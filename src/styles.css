@@ -1751,9 +1751,14 @@ p {
 
 .about-lead {
   max-width: 66ch;
+  margin: 0;
   color: var(--ink);
   font-size: clamp(18px, 1.35vw, 22px);
   line-height: 1.62;
+}
+
+.about-lead-secondary {
+  margin-top: 18px;
 }
 
 .about-support {
@@ -1770,13 +1775,16 @@ p {
 
 .about-hero-gallery {
   position: relative;
-  min-height: clamp(390px, 43vw, 620px);
+  min-height: clamp(480px, 44vw, 680px);
+  isolation: isolate;
 }
 
 .about-hero-gallery figure {
   overflow: hidden;
   margin: 0;
-  border-radius: 8px;
+  border-radius: 10px;
+  background: #dcecf2;
+  transform: translateZ(0);
 }
 
 .about-hero-gallery img,
@@ -1787,33 +1795,44 @@ p {
   object-fit: cover;
 }
 
+.about-hero-gallery figure img {
+  transition: transform 700ms ease, filter 700ms ease;
+}
+
+.about-hero-gallery figure:hover img {
+  transform: scale(1.045);
+  filter: saturate(1.04) contrast(1.02);
+}
+
 .about-hero-main {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 82%;
-  height: 72%;
-  box-shadow: 0 28px 70px rgba(13, 51, 115, 0.16);
+  left: 4%;
+  bottom: 2%;
+  width: 78%;
+  height: 68%;
+  z-index: 1;
+  box-shadow: 0 30px 80px rgba(13, 51, 115, 0.18);
 }
 
 .about-hero-float {
   position: absolute;
   z-index: 2;
-  box-shadow: 0 24px 54px rgba(13, 51, 115, 0.18);
+  box-shadow: 0 24px 56px rgba(13, 51, 115, 0.2);
 }
 
 .about-hero-float-one {
-  top: 0;
-  left: 0;
-  width: 44%;
+  top: 4%;
+  right: 0;
+  width: 50%;
   height: 34%;
 }
 
 .about-hero-float-two {
-  right: 0;
+  right: 2%;
   bottom: 0;
-  width: 36%;
-  height: 42%;
+  width: 42%;
+  height: 38%;
+  z-index: 3;
 }
 
 .about-metrics-band {
@@ -2485,7 +2504,23 @@ p {
   }
 
   .about-hero-gallery {
-    min-height: 460px;
+    min-height: 520px;
+  }
+
+  .about-hero-main {
+    left: 0;
+    width: 82%;
+    height: 66%;
+  }
+
+  .about-hero-float-one {
+    width: 48%;
+    height: 32%;
+  }
+
+  .about-hero-float-two {
+    width: 44%;
+    height: 36%;
   }
 
   .about-flow-layout {
@@ -2880,7 +2915,26 @@ p {
   }
 
   .about-hero-gallery {
-    min-height: 360px;
+    min-height: 410px;
+  }
+
+  .about-hero-main {
+    left: 0;
+    bottom: 4%;
+    width: 84%;
+    height: 62%;
+  }
+
+  .about-hero-float-one {
+    top: 0;
+    width: 56%;
+    height: 30%;
+  }
+
+  .about-hero-float-two {
+    right: 0;
+    width: 48%;
+    height: 34%;
   }
 
   .about-flow-media {

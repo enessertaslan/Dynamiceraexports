@@ -88,6 +88,12 @@ const showcaseImages = {
     "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=82",
   logistics:
     "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=900&q=82",
+  aboutMain:
+    "https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1200&q=86",
+  aboutSupply:
+    "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=900&q=86",
+  aboutProduct:
+    "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=86",
 };
 
 const copy = {
@@ -231,18 +237,20 @@ const copy = {
     ],
     aboutIntroTitle: "Hakkımızda",
     aboutIntroText:
-      "Dynamic Era Exporters, iç ve dış ticaret alanında geniş ürün portföyü, güçlü tedarik ilişkileri ve çözüm odaklı yaklaşımıyla faaliyet gösteren bir ticaret şirketidir.\n\nEnerji, inşaat malzemeleri, tekstil, gıda, sağlık, savunma sanayi ve farklı ticaret kategorilerinde müşterilerinin ihtiyaçlarına uygun tedarik çözümleri geliştirir. Amacımız yalnızca ürün sağlamak değil; müşterilerimize güvenilir, sürdürülebilir ve verimli bir ticaret deneyimi sunmaktır.\n\nGeniş sektör ağı, esnek operasyon yapısı ve müşteri odaklı hizmet anlayışımızla, firmaların ithalat ve ihracat süreçlerinde güçlü bir iş ortağı olarak konumlanıyoruz.",
+      "Dynamic Era Exporters, iç ve dış ticaret alanında faaliyet gösteren; farklı sektörlerdeki ürün ve tedarik ihtiyaçlarına profesyonel çözümler sunan bir ticaret şirketidir. Kurulduğu günden bu yana temel hedefimiz, müşterilerimizin ihtiyaç duyduğu ürünleri doğru tedarik kaynaklarıyla buluşturmak ve ithalat ile ihracat süreçlerini güvenilir şekilde yönetmektir.",
     aboutMore: "Hakkımızda Daha Fazla Bilgi",
-    aboutTitle: "İhtiyacınız olan ürünü doğru kaynaktan temin ediyoruz.",
+    aboutTitle: "Hakkımızda",
     aboutText:
-      "Global ticarette başarı; doğru ürüne, doğru zamanda ve doğru şartlarda ulaşabilmekten geçer. Müşterilerimizin ihtiyaçlarını analiz ediyor, sektöre ve talebe uygun tedarik kaynaklarını belirliyor ve ticaret sürecini güvenilir şekilde yönetiyoruz.",
+      "Dynamic Era Exporters, iç ve dış ticaret alanında faaliyet gösteren; farklı sektörlerdeki ürün ve tedarik ihtiyaçlarına profesyonel çözümler sunan bir ticaret şirketidir.",
     aboutSupport:
-      "Dynamic Era Exporters olarak ürün bulmanın ötesine geçiyor, ticaretin her adımını güven, şeffaflık ve hızla yönetiyoruz.",
-    aboutFlowTitle: "Ticarette güven, hız ve şeffaflık",
-    aboutFlowText1:
-      "Kurulduğu günden bu yana temel hedefimiz; müşterilerimizin ihtiyaç duyduğu ürünleri doğru tedarik kaynaklarıyla buluşturmak, ithalat ve ihracat süreçlerini güvenilir şekilde yönetmek ve ticaretin her aşamasında değer yaratan bir iş ortağı olmaktır.",
-    aboutFlowText2:
       "Günümüz global ticaret dünyasında firmalar yalnızca ürün aramaz; güvenilir tedarikçi, doğru fiyatlandırma, sürdürülebilir iş ilişkisi, operasyonel takip ve hızlı iletişim de bekler. Dynamic Era Exporters olarak biz, bu ihtiyaçların tamamını dikkate alan bütüncül bir ticaret yaklaşımı benimsiyoruz.",
+    aboutHeroNote:
+      "Bu yaklaşım sayesinde firmaların hem yerel hem de uluslararası pazarlarda daha güvenli ve verimli ticaret yapmasına katkı sağlıyoruz.",
+    aboutFlowTitle: "Geniş sektör ağımızla ticaret sürecinizi uçtan uca yönetiyoruz",
+    aboutFlowText1:
+      "Enerji, inşaat malzemeleri, tekstil, gıda, sağlık, savunma sanayi, elektrik-elektronik, makine, mobilya, otomotiv, ambalaj, plastik, tarım ürünleri ve daha birçok alanda geniş ürün ve sektör ağıyla müşterilerimize hizmet veriyoruz. Her sektörde farklı ihtiyaçların, farklı standartların ve farklı operasyon süreçlerinin olduğunu biliyor; bu doğrultuda müşterilerimize özel çözümler geliştiriyoruz.",
+    aboutFlowText2:
+      "Dynamic Era Exporters için ticaret yalnızca alım-satım süreci değildir. Bizim için ticaret; doğru ürünü bulmak, güvenilir tedarikçiyle çalışmak, rekabetçi fiyat sunmak, teslimat sürecini takip etmek ve müşterinin operasyonel yükünü azaltmak anlamına gelir. Müşterilerimizin taleplerini detaylı şekilde analiz eder, uygun tedarik kaynaklarını belirler ve sürecin her aşamasında şeffaf iletişim kurarız.",
     aboutPillars: [
       ["Vizyonumuz", "Global ticarette güvenilirliği, hızı ve çözüm odaklı yaklaşımıyla öne çıkan; farklı sektörlerde müşterilerine sürdürülebilir tedarik çözümleri sunan güçlü bir ticaret markası olmak."],
       ["Misyonumuz", "Müşterilerimizin ithalat, ihracat ve tedarik ihtiyaçlarını doğru analiz ederek; kaliteli ürün, güvenilir kaynak, rekabetçi fiyat ve profesyonel operasyon desteğiyle en uygun ticaret çözümlerini sunmak."],
@@ -432,7 +440,7 @@ const copy = {
     aboutIntroText:
       "Dynamic Era Exporters is a trade company operating in domestic and foreign trade with a wide product portfolio, strong supplier relationships and a solution-oriented approach.\n\nIt develops sourcing solutions suitable for customer needs in energy, construction materials, textile, food, health, defense industry and different trade categories. Our goal is not only to provide products, but to offer our customers a reliable, sustainable and efficient trade experience.\n\nWith our wide sector network, flexible operation structure and customer-oriented service approach, we position ourselves as a strong business partner in companies' import and export processes.",
     aboutMore: "More Information About Us",
-    aboutTitle: "We source the product you need from the right source.",
+    aboutTitle: "About Us",
     aboutText:
       "Success in global trade depends on reaching the right product, at the right time and under the right conditions. We analyze our customers' needs, identify sourcing channels suitable for the sector and demand, and manage the trade process reliably.",
     aboutSupport:
@@ -630,7 +638,7 @@ const copy = {
     aboutIntroText:
       "Dynamic Era Exporters شركة تجارية تعمل في مجال التجارة الداخلية والخارجية من خلال محفظة منتجات واسعة وعلاقات توريد قوية ونهج يركز على الحلول.\n\nتطور الشركة حلول توريد مناسبة لاحتياجات عملائها في الطاقة ومواد البناء والمنسوجات والغذاء والصحة والصناعات الدفاعية وفئات تجارية مختلفة. هدفنا ليس فقط توفير المنتجات، بل تقديم تجربة تجارية موثوقة ومستدامة وفعالة لعملائنا.\n\nمن خلال شبكة قطاعات واسعة وهيكل عمليات مرن ونهج خدمة يركز على العميل، نتموضع كشريك أعمال قوي في عمليات الاستيراد والتصدير للشركات.",
     aboutMore: "مزيد من المعلومات عنا",
-    aboutTitle: "نوفر المنتج الذي تحتاجونه من المصدر الصحيح.",
+    aboutTitle: "من نحن",
     aboutText:
       "يعتمد النجاح في التجارة العالمية على الوصول إلى المنتج الصحيح في الوقت الصحيح وبالشروط الصحيحة. نحلل احتياجات عملائنا ونحدد مصادر التوريد المناسبة للقطاع والطلب وندير العملية التجارية بثقة.",
     aboutSupport:
@@ -1352,9 +1360,9 @@ function CategoriesPage({ t, goTo, selectedCategory, setSelectedCategory }) {
 function About({ t, goTo }) {
   const introText = t.aboutIntroText || t.aboutText;
   const heroImages = [
-    showcaseImages.trade,
-    showcaseImages.cargo,
-    showcaseImages.textile,
+    showcaseImages.aboutMain,
+    showcaseImages.aboutSupply,
+    showcaseImages.aboutProduct,
   ];
   const pillars = t.aboutPillars || [];
   const values = t.aboutValues || [];
@@ -1365,7 +1373,8 @@ function About({ t, goTo }) {
         <Reveal className="about-hero-copy">
           <h1>{t.aboutTitle}</h1>
           <p className="about-lead">{introText}</p>
-          <p className="about-support">{t.aboutSupport}</p>
+          <p className="about-lead about-lead-secondary">{t.aboutSupport}</p>
+          {t.aboutHeroNote && <p className="about-support">{t.aboutHeroNote}</p>}
         </Reveal>
 
         <Reveal className="about-hero-panel">
