@@ -236,6 +236,42 @@ const copy = {
     aboutTitle: "İhtiyacınız olan ürünü doğru kaynaktan temin ediyoruz.",
     aboutText:
       "Global ticarette başarı; doğru ürüne, doğru zamanda ve doğru şartlarda ulaşabilmekten geçer. Müşterilerimizin ihtiyaçlarını analiz ediyor, sektöre ve talebe uygun tedarik kaynaklarını belirliyor ve ticaret sürecini güvenilir şekilde yönetiyoruz.",
+    aboutSupport:
+      "Dynamic Era Exporters olarak ürün bulmanın ötesine geçiyor, ticaretin her adımını güven, şeffaflık ve hızla yönetiyoruz.",
+    aboutFlowTitle: "Ticarette güven, hız ve şeffaflık",
+    aboutFlowText1:
+      "Kurulduğu günden bu yana temel hedefimiz; müşterilerimizin ihtiyaç duyduğu ürünleri doğru tedarik kaynaklarıyla buluşturmak, ithalat ve ihracat süreçlerini güvenilir şekilde yönetmek ve ticaretin her aşamasında değer yaratan bir iş ortağı olmaktır.",
+    aboutFlowText2:
+      "Günümüz global ticaret dünyasında firmalar yalnızca ürün aramaz; güvenilir tedarikçi, doğru fiyatlandırma, sürdürülebilir iş ilişkisi, operasyonel takip ve hızlı iletişim de bekler. Dynamic Era Exporters olarak biz, bu ihtiyaçların tamamını dikkate alan bütüncül bir ticaret yaklaşımı benimsiyoruz.",
+    aboutPillars: [
+      ["Vizyonumuz", "Global ticarette güvenilirliği, hızı ve çözüm odaklı yaklaşımıyla öne çıkan; farklı sektörlerde müşterilerine sürdürülebilir tedarik çözümleri sunan güçlü bir ticaret markası olmak."],
+      ["Misyonumuz", "Müşterilerimizin ithalat, ihracat ve tedarik ihtiyaçlarını doğru analiz ederek; kaliteli ürün, güvenilir kaynak, rekabetçi fiyat ve profesyonel operasyon desteğiyle en uygun ticaret çözümlerini sunmak."],
+      ["Yaklaşımımız", "Her iş birliğini uzun vadeli bir ticari ilişki olarak görür, yalnızca anlık ürün taleplerine değil müşterilerimizin gelecekteki ihtiyaçlarına da odaklanırız."],
+    ],
+    aboutOperationsEyebrow: "Ne Yapıyoruz?",
+    aboutOperationsTitle: "İthalat, ihracat ve tedarik süreçlerinde uçtan uca destek sağlıyoruz.",
+    aboutOperations: [
+      ["01", "İthalat ve ihracat desteği", "İthalat ve ihracat süreçlerinde ticari destek sağlıyoruz."],
+      ["02", "Ürün ve tedarik araştırması", "Farklı sektörler için ürün ve tedarikçi araştırması yapıyoruz."],
+      ["03", "Talebe uygun ürün grupları", "Müşteri taleplerine göre uygun ürün gruplarını belirliyoruz."],
+      ["04", "Tedarikçi bağlantıları", "Yerel ve uluslararası tedarikçilerle bağlantı kuruyoruz."],
+      ["05", "Teklif ve operasyon", "Teklif, fiyatlandırma ve operasyon süreçlerini yönetiyoruz."],
+      ["06", "Sürdürülebilir tedarik", "Geniş ürün kategorilerinde sürdürülebilir tedarik çözümleri sunuyoruz."],
+    ],
+    aboutValuesEyebrow: "Değerlerimiz",
+    aboutValuesTitle: "Ticaretin temelinde güven, hız, esneklik ve global bakış açısı olduğuna inanıyoruz.",
+    aboutValues: [
+      ["Güvenilirlik", "Tüm iş süreçlerimizde şeffaf, sorumlu ve sürdürülebilir bir yaklaşım benimsiyoruz."],
+      ["Hız", "Müşteri taleplerine hızlı dönüş yapar, süreci etkin şekilde planlar ve operasyonel akışı yakından takip ederiz."],
+      ["Esneklik", "Standart kalıplar yerine projeye, ürüne ve talebe özel çözümler üretiriz."],
+      ["Global Bakış Açısı", "Farklı pazarları, ürün gruplarını ve tedarik kaynaklarını değerlendirerek daha geniş seçenekler sunarız."],
+    ],
+    aboutCtaEyebrow: "Dynamic Era Exporters ile Çalışmak",
+    aboutCtaTitle: "Ticaret sürecinizi daha güvenli, daha hızlı ve daha verimli hale getirelim.",
+    aboutCtaText:
+      "İster belirli bir ürün grubu için tedarik arayışında olun, ister ithalat-ihracat süreçleriniz için profesyonel destek isteyin; ekibimiz size en uygun çözümü geliştirmek için hazırdır.",
+    aboutCtaPrimary: "WhatsApp ile iletişime geç",
+    aboutCtaSecondary: "İletişim sayfası",
     values: ["Geniş ürün ve sektör ağı", "Güvenilir ticaret süreci", "Esnek ve hızlı çözümler", "Uluslararası ticaret deneyimi"],
     contactTitle: "İletişim",
     contactLead:
@@ -399,6 +435,42 @@ const copy = {
     aboutTitle: "We source the product you need from the right source.",
     aboutText:
       "Success in global trade depends on reaching the right product, at the right time and under the right conditions. We analyze our customers' needs, identify sourcing channels suitable for the sector and demand, and manage the trade process reliably.",
+    aboutSupport:
+      "At Dynamic Era Exporters, we go beyond finding products and manage every step of trade with trust, transparency and speed.",
+    aboutFlowTitle: "Trade built on trust, speed and transparency",
+    aboutFlowText1:
+      "Since day one, our core goal has been to connect customers with the right sourcing channels, manage import and export processes reliably, and become a business partner that creates value at every stage of trade.",
+    aboutFlowText2:
+      "In today's global trade landscape, companies expect more than a product: a reliable supplier, correct pricing, sustainable business relationships, operational follow-up and fast communication. At Dynamic Era Exporters, we adopt a holistic trade approach that takes all of these needs into account.",
+    aboutPillars: [
+      ["Our Vision", "To become a strong trade brand known for reliability, speed and solution-focused thinking in global trade, while offering sustainable sourcing solutions across different sectors."],
+      ["Our Mission", "To analyze our customers' import, export and sourcing needs correctly and deliver the most suitable trade solutions with quality products, reliable sources, competitive pricing and professional operational support."],
+      ["Our Approach", "We see every collaboration as a long-term commercial relationship and focus not only on current product requests, but also on our customers' future needs."],
+    ],
+    aboutOperationsEyebrow: "What We Do",
+    aboutOperationsTitle: "We provide end-to-end support in import, export and sourcing processes.",
+    aboutOperations: [
+      ["01", "Import and export support", "We provide commercial support in import and export processes."],
+      ["02", "Product and supplier research", "We research products and suppliers for different sectors."],
+      ["03", "Demand-fit product groups", "We identify suitable product groups based on customer demand."],
+      ["04", "Supplier connections", "We connect with local and international suppliers."],
+      ["05", "Quotes and operations", "We manage quotation, pricing and operational processes."],
+      ["06", "Sustainable sourcing", "We offer sustainable sourcing solutions across broad product categories."],
+    ],
+    aboutValuesEyebrow: "Our Values",
+    aboutValuesTitle: "We believe trust, speed, flexibility and a global perspective are the foundation of trade.",
+    aboutValues: [
+      ["Reliability", "We adopt a transparent, responsible and sustainable approach across all business processes."],
+      ["Speed", "We respond quickly to customer requests, plan the process efficiently and closely track the operational flow."],
+      ["Flexibility", "Instead of fixed patterns, we create project-specific, product-specific and demand-specific solutions."],
+      ["Global Perspective", "By evaluating different markets, product groups and supply sources, we offer broader options."],
+    ],
+    aboutCtaEyebrow: "Working with Dynamic Era Exporters",
+    aboutCtaTitle: "Let's make your trade process safer, faster and more efficient.",
+    aboutCtaText:
+      "Whether you are looking for a specific product group or need professional support for import-export processes, our team is ready to build the right solution for you.",
+    aboutCtaPrimary: "Contact via WhatsApp",
+    aboutCtaSecondary: "Contact page",
     values: ["Wide product and sector network", "Reliable trade process", "Flexible and fast solutions", "International trade experience"],
     contactTitle: "Contact",
     contactLead: "Whatever the product, target country or category you are looking for, we can start with a short message.",
@@ -561,6 +633,42 @@ const copy = {
     aboutTitle: "نوفر المنتج الذي تحتاجونه من المصدر الصحيح.",
     aboutText:
       "يعتمد النجاح في التجارة العالمية على الوصول إلى المنتج الصحيح في الوقت الصحيح وبالشروط الصحيحة. نحلل احتياجات عملائنا ونحدد مصادر التوريد المناسبة للقطاع والطلب وندير العملية التجارية بثقة.",
+    aboutSupport:
+      "في Dynamic Era Exporters نتجاوز مجرد إيجاد المنتجات، وندير كل خطوة في التجارة بثقة وشفافية وسرعة.",
+    aboutFlowTitle: "تجارة قائمة على الثقة والسرعة والشفافية",
+    aboutFlowText1:
+      "منذ اليوم الأول كان هدفنا الأساسي هو ربط عملائنا بمصادر التوريد الصحيحة، وإدارة عمليات الاستيراد والتصدير بثقة، وأن نكون شريكا يضيف قيمة في كل مرحلة من مراحل التجارة.",
+    aboutFlowText2:
+      "في عالم التجارة العالمية اليوم لا تبحث الشركات عن المنتج فقط؛ بل تتوقع موردا موثوقا وتسعيرا صحيحا وعلاقات عمل مستدامة ومتابعة تشغيلية وتواصلا سريعا. لذلك نعتمد نهجا تجاريا شاملا يراعي كل هذه الاحتياجات.",
+    aboutPillars: [
+      ["رؤيتنا", "أن نكون علامة تجارية قوية في التجارة العالمية تتميز بالثقة والسرعة والتركيز على الحلول، وتقدم حلول توريد مستدامة في قطاعات مختلفة."],
+      ["مهمتنا", "تحليل احتياجات عملائنا في الاستيراد والتصدير والتوريد بشكل صحيح، وتقديم أفضل حلول التجارة من خلال منتجات عالية الجودة ومصادر موثوقة وأسعار تنافسية ودعم تشغيلي احترافي."],
+      ["نهجنا", "نرى كل تعاون كعلاقة تجارية طويلة الأمد، ونركز على احتياجات عملائنا الحالية والمستقبلية."],
+    ],
+    aboutOperationsEyebrow: "ماذا نفعل",
+    aboutOperationsTitle: "نقدم دعما شاملا في عمليات الاستيراد والتصدير والتوريد.",
+    aboutOperations: [
+      ["01", "دعم الاستيراد والتصدير", "نقدم دعما تجاريا في عمليات الاستيراد والتصدير."],
+      ["02", "بحث المنتجات والموردين", "نبحث عن المنتجات والموردين لقطاعات مختلفة."],
+      ["03", "مجموعات منتجات مناسبة", "نحدد مجموعات المنتجات المناسبة حسب طلب العميل."],
+      ["04", "ربط الموردين", "نتواصل مع الموردين المحليين والدوليين."],
+      ["05", "العروض والعمليات", "ندير عروض الأسعار والتسعير والعمليات التشغيلية."],
+      ["06", "توريد مستدام", "نقدم حلول توريد مستدامة عبر فئات منتجات واسعة."],
+    ],
+    aboutValuesEyebrow: "قيمنا",
+    aboutValuesTitle: "نؤمن بأن الثقة والسرعة والمرونة والرؤية العالمية هي أساس التجارة.",
+    aboutValues: [
+      ["الموثوقية", "نعتمد نهجا شفافا ومسؤولا ومستداما في جميع عملياتنا."],
+      ["السرعة", "نستجيب بسرعة لطلبات العملاء ونخطط العملية بكفاءة ونتابع التدفق التشغيلي عن كثب."],
+      ["المرونة", "نصمم حلولا خاصة بالمشروع والمنتج والطلب بدلا من القوالب الثابتة."],
+      ["الرؤية العالمية", "نقيم الأسواق ومجموعات المنتجات ومصادر التوريد المختلفة لتقديم خيارات أوسع."],
+    ],
+    aboutCtaEyebrow: "العمل مع Dynamic Era Exporters",
+    aboutCtaTitle: "لنجعل عملية تجارتكم أكثر أمانا وسرعة وكفاءة.",
+    aboutCtaText:
+      "سواء كنتم تبحثون عن مجموعة منتجات معينة أو تحتاجون دعما مهنيا لعمليات الاستيراد والتصدير، فريقنا جاهز لبناء الحل الأنسب لكم.",
+    aboutCtaPrimary: "تواصلوا عبر واتساب",
+    aboutCtaSecondary: "صفحة التواصل",
     values: ["شبكة واسعة من المنتجات والقطاعات", "عملية تجارة موثوقة", "حلول مرنة وسريعة", "خبرة في التجارة الدولية"],
     contactTitle: "تواصل",
     contactLead: "أيا كان المنتج أو البلد المستهدف أو الفئة التي تبحثون عنها، يمكننا البدء برسالة قصيرة.",
@@ -671,7 +779,7 @@ function App() {
             setSelectedCategory={setSelectedCategory}
           />
         )}
-        {page === "about" && <About t={t} />}
+        {page === "about" && <About t={t} goTo={goTo} />}
         {page === "contact" && <Contact t={t} />}
       </main>
       <Footer t={t} goTo={goTo} />
@@ -1241,29 +1349,166 @@ function CategoriesPage({ t, goTo, selectedCategory, setSelectedCategory }) {
   );
 }
 
-function About({ t }) {
+function About({ t, goTo }) {
+  const introText = t.aboutIntroText || t.aboutText;
+  const heroImages = [
+    showcaseImages.trade,
+    showcaseImages.cargo,
+    showcaseImages.textile,
+  ];
+  const pillars = t.aboutPillars || [];
+  const values = t.aboutValues || [];
+
   return (
     <section className="page-section about-page">
-      <Reveal className="about-hero">
-        <div>
-          <p className="eyebrow">20+ Years</p>
+      <div className="about-hero-shell">
+        <Reveal className="about-hero-copy">
           <h1>{t.aboutTitle}</h1>
-          <p>{t.aboutText}</p>
-        </div>
-        <div className="about-number">
-          <strong>1500+</strong>
-          <span>{t.metrics[1][1]}</span>
-        </div>
-      </Reveal>
-      <div className="value-list page-values">
-        {t.values.map((value) => (
-          <Reveal key={value}>
-            <div>
-              <Sparkles size={18} />
-              <span>{value}</span>
-            </div>
-          </Reveal>
+          <p className="about-lead">{introText}</p>
+          <p className="about-support">{t.aboutSupport}</p>
+        </Reveal>
+
+        <Reveal className="about-hero-panel">
+          <div className="about-hero-gallery">
+            <figure className="about-hero-main">
+              <img src={heroImages[0]} alt="" loading="lazy" />
+            </figure>
+            <figure className="about-hero-float about-hero-float-one">
+              <img src={heroImages[1]} alt="" loading="lazy" />
+            </figure>
+            <figure className="about-hero-float about-hero-float-two">
+              <img src={heroImages[2]} alt="" loading="lazy" />
+            </figure>
+          </div>
+        </Reveal>
+      </div>
+
+      <Reveal className="about-metrics-band">
+        {t.metrics.slice(0, 4).map(([value, label]) => (
+          <div key={label} className="about-metric">
+            <strong>{value}</strong>
+            <span>{label}</span>
+          </div>
         ))}
+      </Reveal>
+
+      <div className="about-flow">
+        <Reveal className="about-flow-intro">
+          <div className="about-flow-layout">
+            <div className="about-flow-copy">
+              <h2>{t.aboutFlowTitle || t.aboutMore}</h2>
+              <p>{t.aboutFlowText1}</p>
+              <p>{t.aboutFlowText2}</p>
+            </div>
+            <figure className="about-flow-media">
+              <img src={showcaseImages.logistics || showcaseImages.trade} alt="" loading="lazy" />
+            </figure>
+          </div>
+        </Reveal>
+
+        <div className="about-pillars">
+          {pillars.map(([title, text], index) => (
+            <Reveal key={title} className={`about-pillar pillar-${index + 1}`}>
+              <div className="about-pillar-inner">
+                <span
+                  className="about-pillar-index"
+                  style={{
+                    display: "grid",
+                    placeItems: "center",
+                    width: 56,
+                    height: 56,
+                    flex: "0 0 56px",
+                    borderRadius: 999,
+                    background: "#155c98",
+                    color: "#ffffff",
+                    fontSize: 15,
+                    fontWeight: 900,
+                    lineHeight: 1,
+                    opacity: 1,
+                  }}
+                >
+                  0{index + 1}
+                </span>
+                <div>
+                  <h3>{title}</h3>
+                  <p>{text}</p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal className="about-operations">
+          <div className="about-operations-copy">
+            <p className="eyebrow">{t.aboutOperationsEyebrow}</p>
+            <h2>{t.aboutOperationsTitle}</h2>
+          </div>
+          <div className="about-operations-grid">
+            {t.aboutOperations.map(([index, title, text]) => (
+              <article className="about-operation-card" key={title}>
+                <strong
+                  style={{
+                    display: "grid",
+                    placeItems: "center",
+                    width: 50,
+                    height: 50,
+                    borderRadius: 999,
+                    background: "#0d3373",
+                    color: "#ffffff",
+                    fontSize: 15,
+                    fontWeight: 900,
+                    lineHeight: 1,
+                    opacity: 1,
+                    visibility: "visible",
+                  }}
+                >
+                  {index}
+                </strong>
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </article>
+            ))}
+          </div>
+        </Reveal>
+
+        <Reveal className="about-values">
+          <div className="about-values-copy">
+            <p className="eyebrow">{t.aboutValuesEyebrow}</p>
+            <h2>{t.aboutValuesTitle}</h2>
+          </div>
+          <div className="about-values-grid">
+            {values.map(([title, text], index) => {
+              const Icon = [Shield, Zap, Sparkles, Globe2][index] || Sparkles;
+              return (
+                <div key={title} className="about-value-card">
+                  <div className="about-value-icon">
+                    <Icon size={22} />
+                  </div>
+                  <h3>{title}</h3>
+                  <p>{text}</p>
+                </div>
+              );
+            })}
+          </div>
+        </Reveal>
+
+        <Reveal className="about-cta">
+          <div className="about-cta-copy">
+            <p className="eyebrow">{t.aboutCtaEyebrow}</p>
+            <h2>{t.aboutCtaTitle}</h2>
+            <p>{t.aboutCtaText}</p>
+            <div className="about-cta-actions">
+              <a className="primary-action" href={`https://wa.me/${company.whatsapp}`} target="_blank" rel="noreferrer">
+                <WhatsAppIcon size={18} />
+                {t.aboutCtaPrimary}
+              </a>
+              <button className="secondary-action" onClick={() => goTo("contact")}>
+                <Mail size={18} />
+                {t.aboutCtaSecondary}
+              </button>
+            </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   );
