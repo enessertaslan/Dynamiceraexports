@@ -1,0 +1,17 @@
+{
+  "name": "Dynamic Era Export",
+  "short_name": "Dynamic Era",
+  "description": "Global sourcing, import, export and trade operation solutions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#062b5f",
+  "icons": [
+    {
+      "src": "/dynamic-era-logo-original.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

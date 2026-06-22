@@ -1,22 +1,37 @@
 import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import {
+  Armchair,
   ArrowRight,
-  Building2,
+  Boxes,
+  BrickWall,
+  Cable,
+  CarFront,
   CheckCircle2,
   ChevronDown as ChevronDownIcon,
   CircleAlert,
-  Factory,
+  Cog,
+  FlaskConical,
   Globe2,
+  HardHat,
   HeartPulse,
   Mail,
   MapPin,
   Menu,
   PackageCheck,
+  PackageOpen,
   Phone,
+  SearchCheck,
   Shield,
+  ShieldCheck,
+  Ship,
+  Shirt,
+  Shapes,
   Sparkles,
-  Wheat,
+  SprayCan,
+  Stethoscope,
+  Tractor,
+  Utensils,
   X,
   Zap,
 } from "lucide-react";
@@ -31,6 +46,7 @@ const company = {
   email: "mehmet@dynamiceraexport.com",
   location: "Istanbul, Turkiye",
 };
+const web3FormsAccessKey = String(import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "").trim();
 
 const languages = [
   { code: "tr", label: "TR", name: "Türkçe", dir: "ltr" },
@@ -64,11 +80,25 @@ function getInitialLanguage() {
 
 const categoryIcons = {
   energy: Zap,
-  construction: Building2,
-  textile: Factory,
-  food: Wheat,
+  construction: HardHat,
+  textile: Shirt,
+  food: Utensils,
   health: HeartPulse,
-  defense: Shield,
+  defense: ShieldCheck,
+  electrical: Cable,
+  machinery: Cog,
+  furniture: Armchair,
+  automotive: CarFront,
+  plastic: Shapes,
+  packaging: PackageOpen,
+  cosmetics: FlaskConical,
+  cleaning: SprayCan,
+  agriculture: Tractor,
+  medical: Stethoscope,
+  rawMaterial: Boxes,
+  buildingProducts: BrickWall,
+  logisticsTrade: Ship,
+  generalSourcing: SearchCheck,
 };
 
 const heroImages = [
@@ -78,13 +108,14 @@ const heroImages = [
 ];
 
 const partnerLogos = [
-  { name: "Astra Global", code: "AG" },
-  { name: "Nova Supply", code: "NS" },
-  { name: "Blue Port", code: "BP" },
-  { name: "Meridian Trade", code: "MT" },
-  { name: "Atlas Works", code: "AW" },
-  { name: "Vector Line", code: "VL" },
-  { name: "Prime Source", code: "PS" },
+  { name: "Maersk", logo: "/logos/maersk.svg" },
+  { name: "MSC", logo: "/logos/msc.svg" },
+  { name: "DHL", logo: "/logos/dhl.svg" },
+  { name: "FedEx", logo: "/logos/fedex.svg" },
+  { name: "UPS", logo: "/logos/ups.svg" },
+  { name: "Turkish Cargo", logo: "/logos/turkish-cargo.svg" },
+  { name: "Alibaba.com", logo: "/logos/alibaba.svg" },
+  { name: "Europages", logo: "/logos/europages.svg" },
 ];
 
 const showcaseImages = {
@@ -98,6 +129,7 @@ const showcaseImages = {
     "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=82",
   logistics:
     "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=900&q=82",
+  aboutFlow: "/about-global-logistics.jpg",
   aboutMain:
     "https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1200&q=86",
   aboutSupply:
@@ -312,6 +344,8 @@ const copy = {
       message: "Ne arıyorsunuz?",
       send: "Mail Gönder",
       sending: "Gönderiliyor...",
+      configTitle: "Form servisi yapılandırılmadı",
+      configText: "Mesaj göndermek için Web3Forms erişim anahtarının eklenmesi gerekiyor. Bu sırada WhatsApp üzerinden bize ulaşabilirsiniz.",
       successTitle: "Mesajınız başarıyla gönderildi",
       successText: "Teşekkür ederiz. Size en kısa sürede dönüş sağlayacağız.",
       errorTitle: "Mesaj gönderilemedi",
@@ -320,7 +354,7 @@ const copy = {
       rateText: "Spam güvenliği için bir dakika içinde yalnızca bir mesaj gönderebilirsiniz.",
       close: "Kapat",
     },
-    partnersTitle: "İş Ortaklarımız",
+    partnersTitle: "Global Ticaret Ekosistemi",
     importantLinksTitle: "Önemli Linkler",
     footerWhatsappTitle: "WhatsApp'tan Ulaşın",
     footerWhatsappText: "Ürün, sektör veya tedarik talebiniz için doğrudan bizimle iletişime geçin.",
@@ -529,6 +563,8 @@ const copy = {
       message: "What are you looking for?",
       send: "Send Email",
       sending: "Sending...",
+      configTitle: "Form service is not configured",
+      configText: "A Web3Forms access key must be added before messages can be sent. You can contact us via WhatsApp in the meantime.",
       successTitle: "Your message was sent successfully",
       successText: "Thank you. We will get back to you as soon as possible.",
       errorTitle: "Message could not be sent",
@@ -537,7 +573,7 @@ const copy = {
       rateText: "For spam protection, you can send only one message per minute.",
       close: "Close",
     },
-    partnersTitle: "Our Partners",
+    partnersTitle: "Global Trade Ecosystem",
     importantLinksTitle: "Important Links",
     footerWhatsappTitle: "Reach Us on WhatsApp",
     footerWhatsappText: "Contact us directly for your product, sector or sourcing request.",
@@ -746,6 +782,8 @@ const copy = {
       message: "Что вы ищете?",
       send: "Отправить email",
       sending: "Отправка...",
+      configTitle: "Сервис формы не настроен",
+      configText: "Для отправки сообщений необходимо добавить ключ доступа Web3Forms. Пока вы можете связаться с нами через WhatsApp.",
       successTitle: "Ваше сообщение успешно отправлено",
       successText: "Спасибо. Мы свяжемся с вами в ближайшее время.",
       errorTitle: "Не удалось отправить сообщение",
@@ -754,7 +792,7 @@ const copy = {
       rateText: "Для защиты от спама можно отправлять только одно сообщение в минуту.",
       close: "Закрыть",
     },
-    partnersTitle: "Наши партнеры",
+    partnersTitle: "Экосистема мировой торговли",
     importantLinksTitle: "Важные ссылки",
     footerWhatsappTitle: "Связаться с нами в WhatsApp",
     footerWhatsappText: "Свяжитесь с нами напрямую по вашему продукту, сектору или запросу на поставку.",
@@ -963,6 +1001,8 @@ const copy = {
       message: "Que recherchez-vous ?",
       send: "Envoyer un email",
       sending: "Envoi...",
+      configTitle: "Le service de formulaire n’est pas configuré",
+      configText: "Une clé d’accès Web3Forms doit être ajoutée avant l’envoi. Vous pouvez nous contacter via WhatsApp entre-temps.",
       successTitle: "Votre message a été envoyé",
       successText: "Merci. Nous vous répondrons dans les plus brefs délais.",
       errorTitle: "Le message n'a pas pu être envoyé",
@@ -971,7 +1011,7 @@ const copy = {
       rateText: "Pour éviter le spam, vous ne pouvez envoyer qu'un message par minute.",
       close: "Fermer",
     },
-    partnersTitle: "Nos Partenaires",
+    partnersTitle: "Écosystème du commerce mondial",
     importantLinksTitle: "Liens Importants",
     footerWhatsappTitle: "Nous contacter sur WhatsApp",
     footerWhatsappText: "Contactez-nous directement pour votre produit, secteur ou demande d'approvisionnement.",
@@ -1180,6 +1220,8 @@ const copy = {
       message: "Wonach suchen Sie?",
       send: "E-Mail senden",
       sending: "Wird gesendet...",
+      configTitle: "Formulardienst ist nicht konfiguriert",
+      configText: "Vor dem Versand muss ein Web3Forms-Zugriffsschlüssel hinzugefügt werden. Bis dahin erreichen Sie uns über WhatsApp.",
       successTitle: "Ihre Nachricht wurde erfolgreich gesendet",
       successText: "Vielen Dank. Wir melden uns schnellstmöglich bei Ihnen.",
       errorTitle: "Nachricht konnte nicht gesendet werden",
@@ -1188,7 +1230,7 @@ const copy = {
       rateText: "Zum Schutz vor Spam können Sie nur eine Nachricht pro Minute senden.",
       close: "Schließen",
     },
-    partnersTitle: "Unsere Partner",
+    partnersTitle: "Globales Handelsökosystem",
     importantLinksTitle: "Wichtige Links",
     footerWhatsappTitle: "Kontaktieren Sie uns per WhatsApp",
     footerWhatsappText: "Kontaktieren Sie uns direkt für Ihr Produkt, Ihren Sektor oder Ihre Beschaffungsanfrage.",
@@ -1397,6 +1439,8 @@ const copy = {
       message: "Waar bent u naar op zoek?",
       send: "E-mail verzenden",
       sending: "Verzenden...",
+      configTitle: "Formulierservice is niet geconfigureerd",
+      configText: "Er moet een Web3Forms-toegangssleutel worden toegevoegd voordat berichten kunnen worden verzonden. Neem ondertussen contact op via WhatsApp.",
       successTitle: "Uw bericht is succesvol verzonden",
       successText: "Bedankt. Wij nemen zo snel mogelijk contact met u op.",
       errorTitle: "Het bericht kon niet worden verzonden",
@@ -1405,7 +1449,7 @@ const copy = {
       rateText: "Ter bescherming tegen spam kunt u slechts één bericht per minuut verzenden.",
       close: "Sluiten",
     },
-    partnersTitle: "Onze Partners",
+    partnersTitle: "Wereldwijd handelsecosysteem",
     importantLinksTitle: "Belangrijke Links",
     footerWhatsappTitle: "Bereik ons via WhatsApp",
     footerWhatsappText: "Neem direct contact met ons op voor uw product, sector of sourcingaanvraag.",
@@ -1614,6 +1658,8 @@ const copy = {
       message: "ماذا تبحث عنه؟",
       send: "إرسال بريد",
       sending: "جارٍ الإرسال...",
+      configTitle: "خدمة النموذج غير مهيأة",
+      configText: "يجب إضافة مفتاح وصول Web3Forms قبل إرسال الرسائل. يمكنكم التواصل معنا عبر واتساب في هذه الأثناء.",
       successTitle: "تم إرسال رسالتكم بنجاح",
       successText: "شكرا لكم. سنتواصل معكم في أقرب وقت ممكن.",
       errorTitle: "تعذر إرسال الرسالة",
@@ -1622,12 +1668,85 @@ const copy = {
       rateText: "للحماية من الرسائل المزعجة، يمكن إرسال رسالة واحدة فقط كل دقيقة.",
       close: "إغلاق",
     },
-    partnersTitle: "شركاؤنا",
+    partnersTitle: "منظومة التجارة العالمية",
     importantLinksTitle: "روابط مهمة",
     footerWhatsappTitle: "تواصلوا عبر واتساب",
     footerWhatsappText: "تواصلوا معنا مباشرة لطلب المنتج أو القطاع أو التوريد.",
     footer: "تواصل واضح في عمليات الاستيراد والتصدير والتوريد العالمي.",
     copyright: "© Copyright 2026 Dynamic Era Exporters. جميع الحقوق محفوظة.",
+  },
+};
+
+const seoFaqContent = {
+  tr: {
+    title: "Dış ticaret ve tedarik hakkında sık sorulanlar",
+    intro: "Ürün araştırması, ithalat, ihracat ve operasyon süreçlerimizle ilgili temel soruların kısa yanıtları.",
+    items: [
+      ["Dynamic Era Exporters hangi sektörlerde tedarik sağlar?", "Enerji, inşaat malzemeleri, tekstil, gıda, sağlık, savunma sanayi, elektrik-elektronik, makine, mobilya, otomotiv, ambalaj, tarım ve farklı ürün gruplarında tedarik araştırması yürütürüz."],
+      ["İthalat ve ihracat süreci nasıl başlar?", "Ürün, teknik özellik, miktar, hedef ülke ve teslimat beklentisini netleştirir; uygun tedarik kaynaklarını, teklifleri ve operasyon adımlarını birlikte planlarız."],
+      ["Teklif almak için hangi bilgiler gerekir?", "Ürün adı veya teknik şartname, tahmini adet, teslimat ülkesi veya şehri ve hedeflenen zaman bilgisi ilk araştırma için yeterlidir."],
+      ["Yerel ve uluslararası tedarikçilerle çalışıyor musunuz?", "Evet. Talebin sektörüne, kalite standardına, bütçesine ve teslimat koşullarına göre yerel ve uluslararası tedarik seçeneklerini karşılaştırırız."],
+    ],
+  },
+  en: {
+    title: "Frequently asked questions about global trade and sourcing",
+    intro: "Clear answers about product research, import, export and operational follow-up.",
+    items: [
+      ["Which sectors does Dynamic Era Exporters source for?", "We research sourcing options across energy, construction materials, textile, food, health, defense, electrical and electronics, machinery, furniture, automotive, packaging, agriculture and other product groups."],
+      ["How does the import or export process begin?", "We clarify the product, technical specifications, quantity, destination and delivery expectations, then plan suppliers, quotations and operational steps."],
+      ["What information is needed for a quotation?", "A product name or specification, estimated quantity, delivery country or city and target timing are enough to start the initial research."],
+      ["Do you work with local and international suppliers?", "Yes. We compare local and international sourcing options according to sector, quality standards, budget and delivery requirements."],
+    ],
+  },
+  ru: {
+    title: "Частые вопросы о международной торговле и поставках",
+    intro: "Краткие ответы об исследовании продукции, импорте, экспорте и операционном сопровождении.",
+    items: [
+      ["Для каких отраслей Dynamic Era Exporters организует поставки?", "Мы исследуем варианты поставок для энергетики, строительства, текстиля, пищевой отрасли, здравоохранения, обороны, электроники, машиностроения, мебели, автомобилестроения, упаковки, сельского хозяйства и других групп товаров."],
+      ["Как начинается процесс импорта или экспорта?", "Мы уточняем продукт, технические характеристики, объем, страну назначения и условия поставки, затем планируем поставщиков, предложения и операционные этапы."],
+      ["Какая информация нужна для предложения?", "Для начала достаточно названия или спецификации продукта, примерного количества, места доставки и желаемых сроков."],
+      ["Вы работаете с местными и международными поставщиками?", "Да. Мы сравниваем местные и международные варианты по качеству, бюджету, отраслевым стандартам и условиям поставки."],
+    ],
+  },
+  fr: {
+    title: "Questions fréquentes sur le commerce et l’approvisionnement",
+    intro: "Des réponses claires sur la recherche de produits, l’importation, l’exportation et le suivi opérationnel.",
+    items: [
+      ["Dans quels secteurs Dynamic Era Exporters intervient-elle ?", "Nous recherchons des solutions d’approvisionnement dans l’énergie, la construction, le textile, l’alimentaire, la santé, la défense, l’électronique, les machines, le mobilier, l’automobile, l’emballage, l’agriculture et d’autres groupes de produits."],
+      ["Comment commence un processus d’importation ou d’exportation ?", "Nous précisons le produit, les spécifications, la quantité, la destination et les attentes de livraison avant de planifier les fournisseurs, les offres et les étapes opérationnelles."],
+      ["Quelles informations faut-il fournir pour une offre ?", "Le nom ou la spécification du produit, la quantité estimée, le lieu de livraison et le délai souhaité suffisent pour lancer la recherche."],
+      ["Travaillez-vous avec des fournisseurs locaux et internationaux ?", "Oui. Nous comparons les options locales et internationales selon les normes de qualité, le budget et les conditions de livraison."],
+    ],
+  },
+  de: {
+    title: "Häufige Fragen zu Handel und Beschaffung",
+    intro: "Klare Antworten zu Produktsuche, Import, Export und operativer Begleitung.",
+    items: [
+      ["Für welche Branchen beschafft Dynamic Era Exporters Produkte?", "Wir recherchieren Beschaffungsoptionen für Energie, Bau, Textil, Lebensmittel, Gesundheit, Verteidigung, Elektronik, Maschinen, Möbel, Automotive, Verpackung, Landwirtschaft und weitere Produktgruppen."],
+      ["Wie beginnt ein Import- oder Exportprozess?", "Wir klären Produkt, technische Spezifikationen, Menge, Zielort und Liefererwartungen und planen anschließend Lieferanten, Angebote und operative Schritte."],
+      ["Welche Angaben werden für ein Angebot benötigt?", "Produktname oder Spezifikation, geschätzte Menge, Lieferland oder -stadt und gewünschter Zeitraum reichen für die erste Recherche aus."],
+      ["Arbeiten Sie mit lokalen und internationalen Lieferanten?", "Ja. Wir vergleichen lokale und internationale Optionen nach Branche, Qualitätsstandard, Budget und Lieferbedingungen."],
+    ],
+  },
+  nl: {
+    title: "Veelgestelde vragen over handel en sourcing",
+    intro: "Duidelijke antwoorden over productonderzoek, import, export en operationele opvolging.",
+    items: [
+      ["Voor welke sectoren verzorgt Dynamic Era Exporters sourcing?", "Wij onderzoeken sourcingopties voor energie, bouw, textiel, voeding, gezondheid, defensie, elektronica, machines, meubilair, automotive, verpakking, landbouw en andere productgroepen."],
+      ["Hoe begint een import- of exportproces?", "Wij verduidelijken het product, de specificaties, hoeveelheid, bestemming en leveringsverwachtingen en plannen daarna leveranciers, offertes en operationele stappen."],
+      ["Welke informatie is nodig voor een offerte?", "Een productnaam of specificatie, geschatte hoeveelheid, leveringsland of stad en gewenste timing zijn voldoende voor de eerste inventarisatie."],
+      ["Werkt u met lokale en internationale leveranciers?", "Ja. Wij vergelijken lokale en internationale opties op basis van sector, kwaliteit, budget en leveringsvoorwaarden."],
+    ],
+  },
+  ar: {
+    title: "الأسئلة الشائعة حول التجارة والتوريد",
+    intro: "إجابات واضحة حول البحث عن المنتجات والاستيراد والتصدير والمتابعة التشغيلية.",
+    items: [
+      ["ما القطاعات التي توفر لها Dynamic Era Exporters حلول التوريد؟", "نبحث عن خيارات التوريد في الطاقة والبناء والمنسوجات والغذاء والصحة والدفاع والإلكترونيات والآلات والأثاث والسيارات والتغليف والزراعة ومجموعات منتجات أخرى."],
+      ["كيف تبدأ عملية الاستيراد أو التصدير؟", "نحدد المنتج والمواصفات الفنية والكمية والوجهة ومتطلبات التسليم، ثم نخطط للموردين والعروض والخطوات التشغيلية."],
+      ["ما المعلومات المطلوبة للحصول على عرض؟", "يكفي اسم المنتج أو مواصفاته والكمية التقديرية وبلد أو مدينة التسليم والموعد المطلوب لبدء البحث."],
+      ["هل تعملون مع موردين محليين ودوليين؟", "نعم. نقارن الخيارات المحلية والدولية وفق القطاع ومعايير الجودة والميزانية وشروط التسليم."],
+    ],
   },
 };
 
@@ -1656,6 +1775,120 @@ const categoryOrder = [
 const featuredCategoryOrder = categoryOrder.slice(0, 6);
 const categoryIndexByKey = Object.fromEntries(categoryOrder.map((key, index) => [key, index]));
 const pages = ["home", "categories", "about", "contact"];
+const SITE_URL = "https://dynamiceraexport.com";
+const routePaths = {
+  tr: { home: "/", categories: "/sektorler", about: "/hakkimizda", contact: "/iletisim" },
+  en: { home: "/en", categories: "/en/sectors", about: "/en/about", contact: "/en/contact" },
+  ru: { home: "/ru", categories: "/ru/sectors", about: "/ru/about", contact: "/ru/contact" },
+  fr: { home: "/fr", categories: "/fr/secteurs", about: "/fr/a-propos", contact: "/fr/contact" },
+  de: { home: "/de", categories: "/de/branchen", about: "/de/ueber-uns", contact: "/de/kontakt" },
+  nl: { home: "/nl", categories: "/nl/sectoren", about: "/nl/over-ons", contact: "/nl/contact" },
+  ar: { home: "/ar", categories: "/ar/sectors", about: "/ar/about", contact: "/ar/contact" },
+};
+const categorySlugs = {
+  rawMaterial: "raw-material",
+  buildingProducts: "building-products",
+  logisticsTrade: "logistics-supported-trade",
+  generalSourcing: "general-sourcing",
+};
+const seoHomeTitles = {
+  tr: "Global Tedarik ve Dış Ticaret | Dynamic Era Export",
+  en: "Global Sourcing and Trade | Dynamic Era Export",
+  ru: "Глобальные поставки и торговля | Dynamic Era Export",
+  fr: "Approvisionnement et commerce mondial | Dynamic Era Export",
+  de: "Globale Beschaffung und Handel | Dynamic Era Export",
+  nl: "Wereldwijde sourcing en handel | Dynamic Era Export",
+  ar: "التوريد والتجارة العالمية | Dynamic Era Export",
+};
+const localeCodes = {
+  tr: "tr_TR",
+  en: "en_US",
+  ru: "ru_RU",
+  fr: "fr_FR",
+  de: "de_DE",
+  nl: "nl_NL",
+  ar: "ar_AE",
+};
+
+function getPathForPage(lang, page, category) {
+  const languageRoutes = routePaths[lang] || routePaths.tr;
+  const basePath = languageRoutes[page] || languageRoutes.home;
+  return page === "categories" && category ? `${basePath}/${categorySlugs[category] || category}` : basePath;
+}
+
+function getRouteFromPath() {
+  const path = window.location.pathname.replace(/\/+$/, "") || "/";
+  for (const [routeLang, languageRoutes] of Object.entries(routePaths)) {
+    for (const routePage of pages) {
+      const basePath = languageRoutes[routePage];
+      if (path === basePath) return { lang: routeLang, page: routePage, category: null };
+      if (routePage === "categories" && path.startsWith(`${basePath}/`)) {
+        const categorySlug = path.slice(basePath.length + 1);
+        const category = categoryOrder.find((key) => (categorySlugs[key] || key) === categorySlug);
+        if (category) return { lang: routeLang, page: routePage, category };
+      }
+    }
+  }
+  return null;
+}
+
+function getInitialRoute() {
+  const route = getRouteFromPath();
+  if (route && window.location.pathname !== "/") return route;
+  const queryLanguage = new URLSearchParams(window.location.search).get("lang");
+  const initialLanguage = languages.some((language) => language.code === queryLanguage)
+    ? queryLanguage
+    : getInitialLanguage();
+  return route && initialLanguage === "tr" ? route : { lang: initialLanguage, page: "home", category: null };
+}
+
+function cleanSeoText(value) {
+  return String(value || "").replace(/\s+/g, " ").trim();
+}
+
+function truncateSeoText(value, maxLength = 158) {
+  const text = cleanSeoText(value);
+  if (text.length <= maxLength) return text;
+  return `${text.slice(0, maxLength - 1).replace(/\s+\S*$/, "")}…`;
+}
+
+function setMetaTag(attribute, key, content) {
+  let element = document.head.querySelector(`meta[${attribute}="${key}"]`);
+  if (!element) {
+    element = document.createElement("meta");
+    element.setAttribute(attribute, key);
+    document.head.appendChild(element);
+  }
+  element.setAttribute("content", content);
+}
+
+function setCanonicalLink(url) {
+  let link = document.head.querySelector('link[rel="canonical"]');
+  if (!link) {
+    link = document.createElement("link");
+    link.setAttribute("rel", "canonical");
+    document.head.appendChild(link);
+  }
+  link.setAttribute("href", url);
+}
+
+function updateAlternateLinks(page, category) {
+  document.head.querySelectorAll("link[data-seo-hreflang]").forEach((link) => link.remove());
+  languages.forEach((language) => {
+    const link = document.createElement("link");
+    link.rel = "alternate";
+    link.hreflang = language.code;
+    link.href = `${SITE_URL}${getPathForPage(language.code, page, category)}`;
+    link.dataset.seoHreflang = "true";
+    document.head.appendChild(link);
+  });
+  const defaultLink = document.createElement("link");
+  defaultLink.rel = "alternate";
+  defaultLink.hreflang = "x-default";
+  defaultLink.href = `${SITE_URL}${getPathForPage("tr", page, category)}`;
+  defaultLink.dataset.seoHreflang = "true";
+  document.head.appendChild(defaultLink);
+}
 
 function getCategoryEntry(t, key) {
   return t.categories?.[key] || t.allSectors?.[categoryIndexByKey[key]] || [key, ""];
@@ -1672,32 +1905,200 @@ function getCategoryDetail(t, key) {
   );
 }
 
+function updatePageSeo({ lang, page, category, t }) {
+  const pageLabel = page === "home" ? t.homeTitle : t.nav[pages.indexOf(page)];
+  const categoryLabel = category ? getCategoryEntry(t, category)[0] : null;
+  const title = page === "home"
+    ? seoHomeTitles[lang]
+    : `${categoryLabel || pageLabel} | Dynamic Era Export`;
+  const descriptionSource = page === "home"
+    ? t.homeText
+    : page === "categories"
+      ? category
+        ? getCategoryEntry(t, category)[1]
+        : t.categoryPageLead
+      : page === "about"
+        ? t.aboutIntroText || t.aboutText
+        : t.contactLead;
+  const description = truncateSeoText(descriptionSource);
+  const path = getPathForPage(lang, page, category);
+  const canonicalUrl = `${SITE_URL}${path}`;
+  const imageUrl = `${SITE_URL}/about-global-logistics.jpg`;
+
+  document.title = title;
+  setMetaTag("name", "description", description);
+  setMetaTag("name", "robots", "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1");
+  setMetaTag("name", "application-name", "Dynamic Era Export");
+  setMetaTag("name", "author", "Dynamic Era Exporters");
+  setMetaTag("property", "og:type", "website");
+  setMetaTag("property", "og:site_name", "Dynamic Era Export");
+  setMetaTag("property", "og:title", title);
+  setMetaTag("property", "og:description", description);
+  setMetaTag("property", "og:url", canonicalUrl);
+  setMetaTag("property", "og:image", imageUrl);
+  setMetaTag("property", "og:image:width", "1920");
+  setMetaTag("property", "og:image:height", "1280");
+  setMetaTag("property", "og:image:alt", categoryLabel || pageLabel);
+  setMetaTag("property", "og:locale", localeCodes[lang] || localeCodes.tr);
+  setMetaTag("name", "twitter:card", "summary_large_image");
+  setMetaTag("name", "twitter:title", title);
+  setMetaTag("name", "twitter:description", description);
+  setMetaTag("name", "twitter:image", imageUrl);
+  setCanonicalLink(canonicalUrl);
+  updateAlternateLinks(page, category);
+
+  const sectorNames = (t.allSectors || []).map(([name]) => name);
+  const organizationId = `${SITE_URL}/#organization`;
+  const websiteId = `${SITE_URL}/#website`;
+  const webpageId = `${canonicalUrl}#webpage`;
+  const breadcrumbItems = [
+    { "@type": "ListItem", position: 1, name: t.nav[0], item: `${SITE_URL}${getPathForPage(lang, "home")}` },
+  ];
+  if (page !== "home") {
+    breadcrumbItems.push({ "@type": "ListItem", position: 2, name: pageLabel, item: `${SITE_URL}${getPathForPage(lang, page)}` });
+  }
+  if (categoryLabel) {
+    breadcrumbItems.push({ "@type": "ListItem", position: 3, name: categoryLabel, item: canonicalUrl });
+  }
+
+  const graph = [
+    {
+      "@type": "Organization",
+      "@id": organizationId,
+      name: "Dynamic Era Exporters",
+      alternateName: "Dynamic Era Export",
+      url: SITE_URL,
+      logo: `${SITE_URL}/dynamic-era-logo-original.svg`,
+      image: imageUrl,
+      email: company.email,
+      telephone: company.phone,
+      description,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Istanbul",
+        addressCountry: "TR",
+      },
+      areaServed: "Worldwide",
+      knowsAbout: sectorNames,
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: company.phone,
+        contactType: "sales",
+        availableLanguage: languages.map((language) => language.name),
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": websiteId,
+      url: SITE_URL,
+      name: "Dynamic Era Export",
+      publisher: { "@id": organizationId },
+      inLanguage: languages.map((language) => language.code),
+    },
+    {
+      "@type": page === "about" ? "AboutPage" : page === "contact" ? "ContactPage" : page === "categories" ? "CollectionPage" : "WebPage",
+      "@id": webpageId,
+      url: canonicalUrl,
+      name: title,
+      description,
+      isPartOf: { "@id": websiteId },
+      about: { "@id": organizationId },
+      inLanguage: lang,
+      breadcrumb: { "@id": `${canonicalUrl}#breadcrumb` },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${canonicalUrl}#breadcrumb`,
+      itemListElement: breadcrumbItems,
+    },
+  ];
+
+  const faqItems = seoFaqContent[lang]?.items || [];
+  if (page === "home" && faqItems.length) {
+    graph.push({
+      "@type": "FAQPage",
+      "@id": `${canonicalUrl}#faq`,
+      mainEntity: faqItems.map(([question, answer]) => ({
+        "@type": "Question",
+        name: question,
+        acceptedAnswer: { "@type": "Answer", text: answer },
+      })),
+    });
+  }
+
+  let schema = document.getElementById("dynamic-era-schema");
+  if (!schema) {
+    schema = document.createElement("script");
+    schema.id = "dynamic-era-schema";
+    schema.type = "application/ld+json";
+    document.head.appendChild(schema);
+  }
+  schema.textContent = JSON.stringify({ "@context": "https://schema.org", "@graph": graph });
+}
+
 function App() {
-  const [lang, setLang] = useState(getInitialLanguage);
-  const [page, setPage] = useState("home");
+  const [initialRoute] = useState(getInitialRoute);
+  const [lang, setLang] = useState(initialRoute.lang);
+  const [page, setPage] = useState(initialRoute.page);
   const [menuOpen, setMenuOpen] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [selectedCategory, setSelectedCategory] = useState("energy");
+  const [selectedCategory, setSelectedCategory] = useState(initialRoute.category || "energy");
+  const [categoryInUrl, setCategoryInUrl] = useState(initialRoute.category);
   const t = copy[lang];
   const isRtl = languages.find((item) => item.code === lang)?.dir === "rtl";
 
   useEffect(() => {
     document.documentElement.lang = lang;
     document.documentElement.dir = isRtl ? "rtl" : "ltr";
-  }, [lang, isRtl]);
+    updatePageSeo({ lang, page, category: page === "categories" ? categoryInUrl : null, t });
+  }, [lang, isRtl, page, categoryInUrl, t]);
 
   useEffect(() => {
     const timer = window.setTimeout(() => setLoading(false), 1150);
     return () => window.clearTimeout(timer);
   }, []);
 
-  const goTo = (target, category) => {
-    if (category) {
-      setSelectedCategory(category);
+  useEffect(() => {
+    const expectedPath = getPathForPage(lang, page, page === "categories" ? categoryInUrl : null);
+    if (window.location.pathname !== expectedPath) {
+      window.history.replaceState({ lang, page, category: selectedCategory }, "", expectedPath);
     }
+    const handlePopState = () => {
+      const route = getRouteFromPath() || { lang: "tr", page: "home", category: null };
+      setLang(route.lang);
+      setPage(route.page);
+      setCategoryInUrl(route.category);
+      if (route.category) setSelectedCategory(route.category);
+      setMenuOpen(false);
+      window.scrollTo({ top: 0, behavior: "auto" });
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
+  const goTo = (target, category) => {
+    const nextCategory = category || null;
+    if (nextCategory) setSelectedCategory(nextCategory);
+    setCategoryInUrl(target === "categories" ? nextCategory : null);
     setPage(target);
     setMenuOpen(false);
+    const nextPath = getPathForPage(lang, target, nextCategory);
+    window.history.pushState({ lang, page: target, category: nextCategory }, "", nextPath);
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const changeLanguage = (nextLanguage) => {
+    setLang(nextLanguage);
+    const nextCategory = page === "categories" ? categoryInUrl : null;
+    const nextPath = getPathForPage(nextLanguage, page, nextCategory);
+    window.history.pushState({ lang: nextLanguage, page, category: nextCategory }, "", nextPath);
+  };
+
+  const selectCategory = (category) => {
+    setSelectedCategory(category);
+    setCategoryInUrl(category);
+    const nextPath = getPathForPage(lang, "categories", category);
+    window.history.pushState({ lang, page: "categories", category }, "", nextPath);
   };
 
   return (
@@ -1706,26 +2107,27 @@ function App() {
       <Header
         t={t}
         lang={lang}
-        setLang={setLang}
+        setLang={changeLanguage}
         page={page}
         goTo={goTo}
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
       />
       <main>
-        {page === "home" && <Home t={t} goTo={goTo} />}
+        {page === "home" && <Home t={t} lang={lang} goTo={goTo} />}
         {page === "categories" && (
           <CategoriesPage
             t={t}
+            lang={lang}
             goTo={goTo}
             selectedCategory={selectedCategory}
-            setSelectedCategory={setSelectedCategory}
+            setSelectedCategory={selectCategory}
           />
         )}
         {page === "about" && <About t={t} goTo={goTo} />}
         {page === "contact" && <Contact t={t} />}
       </main>
-      <Footer t={t} goTo={goTo} />
+      <Footer t={t} lang={lang} goTo={goTo} />
     </div>
   );
 }
@@ -1790,15 +2192,20 @@ function Header({ t, lang, setLang, page, goTo, menuOpen, setMenuOpen }) {
 
   return (
     <header className={`topbar ${isTransparent ? "topbar-transparent" : "topbar-solid"}`}>
-      <button className="brand" onClick={() => goTo("home")} aria-label="Home">
+      <a className="brand" href={getPathForPage(lang, "home")} onClick={(event) => { event.preventDefault(); goTo("home"); }} aria-label={t.nav[0]}>
         <LogoMark />
-      </button>
+      </a>
 
       <nav className={`nav ${menuOpen ? "nav-open" : ""}`} aria-label="Primary navigation">
         {pages.map((item, index) => (
-          <button key={item} className={page === item ? "active" : ""} onClick={() => goTo(item)}>
+          <a
+            key={item}
+            href={getPathForPage(lang, item)}
+            className={page === item ? "active" : ""}
+            onClick={(event) => { event.preventDefault(); goTo(item); }}
+          >
             {t.nav[index]}
-          </button>
+          </a>
         ))}
       </nav>
 
@@ -1844,7 +2251,7 @@ function Header({ t, lang, setLang, page, goTo, menuOpen, setMenuOpen }) {
   );
 }
 
-function Home({ t, goTo }) {
+function Home({ t, lang, goTo }) {
   return (
     <>
       <Hero t={t} goTo={goTo} />
@@ -1852,8 +2259,9 @@ function Home({ t, goTo }) {
       <AboutIntro t={t} goTo={goTo} />
       <AboutShowcase t={t} goTo={goTo} />
       <ServicesSection t={t} />
-      <CategoryPreview t={t} goTo={goTo} />
+      <CategoryPreview t={t} lang={lang} goTo={goTo} />
       <ProcessSection t={t} />
+      <FaqSection lang={lang} />
       <CtaBand t={t} goTo={goTo} />
     </>
   );
@@ -1863,13 +2271,13 @@ function LogoTicker({ t }) {
   const logos = [...partnerLogos, ...partnerLogos];
 
   return (
-    <section className="logo-ticker" aria-label="Partner logos">
-      <div className="logo-ticker-label">{t.partnersTitle || "İş Ortaklarımız"}</div>
+    <section className="logo-ticker" aria-label={t.partnersTitle || "Global Trade Ecosystem"}>
+      <div className="logo-ticker-label">{t.partnersTitle || "Global Trade Ecosystem"}</div>
       <div className="logo-ticker-window">
         <div className="logo-ticker-track">
           {logos.map((logo, index) => (
             <div className="ticker-logo" key={`${logo.name}-${index}`}>
-              <PartnerLogo partner={logo} variant={index % partnerLogos.length} />
+              <PartnerLogo partner={logo} />
             </div>
           ))}
         </div>
@@ -1878,17 +2286,10 @@ function LogoTicker({ t }) {
   );
 }
 
-function PartnerLogo({ partner, variant }) {
+function PartnerLogo({ partner }) {
   return (
     <div className="partner-logo">
-      <svg viewBox="0 0 58 38" aria-hidden="true" focusable="false">
-        <circle cx="19" cy="19" r="14" />
-        {variant % 3 === 0 && <path d="M15 24 L25 14 M15 14 L25 24" />}
-        {variant % 3 === 1 && <path d="M12 23 C18 10 25 10 31 23" />}
-        {variant % 3 === 2 && <path d="M11 21 H29 M20 12 V28" />}
-        <path d="M37 12 H52 M37 19 H49 M37 26 H54" />
-      </svg>
-      <span>{partner.name}</span>
+      <img src={partner.logo} alt={`${partner.name} logo`} loading="lazy" decoding="async" />
     </div>
   );
 }
@@ -2037,10 +2438,36 @@ function AboutIntro({ t, goTo }) {
           </button>
         </Reveal>
         <Reveal className="about-intro-media">
-          <img className="about-intro-main" src={showcaseImages.logistics} alt="" />
-          <img className="about-intro-side top" src={heroImages[2]} alt="" />
-          <img className="about-intro-side bottom" src={heroImages[1]} alt="" />
+          <img className="about-intro-main" src={showcaseImages.logistics} alt={`${t.aboutIntroTitle || t.aboutTitle} - ${getCategoryEntry(t, "logisticsTrade")[0]}`} loading="lazy" />
+          <img className="about-intro-side top" src={heroImages[2]} alt={getCategoryEntry(t, "machinery")[0]} loading="lazy" />
+          <img className="about-intro-side bottom" src={heroImages[1]} alt={getCategoryEntry(t, "construction")[0]} loading="lazy" />
         </Reveal>
+      </div>
+    </section>
+  );
+}
+
+function FaqSection({ lang }) {
+  const content = seoFaqContent[lang] || seoFaqContent.tr;
+
+  return (
+    <section className="faq-section" aria-labelledby="faq-title">
+      <Reveal className="faq-heading">
+        <h2 id="faq-title">{content.title}</h2>
+        <p>{content.intro}</p>
+      </Reveal>
+      <div className="faq-list">
+        {content.items.map(([question, answer], index) => (
+          <Reveal key={question}>
+            <details className="faq-item" open={index === 0}>
+              <summary>
+                <span>{question}</span>
+                <ChevronDownIcon aria-hidden="true" />
+              </summary>
+              <p>{answer}</p>
+            </details>
+          </Reveal>
+        ))}
       </div>
     </section>
   );
@@ -2050,9 +2477,9 @@ function AboutShowcase({ t, goTo }) {
   return (
     <section className="about-showcase">
       <Reveal className="showcase-media">
-        <img className="showcase-main" src={showcaseImages.trade} alt="" />
-        <img className="showcase-float top" src={showcaseImages.cargo} alt="" />
-        <img className="showcase-float bottom" src={showcaseImages.textile} alt="" />
+        <img className="showcase-main" src={showcaseImages.trade} alt={t.homeAboutTitle || t.aboutTitle} loading="lazy" />
+        <img className="showcase-float top" src={showcaseImages.cargo} alt={getCategoryEntry(t, "logisticsTrade")[0]} loading="lazy" />
+        <img className="showcase-float bottom" src={showcaseImages.textile} alt={getCategoryEntry(t, "textile")[0]} loading="lazy" />
         <div className="showcase-badge">
           <strong>20+</strong>
           <span>{t.metrics[0][1]}</span>
@@ -2168,7 +2595,7 @@ function Metrics({ t }) {
   );
 }
 
-function CategoryPreview({ t, goTo }) {
+function CategoryPreview({ t, lang, goTo }) {
   return (
     <section className="section categories-preview">
       <Reveal className="category-title-row">
@@ -2190,19 +2617,27 @@ function CategoryPreview({ t, goTo }) {
                     </div>
                     <h3>{title}</h3>
                     <p>{description}</p>
-                <button onClick={() => goTo("categories", key)}>
+                <a
+                  href={getPathForPage(lang, "categories", key)}
+                  aria-label={title}
+                  onClick={(event) => { event.preventDefault(); goTo("categories", key); }}
+                >
                   <ArrowRight size={18} />
-                </button>
+                </a>
               </article>
             </Reveal>
           );
         })}
       </div>
       <Reveal className="category-cta-row">
-        <button className="primary-action" onClick={() => goTo("categories")}>
+        <a
+          className="primary-action"
+          href={getPathForPage(lang, "categories")}
+          onClick={(event) => { event.preventDefault(); goTo("categories"); }}
+        >
           {t.allCategoriesCta || t.categoriesCta || "View All Categories"}
           <ArrowRight size={17} />
-        </button>
+        </a>
       </Reveal>
     </section>
   );
@@ -2232,7 +2667,7 @@ function AboutStrip({ t }) {
   );
 }
 
-function CategoriesPage({ t, goTo, selectedCategory, setSelectedCategory }) {
+function CategoriesPage({ t, lang, goTo, selectedCategory, setSelectedCategory }) {
   const selected = getCategoryDetail(t, selectedCategory);
   const selectedLabel = getCategoryEntry(t, selectedCategory)[0];
 
@@ -2253,15 +2688,16 @@ function CategoriesPage({ t, goTo, selectedCategory, setSelectedCategory }) {
               const Icon = categoryIcons[key] || PackageCheck;
               const [title, description] = getCategoryEntry(t, key);
               return (
-                <button
+                <a
                   key={key}
+                  href={getPathForPage(lang, "categories", key)}
                   className={selectedCategory === key ? "active" : ""}
-                  onClick={() => setSelectedCategory(key)}
+                  onClick={(event) => { event.preventDefault(); setSelectedCategory(key); }}
                 >
                   <Icon size={22} />
                   <span>{title}</span>
                   <small>{description}</small>
-                </button>
+                </a>
               );
             })}
           </div>
@@ -2320,13 +2756,13 @@ function About({ t, goTo }) {
         <Reveal className="about-hero-panel">
           <div className="about-hero-gallery">
             <figure className="about-hero-main">
-              <img src={heroImages[0]} alt="" loading="lazy" />
+              <img src={heroImages[0]} alt={`${t.aboutTitle} - ${getCategoryEntry(t, "logisticsTrade")[0]}`} loading="lazy" />
             </figure>
             <figure className="about-hero-float about-hero-float-one">
-              <img src={heroImages[1]} alt="" loading="lazy" />
+              <img src={heroImages[1]} alt={getCategoryEntry(t, "construction")[0]} loading="lazy" />
             </figure>
             <figure className="about-hero-float about-hero-float-two">
-              <img src={heroImages[2]} alt="" loading="lazy" />
+              <img src={heroImages[2]} alt={getCategoryEntry(t, "textile")[0]} loading="lazy" />
             </figure>
           </div>
         </Reveal>
@@ -2350,7 +2786,7 @@ function About({ t, goTo }) {
               <p>{t.aboutFlowText2}</p>
             </div>
             <figure className="about-flow-media">
-              <img src={showcaseImages.logistics || showcaseImages.trade} alt="" loading="lazy" />
+              <img src={showcaseImages.aboutFlow} alt={t.aboutFlowTitle || t.aboutMore} loading="lazy" />
             </figure>
           </div>
         </Reveal>
@@ -2483,6 +2919,11 @@ function Contact({ t }) {
     event.preventDefault();
     if (submitting) return;
 
+    if (!web3FormsAccessKey) {
+      setFeedback("config");
+      return;
+    }
+
     if (form.website) {
       setFeedback("success");
       return;
@@ -2502,18 +2943,30 @@ function Contact({ t }) {
 
     setSubmitting(true);
     try {
-      const payload = new FormData(event.currentTarget);
-      payload.set("name", form.name.trim());
-      payload.set("company", form.company.trim());
-      payload.set("email", form.email.trim());
-      payload.set("message", form.message.trim());
-      payload.set("_replyto", form.email.trim());
+      const payload = {
+        access_key: web3FormsAccessKey,
+        subject: `${company.name} website inquiry`,
+        from_name: company.name,
+        name: form.name.trim(),
+        company: form.company.trim(),
+        email: form.email.trim(),
+        message: form.message.trim(),
+        botcheck: "",
+      };
 
-      await fetch(`https://formsubmit.co/${company.email}`, {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        mode: "no-cors",
-        body: payload,
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
       });
+      const result = await response.json().catch(() => null);
+      const succeeded = result?.success === true;
+      if (!response.ok || !succeeded) {
+        throw new Error(result?.message || `Web3Forms submission failed with status ${response.status}`);
+      }
 
       try {
         window.localStorage.setItem("dynamic-era-contact-last-submit", String(Date.now()));
@@ -2523,7 +2976,8 @@ function Contact({ t }) {
       setForm({ name: "", company: "", email: "", message: "", website: "" });
       setFormStartedAt(Date.now());
       setFeedback("success");
-    } catch {
+    } catch (error) {
+      if (import.meta.env.DEV) console.error("Contact form error:", error);
       setFeedback("error");
     } finally {
       setSubmitting(false);
@@ -2533,6 +2987,8 @@ function Contact({ t }) {
   const feedbackContent = feedback
     ? feedback === "success"
       ? { title: t.form.successTitle, text: t.form.successText }
+      : feedback === "config"
+        ? { title: t.form.configTitle, text: t.form.configText }
       : feedback === "rate"
         ? { title: t.form.rateTitle, text: t.form.rateText }
         : { title: t.form.errorTitle, text: t.form.errorText }
@@ -2548,18 +3004,18 @@ function Contact({ t }) {
         <Reveal>
           <form
             className="contact-form"
-            action={`https://formsubmit.co/${company.email}`}
+            action="https://api.web3forms.com/submit"
             method="POST"
             onSubmit={submit}
           >
-            <input type="hidden" name="_subject" value={`${company.name} website inquiry`} />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="access_key" value={web3FormsAccessKey} />
+            <input type="hidden" name="subject" value={`${company.name} website inquiry`} />
+            <input type="hidden" name="from_name" value={company.name} />
             <div className="form-honeypot" aria-hidden="true">
               <label htmlFor="contact-website">Website</label>
               <input
                 id="contact-website"
-                name="_honey"
+                name="botcheck"
                 type="text"
                 tabIndex="-1"
                 autoComplete="off"
@@ -2676,16 +3132,16 @@ function Contact({ t }) {
   );
 }
 
-function Footer({ t, goTo }) {
+function Footer({ t, lang, goTo }) {
   const footerServices = (t.services || []).slice(0, 4);
 
   return (
     <footer className="footer">
       <div className="footer-main">
         <div className="footer-brand-col">
-          <button className="brand" onClick={() => goTo("home")} aria-label="Home">
+          <a className="brand" href={getPathForPage(lang, "home")} onClick={(event) => { event.preventDefault(); goTo("home"); }} aria-label={t.nav[0]}>
             <LogoMark />
-          </button>
+          </a>
           <h2>{t.homeTitle}</h2>
           <p>{t.footer}</p>
         </div>
@@ -2700,9 +3156,9 @@ function Footer({ t, goTo }) {
         <div className="footer-col footer-links">
           <h3>{t.importantLinksTitle || "Önemli Linkler"}</h3>
           {pages.map((page, index) => (
-            <button key={page} onClick={() => goTo(page)}>
+            <a key={page} href={getPathForPage(lang, page)} onClick={(event) => { event.preventDefault(); goTo(page); }}>
               {t.nav[index]}
-            </button>
+            </a>
           ))}
         </div>
 

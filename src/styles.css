@@ -210,14 +210,17 @@ a {
   gap: 2px;
 }
 
-.nav button,
-.footer-links button {
+.nav a,
+.footer-links a {
   border: 0;
   background: transparent;
   color: currentColor;
+  text-decoration: none;
 }
 
-.nav button {
+.nav a {
+  display: inline-flex;
+  align-items: center;
   position: relative;
   min-height: 76px;
   padding: 0 17px;
@@ -229,29 +232,29 @@ a {
   transition: color 180ms ease, background 180ms ease, opacity 180ms ease;
 }
 
-.nav button:hover {
+.nav a:hover {
   background: transparent;
   color: #bff5ff;
   opacity: 1;
 }
 
-.nav button.active {
+.nav a.active {
   background: transparent;
   color: #bff5ff;
   opacity: 1;
 }
 
-.topbar-solid .nav button:hover {
+.topbar-solid .nav a:hover {
   background: transparent;
   color: var(--rust);
 }
 
-.topbar-solid .nav button.active {
+.topbar-solid .nav a.active {
   background: transparent;
   color: var(--rust);
 }
 
-.nav button.active::after {
+.nav a.active::after {
   content: "";
   position: absolute;
   left: 17px;
@@ -707,7 +710,7 @@ p {
 .logo-ticker-track {
   display: flex;
   width: max-content;
-  gap: clamp(34px, 4.6vw, 82px);
+  gap: clamp(20px, 2.4vw, 42px);
   animation: logo-marquee 24s linear infinite;
 }
 
@@ -719,46 +722,29 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: clamp(190px, 15vw, 270px);
-  color: rgba(255, 255, 255, 0.94);
+  min-width: clamp(190px, 13vw, 236px);
   white-space: nowrap;
 }
 
 .partner-logo {
-  display: inline-flex;
+  display: grid;
+  width: clamp(180px, 12vw, 220px);
+  height: 54px;
   align-items: center;
-  gap: 13px;
-  color: #ffffff;
+  justify-items: center;
+  padding: 8px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  border-radius: 6px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(1, 41, 77, 0.12);
 }
 
-.partner-logo svg {
+.partner-logo img {
   display: block;
-  width: 58px;
+  width: 100%;
+  max-width: 184px;
   height: 38px;
-  flex: 0 0 auto;
-}
-
-.partner-logo circle {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 3;
-  opacity: 0.92;
-}
-
-.partner-logo path {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  opacity: 0.94;
-}
-
-.partner-logo span {
-  font-size: clamp(17px, 1.25vw, 24px);
-  font-weight: 850;
-  letter-spacing: 0;
-  text-transform: uppercase;
+  object-fit: contain;
 }
 
 @keyframes logo-marquee {
@@ -1289,7 +1275,7 @@ p {
   hyphens: manual;
 }
 
-.category-card button {
+.category-card > a {
   position: absolute;
   right: 28px;
   bottom: 28px;
@@ -1301,6 +1287,7 @@ p {
   border-radius: 50%;
   background: var(--brand-navy);
   color: var(--white);
+  text-decoration: none;
 }
 
 .category-cta-row {
@@ -1429,6 +1416,91 @@ p {
   margin: 0;
   color: rgba(255, 255, 255, 0.72);
   line-height: 1.64;
+}
+
+.faq-section {
+  padding: clamp(72px, 8vw, 124px) clamp(18px, 5vw, 86px);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.faq-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.55fr);
+  gap: clamp(28px, 6vw, 96px);
+  align-items: end;
+  padding-bottom: clamp(34px, 5vw, 64px);
+  border-bottom: 1px solid rgba(6, 43, 95, 0.22);
+}
+
+.faq-heading h2 {
+  max-width: 920px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 5vw, 78px);
+  font-weight: 500;
+  line-height: 0.98;
+}
+
+.faq-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.72;
+}
+
+.faq-list {
+  display: grid;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(6, 43, 95, 0.18);
+}
+
+.faq-item summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 42px;
+  gap: 24px;
+  align-items: center;
+  min-height: 96px;
+  padding-block: 24px;
+  color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary span {
+  font-size: clamp(21px, 2vw, 30px);
+  font-weight: 900;
+  line-height: 1.18;
+}
+
+.faq-item summary svg {
+  width: 32px;
+  height: 32px;
+  padding: 7px;
+  border: 1px solid rgba(6, 43, 95, 0.24);
+  border-radius: 50%;
+  color: var(--brand-teal);
+  transition: transform 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+.faq-item[open] summary svg {
+  background: var(--brand-navy);
+  color: #fff;
+  transform: rotate(180deg);
+}
+
+.faq-item > p {
+  max-width: 980px;
+  margin: -8px 0 30px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.74;
 }
 
 .about-strip {
@@ -1637,7 +1709,7 @@ p {
   background: var(--brand-teal);
 }
 
-.category-tabs button {
+.category-tabs a {
   display: grid;
   grid-template-columns: 32px 1fr;
   gap: 8px 12px;
@@ -1648,12 +1720,13 @@ p {
   border-bottom: 1px solid var(--line);
   background: transparent;
   color: var(--ink);
+  text-decoration: none;
   text-align: start;
   transition: color 180ms ease, background 180ms ease, padding 180ms ease;
 }
 
-.category-tabs button:hover,
-.category-tabs button.active {
+.category-tabs a:hover,
+.category-tabs a.active {
   color: var(--rust);
   background: rgba(0, 151, 178, 0.06);
 }
@@ -2583,7 +2656,7 @@ p {
 }
 
 .footer-col span,
-.footer-links button {
+.footer-links a {
   color: rgba(255, 255, 255, 0.7);
   font-size: 15px;
   font-weight: 750;
@@ -2593,13 +2666,14 @@ p {
   justify-items: start;
 }
 
-.footer-links button {
+.footer-links a {
   padding: 0;
   text-align: start;
+  text-decoration: none;
   transition: color 180ms ease, transform 180ms ease;
 }
 
-.footer-links button:hover {
+.footer-links a:hover {
   color: #bff5ff;
   transform: translateX(4px);
 }
@@ -2762,7 +2836,7 @@ p {
     display: grid;
   }
 
-  .nav button {
+  .nav a {
     min-height: 48px;
     text-align: start;
   }
@@ -2784,6 +2858,7 @@ p {
   .about-strip,
   .about-hero,
   .about-hero-shell,
+  .faq-heading,
   .about-flow-layout,
   .about-intro-layout,
   .about-showcase,
@@ -3066,20 +3141,18 @@ p {
   }
 
   .ticker-logo {
-    min-width: 178px;
+    min-width: 168px;
   }
 
   .partner-logo {
-    gap: 9px;
+    width: 158px;
+    height: 48px;
+    padding: 7px 14px;
   }
 
-  .partner-logo svg {
-    width: 46px;
-    height: 30px;
-  }
-
-  .partner-logo span {
-    font-size: 16px;
+  .partner-logo img {
+    max-width: 132px;
+    height: 32px;
   }
 
   .section,
@@ -3089,6 +3162,7 @@ p {
   .about-showcase,
   .services-section,
   .process-section,
+  .faq-section,
   .cta-band,
   .footer {
     padding-inline: 14px;
@@ -3195,7 +3269,7 @@ p {
     font-size: 28px;
   }
 
-  .category-card button {
+  .category-card > a {
     right: 24px;
     bottom: 24px;
     width: 46px;
@@ -3207,12 +3281,18 @@ p {
     padding-right: 6px;
   }
 
-  .category-tabs button {
+  .category-tabs a {
     min-height: 84px;
   }
 
   .category-tabs span {
     font-size: 18px;
+  }
+
+  .faq-item summary {
+    min-height: 82px;
+    gap: 14px;
+    padding-block: 20px;
   }
 
   .page-values {
