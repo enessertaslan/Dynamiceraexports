@@ -83,13 +83,21 @@ a {
   animation: loader-pop 850ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 
+.loader-logo .logo-mark {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(43%) saturate(2342%) hue-rotate(192deg) brightness(86%) contrast(102%) drop-shadow(0 16px 26px rgba(6, 43, 95, 0.16));
+}
+
+.loader-logo .logo-mark img {
+  filter: none;
+}
+
 .loader-line {
   position: absolute;
   bottom: 38%;
   width: min(280px, 56vw);
   height: 3px;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.12);
+  background: rgba(6, 43, 95, 0.16);
 }
 
 .loader-line::after {
@@ -97,7 +105,7 @@ a {
   display: block;
   width: 45%;
   height: 100%;
-  background: var(--rust);
+  background: var(--brand-navy);
   animation: loading-line 950ms ease-in-out infinite;
 }
 
@@ -1486,12 +1494,14 @@ p {
   letter-spacing: 0;
 }
 
-.category-page-intro {
+.category-page-intro,
+.contact-page-intro {
   width: 100%;
   max-width: none;
 }
 
-.category-page-intro h1 {
+.category-page-intro h1,
+.contact-page-intro h1 {
   width: 100%;
   max-width: none;
 }
@@ -2084,8 +2094,13 @@ p {
 .about-values-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
   gap: 16px;
   margin-top: 26px;
+}
+
+.about-operations-grid {
+  grid-auto-rows: 286px;
 }
 
 .about-operation-card,
@@ -2098,6 +2113,27 @@ p {
   border-radius: 8px;
   background: var(--paper);
   transition: transform 220ms ease, background 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.about-operation-card {
+  display: flex;
+  flex-direction: column;
+  height: 286px;
+  min-height: 286px;
+  max-height: 286px;
+}
+
+.about-operation-card h3 {
+  display: block;
+  height: auto;
+  min-height: 0;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: auto;
+}
+
+.about-operation-card p {
+  margin-top: 0;
 }
 
 .about-operation-card::after {
@@ -2132,7 +2168,7 @@ p {
   place-items: center;
   width: 50px !important;
   height: 50px !important;
-  margin-bottom: 42px;
+  margin-bottom: 24px;
   border-radius: 999px;
   background: #0d3373 !important;
   color: #ffffff !important;
@@ -2240,6 +2276,18 @@ p {
   box-shadow: 0 24px 58px rgba(37, 211, 102, 0.36);
 }
 
+.about-cta .about-mail-action {
+  min-height: 56px;
+  padding-inline: 24px;
+  border-color: rgba(255, 255, 255, 0.34);
+  color: #ffffff;
+}
+
+.about-cta .about-mail-action:hover {
+  background: rgba(255, 255, 255, 0.16);
+  transform: translateY(-2px);
+}
+
 .contact-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(330px, 0.78fr);
@@ -2254,6 +2302,7 @@ p {
 }
 
 .contact-form {
+  position: relative;
   display: grid;
   gap: 12px;
   padding: clamp(18px, 3vw, 32px);
@@ -2276,6 +2325,140 @@ p {
 
 .contact-form .primary-action {
   justify-self: start;
+}
+
+.form-honeypot {
+  position: absolute !important;
+  left: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.contact-form .primary-action:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.button-spinner {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  border: 2px solid rgba(255, 255, 255, 0.38);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: button-spin 0.7s linear infinite;
+}
+
+.form-feedback-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(2, 18, 42, 0.68);
+  backdrop-filter: blur(7px);
+  animation: feedback-fade 180ms ease both;
+}
+
+.form-feedback-modal {
+  position: relative;
+  width: min(100%, 520px);
+  padding: clamp(28px, 5vw, 48px);
+  border: 1px solid rgba(6, 43, 95, 0.14);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  text-align: center;
+  box-shadow: 0 30px 90px rgba(2, 18, 42, 0.28);
+  animation: feedback-pop 240ms ease both;
+}
+
+.form-feedback-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.form-feedback-close:hover {
+  background: rgba(6, 43, 95, 0.08);
+  color: var(--brand-blue);
+}
+
+.form-feedback-icon {
+  display: grid;
+  place-items: center;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+}
+
+.form-feedback-modal.is-success .form-feedback-icon {
+  background: rgba(37, 211, 102, 0.14);
+  color: #18a94b;
+}
+
+.form-feedback-modal.is-error .form-feedback-icon {
+  background: rgba(6, 43, 95, 0.1);
+  color: var(--brand-navy);
+}
+
+.form-feedback-modal h2 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.05;
+}
+
+.form-feedback-modal p {
+  max-width: 42ch;
+  margin: 14px auto 26px;
+  color: rgba(12, 37, 84, 0.76);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.form-feedback-modal .primary-action {
+  min-width: 150px;
+  justify-content: center;
+}
+
+[dir="rtl"] .form-feedback-close {
+  right: auto;
+  left: 14px;
+}
+
+@keyframes button-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes feedback-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes feedback-pop {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.97);
+  }
 }
 
 .contact-card {
@@ -2307,9 +2490,22 @@ p {
 
 .whatsapp-wide {
   width: 100%;
-  border: 1px solid var(--ink);
-  background: var(--sage);
-  color: var(--paper);
+  border: 1px solid #25d366;
+  background: #25d366;
+  color: #ffffff;
+  box-shadow: 0 16px 38px rgba(37, 211, 102, 0.24);
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.contact-card .whatsapp-wide .whatsapp-icon {
+  color: #ffffff;
+}
+
+.whatsapp-wide:hover {
+  border-color: #1fbd59;
+  background: #1fbd59;
+  transform: translateY(-2px);
+  box-shadow: 0 20px 46px rgba(37, 211, 102, 0.32);
 }
 
 .footer {
@@ -2615,6 +2811,16 @@ p {
   .about-operations-grid,
   .about-values-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-operations-grid {
+    grid-auto-rows: 310px;
+  }
+
+  .about-operation-card {
+    height: 310px;
+    min-height: 310px;
+    max-height: 310px;
   }
 
   .about-hero-gallery {
@@ -3017,6 +3223,21 @@ p {
   .about-operations-grid,
   .about-values-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-operations-grid {
+    grid-auto-rows: auto;
+  }
+
+  .about-operation-card {
+    height: auto;
+    min-height: 270px;
+    max-height: none;
+  }
+
+  .about-operation-card h3 {
+    height: auto;
+    min-height: 0;
   }
 
   .about-metric {

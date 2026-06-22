@@ -3,7 +3,9 @@ import { createRoot } from "react-dom/client";
 import {
   ArrowRight,
   Building2,
+  CheckCircle2,
   ChevronDown as ChevronDownIcon,
+  CircleAlert,
   Factory,
   Globe2,
   HeartPulse,
@@ -24,9 +26,9 @@ import "./styles.css";
 const company = {
   name: "Dynamic Era Export",
   suffix: "Global Trade, Dynamic Solutions",
-  phone: "+90 555 111 22 33",
-  whatsapp: "905551112233",
-  email: "info@dynamiceraexport.com",
+  phone: "+90 535 878 86 04",
+  whatsapp: "905358788604",
+  email: "mehmet@dynamiceraexport.com",
   location: "Istanbul, Turkiye",
 };
 
@@ -110,7 +112,7 @@ const copy = {
     whatsapp: "WhatsApp ile direkt iletişim",
     direct: "WhatsApp ile İletişime Geç",
     quoteCta: "Teklif Al",
-    categoriesCta: "Faaliyet Alanlarını İncele",
+    categoriesCta: "Tüm Sektörleri İncele",
     homeBadge: "Global Trade, Dynamic Solutions",
     homeTitle: "Global Ticarette Güvenilir Çözüm Ortağınız",
     homeText:
@@ -297,6 +299,7 @@ const copy = {
     aboutCtaText:
       "İster belirli bir ürün grubu için tedarik arayışında olun, ister ithalat-ihracat süreçleriniz için profesyonel destek isteyin; ekibimiz size en uygun çözümü geliştirmek için hazırdır.",
     aboutCtaPrimary: "WhatsApp ile iletişime geç",
+    aboutCtaEmail: "E-posta ile Ulaş",
     aboutCtaSecondary: "İletişim sayfası",
     values: ["Geniş ürün ve sektör ağı", "Güvenilir ticaret süreci", "Esnek ve hızlı çözümler", "Uluslararası ticaret deneyimi"],
     contactTitle: "İletişim",
@@ -308,6 +311,14 @@ const copy = {
       email: "E-posta",
       message: "Ne arıyorsunuz?",
       send: "Mail Gönder",
+      sending: "Gönderiliyor...",
+      successTitle: "Mesajınız başarıyla gönderildi",
+      successText: "Teşekkür ederiz. Size en kısa sürede dönüş sağlayacağız.",
+      errorTitle: "Mesaj gönderilemedi",
+      errorText: "Lütfen biraz sonra tekrar deneyin veya WhatsApp üzerinden bize ulaşın.",
+      rateTitle: "Lütfen biraz bekleyin",
+      rateText: "Spam güvenliği için bir dakika içinde yalnızca bir mesaj gönderebilirsiniz.",
+      close: "Kapat",
     },
     partnersTitle: "İş Ortaklarımız",
     importantLinksTitle: "Önemli Linkler",
@@ -321,7 +332,7 @@ const copy = {
     whatsapp: "Direct WhatsApp contact",
     direct: "Contact via WhatsApp",
     quoteCta: "Get a Quote",
-    categoriesCta: "View Categories",
+    categoriesCta: "View All Sectors",
     homeBadge: "Global Trade, Dynamic Solutions",
     homeTitle: "Your Reliable\nSolution Partner in\nGlobal Trade",
     homeText:
@@ -506,6 +517,7 @@ const copy = {
     aboutCtaText:
       "Whether you are looking for a specific product group or need professional support for import-export processes, our team is ready to build the right solution for you.",
     aboutCtaPrimary: "Contact via WhatsApp",
+    aboutCtaEmail: "Contact via Email",
     aboutCtaSecondary: "Contact page",
     values: ["Wide product and sector network", "Reliable trade process", "Flexible and fast solutions", "International trade experience"],
     contactTitle: "Contact",
@@ -516,6 +528,14 @@ const copy = {
       email: "Email",
       message: "What are you looking for?",
       send: "Send Email",
+      sending: "Sending...",
+      successTitle: "Your message was sent successfully",
+      successText: "Thank you. We will get back to you as soon as possible.",
+      errorTitle: "Message could not be sent",
+      errorText: "Please try again shortly or contact us via WhatsApp.",
+      rateTitle: "Please wait a moment",
+      rateText: "For spam protection, you can send only one message per minute.",
+      close: "Close",
     },
     partnersTitle: "Our Partners",
     importantLinksTitle: "Important Links",
@@ -529,7 +549,7 @@ const copy = {
     whatsapp: "Прямая связь в WhatsApp",
     direct: "Связаться в WhatsApp",
     quoteCta: "Получить предложение",
-    categoriesCta: "Посмотреть категории",
+    categoriesCta: "Посмотреть все отрасли",
     homeBadge: "Global Trade, Dynamic Solutions",
     homeTitle: "Ваш надежный\nпартнер в\nмировой торговле",
     homeText:
@@ -714,6 +734,7 @@ const copy = {
     aboutCtaText:
       "Если вы ищете конкретную группу продукции или нуждаетесь в профессиональной поддержке импортно-экспортных процессов, наша команда готова построить для вас правильное решение.",
     aboutCtaPrimary: "Связаться в WhatsApp",
+    aboutCtaEmail: "Связаться по электронной почте",
     aboutCtaSecondary: "Страница контактов",
     values: ["Широкая продуктовая и секторная сеть", "Надежный торговый процесс", "Гибкие и быстрые решения", "Опыт международной торговли"],
     contactTitle: "Контакты",
@@ -724,6 +745,14 @@ const copy = {
       email: "Email",
       message: "Что вы ищете?",
       send: "Отправить email",
+      sending: "Отправка...",
+      successTitle: "Ваше сообщение успешно отправлено",
+      successText: "Спасибо. Мы свяжемся с вами в ближайшее время.",
+      errorTitle: "Не удалось отправить сообщение",
+      errorText: "Попробуйте еще раз немного позже или свяжитесь с нами через WhatsApp.",
+      rateTitle: "Пожалуйста, немного подождите",
+      rateText: "Для защиты от спама можно отправлять только одно сообщение в минуту.",
+      close: "Закрыть",
     },
     partnersTitle: "Наши партнеры",
     importantLinksTitle: "Важные ссылки",
@@ -737,7 +766,7 @@ const copy = {
     whatsapp: "Contact direct via WhatsApp",
     direct: "Contacter via WhatsApp",
     quoteCta: "Demander un devis",
-    categoriesCta: "Voir les catégories",
+    categoriesCta: "Voir tous les secteurs",
     homeBadge: "Global Trade, Dynamic Solutions",
     homeTitle: "Votre partenaire\nfiable dans le\ncommerce mondial",
     homeText:
@@ -922,6 +951,7 @@ const copy = {
     aboutCtaText:
       "Que vous recherchiez un groupe de produits spécifique ou un support professionnel pour vos processus import-export, notre équipe est prête à construire la bonne solution pour vous.",
     aboutCtaPrimary: "Contacter via WhatsApp",
+    aboutCtaEmail: "Contacter par e-mail",
     aboutCtaSecondary: "Page contact",
     values: ["Large réseau de produits et secteurs", "Processus commercial fiable", "Solutions flexibles et rapides", "Expérience du commerce international"],
     contactTitle: "Contact",
@@ -932,6 +962,14 @@ const copy = {
       email: "Email",
       message: "Que recherchez-vous ?",
       send: "Envoyer un email",
+      sending: "Envoi...",
+      successTitle: "Votre message a été envoyé",
+      successText: "Merci. Nous vous répondrons dans les plus brefs délais.",
+      errorTitle: "Le message n'a pas pu être envoyé",
+      errorText: "Veuillez réessayer dans quelques instants ou nous contacter via WhatsApp.",
+      rateTitle: "Veuillez patienter un instant",
+      rateText: "Pour éviter le spam, vous ne pouvez envoyer qu'un message par minute.",
+      close: "Fermer",
     },
     partnersTitle: "Nos Partenaires",
     importantLinksTitle: "Liens Importants",
@@ -945,7 +983,7 @@ const copy = {
     whatsapp: "Direkter WhatsApp-Kontakt",
     direct: "Per WhatsApp kontaktieren",
     quoteCta: "Angebot anfordern",
-    categoriesCta: "Kategorien ansehen",
+    categoriesCta: "Alle Sektoren ansehen",
     homeBadge: "Global Trade, Dynamic Solutions",
     homeTitle: "Ihr zuverlässiger\nPartner im\nglobalen Handel",
     homeText:
@@ -1130,6 +1168,7 @@ const copy = {
     aboutCtaText:
       "Ob Sie eine bestimmte Produktgruppe suchen oder professionelle Unterstützung für Import-Export-Prozesse benötigen: Unser Team ist bereit, die richtige Lösung für Sie zu entwickeln.",
     aboutCtaPrimary: "Per WhatsApp kontaktieren",
+    aboutCtaEmail: "Per E-Mail kontaktieren",
     aboutCtaSecondary: "Kontaktseite",
     values: ["Breites Produkt- und Sektornetzwerk", "Zuverlässiger Handelsprozess", "Flexible und schnelle Lösungen", "Erfahrung im internationalen Handel"],
     contactTitle: "Kontakt",
@@ -1140,6 +1179,14 @@ const copy = {
       email: "E-Mail",
       message: "Wonach suchen Sie?",
       send: "E-Mail senden",
+      sending: "Wird gesendet...",
+      successTitle: "Ihre Nachricht wurde erfolgreich gesendet",
+      successText: "Vielen Dank. Wir melden uns schnellstmöglich bei Ihnen.",
+      errorTitle: "Nachricht konnte nicht gesendet werden",
+      errorText: "Bitte versuchen Sie es später erneut oder kontaktieren Sie uns per WhatsApp.",
+      rateTitle: "Bitte warten Sie einen Moment",
+      rateText: "Zum Schutz vor Spam können Sie nur eine Nachricht pro Minute senden.",
+      close: "Schließen",
     },
     partnersTitle: "Unsere Partner",
     importantLinksTitle: "Wichtige Links",
@@ -1153,7 +1200,7 @@ const copy = {
     whatsapp: "Direct WhatsApp-contact",
     direct: "Contact via WhatsApp",
     quoteCta: "Offerte aanvragen",
-    categoriesCta: "Categorieen bekijken",
+    categoriesCta: "Alle sectoren bekijken",
     homeBadge: "Global Trade, Dynamic Solutions",
     homeTitle: "Uw betrouwbare\npartner in\nwereldhandel",
     homeText:
@@ -1338,6 +1385,7 @@ const copy = {
     aboutCtaText:
       "Of u nu een specifieke productgroep zoekt of professionele ondersteuning nodig heeft voor import-exportprocessen, ons team is klaar om de juiste oplossing voor u te bouwen.",
     aboutCtaPrimary: "Contact via WhatsApp",
+    aboutCtaEmail: "Contact via e-mail",
     aboutCtaSecondary: "Contactpagina",
     values: ["Breed product- en sectornetwerk", "Betrouwbaar handelsproces", "Flexibele en snelle oplossingen", "Ervaring in internationale handel"],
     contactTitle: "Contact",
@@ -1348,6 +1396,14 @@ const copy = {
       email: "E-mail",
       message: "Waar bent u naar op zoek?",
       send: "E-mail verzenden",
+      sending: "Verzenden...",
+      successTitle: "Uw bericht is succesvol verzonden",
+      successText: "Bedankt. Wij nemen zo snel mogelijk contact met u op.",
+      errorTitle: "Het bericht kon niet worden verzonden",
+      errorText: "Probeer het later opnieuw of neem contact met ons op via WhatsApp.",
+      rateTitle: "Wacht alstublieft even",
+      rateText: "Ter bescherming tegen spam kunt u slechts één bericht per minuut verzenden.",
+      close: "Sluiten",
     },
     partnersTitle: "Onze Partners",
     importantLinksTitle: "Belangrijke Links",
@@ -1361,7 +1417,7 @@ const copy = {
     whatsapp: "تواصل مباشر عبر واتساب",
     direct: "تواصل عبر واتساب",
     quoteCta: "اطلب عرضا",
-    categoriesCta: "استعرض مجالات العمل",
+    categoriesCta: "عرض جميع القطاعات",
     homeBadge: "Global Trade, Dynamic Solutions",
     homeTitle: "شريككم الموثوق للحلول في التجارة العالمية",
     homeText:
@@ -1546,6 +1602,7 @@ const copy = {
     aboutCtaText:
       "سواء كنتم تبحثون عن مجموعة منتجات معينة أو تحتاجون دعما مهنيا لعمليات الاستيراد والتصدير، فريقنا جاهز لبناء الحل الأنسب لكم.",
     aboutCtaPrimary: "تواصلوا عبر واتساب",
+    aboutCtaEmail: "تواصل عبر البريد الإلكتروني",
     aboutCtaSecondary: "صفحة التواصل",
     values: ["شبكة واسعة من المنتجات والقطاعات", "عملية تجارة موثوقة", "حلول مرنة وسريعة", "خبرة في التجارة الدولية"],
     contactTitle: "تواصل",
@@ -1556,6 +1613,14 @@ const copy = {
       email: "البريد الإلكتروني",
       message: "ماذا تبحث عنه؟",
       send: "إرسال بريد",
+      sending: "جارٍ الإرسال...",
+      successTitle: "تم إرسال رسالتكم بنجاح",
+      successText: "شكرا لكم. سنتواصل معكم في أقرب وقت ممكن.",
+      errorTitle: "تعذر إرسال الرسالة",
+      errorText: "يرجى المحاولة مرة أخرى بعد قليل أو التواصل معنا عبر واتساب.",
+      rateTitle: "يرجى الانتظار قليلا",
+      rateText: "للحماية من الرسائل المزعجة، يمكن إرسال رسالة واحدة فقط كل دقيقة.",
+      close: "إغلاق",
     },
     partnersTitle: "شركاؤنا",
     importantLinksTitle: "روابط مهمة",
@@ -2386,6 +2451,10 @@ function About({ t, goTo }) {
                 <WhatsAppIcon size={18} />
                 {t.aboutCtaPrimary}
               </a>
+              <a className="secondary-action about-mail-action" href={`mailto:${company.email}`}>
+                <Mail size={18} />
+                {t.aboutCtaEmail}
+              </a>
             </div>
           </div>
         </Reveal>
@@ -2395,34 +2464,157 @@ function About({ t, goTo }) {
 }
 
 function Contact({ t }) {
-  const [form, setForm] = useState({ name: "", company: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: "", company: "", email: "", message: "", website: "" });
+  const [submitting, setSubmitting] = useState(false);
+  const [feedback, setFeedback] = useState(null);
+  const [formStartedAt, setFormStartedAt] = useState(() => Date.now());
   const update = (key) => (event) => setForm((value) => ({ ...value, [key]: event.target.value }));
 
-  const submit = (event) => {
+  useEffect(() => {
+    if (!feedback) return undefined;
+    const closeOnEscape = (event) => {
+      if (event.key === "Escape") setFeedback(null);
+    };
+    window.addEventListener("keydown", closeOnEscape);
+    return () => window.removeEventListener("keydown", closeOnEscape);
+  }, [feedback]);
+
+  const submit = async (event) => {
     event.preventDefault();
-    const subject = encodeURIComponent(`${company.name} inquiry - ${form.company || form.name}`);
-    const body = encodeURIComponent(
-      `${t.form.name}: ${form.name}\n${t.form.company}: ${form.company}\n${t.form.email}: ${form.email}\n\n${form.message}`
-    );
-    window.location.href = `mailto:${company.email}?subject=${subject}&body=${body}`;
+    if (submitting) return;
+
+    if (form.website) {
+      setFeedback("success");
+      return;
+    }
+
+    const now = Date.now();
+    let lastSubmit = 0;
+    try {
+      lastSubmit = Number(window.localStorage.getItem("dynamic-era-contact-last-submit") || 0);
+    } catch {
+      lastSubmit = 0;
+    }
+    if (now - formStartedAt < 2500 || now - lastSubmit < 60000) {
+      setFeedback("rate");
+      return;
+    }
+
+    setSubmitting(true);
+    try {
+      const payload = new FormData(event.currentTarget);
+      payload.set("name", form.name.trim());
+      payload.set("company", form.company.trim());
+      payload.set("email", form.email.trim());
+      payload.set("message", form.message.trim());
+      payload.set("_replyto", form.email.trim());
+
+      await fetch(`https://formsubmit.co/${company.email}`, {
+        method: "POST",
+        mode: "no-cors",
+        body: payload,
+      });
+
+      try {
+        window.localStorage.setItem("dynamic-era-contact-last-submit", String(Date.now()));
+      } catch {
+        // Submission still succeeds when browser storage is unavailable.
+      }
+      setForm({ name: "", company: "", email: "", message: "", website: "" });
+      setFormStartedAt(Date.now());
+      setFeedback("success");
+    } catch {
+      setFeedback("error");
+    } finally {
+      setSubmitting(false);
+    }
   };
+
+  const feedbackContent = feedback
+    ? feedback === "success"
+      ? { title: t.form.successTitle, text: t.form.successText }
+      : feedback === "rate"
+        ? { title: t.form.rateTitle, text: t.form.rateText }
+        : { title: t.form.errorTitle, text: t.form.errorText }
+    : null;
 
   return (
     <section className="page-section contact-page">
-      <Reveal className="page-intro">
+      <Reveal className="page-intro contact-page-intro">
         <p className="eyebrow">{t.contactTitle}</p>
         <h1>{t.contactLead}</h1>
       </Reveal>
       <div className="contact-layout">
         <Reveal>
-          <form className="contact-form" onSubmit={submit}>
-            <input required placeholder={t.form.name} value={form.name} onChange={update("name")} />
-            <input placeholder={t.form.company} value={form.company} onChange={update("company")} />
-            <input required type="email" placeholder={t.form.email} value={form.email} onChange={update("email")} />
-            <textarea required rows="6" placeholder={t.form.message} value={form.message} onChange={update("message")} />
-            <button className="primary-action" type="submit">
-              <Mail size={18} />
-              {t.form.send}
+          <form
+            className="contact-form"
+            action={`https://formsubmit.co/${company.email}`}
+            method="POST"
+            onSubmit={submit}
+          >
+            <input type="hidden" name="_subject" value={`${company.name} website inquiry`} />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <div className="form-honeypot" aria-hidden="true">
+              <label htmlFor="contact-website">Website</label>
+              <input
+                id="contact-website"
+                name="_honey"
+                type="text"
+                tabIndex="-1"
+                autoComplete="off"
+                value={form.website}
+                onChange={update("website")}
+              />
+            </div>
+            <input
+              required
+              id="contact-name"
+              name="name"
+              autoComplete="name"
+              maxLength="120"
+              aria-label={t.form.name}
+              placeholder={t.form.name}
+              value={form.name}
+              onChange={update("name")}
+            />
+            <input
+              id="contact-company"
+              name="company"
+              autoComplete="organization"
+              maxLength="160"
+              aria-label={t.form.company}
+              placeholder={t.form.company}
+              value={form.company}
+              onChange={update("company")}
+            />
+            <input
+              required
+              id="contact-email"
+              name="email"
+              type="email"
+              autoComplete="email"
+              maxLength="180"
+              aria-label={t.form.email}
+              placeholder={t.form.email}
+              value={form.email}
+              onChange={update("email")}
+            />
+            <textarea
+              required
+              id="contact-message"
+              name="message"
+              rows="6"
+              minLength="10"
+              maxLength="3000"
+              aria-label={t.form.message}
+              placeholder={t.form.message}
+              value={form.message}
+              onChange={update("message")}
+            />
+            <button className="primary-action" type="submit" disabled={submitting} aria-live="polite">
+              {submitting ? <span className="button-spinner" aria-hidden="true" /> : <Mail size={18} />}
+              {submitting ? t.form.sending : t.form.send}
             </button>
           </form>
         </Reveal>
@@ -2453,6 +2645,33 @@ function Contact({ t }) {
           </aside>
         </Reveal>
       </div>
+      {feedbackContent && (
+        <div
+          className="form-feedback-backdrop"
+          onMouseDown={(event) => {
+            if (event.target === event.currentTarget) setFeedback(null);
+          }}
+        >
+          <div
+            className={`form-feedback-modal ${feedback === "success" ? "is-success" : "is-error"}`}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="form-feedback-title"
+          >
+            <button className="form-feedback-close" type="button" onClick={() => setFeedback(null)} aria-label={t.form.close}>
+              <X size={20} />
+            </button>
+            <div className="form-feedback-icon" aria-hidden="true">
+              {feedback === "success" ? <CheckCircle2 size={34} /> : <CircleAlert size={34} />}
+            </div>
+            <h2 id="form-feedback-title">{feedbackContent.title}</h2>
+            <p>{feedbackContent.text}</p>
+            <button className="primary-action" type="button" onClick={() => setFeedback(null)}>
+              {t.form.close}
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
