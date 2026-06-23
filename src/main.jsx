@@ -108,14 +108,11 @@ const heroImages = [
 ];
 
 const partnerLogos = [
-  { name: "Maersk", logo: "/logos/maersk.svg" },
-  { name: "MSC", logo: "/logos/msc.svg" },
-  { name: "DHL", logo: "/logos/dhl.svg" },
-  { name: "FedEx", logo: "/logos/fedex.svg" },
-  { name: "UPS", logo: "/logos/ups.svg" },
-  { name: "Turkish Cargo", logo: "/logos/turkish-cargo.svg" },
-  { name: "Alibaba.com", logo: "/logos/alibaba.svg" },
-  { name: "Europages", logo: "/logos/europages.svg" },
+  { name: "Set Medikal", logo: "/logos/set-medikal.svg" },
+  { name: "Çimsa", logo: "/logos/cimsa.png" },
+  { name: "Kipaş", logo: "/logos/kipas.svg" },
+  { name: "Tat Gıda", logo: "/logos/tat-gida.png" },
+  { name: "Korozo Group", logo: "/logos/korozo-group.png" },
 ];
 
 const showcaseImages = {

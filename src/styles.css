@@ -711,7 +711,7 @@ p {
   display: flex;
   width: max-content;
   gap: clamp(20px, 2.4vw, 42px);
-  animation: logo-marquee 24s linear infinite;
+  animation: logo-marquee 34s linear infinite;
 }
 
 .logo-ticker:hover .logo-ticker-track {
@@ -722,13 +722,13 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: clamp(190px, 13vw, 236px);
+  min-width: clamp(202px, 14vw, 260px);
   white-space: nowrap;
 }
 
 .partner-logo {
   display: grid;
-  width: clamp(180px, 12vw, 220px);
+  width: clamp(192px, 13vw, 244px);
   height: 54px;
   align-items: center;
   justify-items: center;
@@ -742,9 +742,13 @@ p {
 .partner-logo img {
   display: block;
   width: 100%;
-  max-width: 184px;
+  max-width: 204px;
   height: 38px;
   object-fit: contain;
+}
+
+.partner-logo img[src*="nurol-makina"] {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(65%) saturate(1685%) hue-rotate(186deg) brightness(90%) contrast(104%);
 }
 
 @keyframes logo-marquee {
@@ -3137,21 +3141,21 @@ p {
 
   .logo-ticker-track {
     gap: 26px;
-    animation-duration: 18s;
+    animation-duration: 28s;
   }
 
   .ticker-logo {
-    min-width: 168px;
+    min-width: 180px;
   }
 
   .partner-logo {
-    width: 158px;
+    width: 170px;
     height: 48px;
     padding: 7px 14px;
   }
 
   .partner-logo img {
-    max-width: 132px;
+    max-width: 146px;
     height: 32px;
   }
 
