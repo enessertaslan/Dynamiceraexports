@@ -113,6 +113,7 @@ function imageVariant(url, width = 1280, quality = 78) {
   try {
     const imageUrl = new URL(url);
     imageUrl.searchParams.set("auto", "format");
+    imageUrl.searchParams.set("fm", "avif");
     imageUrl.searchParams.set("fit", "crop");
     imageUrl.searchParams.set("w", String(width));
     imageUrl.searchParams.set("q", String(quality));
@@ -128,10 +129,10 @@ function imageSrcSet(url, quality = 78) {
 
 const partnerLogos = [
   { name: "Set Medikal", logo: "/logos/set-medikal.svg" },
-  { name: "Çimsa", logo: "/logos/cimsa.png" },
+  { name: "Çimsa", logo: "/logos/cimsa.avif" },
   { name: "Kipaş", logo: "/logos/kipas.svg" },
-  { name: "Tat Gıda", logo: "/logos/tat-gida.png" },
-  { name: "Korozo Group", logo: "/logos/korozo-group.png" },
+  { name: "Tat Gıda", logo: "/logos/tat-gida.avif" },
+  { name: "Korozo Group", logo: "/logos/korozo-group.avif" },
 ];
 
 const showcaseImages = {
@@ -145,7 +146,7 @@ const showcaseImages = {
     "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=82",
   logistics:
     "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=900&q=82",
-  aboutFlow: "/about-global-logistics.jpg",
+  aboutFlow: "/about-global-logistics.avif",
   aboutMain:
     "https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1200&q=86",
   aboutSupply:
