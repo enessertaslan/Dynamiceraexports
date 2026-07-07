@@ -36,6 +36,7 @@ import {
   Zap,
 } from "lucide-react";
 import { AE, DE, FR, GB, NL, RU, TR } from "country-flag-icons/react/3x2";
+import logoSvg from "./assets/dynamic-era-logo-original.svg?raw";
 import "./styles.css";
 
 const company = {
@@ -2166,9 +2167,12 @@ function Loader({ loading }) {
 
 function LogoMark() {
   return (
-    <span className="logo-mark" aria-label="Dynamic Era Export">
-      <img src="/dynamic-era-logo-original.svg" width="290" height="80" alt="Dynamic Era Export" loading="eager" fetchPriority="high" decoding="async" />
-    </span>
+    <span
+      className="logo-mark"
+      role="img"
+      aria-label="Dynamic Era Export"
+      dangerouslySetInnerHTML={{ __html: logoSvg }}
+    />
   );
 }
 
