@@ -2167,7 +2167,7 @@ function Loader({ loading }) {
 function LogoMark() {
   return (
     <span className="logo-mark" aria-label="Dynamic Era Export">
-      <img src="/dynamic-era-logo-original.svg" width="290" height="80" alt="Dynamic Era Export" decoding="async" />
+      <img src="/dynamic-era-logo-original.svg" width="290" height="80" alt="Dynamic Era Export" loading="eager" fetchPriority="high" decoding="async" />
     </span>
   );
 }
