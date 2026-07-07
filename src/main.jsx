@@ -41,9 +41,9 @@ import "./styles.css";
 const company = {
   name: "Dynamic Era Export",
   suffix: "Global Trade, Dynamic Solutions",
-  phone: "+90 535 878 86 04",
-  whatsapp: "905358788604",
-  email: "mehmet@dynamiceraexport.com",
+  phone: "+90 547 990 40 40",
+  whatsapp: "905479904040",
+  email: "info@dynamiceraexport.com",
   location: "Istanbul, Turkiye",
 };
 const web3FormsAccessKey = String(import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "").trim();
