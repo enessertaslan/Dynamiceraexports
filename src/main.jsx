@@ -107,6 +107,25 @@ const heroImages = [
   "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=2100&q=84",
 ];
 
+const responsiveWidths = [640, 960, 1280, 1600];
+
+function imageVariant(url, width = 1280, quality = 78) {
+  try {
+    const imageUrl = new URL(url);
+    imageUrl.searchParams.set("auto", "format");
+    imageUrl.searchParams.set("fit", "crop");
+    imageUrl.searchParams.set("w", String(width));
+    imageUrl.searchParams.set("q", String(quality));
+    return imageUrl.toString();
+  } catch {
+    return url;
+  }
+}
+
+function imageSrcSet(url, quality = 78) {
+  return responsiveWidths.map((width) => `${imageVariant(url, width, quality)} ${width}w`).join(", ");
+}
+
 const partnerLogos = [
   { name: "Set Medikal", logo: "/logos/set-medikal.svg" },
   { name: "Çimsa", logo: "/logos/cimsa.png" },
@@ -2038,7 +2057,10 @@ function App() {
   const [lang, setLang] = useState(initialRoute.lang);
   const [page, setPage] = useState(initialRoute.page);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  });
   const [selectedCategory, setSelectedCategory] = useState(initialRoute.category || "energy");
   const [categoryInUrl, setCategoryInUrl] = useState(initialRoute.category);
   const t = copy[lang];
@@ -2051,9 +2073,10 @@ function App() {
   }, [lang, isRtl, page, categoryInUrl, t]);
 
   useEffect(() => {
-    const timer = window.setTimeout(() => setLoading(false), 1150);
+    if (!loading) return undefined;
+    const timer = window.setTimeout(() => setLoading(false), 220);
     return () => window.clearTimeout(timer);
-  }, []);
+  }, [loading]);
 
   useEffect(() => {
     const expectedPath = getPathForPage(lang, page, page === "categories" ? categoryInUrl : null);
@@ -2143,7 +2166,7 @@ function Loader({ loading }) {
 function LogoMark() {
   return (
     <span className="logo-mark" aria-label="Dynamic Era Export">
-      <img src="/dynamic-era-logo-original.svg" alt="Dynamic Era Export" />
+      <img src="/dynamic-era-logo-original.svg" width="290" height="80" alt="Dynamic Era Export" decoding="async" />
     </span>
   );
 }
@@ -2293,24 +2316,55 @@ function PartnerLogo({ partner }) {
 
 function Hero({ t, goTo }) {
   const [active, setActive] = useState(0);
+  const [carouselReady, setCarouselReady] = useState(false);
   const heroStats = t.heroStats || t.metrics;
 
   useEffect(() => {
+    const startCarousel = () => setCarouselReady(true);
+    let idleId;
+    let timerId;
+    if ("requestIdleCallback" in window) {
+      idleId = window.requestIdleCallback(startCarousel, { timeout: 1800 });
+    } else {
+      timerId = window.setTimeout(startCarousel, 1200);
+    }
+
+    return () => {
+      if (idleId) window.cancelIdleCallback(idleId);
+      if (timerId) window.clearTimeout(timerId);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!carouselReady) return undefined;
     const timer = window.setInterval(() => {
       setActive((value) => (value + 1) % heroImages.length);
     }, 5400);
     return () => window.clearInterval(timer);
-  }, []);
+  }, [carouselReady]);
 
   return (
     <section className="hero">
-      {heroImages.map((image, index) => (
-        <div
-          key={image}
-          className={`hero-image ${active === index ? "active" : ""}`}
-          style={{ backgroundImage: `url(${image})` }}
-        />
-      ))}
+      {heroImages.map((image, index) => {
+        if (!carouselReady && index > 0) return null;
+
+        return (
+          <img
+            key={image}
+            className={`hero-image ${active === index ? "active" : ""}`}
+            src={imageVariant(image, index === 0 ? 1280 : 960, index === 0 ? 80 : 74)}
+            srcSet={imageSrcSet(image, index === 0 ? 80 : 74)}
+            sizes="100vw"
+            width="1600"
+            height="1067"
+            alt=""
+            aria-hidden="true"
+            loading={index === 0 ? "eager" : "lazy"}
+            fetchPriority={index === 0 ? "high" : "low"}
+            decoding={index === 0 ? "sync" : "async"}
+          />
+        );
+      })}
       <div className="hero-overlay" />
       <div className="hero-inner">
         <div className="hero-copy">
@@ -2435,9 +2489,9 @@ function AboutIntro({ t, goTo }) {
           </button>
         </Reveal>
         <Reveal className="about-intro-media">
-          <img className="about-intro-main" src={showcaseImages.logistics} alt={`${t.aboutIntroTitle || t.aboutTitle} - ${getCategoryEntry(t, "logisticsTrade")[0]}`} loading="lazy" />
-          <img className="about-intro-side top" src={heroImages[2]} alt={getCategoryEntry(t, "machinery")[0]} loading="lazy" />
-          <img className="about-intro-side bottom" src={heroImages[1]} alt={getCategoryEntry(t, "construction")[0]} loading="lazy" />
+          <img className="about-intro-main" src={imageVariant(showcaseImages.logistics, 960)} srcSet={imageSrcSet(showcaseImages.logistics)} sizes="(max-width: 760px) 100vw, 44vw" width="960" height="640" alt={`${t.aboutIntroTitle || t.aboutTitle} - ${getCategoryEntry(t, "logisticsTrade")[0]}`} loading="lazy" decoding="async" />
+          <img className="about-intro-side top" src={imageVariant(heroImages[2], 640, 74)} srcSet={imageSrcSet(heroImages[2], 74)} sizes="(max-width: 760px) 44vw, 20vw" width="640" height="427" alt={getCategoryEntry(t, "machinery")[0]} loading="lazy" decoding="async" />
+          <img className="about-intro-side bottom" src={imageVariant(heroImages[1], 640, 74)} srcSet={imageSrcSet(heroImages[1], 74)} sizes="(max-width: 760px) 48vw, 22vw" width="640" height="427" alt={getCategoryEntry(t, "construction")[0]} loading="lazy" decoding="async" />
         </Reveal>
       </div>
     </section>
@@ -2474,9 +2528,9 @@ function AboutShowcase({ t, goTo }) {
   return (
     <section className="about-showcase">
       <Reveal className="showcase-media">
-        <img className="showcase-main" src={showcaseImages.trade} alt={t.homeAboutTitle || t.aboutTitle} loading="lazy" />
-        <img className="showcase-float top" src={showcaseImages.cargo} alt={getCategoryEntry(t, "logisticsTrade")[0]} loading="lazy" />
-        <img className="showcase-float bottom" src={showcaseImages.textile} alt={getCategoryEntry(t, "textile")[0]} loading="lazy" />
+        <img className="showcase-main" src={imageVariant(showcaseImages.trade, 960)} srcSet={imageSrcSet(showcaseImages.trade)} sizes="(max-width: 760px) 100vw, 46vw" width="960" height="640" alt={t.homeAboutTitle || t.aboutTitle} loading="lazy" decoding="async" />
+        <img className="showcase-float top" src={imageVariant(showcaseImages.cargo, 560, 74)} srcSet={imageSrcSet(showcaseImages.cargo, 74)} sizes="(max-width: 760px) 48vw, 20vw" width="560" height="374" alt={getCategoryEntry(t, "logisticsTrade")[0]} loading="lazy" decoding="async" />
+        <img className="showcase-float bottom" src={imageVariant(showcaseImages.textile, 560, 74)} srcSet={imageSrcSet(showcaseImages.textile, 74)} sizes="(max-width: 760px) 48vw, 20vw" width="560" height="374" alt={getCategoryEntry(t, "textile")[0]} loading="lazy" decoding="async" />
         <div className="showcase-badge">
           <strong>20+</strong>
           <span>{t.metrics[0][1]}</span>
@@ -2753,13 +2807,13 @@ function About({ t, goTo }) {
         <Reveal className="about-hero-panel">
           <div className="about-hero-gallery">
             <figure className="about-hero-main">
-              <img src={heroImages[0]} alt={`${t.aboutTitle} - ${getCategoryEntry(t, "logisticsTrade")[0]}`} loading="lazy" />
+              <img src={imageVariant(heroImages[0], 960)} srcSet={imageSrcSet(heroImages[0])} sizes="(max-width: 760px) 100vw, 46vw" width="960" height="640" alt={`${t.aboutTitle} - ${getCategoryEntry(t, "logisticsTrade")[0]}`} loading="lazy" decoding="async" />
             </figure>
             <figure className="about-hero-float about-hero-float-one">
-              <img src={heroImages[1]} alt={getCategoryEntry(t, "construction")[0]} loading="lazy" />
+              <img src={imageVariant(heroImages[1], 560, 74)} srcSet={imageSrcSet(heroImages[1], 74)} sizes="(max-width: 760px) 44vw, 20vw" width="560" height="374" alt={getCategoryEntry(t, "construction")[0]} loading="lazy" decoding="async" />
             </figure>
             <figure className="about-hero-float about-hero-float-two">
-              <img src={heroImages[2]} alt={getCategoryEntry(t, "textile")[0]} loading="lazy" />
+              <img src={imageVariant(heroImages[2], 560, 74)} srcSet={imageSrcSet(heroImages[2], 74)} sizes="(max-width: 760px) 44vw, 20vw" width="560" height="374" alt={getCategoryEntry(t, "textile")[0]} loading="lazy" decoding="async" />
             </figure>
           </div>
         </Reveal>
@@ -2783,7 +2837,7 @@ function About({ t, goTo }) {
               <p>{t.aboutFlowText2}</p>
             </div>
             <figure className="about-flow-media">
-              <img src={showcaseImages.aboutFlow} alt={t.aboutFlowTitle || t.aboutMore} loading="lazy" />
+              <img src={showcaseImages.aboutFlow} width="1920" height="1280" alt={t.aboutFlowTitle || t.aboutMore} loading="lazy" decoding="async" />
             </figure>
           </div>
         </Reveal>
