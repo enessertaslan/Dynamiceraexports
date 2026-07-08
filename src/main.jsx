@@ -2219,6 +2219,7 @@ function Header({ t, lang, setLang, page, goTo, menuOpen, setMenuOpen }) {
     <header className={`topbar ${isTransparent ? "topbar-transparent" : "topbar-solid"}`}>
       <a className="brand" href={getPathForPage(lang, "home")} onClick={(event) => { event.preventDefault(); goTo("home"); }} aria-label={t.nav[0]}>
         <LogoMark />
+        <span className="sr-only">Dynamic Era Export - Dynamic Era Exporters</span>
       </a>
 
       <nav className={`nav ${menuOpen ? "nav-open" : ""}`} aria-label="Primary navigation">
