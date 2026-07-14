@@ -21,6 +21,7 @@ import {
   PackageCheck,
   PackageOpen,
   Phone,
+  Search,
   SearchCheck,
   Shield,
   ShieldCheck,
@@ -1828,6 +1829,107 @@ const localeCodes = {
   ar: "ar_AE",
 };
 
+const searchUiCopy = {
+  tr: {
+    open: "Site içinde ara",
+    title: "Sitede ara",
+    placeholder: "Sektör, hizmet, sayfa veya ürün grubu ara",
+    hint: "En az 2 karakter yazın.",
+    empty: "Sonuç bulunamadı. Farklı bir kelime deneyin.",
+    close: "Aramayı kapat",
+    page: "Sayfa",
+    sector: "Sektör",
+    service: "Hizmet",
+    process: "Süreç",
+    value: "Değer",
+    resultCount: "sonuç",
+  },
+  en: {
+    open: "Search site",
+    title: "Search the site",
+    placeholder: "Search sectors, services, pages or product groups",
+    hint: "Type at least 2 characters.",
+    empty: "No results found. Try another keyword.",
+    close: "Close search",
+    page: "Page",
+    sector: "Sector",
+    service: "Service",
+    process: "Process",
+    value: "Value",
+    resultCount: "results",
+  },
+  ru: {
+    open: "Поиск по сайту",
+    title: "Поиск по сайту",
+    placeholder: "Ищите сектора, услуги, страницы или группы продуктов",
+    hint: "Введите минимум 2 символа.",
+    empty: "Результаты не найдены. Попробуйте другое слово.",
+    close: "Закрыть поиск",
+    page: "Страница",
+    sector: "Сектор",
+    service: "Услуга",
+    process: "Процесс",
+    value: "Ценность",
+    resultCount: "результатов",
+  },
+  fr: {
+    open: "Rechercher sur le site",
+    title: "Rechercher sur le site",
+    placeholder: "Rechercher secteurs, services, pages ou groupes de produits",
+    hint: "Saisissez au moins 2 caractères.",
+    empty: "Aucun résultat trouvé. Essayez un autre mot.",
+    close: "Fermer la recherche",
+    page: "Page",
+    sector: "Secteur",
+    service: "Service",
+    process: "Processus",
+    value: "Valeur",
+    resultCount: "résultats",
+  },
+  de: {
+    open: "Website durchsuchen",
+    title: "Website durchsuchen",
+    placeholder: "Branchen, Services, Seiten oder Produktgruppen suchen",
+    hint: "Mindestens 2 Zeichen eingeben.",
+    empty: "Keine Ergebnisse gefunden. Versuchen Sie ein anderes Wort.",
+    close: "Suche schließen",
+    page: "Seite",
+    sector: "Branche",
+    service: "Service",
+    process: "Prozess",
+    value: "Wert",
+    resultCount: "Ergebnisse",
+  },
+  nl: {
+    open: "Zoeken op site",
+    title: "Zoeken op de site",
+    placeholder: "Zoek sectoren, diensten, pagina's of productgroepen",
+    hint: "Typ minimaal 2 tekens.",
+    empty: "Geen resultaten gevonden. Probeer een ander woord.",
+    close: "Zoeken sluiten",
+    page: "Pagina",
+    sector: "Sector",
+    service: "Dienst",
+    process: "Proces",
+    value: "Waarde",
+    resultCount: "resultaten",
+  },
+  ar: {
+    open: "البحث في الموقع",
+    title: "البحث في الموقع",
+    placeholder: "ابحث عن القطاعات أو الخدمات أو الصفحات أو مجموعات المنتجات",
+    hint: "اكتب حرفين على الأقل.",
+    empty: "لم يتم العثور على نتائج. جرب كلمة أخرى.",
+    close: "إغلاق البحث",
+    page: "صفحة",
+    sector: "قطاع",
+    service: "خدمة",
+    process: "عملية",
+    value: "قيمة",
+    resultCount: "نتائج",
+  },
+};
+
 function getPathForPage(lang, page, category) {
   const languageRoutes = routePaths[lang] || routePaths.tr;
   const basePath = languageRoutes[page] || languageRoutes.home;
@@ -1921,6 +2023,88 @@ function getCategoryDetail(t, key) {
       points: t.processSteps.map(([, stepTitle]) => stepTitle),
     }
   );
+}
+
+function normalizeSearchText(value) {
+  return String(value || "")
+    .toLocaleLowerCase("tr")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function compactSearchText(parts) {
+  return parts.flat(Infinity).filter(Boolean).map((part) => String(part).trim()).filter(Boolean).join(" ");
+}
+
+function buildSearchItems(t, lang) {
+  const ui = searchUiCopy[lang] || searchUiCopy.en;
+  const items = pages.map((pageKey, index) => {
+    const title = t.nav[index];
+    const descriptions = {
+      home: compactSearchText([t.homeTitle, t.homeText, t.homeSubText, t.homeAboutTitle, t.homeAboutText]),
+      categories: compactSearchText([t.categoryPageTitle, t.categoryPageLead, t.categoryCustomCtaText]),
+      about: compactSearchText([t.aboutTitle, t.aboutText, t.aboutIntroText, t.aboutSupport, t.aboutFlowTitle]),
+      contact: compactSearchText([t.contactTitle, t.contactLead, t.contactText, t.contactSubtitle]),
+    };
+    return {
+      id: `page-${pageKey}`,
+      type: ui.page,
+      title,
+      description: descriptions[pageKey] || title,
+      page: pageKey,
+      category: null,
+    };
+  });
+
+  const categoryItems = categoryOrder.map((key) => {
+    const [title, description] = getCategoryEntry(t, key);
+    const detail = getCategoryDetail(t, key);
+    return {
+      id: `category-${key}`,
+      type: ui.sector,
+      title,
+      description: compactSearchText([description, detail.title, detail.text, detail.points]),
+      page: "categories",
+      category: key,
+    };
+  });
+
+  const serviceItems = (t.services || []).map(([title, description], index) => ({
+    id: `service-${index}`,
+    type: ui.service,
+    title,
+    description,
+    page: "home",
+    category: null,
+  }));
+
+  const processItems = (t.processSteps || []).map((step, index) => {
+    const [, title, description] = step;
+    return {
+      id: `process-${index}`,
+      type: ui.process,
+      title,
+      description,
+      page: "home",
+      category: null,
+    };
+  });
+
+  const valueItems = (t.aboutValues || []).map(([title, description], index) => ({
+    id: `value-${index}`,
+    type: ui.value,
+    title,
+    description,
+    page: "about",
+    category: null,
+  }));
+
+  return [...items, ...categoryItems, ...serviceItems, ...processItems, ...valueItems].map((item) => ({
+    ...item,
+    haystack: normalizeSearchText(compactSearchText([item.title, item.description, item.type])),
+  }));
 }
 
 function updatePageSeo({ lang, page, category, t }) {
@@ -2059,6 +2243,7 @@ function App() {
   const [lang, setLang] = useState(initialRoute.lang);
   const [page, setPage] = useState(initialRoute.page);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const [loading, setLoading] = useState(() => {
     if (typeof window === "undefined") return false;
     return !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -2109,6 +2294,18 @@ function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const openSearch = () => {
+    setMenuOpen(false);
+    setSearchOpen(true);
+  };
+
+  const closeSearch = () => setSearchOpen(false);
+
+  const handleSearchSelect = (result) => {
+    closeSearch();
+    goTo(result.page, result.category);
+  };
+
   const changeLanguage = (nextLanguage) => {
     setLang(nextLanguage);
     const nextCategory = page === "categories" ? categoryInUrl : null;
@@ -2134,6 +2331,14 @@ function App() {
         goTo={goTo}
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
+        onSearchOpen={openSearch}
+      />
+      <SearchOverlay
+        open={searchOpen}
+        t={t}
+        lang={lang}
+        onClose={closeSearch}
+        onSelect={handleSearchSelect}
       />
       <main>
         {page === "home" && <Home t={t} lang={lang} goTo={goTo} />}
@@ -2201,7 +2406,7 @@ function LanguageFlag({ code }) {
   );
 }
 
-function Header({ t, lang, setLang, page, goTo, menuOpen, setMenuOpen }) {
+function Header({ t, lang, setLang, page, goTo, menuOpen, setMenuOpen, onSearchOpen }) {
   const [scrolled, setScrolled] = useState(false);
   const [languageOpen, setLanguageOpen] = useState(false);
   const activeLanguage = languages.find((language) => language.code === lang) || languages[0];
@@ -2236,6 +2441,9 @@ function Header({ t, lang, setLang, page, goTo, menuOpen, setMenuOpen }) {
       </nav>
 
       <div className="top-actions">
+        <button className="search-toggle" type="button" aria-label={(searchUiCopy[lang] || searchUiCopy.en).open} onClick={onSearchOpen}>
+          <Search size={19} />
+        </button>
         <div className={`language-picker ${languageOpen ? "language-picker-open" : ""}`}>
           <button
             className="language-current"
@@ -2274,6 +2482,95 @@ function Header({ t, lang, setLang, page, goTo, menuOpen, setMenuOpen }) {
         </button>
       </div>
     </header>
+  );
+}
+
+function SearchOverlay({ open, t, lang, onClose, onSelect }) {
+  const [query, setQuery] = useState("");
+  const inputRef = React.useRef(null);
+  const ui = searchUiCopy[lang] || searchUiCopy.en;
+  const items = React.useMemo(() => buildSearchItems(t, lang), [t, lang]);
+  const normalizedQuery = normalizeSearchText(query);
+  const results = React.useMemo(() => {
+    if (normalizedQuery.length < 2) return [];
+    return items
+      .filter((item) => item.haystack.includes(normalizedQuery))
+      .slice(0, 12);
+  }, [items, normalizedQuery]);
+
+  useEffect(() => {
+    if (!open) return undefined;
+    const focusTimer = window.setTimeout(() => inputRef.current?.focus(), 40);
+    const closeOnEscape = (event) => {
+      if (event.key === "Escape") onClose();
+    };
+    document.body.classList.add("search-lock");
+    window.addEventListener("keydown", closeOnEscape);
+    return () => {
+      window.clearTimeout(focusTimer);
+      window.removeEventListener("keydown", closeOnEscape);
+      document.body.classList.remove("search-lock");
+    };
+  }, [open, onClose]);
+
+  useEffect(() => {
+    if (open) setQuery("");
+  }, [open]);
+
+  if (!open) return null;
+
+  return (
+    <div className="search-overlay" role="dialog" aria-modal="true" aria-labelledby="site-search-title">
+      <button className="search-backdrop" type="button" aria-label={ui.close} onClick={onClose} />
+      <div className="search-panel">
+        <div className="search-panel-head">
+          <div>
+            <span>{company.name}</span>
+            <h2 id="site-search-title">{ui.title}</h2>
+          </div>
+          <button className="search-close" type="button" aria-label={ui.close} onClick={onClose}>
+            <X size={22} />
+          </button>
+        </div>
+
+        <label className="search-field">
+          <Search size={22} />
+          <input
+            ref={inputRef}
+            type="search"
+            value={query}
+            placeholder={ui.placeholder}
+            onChange={(event) => setQuery(event.target.value)}
+          />
+        </label>
+
+        <div className="search-meta">
+          {normalizedQuery.length < 2 ? ui.hint : `${results.length} ${ui.resultCount}`}
+        </div>
+
+        <div className="search-results">
+          {normalizedQuery.length >= 2 && results.length === 0 && (
+            <div className="search-empty">
+              <CircleAlert size={21} />
+              <span>{ui.empty}</span>
+            </div>
+          )}
+          {results.map((result) => (
+            <button
+              key={result.id}
+              type="button"
+              className="search-result"
+              onClick={() => onSelect(result)}
+            >
+              <span>{result.type}</span>
+              <strong>{result.title}</strong>
+              <small>{truncateSeoText(result.description, 170)}</small>
+              <ArrowRight size={18} />
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
 
