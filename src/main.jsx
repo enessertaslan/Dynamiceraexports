@@ -36,7 +36,7 @@ import {
   X,
   Zap,
 } from "lucide-react";
-import { AE, DE, FR, GB, NL, RU, TR } from "country-flag-icons/react/3x2";
+import { AE, AZ, BG, CN, DE, FR, GB, GR, IR, IT, NL, PL, PT, RO, RU, TR, UA } from "country-flag-icons/react/3x2";
 import logoSvg from "./assets/dynamic-era-logo-original.svg?raw";
 import "./styles.css";
 
@@ -53,6 +53,16 @@ const web3FormsAccessKey = String(import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "
 const languages = [
   { code: "tr", label: "TR", name: "Türkçe", dir: "ltr" },
   { code: "en", label: "EN", name: "English", dir: "ltr" },
+  { code: "it", label: "IT", name: "Italiano", dir: "ltr" },
+  { code: "pt", label: "PT", name: "Português", dir: "ltr" },
+  { code: "zh", label: "ZH", name: "中文", dir: "ltr" },
+  { code: "fa", label: "FA", name: "فارسی", dir: "rtl" },
+  { code: "uk", label: "UK", name: "Українська", dir: "ltr" },
+  { code: "ro", label: "RO", name: "Română", dir: "ltr" },
+  { code: "bg", label: "BG", name: "Български", dir: "ltr" },
+  { code: "az", label: "AZ", name: "Azərbaycanca", dir: "ltr" },
+  { code: "pl", label: "PL", name: "Polski", dir: "ltr" },
+  { code: "el", label: "EL", name: "Ελληνικά", dir: "ltr" },
   { code: "ru", label: "RU", name: "Русский", dir: "ltr" },
   { code: "fr", label: "FR", name: "Français", dir: "ltr" },
   { code: "de", label: "DE", name: "Deutsch", dir: "ltr" },
@@ -63,6 +73,16 @@ const languages = [
 const languageFlags = {
   tr: TR,
   en: GB,
+  it: IT,
+  pt: PT,
+  zh: CN,
+  fa: IR,
+  uk: UA,
+  ro: RO,
+  bg: BG,
+  az: AZ,
+  pl: PL,
+  el: GR,
   ru: RU,
   fr: FR,
   de: DE,
@@ -1794,10 +1814,118 @@ const categoryOrder = [
 const featuredCategoryOrder = categoryOrder.slice(0, 6);
 const categoryIndexByKey = Object.fromEntries(categoryOrder.map((key, index) => [key, index]));
 const pages = ["home", "categories", "about", "contact"];
+
+function mergeLanguageCopy(base, override) {
+  const result = { ...base };
+  Object.entries(override).forEach(([key, value]) => {
+    const baseValue = base[key];
+    result[key] =
+      value && typeof value === "object" && !Array.isArray(value) && baseValue && typeof baseValue === "object" && !Array.isArray(baseValue)
+        ? mergeLanguageCopy(baseValue, value)
+        : value;
+  });
+  return result;
+}
+
+const additionalLanguageCopy = {
+  it: {
+    nav: ["Home", "Settori", "Chi siamo", "Contatto"],
+    whatsapp: "Contatto diretto via WhatsApp",
+    direct: "Contatta via WhatsApp",
+    categoriesCta: "Vedi tutti i settori",
+    homeTitle: "Il vostro partner affidabile\nnel commercio globale",
+    homeText: "Dall'energia ai materiali da costruzione, dal tessile al food, dalla sanità alla difesa, creiamo valore con il prodotto giusto, il fornitore giusto e il modello commerciale giusto.\n\nCon oltre 20 anni di esperienza, 1500+ clienti e una rete di fornitura in più di 20 settori, siamo una forza dinamica nel commercio globale.",
+    heroStats: [["20+", "Anni di esperienza"], ["1500+", "Clienti"], ["20+", "Settori principali"]],
+    servicesKicker: "I nostri servizi",
+    categoryPageTitle: "Settori / Aree di attività",
+    categoryPageLead: "In tutte le aree sviluppiamo soluzioni di prodotto e sourcing secondo la domanda del cliente.",
+    allSectorsTitle: "Tutti i settori",
+    categoryCustomCtaButton: "Contatta via WhatsApp",
+    aboutTitle: "Chi siamo",
+    contactTitle: "Contatto",
+    contactLead: "Qualunque sia il prodotto, il paese o la categoria che cercate, possiamo iniziare con un breve messaggio.",
+    form: { name: "Nome e cognome", company: "Azienda", message: "Che cosa state cercando?", send: "Invia email", sending: "Invio...", successTitle: "Messaggio inviato con successo", successText: "Grazie. Vi risponderemo il prima possibile.", errorTitle: "Il messaggio non è stato inviato", errorText: "Riprova a breve o contattaci via WhatsApp.", close: "Chiudi" },
+  },
+  pt: {
+    nav: ["Início", "Setores", "Sobre nós", "Contato"],
+    whatsapp: "Contato direto via WhatsApp",
+    direct: "Contato via WhatsApp",
+    categoriesCta: "Ver todos os setores",
+    homeTitle: "Seu parceiro confiável\nno comércio global",
+    homeText: "Da energia aos materiais de construção, do têxtil aos alimentos, da saúde à defesa, criamos valor com o produto certo, o fornecedor certo e o modelo comercial certo.\n\nCom mais de 20 anos de experiência, 1500+ clientes e rede de fornecimento em mais de 20 setores, somos a força dinâmica do comércio global.",
+    heroStats: [["20+", "Anos de experiência"], ["1500+", "Clientes"], ["20+", "Setores principais"]],
+    servicesKicker: "Nossos serviços",
+    categoryPageTitle: "Setores / Áreas de negócio",
+    categoryPageLead: "Em todas as áreas desenvolvemos soluções de produto e sourcing conforme a demanda do cliente.",
+    allSectorsTitle: "Todos os setores",
+    categoryCustomCtaButton: "Contato via WhatsApp",
+    aboutTitle: "Sobre nós",
+    contactTitle: "Contato",
+    contactLead: "Qualquer que seja o produto, país ou categoria, podemos começar com uma mensagem curta.",
+    form: { name: "Nome completo", company: "Empresa", message: "O que você procura?", send: "Enviar email", sending: "Enviando...", successTitle: "Mensagem enviada com sucesso", successText: "Obrigado. Retornaremos o mais breve possível.", errorTitle: "Mensagem não enviada", errorText: "Tente novamente em breve ou fale via WhatsApp.", close: "Fechar" },
+  },
+  zh: {
+    nav: ["首页", "行业", "关于我们", "联系"],
+    whatsapp: "WhatsApp 直接联系",
+    direct: "通过 WhatsApp 联系",
+    categoriesCta: "查看全部行业",
+    homeTitle: "全球贸易中\n值得信赖的解决方案伙伴",
+    homeText: "从能源到建筑材料、从纺织到食品、从医疗到国防，我们通过正确的产品、供应商和贸易模式为客户创造价值。\n\n凭借20年以上商业经验、1500+客户以及覆盖20+行业的供应网络，我们是全球贸易的动态力量。",
+    heroStats: [["20+", "年经验"], ["1500+", "客户"], ["20+", "主要行业"]],
+    servicesKicker: "我们的服务",
+    categoryPageTitle: "行业 / 业务领域",
+    categoryPageLead: "我们在所有业务领域根据客户需求开发产品和采购解决方案。",
+    allSectorsTitle: "全部行业",
+    categoryCustomCtaButton: "通过 WhatsApp 联系",
+    aboutTitle: "关于我们",
+    contactTitle: "联系",
+    contactLead: "无论您寻找产品、目标国家还是类别，都可以从一条简短消息开始。",
+    form: { name: "姓名", company: "公司", message: "您在寻找什么？", send: "发送邮件", sending: "发送中...", successTitle: "消息已成功发送", successText: "谢谢。我们会尽快回复。", errorTitle: "消息未发送", errorText: "请稍后重试或通过 WhatsApp 联系。", close: "关闭" },
+  },
+  fa: {
+    nav: ["خانه", "بخش‌ها", "درباره ما", "تماس"],
+    whatsapp: "ارتباط مستقیم واتساپ",
+    direct: "تماس از طریق واتساپ",
+    categoriesCta: "مشاهده همه بخش‌ها",
+    homeTitle: "شریک مطمئن شما\nدر تجارت جهانی",
+    homeText: "از انرژی تا مصالح ساختمانی، از نساجی تا غذا، از سلامت تا صنایع دفاعی، با محصول درست، تامین‌کننده درست و مدل تجاری درست برای مشتریان ارزش ایجاد می‌کنیم.\n\nبا بیش از 20 سال تجربه، 1500+ مشتری و شبکه تامین در بیش از 20 بخش، نیروی پویا در تجارت جهانی هستیم.",
+    heroStats: [["20+", "سال تجربه"], ["1500+", "مشتری"], ["20+", "بخش اصلی"]],
+    servicesKicker: "خدمات ما",
+    categoryPageTitle: "بخش‌ها / حوزه‌های فعالیت",
+    categoryPageLead: "در همه حوزه‌ها راهکارهای محصول و تامین را براساس نیاز مشتری توسعه می‌دهیم.",
+    allSectorsTitle: "همه بخش‌ها",
+    categoryCustomCtaButton: "تماس از طریق واتساپ",
+    aboutTitle: "درباره ما",
+    contactTitle: "تماس",
+    contactLead: "هر محصول، کشور هدف یا دسته‌ای که جستجو می‌کنید، می‌توانیم با یک پیام کوتاه شروع کنیم.",
+    form: { name: "نام کامل", company: "شرکت", message: "به دنبال چه چیزی هستید؟", send: "ارسال ایمیل", sending: "در حال ارسال...", successTitle: "پیام شما با موفقیت ارسال شد", successText: "سپاسگزاریم. در کوتاه‌ترین زمان پاسخ می‌دهیم.", errorTitle: "پیام ارسال نشد", errorText: "لطفا بعدا تلاش کنید یا از واتساپ تماس بگیرید.", close: "بستن" },
+  },
+  uk: { nav: ["Головна", "Сектори", "Про нас", "Контакти"], whatsapp: "Прямий контакт у WhatsApp", direct: "Зв'язатися через WhatsApp", categoriesCta: "Переглянути всі сектори", homeTitle: "Ваш надійний партнер\nу глобальній торгівлі", heroStats: [["20+", "Років досвіду"], ["1500+", "Клієнтів"], ["20+", "Основних секторів"]], servicesKicker: "Наші послуги", categoryPageTitle: "Сектори / напрями діяльності", allSectorsTitle: "Усі сектори", aboutTitle: "Про нас", contactTitle: "Контакти", categoryCustomCtaButton: "Зв'язатися через WhatsApp", form: { name: "Повне ім'я", company: "Компанія", message: "Що ви шукаєте?", send: "Надіслати email", sending: "Надсилання...", close: "Закрити" } },
+  ro: { nav: ["Acasă", "Sectoare", "Despre noi", "Contact"], whatsapp: "Contact direct pe WhatsApp", direct: "Contact prin WhatsApp", categoriesCta: "Vezi toate sectoarele", homeTitle: "Partenerul tău de încredere\nîn comerțul global", heroStats: [["20+", "Ani experiență"], ["1500+", "Clienți"], ["20+", "Sectoare principale"]], servicesKicker: "Serviciile noastre", categoryPageTitle: "Sectoare / Domenii de activitate", allSectorsTitle: "Toate sectoarele", aboutTitle: "Despre noi", contactTitle: "Contact", categoryCustomCtaButton: "Contact prin WhatsApp", form: { name: "Nume complet", company: "Companie", message: "Ce cauți?", send: "Trimite email", sending: "Se trimite...", close: "Închide" } },
+  bg: { nav: ["Начало", "Сектори", "За нас", "Контакт"], whatsapp: "Директен контакт в WhatsApp", direct: "Контакт чрез WhatsApp", categoriesCta: "Виж всички сектори", homeTitle: "Вашият надежден партньор\nв глобалната търговия", heroStats: [["20+", "Години опит"], ["1500+", "Клиенти"], ["20+", "Основни сектора"]], servicesKicker: "Нашите услуги", categoryPageTitle: "Сектори / бизнес области", allSectorsTitle: "Всички сектори", aboutTitle: "За нас", contactTitle: "Контакт", categoryCustomCtaButton: "Контакт чрез WhatsApp", form: { name: "Име и фамилия", company: "Компания", message: "Какво търсите?", send: "Изпрати email", sending: "Изпращане...", close: "Затвори" } },
+  az: { nav: ["Ana səhifə", "Sektorlar", "Haqqımızda", "Əlaqə"], whatsapp: "WhatsApp ilə birbaşa əlaqə", direct: "WhatsApp ilə əlaqə", categoriesCta: "Bütün sektorları gör", homeTitle: "Qlobal ticarətdə\netibarlı həll ortağınız", heroStats: [["20+", "İl təcrübə"], ["1500+", "Müştəri"], ["20+", "Əsas sektor"]], servicesKicker: "Xidmətlərimiz", categoryPageTitle: "Sektorlar / fəaliyyət sahələri", allSectorsTitle: "Bütün sektorlar", aboutTitle: "Haqqımızda", contactTitle: "Əlaqə", categoryCustomCtaButton: "WhatsApp ilə əlaqə", form: { name: "Ad Soyad", company: "Şirkət", message: "Nə axtarırsınız?", send: "Email göndər", sending: "Göndərilir...", close: "Bağla" } },
+  pl: { nav: ["Strona główna", "Sektory", "O nas", "Kontakt"], whatsapp: "Bezpośredni kontakt WhatsApp", direct: "Kontakt przez WhatsApp", categoriesCta: "Zobacz wszystkie sektory", homeTitle: "Twój zaufany partner\nw globalnym handlu", heroStats: [["20+", "Lat doświadczenia"], ["1500+", "Klientów"], ["20+", "Głównych sektorów"]], servicesKicker: "Nasze usługi", categoryPageTitle: "Sektory / obszary działalności", allSectorsTitle: "Wszystkie sektory", aboutTitle: "O nas", contactTitle: "Kontakt", categoryCustomCtaButton: "Kontakt przez WhatsApp", form: { name: "Imię i nazwisko", company: "Firma", message: "Czego szukasz?", send: "Wyślij email", sending: "Wysyłanie...", close: "Zamknij" } },
+  el: { nav: ["Αρχική", "Κλάδοι", "Σχετικά", "Επικοινωνία"], whatsapp: "Άμεση επαφή μέσω WhatsApp", direct: "Επικοινωνία μέσω WhatsApp", categoriesCta: "Δείτε όλους τους κλάδους", homeTitle: "Ο αξιόπιστος συνεργάτης σας\nστο παγκόσμιο εμπόριο", heroStats: [["20+", "Χρόνια εμπειρίας"], ["1500+", "Πελάτες"], ["20+", "Κύριοι κλάδοι"]], servicesKicker: "Οι υπηρεσίες μας", categoryPageTitle: "Κλάδοι / επιχειρηματικοί τομείς", allSectorsTitle: "Όλοι οι κλάδοι", aboutTitle: "Σχετικά με εμάς", contactTitle: "Επικοινωνία", categoryCustomCtaButton: "Επικοινωνία μέσω WhatsApp", form: { name: "Ονοματεπώνυμο", company: "Εταιρεία", message: "Τι αναζητάτε;", send: "Αποστολή email", sending: "Αποστολή...", close: "Κλείσιμο" } },
+};
+
+Object.entries(additionalLanguageCopy).forEach(([code, localizedCopy]) => {
+  copy[code] = mergeLanguageCopy(copy.en, localizedCopy);
+});
+
 const SITE_URL = "https://dynamiceraexport.com";
 const routePaths = {
   tr: { home: "/", categories: "/sektorler", about: "/hakkimizda", contact: "/iletisim" },
   en: { home: "/en", categories: "/en/sectors", about: "/en/about", contact: "/en/contact" },
+  it: { home: "/it", categories: "/it/settori", about: "/it/chi-siamo", contact: "/it/contatto" },
+  pt: { home: "/pt", categories: "/pt/setores", about: "/pt/sobre", contact: "/pt/contato" },
+  zh: { home: "/zh", categories: "/zh/sectors", about: "/zh/about", contact: "/zh/contact" },
+  fa: { home: "/fa", categories: "/fa/sectors", about: "/fa/about", contact: "/fa/contact" },
+  uk: { home: "/uk", categories: "/uk/sectors", about: "/uk/about", contact: "/uk/contact" },
+  ro: { home: "/ro", categories: "/ro/sectoare", about: "/ro/despre-noi", contact: "/ro/contact" },
+  bg: { home: "/bg", categories: "/bg/sectors", about: "/bg/about", contact: "/bg/contact" },
+  az: { home: "/az", categories: "/az/sektorlar", about: "/az/haqqimizda", contact: "/az/elaqe" },
+  pl: { home: "/pl", categories: "/pl/sektory", about: "/pl/o-nas", contact: "/pl/kontakt" },
+  el: { home: "/el", categories: "/el/sectors", about: "/el/about", contact: "/el/contact" },
   ru: { home: "/ru", categories: "/ru/sectors", about: "/ru/about", contact: "/ru/contact" },
   fr: { home: "/fr", categories: "/fr/secteurs", about: "/fr/a-propos", contact: "/fr/contact" },
   de: { home: "/de", categories: "/de/branchen", about: "/de/ueber-uns", contact: "/de/kontakt" },
@@ -1813,6 +1941,16 @@ const categorySlugs = {
 const seoHomeTitles = {
   tr: "Global Tedarik ve Dış Ticaret | Dynamic Era Export",
   en: "Global Sourcing and Trade | Dynamic Era Export",
+  it: "Sourcing globale e commercio | Dynamic Era Export",
+  pt: "Sourcing global e comércio | Dynamic Era Export",
+  zh: "全球采购与贸易 | Dynamic Era Export",
+  fa: "تأمین جهانی و تجارت | Dynamic Era Export",
+  uk: "Глобальні поставки та торгівля | Dynamic Era Export",
+  ro: "Aprovizionare globală și comerț | Dynamic Era Export",
+  bg: "Глобални доставки и търговия | Dynamic Era Export",
+  az: "Qlobal təchizat və ticarət | Dynamic Era Export",
+  pl: "Globalne zaopatrzenie i handel | Dynamic Era Export",
+  el: "Παγκόσμια προμήθεια και εμπόριο | Dynamic Era Export",
   ru: "Глобальные поставки и торговля | Dynamic Era Export",
   fr: "Approvisionnement et commerce mondial | Dynamic Era Export",
   de: "Globale Beschaffung und Handel | Dynamic Era Export",
@@ -1822,6 +1960,16 @@ const seoHomeTitles = {
 const localeCodes = {
   tr: "tr_TR",
   en: "en_US",
+  it: "it_IT",
+  pt: "pt_PT",
+  zh: "zh_CN",
+  fa: "fa_IR",
+  uk: "uk_UA",
+  ro: "ro_RO",
+  bg: "bg_BG",
+  az: "az_AZ",
+  pl: "pl_PL",
+  el: "el_GR",
   ru: "ru_RU",
   fr: "fr_FR",
   de: "de_DE",
@@ -1929,6 +2077,19 @@ const searchUiCopy = {
     resultCount: "نتائج",
   },
 };
+
+Object.assign(searchUiCopy, {
+  it: { ...searchUiCopy.en, open: "Cerca nel sito", title: "Cerca nel sito", placeholder: "Cerca settori, servizi, pagine o prodotti", empty: "Nessun risultato trovato.", close: "Chiudi ricerca", page: "Pagina", sector: "Settore", service: "Servizio", process: "Processo", value: "Valore", resultCount: "risultati" },
+  pt: { ...searchUiCopy.en, open: "Pesquisar no site", title: "Pesquisar no site", placeholder: "Pesquise setores, serviços, páginas ou produtos", empty: "Nenhum resultado encontrado.", close: "Fechar pesquisa", page: "Página", sector: "Setor", service: "Serviço", process: "Processo", value: "Valor", resultCount: "resultados" },
+  zh: { ...searchUiCopy.en, open: "站内搜索", title: "站内搜索", placeholder: "搜索行业、服务、页面或产品组", hint: "至少输入 2 个字符。", empty: "未找到结果。", close: "关闭搜索", page: "页面", sector: "行业", service: "服务", process: "流程", value: "价值", resultCount: "结果" },
+  fa: { ...searchUiCopy.en, open: "جستجو در سایت", title: "جستجو در سایت", placeholder: "جستجوی بخش، خدمات، صفحه یا گروه محصول", hint: "حداقل ۲ کاراکتر وارد کنید.", empty: "نتیجه‌ای یافت نشد.", close: "بستن جستجو", page: "صفحه", sector: "بخش", service: "خدمت", process: "فرآیند", value: "ارزش", resultCount: "نتیجه" },
+  uk: { ...searchUiCopy.en, open: "Пошук по сайту", title: "Пошук по сайту", placeholder: "Шукайте сектори, послуги, сторінки або групи товарів", empty: "Нічого не знайдено.", close: "Закрити пошук", page: "Сторінка", sector: "Сектор", service: "Послуга", process: "Процес", value: "Цінність", resultCount: "результатів" },
+  ro: { ...searchUiCopy.en, open: "Caută pe site", title: "Caută pe site", placeholder: "Caută sectoare, servicii, pagini sau produse", empty: "Nu s-au găsit rezultate.", close: "Închide căutarea", page: "Pagină", sector: "Sector", service: "Serviciu", process: "Proces", value: "Valoare", resultCount: "rezultate" },
+  bg: { ...searchUiCopy.en, open: "Търсене в сайта", title: "Търсене в сайта", placeholder: "Търсете сектори, услуги, страници или продукти", empty: "Няма намерени резултати.", close: "Затвори търсенето", page: "Страница", sector: "Сектор", service: "Услуга", process: "Процес", value: "Стойност", resultCount: "резултата" },
+  az: { ...searchUiCopy.en, open: "Saytda axtar", title: "Saytda axtar", placeholder: "Sektor, xidmət, səhifə və ya məhsul qrupu axtar", empty: "Nəticə tapılmadı.", close: "Axtarışı bağla", page: "Səhifə", sector: "Sektor", service: "Xidmət", process: "Proses", value: "Dəyər", resultCount: "nəticə" },
+  pl: { ...searchUiCopy.en, open: "Szukaj w serwisie", title: "Szukaj w serwisie", placeholder: "Szukaj sektorów, usług, stron lub produktów", empty: "Nie znaleziono wyników.", close: "Zamknij wyszukiwanie", page: "Strona", sector: "Sektor", service: "Usługa", process: "Proces", value: "Wartość", resultCount: "wyników" },
+  el: { ...searchUiCopy.en, open: "Αναζήτηση στον ιστότοπο", title: "Αναζήτηση στον ιστότοπο", placeholder: "Αναζητήστε κλάδους, υπηρεσίες, σελίδες ή προϊόντα", empty: "Δεν βρέθηκαν αποτελέσματα.", close: "Κλείσιμο αναζήτησης", page: "Σελίδα", sector: "Κλάδος", service: "Υπηρεσία", process: "Διαδικασία", value: "Αξία", resultCount: "αποτελέσματα" },
+});
 
 function getPathForPage(lang, page, category) {
   const languageRoutes = routePaths[lang] || routePaths.tr;
@@ -2215,7 +2376,7 @@ function updatePageSeo({ lang, page, category, t }) {
     },
   ];
 
-  const faqItems = seoFaqContent[lang]?.items || [];
+  const faqItems = seoFaqContent[lang]?.items || seoFaqContent.en?.items || [];
   if (page === "home" && faqItems.length) {
     graph.push({
       "@type": "FAQPage",
@@ -2802,7 +2963,7 @@ function AboutIntro({ t, goTo }) {
 }
 
 function FaqSection({ lang }) {
-  const content = seoFaqContent[lang] || seoFaqContent.tr;
+  const content = seoFaqContent[lang] || seoFaqContent.en || seoFaqContent.tr;
 
   return (
     <section className="faq-section" aria-labelledby="faq-title">
