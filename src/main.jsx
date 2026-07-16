@@ -48,7 +48,8 @@ const company = {
   email: "info@dynamiceraexport.com",
   location: "Istanbul, Turkiye",
 };
-const web3FormsAccessKey = String(import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "").trim();
+const defaultWeb3FormsAccessKey = "282570a4-a7e9-4a13-a895-fe20df7aa532";
+const web3FormsAccessKey = String(import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || defaultWeb3FormsAccessKey).trim();
 
 const languages = [
   { code: "tr", label: "TR", name: "Türkçe", dir: "ltr" },
