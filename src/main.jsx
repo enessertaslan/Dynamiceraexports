@@ -2155,7 +2155,7 @@ function setCanonicalLink(url) {
 }
 
 function updateAlternateLinks(page, category) {
-  document.head.querySelectorAll("link[data-seo-hreflang]").forEach((link) => link.remove());
+  document.head.querySelectorAll('link[rel="alternate"][hreflang]').forEach((link) => link.remove());
   languages.forEach((language) => {
     const link = document.createElement("link");
     link.rel = "alternate";

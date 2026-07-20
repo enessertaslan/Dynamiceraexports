@@ -31,6 +31,91 @@
     <link rel="alternate" hreflang="nl" href="https://dynamiceraexport.com/nl" />
     <link rel="alternate" hreflang="ar" href="https://dynamiceraexport.com/ar" />
     <link rel="alternate" hreflang="x-default" href="https://dynamiceraexport.com/" />
+    <script>
+      (function () {
+        var siteUrl = "https://dynamiceraexport.com";
+        var routePaths = {
+          tr: { home: "/", categories: "/sektorler", about: "/hakkimizda", contact: "/iletisim" },
+          en: { home: "/en", categories: "/en/sectors", about: "/en/about", contact: "/en/contact" },
+          it: { home: "/it", categories: "/it/settori", about: "/it/chi-siamo", contact: "/it/contatto" },
+          pt: { home: "/pt", categories: "/pt/setores", about: "/pt/sobre", contact: "/pt/contato" },
+          zh: { home: "/zh", categories: "/zh/sectors", about: "/zh/about", contact: "/zh/contact" },
+          fa: { home: "/fa", categories: "/fa/sectors", about: "/fa/about", contact: "/fa/contact" },
+          uk: { home: "/uk", categories: "/uk/sectors", about: "/uk/about", contact: "/uk/contact" },
+          ro: { home: "/ro", categories: "/ro/sectoare", about: "/ro/despre-noi", contact: "/ro/contact" },
+          bg: { home: "/bg", categories: "/bg/sectors", about: "/bg/about", contact: "/bg/contact" },
+          az: { home: "/az", categories: "/az/sektorlar", about: "/az/haqqimizda", contact: "/az/elaqe" },
+          pl: { home: "/pl", categories: "/pl/sektory", about: "/pl/o-nas", contact: "/pl/kontakt" },
+          el: { home: "/el", categories: "/el/sectors", about: "/el/about", contact: "/el/contact" },
+          ru: { home: "/ru", categories: "/ru/sectors", about: "/ru/about", contact: "/ru/contact" },
+          fr: { home: "/fr", categories: "/fr/secteurs", about: "/fr/a-propos", contact: "/fr/contact" },
+          de: { home: "/de", categories: "/de/branchen", about: "/de/ueber-uns", contact: "/de/kontakt" },
+          nl: { home: "/nl", categories: "/nl/sectoren", about: "/nl/over-ons", contact: "/nl/contact" },
+          ar: { home: "/ar", categories: "/ar/sectors", about: "/ar/about", contact: "/ar/contact" }
+        };
+        var languages = Object.keys(routePaths);
+        var path = window.location.pathname.replace(/\/+$/, "") || "/";
+        var page = "home";
+        var category = "";
+
+        languages.some(function (lang) {
+          var routes = routePaths[lang];
+          if (path === routes.home) {
+            page = "home";
+            return true;
+          }
+          if (path === routes.about) {
+            page = "about";
+            return true;
+          }
+          if (path === routes.contact) {
+            page = "contact";
+            return true;
+          }
+          if (path === routes.categories) {
+            page = "categories";
+            return true;
+          }
+          if (path.indexOf(routes.categories + "/") === 0) {
+            page = "categories";
+            category = path.slice(routes.categories.length + 1);
+            return true;
+          }
+          return false;
+        });
+
+        function pagePath(lang) {
+          var basePath = (routePaths[lang] || routePaths.tr)[page] || "/";
+          return page === "categories" && category ? basePath + "/" + category : basePath;
+        }
+
+        var canonical = siteUrl + pagePath(languages.find(function (lang) {
+          var routes = routePaths[lang];
+          return path === routes.home || path === routes.about || path === routes.contact || path === routes.categories || path.indexOf(routes.categories + "/") === 0;
+        }) || "tr");
+
+        var canonicalLink = document.querySelector('link[rel="canonical"]') || document.createElement("link");
+        canonicalLink.rel = "canonical";
+        canonicalLink.href = canonical;
+        if (!canonicalLink.parentNode) document.head.appendChild(canonicalLink);
+
+        document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(function (link) {
+          link.remove();
+        });
+        languages.forEach(function (lang) {
+          var link = document.createElement("link");
+          link.rel = "alternate";
+          link.hreflang = lang;
+          link.href = siteUrl + pagePath(lang);
+          document.head.appendChild(link);
+        });
+        var defaultLink = document.createElement("link");
+        defaultLink.rel = "alternate";
+        defaultLink.hreflang = "x-default";
+        defaultLink.href = siteUrl + pagePath("tr");
+        document.head.appendChild(defaultLink);
+      })();
+    </script>
     <link rel="icon" type="image/svg+xml" href="/dynamic-era-logo-original.svg" />
     <link rel="manifest" href="/site.webmanifest" />
     <link
