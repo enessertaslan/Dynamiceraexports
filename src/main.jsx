@@ -2668,7 +2668,6 @@ function Header({ t, lang, setLang, page, goTo, menuOpen, setMenuOpen, onSearchO
             {t.nav[index]}
           </a>
         ))}
-        <SocialLinks className="nav-social-links" />
       </nav>
 
       <div className="top-actions">

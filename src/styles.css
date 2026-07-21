@@ -398,10 +398,6 @@ a {
   color: var(--brand-navy);
 }
 
-.nav-social-links {
-  display: none;
-}
-
 .language-picker,
 .search-toggle,
 .header-whatsapp,
@@ -3236,19 +3232,6 @@ p {
 
   .header-social-links {
     display: none;
-  }
-
-  .nav-social-links {
-    display: flex;
-    padding: 10px 14px 14px;
-  }
-
-  .nav-social-links a {
-    width: 40px;
-    height: 40px;
-    border-color: rgba(6, 43, 95, 0.12);
-    background: rgba(6, 43, 95, 0.04);
-    color: var(--brand-navy);
   }
 
   .nav a {
