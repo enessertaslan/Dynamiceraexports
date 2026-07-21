@@ -48,6 +48,11 @@ const company = {
   email: "info@dynamiceraexport.com",
   location: "Istanbul, Turkiye",
 };
+const socialLinks = [
+  { key: "linkedin", name: "LinkedIn", url: "https://www.linkedin.com/company/dynamic-era-export" },
+  { key: "facebook", name: "Facebook", url: "https://www.facebook.com/dynamiceraexport/" },
+  { key: "instagram", name: "Instagram", url: "https://www.instagram.com/dynamiceraexport/" },
+];
 const defaultWeb3FormsAccessKey = "282570a4-a7e9-4a13-a895-fe20df7aa532";
 const web3FormsAccessKey = String(import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || defaultWeb3FormsAccessKey).trim();
 
@@ -2344,6 +2349,7 @@ function updatePageSeo({ lang, page, category, t }) {
       },
       areaServed: "Worldwide",
       knowsAbout: sectorNames,
+      sameAs: socialLinks.map((item) => item.url),
       contactPoint: {
         "@type": "ContactPoint",
         telephone: company.phone,
@@ -2562,6 +2568,50 @@ function WhatsAppIcon({ size = 18 }) {
   );
 }
 
+function SocialIcon({ type, size = 18 }) {
+  const paths = {
+    linkedin:
+      "M7.2 8.5h3.1v10H7.2v-10Zm1.55-5a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6Zm5.35 5h2.96v1.36h.04c.41-.78 1.42-1.6 2.92-1.6 3.13 0 3.7 2.06 3.7 4.73v5.51h-3.08v-4.88c0-1.17-.02-2.67-1.63-2.67-1.64 0-1.89 1.28-1.89 2.59v4.96H14.1v-10Z",
+    facebook:
+      "M17.8 5.5h2.3V2.2A24 24 0 0 0 16.75 2c-3.32 0-5.59 2.04-5.59 5.78v3.23H7.4v3.7h3.76V24h4.52v-9.29h3.75l.6-3.7h-4.35V8.14c0-1.07.29-2.64 2.12-2.64Z",
+    instagram:
+      "M12 6.7c2.1 0 2.35.01 3.18.05.77.04 1.18.17 1.46.28.36.14.62.31.9.58.27.27.44.53.58.9.11.27.24.69.28 1.46.04.83.05 1.08.05 3.18s-.01 2.35-.05 3.18c-.04.77-.17 1.18-.28 1.46-.14.36-.31.62-.58.9-.27.27-.53.44-.9.58-.27.11-.69.24-1.46.28-.83.04-1.08.05-3.18.05s-2.35-.01-3.18-.05c-.77-.04-1.18-.17-1.46-.28a2.42 2.42 0 0 1-.9-.58 2.42 2.42 0 0 1-.58-.9c-.11-.27-.24-.69-.28-1.46-.04-.83-.05-1.08-.05-3.18s.01-2.35.05-3.18c.04-.77.17-1.18.28-1.46.14-.36.31-.62.58-.9.27-.27.53-.44.9-.58.27-.11.69-.24 1.46-.28.83-.04 1.08-.05 3.18-.05Zm0-2.2c-2.14 0-2.41.01-3.28.05-.86.04-1.45.18-1.96.38a4.62 4.62 0 0 0-1.68 1.1 4.62 4.62 0 0 0-1.1 1.68c-.2.51-.34 1.1-.38 1.96-.04.87-.05 1.14-.05 3.28s.01 2.41.05 3.28c.04.86.18 1.45.38 1.96.21.53.49.98 1.1 1.68.7.61 1.15.89 1.68 1.1.51.2 1.1.34 1.96.38.87.04 1.14.05 3.28.05s2.41-.01 3.28-.05c.86-.04 1.45-.18 1.96-.38a4.62 4.62 0 0 0 1.68-1.1 4.62 4.62 0 0 0 1.1-1.68c.2-.51.34-1.1.38-1.96.04-.87.05-1.14.05-3.28s-.01-2.41-.05-3.28c-.04-.86-.18-1.45-.38-1.96a4.62 4.62 0 0 0-1.1-1.68 4.62 4.62 0 0 0-1.68-1.1c-.51-.2-1.1-.34-1.96-.38-.87-.04-1.14-.05-3.28-.05Zm0 4.35a4.15 4.15 0 1 0 0 8.3 4.15 4.15 0 0 0 0-8.3Zm0 6.1a1.95 1.95 0 1 1 0-3.9 1.95 1.95 0 0 1 0 3.9Zm4.42-6.32a.97.97 0 1 0 0-1.94.97.97 0 0 0 0 1.94Z",
+  };
+
+  return (
+    <svg
+      className="social-icon"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path fill="currentColor" d={paths[type] || paths.linkedin} />
+    </svg>
+  );
+}
+
+function SocialLinks({ className = "" }) {
+  return (
+    <div className={`social-links ${className}`.trim()}>
+      {socialLinks.map((item) => (
+        <a
+          key={item.key}
+          href={item.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`${company.name} ${item.name}`}
+          title={item.name}
+        >
+          <SocialIcon type={item.key} />
+          <span className="sr-only">{item.name}</span>
+        </a>
+      ))}
+    </div>
+  );
+}
+
 function FloatingWhatsApp({ t }) {
   const label = t.direct || t.whatsapp || "Contact via WhatsApp";
   return (
@@ -2618,6 +2668,7 @@ function Header({ t, lang, setLang, page, goTo, menuOpen, setMenuOpen, onSearchO
             {t.nav[index]}
           </a>
         ))}
+        <SocialLinks className="nav-social-links" />
       </nav>
 
       <div className="top-actions">
@@ -2653,6 +2704,7 @@ function Header({ t, lang, setLang, page, goTo, menuOpen, setMenuOpen, onSearchO
             ))}
           </div>
         </div>
+        <SocialLinks className="header-social-links" />
         <a className="header-whatsapp" href={`https://wa.me/${company.whatsapp}`} target="_blank" rel="noreferrer">
           <WhatsAppIcon size={18} />
           <span>{t.direct}</span>
@@ -3632,6 +3684,7 @@ function Contact({ t }) {
               <WhatsAppIcon size={19} />
               {t.whatsapp}
             </a>
+            <SocialLinks className="contact-social-links" />
           </aside>
         </Reveal>
       </div>
@@ -3678,6 +3731,7 @@ function Footer({ t, lang, goTo }) {
           </a>
           <h2>{t.homeTitle}</h2>
           <p>{t.footer}</p>
+          <SocialLinks className="footer-social-links" />
         </div>
 
         <div className="footer-col">

@@ -374,6 +374,34 @@ a {
   gap: 8px;
 }
 
+.header-social-links {
+  gap: 6px;
+  margin-inline: 2px;
+}
+
+.header-social-links a {
+  width: 34px;
+  height: 34px;
+  border-color: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.08);
+  color: currentColor;
+}
+
+.header-social-links .social-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.topbar-solid .header-social-links a {
+  border-color: rgba(6, 43, 95, 0.12);
+  background: rgba(6, 43, 95, 0.04);
+  color: var(--brand-navy);
+}
+
+.nav-social-links {
+  display: none;
+}
+
 .language-picker,
 .search-toggle,
 .header-whatsapp,
@@ -2900,6 +2928,57 @@ p {
   box-shadow: 0 20px 46px rgba(37, 211, 102, 0.32);
 }
 
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-links a {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(6, 43, 95, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--brand-navy);
+  text-decoration: none;
+  transition: transform 180ms ease, background 180ms ease, color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.social-links .social-icon {
+  color: currentColor;
+}
+
+.social-links a:hover {
+  border-color: rgba(0, 151, 178, 0.55);
+  background: var(--brand-cyan);
+  color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(0, 151, 178, 0.22);
+}
+
+.social-links a:focus-visible {
+  outline: 3px solid rgba(0, 151, 178, 0.34);
+  outline-offset: 4px;
+}
+
+.contact-social-links {
+  justify-content: flex-start;
+  padding-top: 2px;
+}
+
+.footer-social-links {
+  margin-top: 20px;
+}
+
+.footer-social-links a {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+}
+
 .footer {
   padding: 0;
   background:
@@ -3153,6 +3232,23 @@ p {
 
   .nav.nav-open {
     display: grid;
+  }
+
+  .header-social-links {
+    display: none;
+  }
+
+  .nav-social-links {
+    display: flex;
+    padding: 10px 14px 14px;
+  }
+
+  .nav-social-links a {
+    width: 40px;
+    height: 40px;
+    border-color: rgba(6, 43, 95, 0.12);
+    background: rgba(6, 43, 95, 0.04);
+    color: var(--brand-navy);
   }
 
   .nav a {
