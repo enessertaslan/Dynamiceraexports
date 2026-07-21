@@ -2599,6 +2599,7 @@ function SocialLinks({ className = "" }) {
         <a
           key={item.key}
           href={item.url}
+          data-social={item.key}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`${company.name} ${item.name}`}
