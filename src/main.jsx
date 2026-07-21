@@ -50,6 +50,7 @@ const company = {
 };
 const socialLinks = [
   { key: "linkedin", name: "LinkedIn", url: "https://www.linkedin.com/company/dynamic-era-export" },
+  { key: "x", name: "X", url: "https://x.com/Dynamiceraxport" },
   { key: "facebook", name: "Facebook", url: "https://www.facebook.com/dynamiceraexport/" },
   { key: "instagram", name: "Instagram", url: "https://www.instagram.com/dynamiceraexport/" },
 ];
@@ -2572,6 +2573,8 @@ function SocialIcon({ type, size = 18 }) {
   const paths = {
     linkedin:
       "M7.2 8.5h3.1v10H7.2v-10Zm1.55-5a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6Zm5.35 5h2.96v1.36h.04c.41-.78 1.42-1.6 2.92-1.6 3.13 0 3.7 2.06 3.7 4.73v5.51h-3.08v-4.88c0-1.17-.02-2.67-1.63-2.67-1.64 0-1.89 1.28-1.89 2.59v4.96H14.1v-10Z",
+    x:
+      "M14.48 10.42 22.08 2h-1.8l-6.6 7.32L8.41 2H2.33l7.97 11.07L2.33 22h1.8l6.97-7.73L16.67 22h6.08l-8.27-11.58Zm-2.47 2.73-.81-1.1L4.78 3.29h2.77l5.18 7.07.81 1.1 6.74 9.2h-2.77l-5.5-7.51Z",
     facebook:
       "M17.8 5.5h2.3V2.2A24 24 0 0 0 16.75 2c-3.32 0-5.59 2.04-5.59 5.78v3.23H7.4v3.7h3.76V24h4.52v-9.29h3.75l.6-3.7h-4.35V8.14c0-1.07.29-2.64 2.12-2.64Z",
     instagram:

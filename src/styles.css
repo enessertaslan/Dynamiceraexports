@@ -2946,6 +2946,10 @@ p {
   --social-color: #0a66c2;
 }
 
+.social-links a[data-social="x"] {
+  --social-color: #000000;
+}
+
 .social-links a[data-social="facebook"] {
   --social-color: #1877f2;
 }
