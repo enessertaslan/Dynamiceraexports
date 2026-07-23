@@ -1,6 +1,8 @@
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 function optimizeInitialRequests() {
   return {
     name: "dynamic-era-optimize-initial-requests",
@@ -20,5 +22,5 @@ function optimizeInitialRequests() {
 }
 
 export default defineConfig({
-  plugins: [react(), optimizeInitialRequests()],
+  plugins: [react(), optimizeInitialRequests(), cloudflare()],
 });

@@ -7,8 +7,9 @@
     "prebuild": "node scripts/generate-sitemap.mjs",
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
-    "preview": "vite preview --host 127.0.0.1",
-    "submit:indexnow": "node scripts/submit-indexnow.mjs"
+    "preview": "npm run build && wrangler dev",
+    "submit:indexnow": "node scripts/submit-indexnow.mjs",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.0.0",
@@ -19,6 +20,8 @@
     "vite": "^7.0.0"
   },
   "devDependencies": {
-    "sharp": "^0.35.3"
+    "@cloudflare/vite-plugin": "^1.47.0",
+    "sharp": "^0.35.3",
+    "wrangler": "^4.114.0"
   }
 }
