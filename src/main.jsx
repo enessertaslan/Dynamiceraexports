@@ -1796,6 +1796,232 @@ const seoFaqContent = {
   },
 };
 
+const additionalSeoFaqContent = {
+  "it": {
+    "title": "Domande frequenti sul commercio globale e sull'approvvigionamento",
+    "intro": "Risposte chiare su ricerca prodotto, import, export e follow-up operativo.",
+    "items": [
+      [
+        "Per quali settori si rifornisce Dynamic Era Export?",
+        "Ricerchiamo opzioni di approvvigionamento nei settori dell'energia, dei materiali da costruzione, del tessile, dell'alimentazione, della sanità, della difesa, dell'elettricità e dell'elettronica, dei macchinari, dei mobili, dell'automotive, dell'imballaggio, dell'agricoltura e di altri gruppi di prodotti."
+      ],
+      [
+        "Come inizia il processo import o export?",
+        "Chiariamo il prodotto, le specifiche tecniche, la quantità, la destinazione e le aspettative di consegna, quindi pianifichiamo fornitori, preventivi e fasi operative."
+      ],
+      [
+        "Quali informazioni sono necessarie per un preventivo?",
+        "Per avviare la ricerca iniziale sono sufficienti il ​​nome o le specifiche del prodotto, la quantità stimata, il paese o la città di consegna e i tempi target."
+      ],
+      [
+        "Lavori con fornitori locali e internazionali?",
+        "SÌ. Confrontiamo le opzioni di approvvigionamento locali e internazionali in base al settore, agli standard di qualità, al budget e ai requisiti di consegna."
+      ]
+    ]
+  },
+  "pt": {
+    "title": "Perguntas frequentes sobre comércio e fornecimento global",
+    "intro": "Respostas claras sobre pesquisa de produtos, import, export e acompanhamento operacional.",
+    "items": [
+      [
+        "Para quais setores a Dynamic Era Export fornece?",
+        "Pesquisamos opções de fornecimento em energia, materiais de construção, têxteis, alimentos, saúde, defesa, elétricos e eletrônicos, máquinas, móveis, automotivo, embalagens, agricultura e outros grupos de produtos."
+      ],
+      [
+        "Como começa o processo import ou export?",
+        "Esclarecemos o produto, especificações técnicas, quantidade, destino e expectativas de entrega, em seguida planejamos fornecedores, cotações e etapas operacionais."
+      ],
+      [
+        "Quais informações são necessárias para uma cotação?",
+        "O nome ou especificação do produto, a quantidade estimada, o país ou cidade de entrega e o prazo de entrega são suficientes para iniciar a pesquisa inicial."
+      ],
+      [
+        "Você trabalha com fornecedores locais e internacionais?",
+        "Sim. Comparamos opções de fornecimento locais e internacionais de acordo com o setor, padrões de qualidade, orçamento e requisitos de entrega."
+      ]
+    ]
+  },
+  "zh": {
+    "title": "有关全球贸易和采购的常见问题",
+    "intro": "关于产品研究、import、export和运营跟进的清晰答案。",
+    "items": [
+      [
+        "Dynamic Era Export 为哪些部门采购？",
+        "我们研究能源、建筑材料、纺织、食品、健康、国防、电气和电子、机械、家具、汽车、包装、农业和其他产品组的采购选择。"
+      ],
+      [
+        "import 或 export 流程如何开始？",
+        "我们明确产品、技术规格、数量、目的地和交货期望，然后规划供应商、报价和操作步骤。"
+      ],
+      [
+        "报价需要哪些信息？",
+        "产品名称或规格、预计数量、交货国家或城市以及目标时间足以开始初步研究。"
+      ],
+      [
+        "您与本地和国际供应商合作吗？",
+        "是的。我们根据行业、质量标准、预算和交付要求比较本地和国际采购选项。"
+      ]
+    ]
+  },
+  "fa": {
+    "title": "سوالات متداول در مورد تجارت جهانی و منابع",
+    "intro": "پاسخ‌های روشن درباره تحقیقات محصول، واردات، صادرات و پیگیری عملیاتی.",
+    "items": [
+      [
+        "Dynamic Era Export برای کدام بخش ها منبع می شود؟",
+        "ما در مورد گزینه های منابع انرژی، مصالح ساختمانی، نساجی، غذا، بهداشت، دفاع، برق و الکترونیک، ماشین آلات، مبلمان، خودرو، بسته بندی، کشاورزی و سایر گروه های محصول تحقیق می کنیم."
+      ],
+      [
+        "فرآیند import یا export چگونه آغاز می شود؟",
+        "ما محصول، مشخصات فنی، کمیت، مقصد و انتظارات تحویل را روشن می کنیم، سپس تامین کنندگان، قیمت ها و مراحل عملیاتی را برنامه ریزی می کنیم."
+      ],
+      [
+        "چه اطلاعاتی برای نقل قول مورد نیاز است؟",
+        "نام یا مشخصات محصول، مقدار تخمینی، کشور یا شهر تحویل و زمان هدف برای شروع تحقیقات اولیه کافی است."
+      ],
+      [
+        "آیا با تامین کنندگان داخلی و بین المللی کار می کنید؟",
+        "بله ما گزینه های منابع محلی و بین المللی را با توجه به بخش، استانداردهای کیفیت، بودجه و الزامات تحویل مقایسه می کنیم."
+      ]
+    ]
+  },
+  "uk": {
+    "title": "Часті запитання про світову торгівлю та пошук",
+    "intro": "Чіткі відповіді щодо дослідження продукту, import, export і операційного супроводу.",
+    "items": [
+      [
+        "Для яких секторів використовується Dynamic Era Export?",
+        "Ми досліджуємо варіанти постачальників у сферах енергетики, будівельних матеріалів, текстилю, продуктів харчування, охорони здоров’я, оборони, електротехніки та електроніки, машинобудування, меблів, автомобілів, упаковки, сільського господарства та інших груп продуктів."
+      ],
+      [
+        "Як починається процес import або export?",
+        "Ми уточнюємо продукт, технічні характеристики, кількість, пункт призначення та очікування доставки, а потім плануємо постачальників, пропозиції та операційні кроки."
+      ],
+      [
+        "Яка інформація потрібна для пропозиції?",
+        "Для початку початкового дослідження достатньо назви або специфікації продукту, орієнтовної кількості, країни або міста доставки та цільового часу."
+      ],
+      [
+        "Чи працюєте ви з місцевими та міжнародними постачальниками?",
+        "так Ми порівнюємо місцеві та міжнародні варіанти постачання відповідно до сектору, стандартів якості, бюджету та вимог щодо доставки."
+      ]
+    ]
+  },
+  "ro": {
+    "title": "Întrebări frecvente despre comerțul global și aprovizionare",
+    "intro": "Răspunsuri clare despre cercetarea produselor, import, export și urmărirea operațională.",
+    "items": [
+      [
+        "Pentru ce sectoare provine Dynamic Era Export?",
+        "Cercetăm opțiuni de aprovizionare pentru energie, materiale de construcții, textile, alimente, sănătate, apărare, electrice și electronice, mașini, mobilier, auto, ambalaje, agricultură și alte grupuri de produse."
+      ],
+      [
+        "Cum începe procesul import sau export?",
+        "Clarificăm produsul, specificațiile tehnice, cantitatea, destinația și așteptările de livrare, apoi planificăm furnizorii, cotațiile și etapele operaționale."
+      ],
+      [
+        "Ce informații sunt necesare pentru o cotație?",
+        "Un nume sau o specificație a produsului, o cantitate estimată, țara sau orașul de livrare și momentul țintă sunt suficiente pentru a începe cercetarea inițială."
+      ],
+      [
+        "Lucrați cu furnizori locali și internaționali?",
+        "Da. Comparăm opțiunile de aprovizionare locale și internaționale în funcție de sector, standarde de calitate, buget și cerințe de livrare."
+      ]
+    ]
+  },
+  "bg": {
+    "title": "Често задавани въпроси относно глобалната търговия и снабдяването",
+    "intro": "Ясни отговори относно проучване на продукта, import, export и оперативно проследяване.",
+    "items": [
+      [
+        "За кои сектори се използва Dynamic Era Export?",
+        "Ние проучваме възможности за снабдяване в енергетиката, строителните материали, текстила, храните, здравеопазването, отбраната, електричеството и електрониката, машините, мебелите, автомобилите, опаковките, селското стопанство и други продуктови групи."
+      ],
+      [
+        "Как започва процесът import или export?",
+        "Ние изясняваме продукта, техническите спецификации, количеството, дестинацията и очакванията за доставка, след което планираме доставчици, оферти и оперативни стъпки."
+      ],
+      [
+        "Каква информация е необходима за оферта?",
+        "Име на продукта или спецификация, прогнозно количество, държава или град на доставка и целево време са достатъчни, за да започнете първоначалното проучване."
+      ],
+      [
+        "Работите ли с местни и международни доставчици?",
+        "да Ние сравняваме местни и международни опции за снабдяване според сектора, стандартите за качество, бюджета и изискванията за доставка."
+      ]
+    ]
+  },
+  "az": {
+    "title": "Qlobal ticarət və mənbə haqqında tez-tez verilən suallar",
+    "intro": "Məhsul araşdırması, import, export və əməliyyat təqibi ilə bağlı aydın cavablar.",
+    "items": [
+      [
+        "Dynamic Era Export hansı sektorlar üçün qaynaq edir?",
+        "Biz enerji, tikinti materialları, tekstil, qida, səhiyyə, müdafiə, elektrik və elektronika, maşınqayırma, mebel, avtomobil, qablaşdırma, kənd təsərrüfatı və digər məhsul qrupları üzrə satınalma variantlarını araşdırırıq."
+      ],
+      [
+        "import və ya export prosesi necə başlayır?",
+        "Məhsulu, texniki xüsusiyyətləri, miqdarı, təyinat yeri və çatdırılma gözləntilərini aydınlaşdırırıq, sonra təchizatçıları, kotirovkaları və əməliyyat addımlarını planlaşdırırıq."
+      ],
+      [
+        "Kotirovka üçün hansı məlumat lazımdır?",
+        "İlkin araşdırmaya başlamaq üçün məhsulun adı və ya spesifikasiyası, təxmin edilən miqdar, çatdırılma ölkəsi və ya şəhəri və hədəf vaxtı kifayətdir."
+      ],
+      [
+        "Yerli və beynəlxalq təchizatçılarla işləyirsinizmi?",
+        "Bəli. Sektor, keyfiyyət standartları, büdcə və çatdırılma tələblərinə uyğun olaraq yerli və beynəlxalq satınalma variantlarını müqayisə edirik."
+      ]
+    ]
+  },
+  "pl": {
+    "title": "Często zadawane pytania dotyczące globalnego handlu i zaopatrzenia",
+    "intro": "Jasne odpowiedzi na temat badań produktów, import, export i działań następczych.",
+    "items": [
+      [
+        "Dla jakich sektorów zaopatruje się Dynamic Era Export?",
+        "Badamy możliwości pozyskiwania energii, materiałów budowlanych, tekstyliów, żywności, zdrowia, obronności, elektryki i elektroniki, maszyn, mebli, motoryzacji, opakowań, rolnictwa i innych grup produktów."
+      ],
+      [
+        "Jak rozpoczyna się proces import lub export?",
+        "Wyjaśniamy produkt, specyfikacje techniczne, ilość, miejsce docelowe i oczekiwania dotyczące dostawy, a następnie planujemy dostawców, oferty i kroki operacyjne."
+      ],
+      [
+        "Jakie informacje są potrzebne do wyceny?",
+        "Nazwa lub specyfikacja produktu, szacowana ilość, kraj lub miasto dostawy oraz docelowy termin wystarczą, aby rozpocząć wstępne badania."
+      ],
+      [
+        "Czy współpracujesz z lokalnymi i międzynarodowymi dostawcami?",
+        "Tak. Porównujemy lokalne i międzynarodowe opcje zaopatrzenia według sektora, standardów jakości, budżetu i wymagań dotyczących dostawy."
+      ]
+    ]
+  },
+  "el": {
+    "title": "Συχνές ερωτήσεις σχετικά με το παγκόσμιο εμπόριο και την προμήθεια",
+    "intro": "Σαφείς απαντήσεις σχετικά με την έρευνα προϊόντων, το import, το export και τη λειτουργική παρακολούθηση.",
+    "items": [
+      [
+        "Για ποιους τομείς προέρχεται το Dynamic Era Export;",
+        "Ερευνούμε επιλογές προμήθειας σε ενέργεια, δομικά υλικά, κλωστοϋφαντουργικά προϊόντα, τρόφιμα, υγεία, άμυνα, ηλεκτρικά και ηλεκτρονικά είδη, μηχανήματα, έπιπλα, αυτοκίνητα, συσκευασία, γεωργία και άλλες ομάδες προϊόντων."
+      ],
+      [
+        "Πώς ξεκινά η διαδικασία import ή export;",
+        "Διευκρινίζουμε το προϊόν, τις τεχνικές προδιαγραφές, την ποσότητα, τον προορισμό και τις προσδοκίες παράδοσης και, στη συνέχεια, σχεδιάζουμε προμηθευτές, προσφορές και λειτουργικά βήματα."
+      ],
+      [
+        "Ποιες πληροφορίες χρειάζονται για μια προσφορά;",
+        "Ένα όνομα προϊόντος ή μια προδιαγραφή, η εκτιμώμενη ποσότητα, η χώρα ή η πόλη παράδοσης και ο χρόνος στόχος είναι αρκετά για να ξεκινήσει η αρχική έρευνα."
+      ],
+      [
+        "Συνεργάζεστε με τοπικούς και διεθνείς προμηθευτές;",
+        "Ναί. Συγκρίνουμε τοπικές και διεθνείς επιλογές προμήθειας σύμφωνα με τον τομέα, τα πρότυπα ποιότητας, τον προϋπολογισμό και τις απαιτήσεις παράδοσης."
+      ]
+    ]
+  }
+};
+
+Object.assign(seoFaqContent, additionalSeoFaqContent);
+
+
 const categoryOrder = [
   "energy",
   "construction",
@@ -1918,6 +2144,2853 @@ const additionalLanguageCopy = {
 Object.entries(additionalLanguageCopy).forEach(([code, localizedCopy]) => {
   copy[code] = mergeLanguageCopy(copy.en, localizedCopy);
 });
+
+const languageCompletionCopy = {
+  it: {
+    nav: ["Home", "Settori", "Chi siamo", "Contatto"],
+    quoteCta: "Richiedi un'offerta",
+    homeBadge: "Commercio globale, soluzioni dinamiche",
+    quoteTitle: "Siamo con voi in ogni fase del commercio",
+    quoteText: "Dalla ricerca prodotto e sourcing alla quotazione e pianificazione logistica, offriamo supporto completo.",
+    trustTitle: "Siamo con voi in ogni fase del commercio",
+    trustText: "Offriamo supporto completo nei processi di importazione ed esportazione, dalla ricerca alla logistica.",
+    servicesLead: "Riuniamo sotto lo stesso tetto l'infrastruttura commerciale, la rete di fornitura e il supporto operativo di cui le aziende hanno bisogno.",
+    services: [
+      ["Sourcing di prodotti", "Ricerchiamo prodotti nella nostra rete locale e internazionale e vi colleghiamo con fornitori adatti."],
+      ["Processi di importazione", "Supportiamo sourcing, documentazione e coordinamento logistico per prodotti provenienti dall'estero."],
+      ["Soluzioni di esportazione", "Creiamo soluzioni di prodotto, mercato e operazione per aziende che esportano verso mercati diversi."],
+      ["Ricerca fornitori", "Proponiamo fornitori adatti in base a qualità, capacità, prezzo e condizioni di consegna."],
+      ["Offerte e prezzi", "Prepariamo opzioni di quotazione competitive e comparabili per i gruppi di prodotto richiesti."],
+      ["Logistica e follow-up operativo", "Forniamo supporto regolare durante consegna, spedizione e follow-up operativo."],
+    ],
+    processTitle: "Analizziamo la domanda, troviamo la fonte giusta e seguiamo l'operazione.",
+    processLead: "Ogni settore ha aspettative diverse su qualità, consegna, costo e conformità; per questo costruiamo un modello commerciale su misura.",
+    processSteps: [
+      ["01", "Analisi della domanda", "Gruppo prodotto, mercato target, quantità, qualità attesa e piano di consegna vengono chiariti."],
+      ["02", "Fonte di fornitura", "Ricerchiamo fornitori adatti e confrontiamo prezzi e opzioni operative."],
+      ["03", "Operazione commerciale", "Offerta, documenti, logistica e consegna vengono seguiti con comunicazione trasparente."],
+    ],
+    ctaTitle: "Rafforziamo insieme il vostro processo commerciale.",
+    ctaText: "Contattateci per il prodotto, il fornitore o la soluzione import-export di cui avete bisogno.",
+    hero: [
+      { eyebrow: "Commercio globale, soluzioni dinamiche", title: "Una forza commerciale dinamica aperta al mondo.", text: "Dynamic Era Export porta prodotti di diversi settori sui mercati internazionali con soluzioni affidabili, rapide e professionali." },
+      { eyebrow: "Ampia rete di settori e prodotti", title: "Soluzioni versatili dall'energia al food, dal tessile alla salute.", text: "Gestiamo ricerca prodotto, sourcing, pricing e processi operativi secondo la domanda del cliente." },
+      { eyebrow: "Oltre 20 anni di esperienza commerciale", title: "Accelerate il processo con la forza dinamica del commercio globale.", text: "Con 1500+ clienti e una vasta rete settoriale, offriamo soluzioni rapide, flessibili e sostenibili." },
+    ],
+    metrics: [["20+", "anni di servizio"], ["1500+", "clienti"], ["20", "aree di attività"], ["360°", "supporto commerciale"]],
+    categoryTitle: "Aree di attività in evidenza",
+    categoryLead: "Dynamic Era Export dispone di una rete commerciale ampia nei gruppi di prodotti e materiali richiesti da diversi settori.",
+    categories: {
+      energy: ["Energia", "Attrezzature, prodotti infrastrutturali, materiali elettrici e supporti per energia rinnovabile."],
+      construction: ["Materiali da costruzione", "Materiali edili, prodotti infrastrutturali, attrezzature meccaniche e necessità di progetto."],
+      textile: ["Tessile", "Tessuti, abbigliamento, abiti da lavoro, tessili tecnici e diversi gruppi tessili."],
+      food: ["Food", "Prodotti alimentari di base, confezionati, agricoli e soluzioni commerciali affidabili."],
+      health: ["Salute", "Prodotti medicali, consumabili, apparecchiature sanitarie e soluzioni settoriali."],
+      defense: ["Industria della difesa", "Processi professionali con conformità, riservatezza e disciplina operativa."],
+    },
+    categoryDetails: {
+      energy: { title: "Energia", text: "Offriamo soluzioni di sourcing per attrezzature, infrastrutture, materiali elettrici e prodotti di supporto all'energia rinnovabile.", points: ["Attrezzature energetiche", "Materiali elettrici", "Sourcing su progetto"] },
+      construction: { title: "Materiali da costruzione", text: "Forniamo sourcing per materiali edili, infrastrutture, attrezzature meccaniche e prodotti complementari.", points: ["Prodotti edili e infrastrutturali", "Attrezzature meccaniche", "Necessità di progetto"] },
+      textile: { title: "Tessile", text: "Sviluppiamo soluzioni di commercio locale e internazionale per tessuti, abbigliamento, abiti da lavoro e tessili tecnici.", points: ["Tessuti e abbigliamento", "Abiti da lavoro", "Tessili tecnici"] },
+      food: { title: "Food", text: "Sviluppiamo soluzioni affidabili per alimenti di base, prodotti confezionati, agricoli e diverse categorie food.", points: ["Alimenti di base", "Prodotti confezionati", "Prodotti agricoli"] },
+      health: { title: "Salute", text: "Offriamo sourcing per prodotti medicali, consumabili, apparecchiature sanitarie e bisogni specifici del settore.", points: ["Prodotti medicali", "Consumabili", "Apparecchiature sanitarie"] },
+      defense: { title: "Industria della difesa", text: "Gestiamo processi di fornitura con conformità, riservatezza e disciplina operativa.", points: ["Conformità", "Riservatezza e disciplina", "Fornitura settoriale"] },
+    },
+    categoryScrollHint: "Scorri l'elenco per vedere tutti i settori.",
+    categoryCustomCtaTitle: "Contattateci per gruppi di prodotto non presenti nell'elenco.",
+    categoryCustomCtaText: "Se non trovate il gruppo di prodotto necessario, contattateci. Dynamic Era Export può ricercare opzioni di sourcing adatte alle vostre richieste speciali.",
+    allSectorsLead: "Dynamic Era Export offre soluzioni commerciali complete per esigenze di prodotto e sourcing in diversi settori.",
+    allSectors: [
+      ["Energia", "Attrezzature, infrastrutture, materiali elettrici e prodotti per energia rinnovabile."],
+      ["Materiali da costruzione", "Materiali edili, infrastrutture, attrezzature meccaniche e bisogni di progetto."],
+      ["Tessile", "Tessuti, abbigliamento, abiti da lavoro, tessili tecnici e gruppi tessili."],
+      ["Food", "Alimenti di base, confezionati, prodotti agricoli e soluzioni affidabili."],
+      ["Salute", "Prodotti medicali, consumabili, apparecchiature sanitarie e sourcing settoriale."],
+      ["Industria della difesa", "Processi professionali con conformità, riservatezza e disciplina operativa."],
+      ["Elettrico ed elettronica", "Materiali elettrici, prodotti elettronici, connessione e illuminazione."],
+      ["Macchinari e attrezzature", "Macchinari industriali, attrezzature produttive, ricambi e bisogni tecnici."],
+      ["Arredamento", "Opzioni di sourcing per casa, ufficio, spazi commerciali e progetti."],
+      ["Automotive", "Ricambi, attrezzature, accessori e gruppi prodotto del settore automotive."],
+      ["Plastica e gomma", "Prodotti plastici, materiali in gomma, parti tecniche e gruppi industriali."],
+      ["Imballaggio", "Prodotti e soluzioni di packaging per food, tessile, industria e retail."],
+      ["Cosmetica", "Cosmetici, cura personale, igiene e gruppi prodotto correlati."],
+      ["Prodotti per la pulizia", "Prodotti industriali per pulizia, materiali igienici e consumabili aziendali."],
+      ["Prodotti agricoli", "Prodotti agricoli, materie prime alimentari e soluzioni per l'agricoltura."],
+      ["Prodotti medicali", "Supporto sourcing per istituzioni sanitarie e forniture medicali."],
+      ["Materie prime", "Gruppi di materie prime necessari nei processi produttivi."],
+      ["Prodotti edili", "Gruppi complementari per costruzione, decorazione e progetti edilizi."],
+      ["Commercio con supporto logistico", "Coordinamento per spedizione, consegna e follow-up operativo."],
+      ["Soluzioni generali di sourcing", "Ricerca e sourcing per richieste speciali oltre una singola categoria."],
+    ],
+    homeAboutTitle: "Trasformiamo le esigenze di sourcing nel modello commerciale giusto.",
+    homeAboutText: "In energia, tessile, food, salute e molti altri settori gestiamo ricerca prodotto, confronto fornitori, offerte e follow-up operativo da un unico punto.",
+    homeAboutValues: ["Sourcing specifico per la domanda", "Rete prodotti per settore", "Follow-up operativo trasparente"],
+    homeAboutButton: "Scopri il nostro modello operativo",
+    aboutText: "Il successo nel commercio globale dipende dal raggiungere il prodotto giusto, al momento giusto e alle condizioni giuste. Analizziamo le esigenze dei clienti e gestiamo il processo commerciale in modo affidabile.",
+    aboutSupport: "In Dynamic Era Export andiamo oltre la ricerca del prodotto e gestiamo ogni fase del commercio con fiducia, trasparenza e velocità.",
+    aboutFlowTitle: "Commercio basato su fiducia, velocità e trasparenza",
+    aboutFlowText1: "Dal primo giorno il nostro obiettivo è collegare i clienti alle fonti corrette, gestire import ed export in modo affidabile e creare valore in ogni fase.",
+    aboutFlowText2: "Nel commercio globale le aziende cercano fornitore affidabile, prezzo corretto, relazioni sostenibili, follow-up operativo e comunicazione rapida.",
+    aboutPillars: [["La nostra visione", "Diventare un marchio commerciale forte, noto per affidabilità, velocità e soluzioni sostenibili."], ["La nostra missione", "Analizzare correttamente le esigenze di import, export e sourcing e offrire soluzioni commerciali adatte."], ["Il nostro approccio", "Consideriamo ogni collaborazione una relazione commerciale di lungo periodo e ci concentriamo anche sui bisogni futuri."]],
+    aboutOperationsEyebrow: "Cosa facciamo",
+    aboutOperationsTitle: "Offriamo supporto end-to-end nei processi di import, export e sourcing.",
+    aboutOperations: [["01", "Supporto import-export", "Forniamo supporto commerciale nei processi di importazione ed esportazione."], ["02", "Ricerca prodotti e fornitori", "Ricerchiamo prodotti e fornitori per diversi settori."], ["03", "Gruppi prodotto su richiesta", "Identifichiamo gruppi di prodotto adatti alla domanda del cliente."], ["04", "Connessioni con fornitori", "Creiamo collegamenti con fornitori locali e internazionali."], ["05", "Offerte e operazioni", "Gestiamo quotazioni, prezzi e processi operativi."], ["06", "Sourcing sostenibile", "Offriamo soluzioni sostenibili in ampie categorie di prodotto."]],
+    aboutValuesEyebrow: "I nostri valori",
+    aboutValuesTitle: "Crediamo che fiducia, velocità, flessibilità e prospettiva globale siano la base del commercio.",
+    aboutValues: [["Affidabilità", "Adottiamo un approccio trasparente, responsabile e sostenibile."], ["Velocità", "Rispondiamo rapidamente e seguiamo il flusso operativo da vicino."], ["Flessibilità", "Creiamo soluzioni specifiche per progetto, prodotto e domanda."], ["Prospettiva globale", "Valutiamo mercati, gruppi prodotto e fonti diverse per offrire più opzioni."]],
+    aboutCtaEyebrow: "Lavorare con Dynamic Era Export",
+    aboutCtaTitle: "Rendiamo il vostro processo commerciale più sicuro, rapido ed efficiente.",
+    aboutCtaText: "Che cerchiate un gruppo prodotto specifico o supporto professionale per import-export, il nostro team è pronto a costruire la soluzione giusta.",
+    aboutCtaPrimary: "Contatta via WhatsApp",
+    aboutCtaEmail: "Contatta via email",
+    aboutCtaSecondary: "Pagina contatti",
+    values: ["Ampia rete prodotti e settori", "Processo commerciale affidabile", "Soluzioni rapide e flessibili", "Esperienza nel commercio internazionale"],
+    form: { email: "Email", configTitle: "Servizio modulo non configurato", configText: "Serve una chiave Web3Forms per inviare messaggi. Nel frattempo potete contattarci via WhatsApp.", rateTitle: "Attendere un momento", rateText: "Per protezione spam potete inviare un solo messaggio al minuto." },
+    partnersTitle: "Ecosistema del commercio globale",
+    importantLinksTitle: "Link importanti",
+    footerWhatsappTitle: "Raggiungici su WhatsApp",
+    footerWhatsappText: "Contattaci direttamente per prodotto, settore o richiesta di sourcing.",
+    footer: "Comunicazione chiara nelle operazioni di import, export e sourcing globale.",
+    copyright: "© Copyright 2026 Dynamic Era Export. Tutti i diritti riservati.",
+  },
+};
+
+Object.entries(languageCompletionCopy).forEach(([code, localizedCopy]) => {
+  copy[code] = mergeLanguageCopy(copy[code] || copy.en, localizedCopy);
+});
+
+const compactLanguageCompletionSeeds = {
+  pt: {
+    quoteCta: "Solicitar proposta",
+    homeBadge: "Comércio global, soluções dinâmicas",
+    homeText: "Da energia aos materiais de construção, do têxtil aos alimentos, da saúde à defesa, criamos valor com o produto certo, o fornecedor certo e o modelo comercial certo.\n\nCom mais de 20 anos de experiência, 1500+ clientes e uma forte rede de fornecimento em mais de 20 setores, somos a força dinâmica do comércio global.",
+    quoteTitle: "Estamos com você em todas as etapas do comércio",
+    quoteText: "Da pesquisa de produto e sourcing à precificação e logística, oferecemos suporte completo.",
+    trustTitle: "Estamos com você em todas as etapas do comércio",
+    trustText: "Oferecemos suporte completo nos processos de importação e exportação.",
+    servicesLead: "Reunimos infraestrutura comercial, rede de fornecimento e suporte operacional em um único ponto.",
+    services: [["Sourcing de produtos", "Pesquisamos produtos em nossa rede local e internacional e conectamos você a fornecedores adequados."], ["Processos de importação", "Apoiamos sourcing, documentação e coordenação logística para produtos do exterior."], ["Soluções de exportação", "Criamos soluções de produto, mercado e operação para empresas que exportam."], ["Pesquisa de fornecedores", "Oferecemos opções conforme qualidade, capacidade, preço e prazo."], ["Cotação e preços", "Preparamos cotações competitivas e comparáveis."], ["Logística e acompanhamento", "Acompanhamos entrega, embarque e processos operacionais."]],
+    processTitle: "Analisamos a demanda, encontramos a fonte certa e acompanhamos a operação.",
+    processLead: "Cada setor tem expectativas diferentes; por isso criamos um modelo comercial específico para a demanda.",
+    processSteps: [["01", "Análise da demanda", "Produto, mercado, quantidade, qualidade e entrega são esclarecidos."], ["02", "Fonte de fornecimento", "Fornecedores adequados são pesquisados e comparados."], ["03", "Operação comercial", "Cotação, documentos, logística e entrega são acompanhados com comunicação transparente."]],
+    ctaTitle: "Vamos fortalecer seu processo comercial juntos.",
+    ctaText: "Entre em contato para o produto, fornecedor ou solução de importação e exportação de que precisa.",
+    hero: [["Comércio global, soluções dinâmicas", "Uma força comercial dinâmica aberta ao mundo.", "Levamos produtos de diferentes setores aos mercados internacionais com soluções confiáveis."], ["Ampla rede de setores e produtos", "Soluções versáteis da energia aos alimentos, do têxtil à saúde.", "Gerenciamos pesquisa, sourcing, preço e operação conforme a demanda."], ["Mais de 20 anos de experiência", "Acelere seu processo com a força dinâmica do comércio global.", "Com 1500+ clientes, oferecemos soluções rápidas, flexíveis e sustentáveis."]],
+    metrics: [["20+", "anos de serviço"], ["1500+", "clientes"], ["20", "áreas de atuação"], ["360°", "suporte comercial"]],
+    categoryTitle: "Áreas de atuação em destaque",
+    categoryLead: "Dynamic Era Export possui uma ampla rede comercial em grupos de produtos e materiais exigidos por diferentes setores.",
+    categoryPageTitle: "Setores / Áreas de atuação",
+    categoryPageLead: "Em todas as nossas áreas, desenvolvemos soluções de produto e sourcing de acordo com a demanda do cliente.",
+    allSectorsTitle: "Todos os setores",
+    allSectorsLead: "Oferecemos soluções comerciais completas para necessidades de produto e sourcing em diferentes setores.",
+    categoryScrollHint: "Role a lista para ver todos os setores.",
+    categoryCustomCtaTitle: "Fale conosco para grupos de produtos não listados aqui.",
+    categoryCustomCtaText: "Se você não encontrar o grupo de produto necessário, podemos pesquisar opções adequadas para sua demanda especial.",
+    categoryCustomCtaButton: "Contato via WhatsApp",
+    categories: [["Energia", "Equipamentos, infraestrutura, materiais elétricos e produtos de apoio a energia renovável."], ["Materiais de construção", "Materiais de construção, infraestrutura, equipamentos mecânicos e necessidades de projeto."], ["Têxtil", "Tecidos, vestuário, uniformes, têxteis técnicos e grupos relacionados."], ["Alimentos", "Alimentos básicos, embalados, produtos agrícolas e soluções confiáveis."], ["Saúde", "Produtos médicos, consumíveis, equipamentos de saúde e soluções setoriais."], ["Indústria de defesa", "Processos profissionais com conformidade, confidencialidade e disciplina operacional."]],
+    allSectorNames: ["Energia", "Materiais de construção", "Têxtil", "Alimentos", "Saúde", "Indústria de defesa", "Elétrica e eletrônica", "Máquinas e equipamentos", "Móveis", "Automotivo", "Plástico e borracha", "Embalagem", "Cosméticos", "Produtos de limpeza", "Produtos agrícolas", "Produtos médicos", "Matérias-primas", "Produtos de construção", "Comércio com apoio logístico", "Soluções gerais de sourcing"],
+    allSectorText: "Pesquisa de produtos, fornecedores e operação comercial para necessidades específicas deste setor.",
+    homeAboutTitle: "Transformamos necessidades de sourcing no modelo comercial certo.",
+    homeAboutText: "Em energia, têxtil, alimentos, saúde e muitos outros setores, gerenciamos pesquisa de produto, comparação de fornecedores, cotação e acompanhamento operacional em um só lugar.",
+    homeAboutValues: ["Sourcing específico por demanda", "Rede de produtos por setor", "Acompanhamento operacional transparente"],
+    homeAboutButton: "Conheça nosso modelo de trabalho",
+    aboutText: "O sucesso no comércio global depende de alcançar o produto certo, no momento certo e nas condições certas. Analisamos as necessidades dos clientes e gerenciamos o processo comercial com confiança.",
+    aboutSupport: "Na Dynamic Era Export, vamos além de encontrar produtos e gerenciamos cada etapa com confiança, transparência e velocidade.",
+    aboutFlowTitle: "Comércio baseado em confiança, velocidade e transparência",
+    aboutFlowText1: "Desde o primeiro dia, nosso objetivo é conectar clientes às fontes certas e gerar valor em cada etapa do comércio.",
+    aboutFlowText2: "Empresas esperam fornecedor confiável, preço correto, relações sustentáveis, acompanhamento operacional e comunicação rápida.",
+    pillars: [["Nossa visão", "Ser uma marca forte de comércio global conhecida por confiança, velocidade e soluções sustentáveis."], ["Nossa missão", "Analisar corretamente necessidades de importação, exportação e sourcing e oferecer as soluções mais adequadas."], ["Nossa abordagem", "Vemos cada colaboração como uma relação comercial de longo prazo."]],
+    operations: [["01", "Suporte importação-exportação", "Oferecemos suporte comercial em processos de importação e exportação."], ["02", "Pesquisa de produtos e fornecedores", "Pesquisamos produtos e fornecedores para diferentes setores."], ["03", "Grupos de produtos por demanda", "Identificamos grupos de produtos adequados à demanda."], ["04", "Conexões com fornecedores", "Conectamos fornecedores locais e internacionais."], ["05", "Cotações e operações", "Gerenciamos cotações, preços e processos operacionais."], ["06", "Sourcing sustentável", "Oferecemos soluções sustentáveis em amplas categorias."]],
+    valuesList: [["Confiabilidade", "Adotamos uma abordagem transparente, responsável e sustentável."], ["Velocidade", "Respondemos rapidamente e acompanhamos o fluxo operacional."], ["Flexibilidade", "Criamos soluções específicas para projeto, produto e demanda."], ["Visão global", "Avaliamos mercados, grupos de produtos e fontes diversas."]],
+    whatWeDo: "O que fazemos",
+    ourValues: "Nossos valores",
+    aboutCtaEyebrow: "Trabalhar com Dynamic Era Export",
+    aboutCtaTitle: "Vamos tornar seu processo comercial mais seguro, rápido e eficiente.",
+    aboutCtaText: "Se você procura um produto específico ou suporte profissional, nossa equipe está pronta para criar a solução certa.",
+    aboutCtaPrimary: "Contato via WhatsApp",
+    aboutCtaEmail: "Contato por email",
+    aboutCtaSecondary: "Página de contato",
+    values: ["Ampla rede de produtos e setores", "Processo comercial confiável", "Soluções rápidas e flexíveis", "Experiência em comércio internacional"],
+    contactTitle: "Contato",
+    contactLead: "Qualquer que seja o produto, país de destino ou categoria, podemos começar com uma mensagem curta.",
+    form: { name: "Nome completo", company: "Empresa", email: "Email", message: "O que você procura?", send: "Enviar email", sending: "Enviando...", configTitle: "Serviço de formulário não configurado", configText: "É necessária uma chave Web3Forms para enviar mensagens. Enquanto isso, fale conosco via WhatsApp.", successTitle: "Mensagem enviada com sucesso", successText: "Obrigado. Retornaremos o quanto antes.", errorTitle: "A mensagem não pôde ser enviada", errorText: "Tente novamente em breve ou fale conosco via WhatsApp.", rateTitle: "Aguarde um momento", rateText: "Para proteção contra spam, é possível enviar apenas uma mensagem por minuto.", close: "Fechar" },
+    partnersTitle: "Ecossistema de comércio global",
+    importantLinksTitle: "Links importantes",
+    footerWhatsappTitle: "Fale conosco pelo WhatsApp",
+    footerWhatsappText: "Entre em contato diretamente para produto, setor ou demanda de sourcing.",
+    footer: "Comunicação clara em operações de importação, exportação e sourcing global.",
+    copyright: "© Copyright 2026 Dynamic Era Export. Todos os direitos reservados.",
+  },
+  zh: {
+    quoteCta: "获取报价",
+    homeBadge: "全球贸易，动态解决方案",
+    homeText: "从能源到建材，从纺织到食品，从健康到防务，我们以正确的产品、供应商和贸易模式为客户创造价值。\n\n凭借20年以上商业经验、1500+客户以及覆盖20+行业的供应网络，我们是全球贸易的动态力量。",
+    quoteTitle: "我们陪伴贸易流程的每一个阶段",
+    quoteText: "从产品研究、采购到报价和物流规划，我们提供端到端支持。",
+    trustTitle: "我们陪伴贸易流程的每一个阶段",
+    trustText: "我们为进出口业务提供从采购到物流的完整支持。",
+    servicesLead: "我们将企业在进出口中需要的商业基础、供应网络和运营支持集中在一起。",
+    services: [["产品采购", "通过本地和国际供应网络寻找产品并对接合适供应商。"], ["进口流程", "为海外产品采购、文件和物流协调提供支持。"], ["出口解决方案", "为出口企业提供产品、市场和运营方案。"], ["供应商调研", "按质量、产能、价格和交付条件提供供应商选项。"], ["报价与定价", "为所需产品组准备有竞争力且可比较的报价。"], ["物流与运营跟进", "持续跟进交付、运输和运营流程。"]],
+    processTitle: "我们分析需求，找到正确来源并跟进运营。",
+    processLead: "每个行业对质量、交付、成本和合规都有不同期待，因此我们建立需求导向的贸易模型。",
+    processSteps: [["01", "需求分析", "明确产品组、目标市场、数量、质量要求和交付计划。"], ["02", "供应来源", "调研合适供应商并比较价格与运营选项。"], ["03", "贸易运营", "以透明沟通跟进报价、文件、物流和交付。"]],
+    ctaTitle: "让我们一起强化您的贸易流程。",
+    ctaText: "如需产品、供应商或进出口解决方案，请联系我们。",
+    hero: [["全球贸易，动态解决方案", "面向世界的动态贸易力量。", "Dynamic Era Export 以可靠、快速和专业的方案将不同领域产品带向国际市场。"], ["广泛的行业和产品网络", "从能源到食品，从纺织到健康的多元贸易方案。", "我们根据客户需求管理产品研究、采购、定价和运营。"], ["20年以上商业经验", "用全球贸易的动态力量加速您的流程。", "凭借1500+客户和广泛行业网络，我们提供快速、灵活、可持续的方案。"]],
+    metrics: [["20+", "服务年限"], ["1500+", "客户"], ["20", "业务领域"], ["360°", "贸易支持"]],
+    categoryTitle: "重点业务领域",
+    categoryLead: "Dynamic Era Export 在不同领域所需产品和材料组中拥有广泛贸易网络。",
+    categoryPageTitle: "行业 / 业务领域",
+    categoryPageLead: "在所有业务领域，我们根据客户需求开发产品与采购解决方案。",
+    allSectorsTitle: "所有行业",
+    allSectorsLead: "我们为不同领域的产品和采购需求提供全面贸易解决方案。",
+    categoryScrollHint: "滚动列表查看全部行业。",
+    categoryCustomCtaTitle: "如未看到所需产品组，请联系我们。",
+    categoryCustomCtaText: "如果列表中没有您需要的产品组，Dynamic Era Export 可为您的特殊需求调研合适的采购选项。",
+    categoryCustomCtaButton: "通过 WhatsApp 联系",
+    categories: [["能源", "设备、基础设施、电气材料和可再生能源支持产品。"], ["建材", "建筑材料、基础设施、机械设备和项目需求。"], ["纺织", "面料、成衣、工装、技术纺织品及相关组。"], ["食品", "基础食品、包装食品、农产品和可靠贸易方案。"], ["健康", "医疗产品、耗材、医疗设备和行业采购方案。"], ["防务工业", "具备合规、保密和运营纪律的专业供应流程。"]],
+    allSectorNames: ["能源", "建材", "纺织", "食品", "健康", "防务工业", "电气与电子", "机械与设备", "家具", "汽车", "塑料与橡胶", "包装", "化妆品", "清洁产品", "农产品", "医疗产品", "原材料", "建筑产品", "物流支持贸易", "通用采购方案"],
+    allSectorText: "针对该行业的特殊需求提供产品、供应商和贸易运营研究。",
+    homeAboutTitle: "我们将采购需求转化为正确的贸易模式。",
+    homeAboutText: "在能源、纺织、食品、健康等领域，我们统一管理产品研究、供应商比较、报价和运营跟进。",
+    homeAboutValues: ["需求导向采购", "按行业建立产品网络", "透明运营跟进"],
+    homeAboutButton: "了解我们的工作模式",
+    aboutText: "全球贸易成功取决于在正确时间、正确条件下找到正确产品。我们分析客户需求并可靠管理贸易流程。",
+    aboutSupport: "Dynamic Era Export 不只寻找产品，还以信任、透明和速度管理贸易每一步。",
+    aboutFlowTitle: "建立在信任、速度和透明上的贸易",
+    aboutFlowText1: "我们的核心目标是连接客户与正确供应来源，可靠管理进出口并在每个阶段创造价值。",
+    aboutFlowText2: "企业需要可靠供应商、正确价格、可持续关系、运营跟进和快速沟通。",
+    pillars: [["我们的愿景", "成为以可靠、快速和解决方案导向著称的全球贸易品牌。"], ["我们的使命", "正确分析进口、出口和采购需求，并提供最合适的贸易解决方案。"], ["我们的方法", "我们将每次合作视为长期商业关系。"]],
+    operations: [["01", "进出口支持", "提供进出口流程的商业支持。"], ["02", "产品与供应商研究", "为不同领域研究产品和供应商。"], ["03", "按需求匹配产品组", "根据客户需求确定合适产品组。"], ["04", "供应商连接", "连接本地和国际供应商。"], ["05", "报价与运营", "管理报价、定价和运营流程。"], ["06", "可持续采购", "在广泛产品类别中提供可持续采购方案。"]],
+    valuesList: [["可靠性", "采用透明、负责和可持续的方法。"], ["速度", "快速响应并密切跟进运营流程。"], ["灵活性", "按项目、产品和需求创建方案。"], ["全球视角", "评估不同市场、产品组和供应来源。"]],
+    whatWeDo: "我们做什么",
+    ourValues: "我们的价值观",
+    aboutCtaEyebrow: "与 Dynamic Era Export 合作",
+    aboutCtaTitle: "让您的贸易流程更安全、更快速、更高效。",
+    aboutCtaText: "无论您需要特定产品组还是专业进出口支持，我们的团队都可以建立正确方案。",
+    aboutCtaPrimary: "通过 WhatsApp 联系",
+    aboutCtaEmail: "通过邮件联系",
+    aboutCtaSecondary: "联系页面",
+    values: ["广泛产品和行业网络", "可靠贸易流程", "快速灵活方案", "国际贸易经验"],
+    contactTitle: "联系",
+    contactLead: "无论您寻找产品、目标国家还是类别，都可以从一条简短消息开始。",
+    form: { name: "姓名", company: "公司", email: "邮箱", message: "您在寻找什么？", send: "发送邮件", sending: "发送中...", configTitle: "表单服务未配置", configText: "发送消息需要 Web3Forms 访问密钥。您也可以先通过 WhatsApp 联系我们。", successTitle: "消息发送成功", successText: "谢谢。我们会尽快回复您。", errorTitle: "消息未能发送", errorText: "请稍后重试或通过 WhatsApp 联系我们。", rateTitle: "请稍等", rateText: "为防止垃圾信息，每分钟只能发送一条消息。", close: "关闭" },
+    partnersTitle: "全球贸易生态",
+    importantLinksTitle: "重要链接",
+    footerWhatsappTitle: "通过 WhatsApp 联系我们",
+    footerWhatsappText: "就产品、行业或采购需求直接联系我们。",
+    footer: "进出口和全球采购运营中的清晰沟通。",
+    copyright: "© Copyright 2026 Dynamic Era Export. 保留所有权利。",
+  },
+};
+
+const extraLanguageDefaults = {
+  fa: {
+    quoteCta: "درخواست پیشنهاد", homeBadge: "تجارت جهانی، راهکارهای پویا", homeText: "از انرژی تا مصالح ساختمانی، از نساجی تا غذا و از سلامت تا صنایع دفاعی، با محصول درست، تامین‌کننده درست و مدل تجاری درست برای مشتریان ارزش ایجاد می‌کنیم.\n\nبا بیش از ۲۰ سال تجربه، ۱۵۰۰+ مشتری و شبکه تامین در بیش از ۲۰ بخش، نیروی پویای تجارت جهانی هستیم.",
+    quoteTitle: "در هر مرحله تجارت کنار شما هستیم", quoteText: "از تحقیق محصول و تامین تا قیمت‌گذاری و برنامه‌ریزی لجستیک، پشتیبانی کامل ارائه می‌دهیم.", trustTitle: "در هر مرحله تجارت کنار شما هستیم", trustText: "در فرایندهای واردات و صادرات پشتیبانی کامل ارائه می‌دهیم.",
+    servicesLead: "زیرساخت تجاری، شبکه تامین و پشتیبانی عملیاتی مورد نیاز شرکت‌ها را یکجا ارائه می‌کنیم.", services: [["تامین محصول", "محصولات را از طریق شبکه محلی و بین‌المللی بررسی کرده و شما را به تامین‌کنندگان مناسب وصل می‌کنیم."], ["فرایندهای واردات", "برای محصولات خارجی در تامین، اسناد و هماهنگی لجستیک پشتیبانی می‌کنیم."], ["راهکارهای صادرات", "برای شرکت‌های صادرکننده راهکار محصول، بازار و عملیات ایجاد می‌کنیم."], ["تحقیق تامین‌کننده", "گزینه‌های مناسب را بر اساس کیفیت، ظرفیت، قیمت و تحویل ارائه می‌کنیم."], ["پیشنهاد و قیمت‌گذاری", "پیشنهادهای رقابتی و قابل مقایسه آماده می‌کنیم."], ["لجستیک و پیگیری عملیات", "تحویل، حمل و مراحل عملیاتی را پیگیری می‌کنیم."]],
+    processTitle: "نیاز را تحلیل می‌کنیم، منبع درست را می‌یابیم و عملیات را دنبال می‌کنیم.", processLead: "هر بخش انتظارهای متفاوتی دارد؛ بنابراین مدل تجاری ویژه نیاز شما می‌سازیم.", processSteps: [["01", "تحلیل نیاز", "گروه محصول، بازار هدف، مقدار، کیفیت و برنامه تحویل مشخص می‌شود."], ["02", "منبع تامین", "تامین‌کنندگان مناسب بررسی و مقایسه می‌شوند."], ["03", "عملیات تجاری", "پیشنهاد، اسناد، لجستیک و تحویل با ارتباط شفاف دنبال می‌شود."]],
+    ctaTitle: "بیایید فرایند تجاری شما را تقویت کنیم.", ctaText: "برای محصول، تامین‌کننده یا راهکار واردات و صادرات مورد نیازتان با ما تماس بگیرید.",
+    categoryTitle: "حوزه‌های فعالیت برجسته", categoryLead: "Dynamic Era Export در گروه‌های محصول و مواد مورد نیاز بخش‌های مختلف شبکه تجاری گسترده‌ای دارد.", categoryPageTitle: "بخش‌ها / حوزه‌های فعالیت", categoryPageLead: "در همه حوزه‌ها بر اساس نیاز مشتری راهکار محصول و تامین توسعه می‌دهیم.", allSectorsTitle: "همه بخش‌ها", allSectorsLead: "برای نیازهای محصول و تامین در بخش‌های مختلف راهکارهای تجاری جامع ارائه می‌دهیم.",
+    categoryScrollHint: "برای دیدن همه بخش‌ها فهرست را پیمایش کنید.", categoryCustomCtaTitle: "برای گروه‌های محصولی که در فهرست نیستند با ما تماس بگیرید.", categoryCustomCtaText: "اگر گروه محصول مورد نیازتان را نمی‌بینید، می‌توانیم گزینه‌های تامین مناسب را بررسی کنیم.", categoryCustomCtaButton: "تماس از طریق واتساپ",
+    categories: [["انرژی", "تجهیزات، زیرساخت، مواد برقی و محصولات پشتیبان انرژی تجدیدپذیر."], ["مصالح ساختمانی", "مصالح، زیرساخت، تجهیزات مکانیکی و نیازهای پروژه."], ["نساجی", "پارچه، پوشاک، لباس کار، منسوجات فنی و گروه‌های مرتبط."], ["غذا", "مواد غذایی پایه، بسته‌بندی، محصولات کشاورزی و راهکارهای قابل اعتماد."], ["سلامت", "محصولات پزشکی، مصرفی، تجهیزات سلامت و راهکارهای بخشی."], ["صنایع دفاعی", "فرایندهای حرفه‌ای با انطباق، محرمانگی و نظم عملیاتی."]],
+    allSectorNames: ["انرژی", "مصالح ساختمانی", "نساجی", "غذا", "سلامت", "صنایع دفاعی", "برق و الکترونیک", "ماشین‌آلات و تجهیزات", "مبلمان", "خودرو", "پلاستیک و لاستیک", "بسته‌بندی", "آرایشی", "محصولات پاک‌کننده", "محصولات کشاورزی", "محصولات پزشکی", "مواد اولیه", "محصولات ساختمانی", "تجارت با پشتیبانی لجستیک", "راهکارهای عمومی تامین"], allSectorText: "تحقیق محصول، تامین‌کننده و عملیات تجاری برای نیازهای ویژه این بخش.",
+    homeAboutTitle: "نیازهای تامین را به مدل تجاری درست تبدیل می‌کنیم.", homeAboutText: "در انرژی، نساجی، غذا، سلامت و بسیاری بخش‌ها تحقیق محصول، مقایسه تامین‌کننده، پیشنهاد و پیگیری عملیات را یکجا مدیریت می‌کنیم.", homeAboutValues: ["تامین ویژه نیاز", "شبکه محصول بر اساس بخش", "پیگیری عملیاتی شفاف"], homeAboutButton: "مدل کاری ما را ببینید",
+    aboutText: "موفقیت در تجارت جهانی به یافتن محصول درست در زمان و شرایط درست بستگی دارد. نیاز مشتریان را تحلیل کرده و فرایند تجارت را با اطمینان مدیریت می‌کنیم.", aboutSupport: "در Dynamic Era Export فراتر از یافتن محصول عمل می‌کنیم و هر مرحله را با اعتماد، شفافیت و سرعت مدیریت می‌کنیم.", aboutFlowTitle: "تجارت بر پایه اعتماد، سرعت و شفافیت", aboutFlowText1: "هدف ما اتصال مشتریان به منابع درست و ایجاد ارزش در هر مرحله تجارت است.", aboutFlowText2: "شرکت‌ها تامین‌کننده قابل اعتماد، قیمت درست، روابط پایدار، پیگیری عملیاتی و ارتباط سریع می‌خواهند.",
+    pillars: [["چشم‌انداز ما", "تبدیل شدن به برند قدرتمند تجارت جهانی با اعتماد، سرعت و راهکارهای پایدار."], ["ماموریت ما", "تحلیل درست نیازهای واردات، صادرات و تامین و ارائه مناسب‌ترین راهکارها."], ["رویکرد ما", "هر همکاری را رابطه‌ای تجاری و بلندمدت می‌دانیم."]], operations: [["01", "پشتیبانی واردات و صادرات", "در فرایندهای واردات و صادرات پشتیبانی تجاری ارائه می‌دهیم."], ["02", "تحقیق محصول و تامین‌کننده", "برای بخش‌های مختلف محصول و تامین‌کننده بررسی می‌کنیم."], ["03", "گروه محصول متناسب با نیاز", "گروه‌های محصول مناسب را تعیین می‌کنیم."], ["04", "ارتباط با تامین‌کنندگان", "با تامین‌کنندگان محلی و بین‌المللی ارتباط برقرار می‌کنیم."], ["05", "پیشنهادها و عملیات", "پیشنهاد، قیمت‌گذاری و عملیات را مدیریت می‌کنیم."], ["06", "تامین پایدار", "در دسته‌های گسترده محصول راهکارهای پایدار ارائه می‌دهیم."]],
+    valuesList: [["اعتمادپذیری", "رویکردی شفاف، مسئولانه و پایدار داریم."], ["سرعت", "سریع پاسخ می‌دهیم و جریان عملیات را پیگیری می‌کنیم."], ["انعطاف‌پذیری", "راهکارهای ویژه پروژه، محصول و نیاز ایجاد می‌کنیم."], ["نگاه جهانی", "بازارها، گروه‌های محصول و منابع مختلف را ارزیابی می‌کنیم."]],
+    whatWeDo: "چه می‌کنیم", ourValues: "ارزش‌های ما", aboutCtaEyebrow: "همکاری با Dynamic Era Export", aboutCtaTitle: "فرایند تجارت شما را ایمن‌تر، سریع‌تر و کارآمدتر کنیم.", aboutCtaText: "برای محصول خاص یا پشتیبانی حرفه‌ای واردات و صادرات، تیم ما آماده ساخت راهکار درست است.", aboutCtaPrimary: "تماس از طریق واتساپ", aboutCtaEmail: "تماس از طریق ایمیل", aboutCtaSecondary: "صفحه تماس", values: ["شبکه گسترده محصول و بخش", "فرایند تجاری قابل اعتماد", "راهکارهای سریع و منعطف", "تجربه تجارت بین‌المللی"], contactTitle: "تماس", contactLead: "هر محصول، کشور هدف یا دسته‌ای که جستجو می‌کنید، می‌توانیم با یک پیام کوتاه شروع کنیم.", form: { email: "ایمیل", configTitle: "سرویس فرم پیکربندی نشده است", configText: "برای ارسال پیام کلید Web3Forms لازم است. فعلا می‌توانید از واتساپ تماس بگیرید.", rateTitle: "لطفا کمی صبر کنید", rateText: "برای جلوگیری از اسپم، در هر دقیقه فقط یک پیام قابل ارسال است." }, partnersTitle: "اکوسیستم تجارت جهانی", importantLinksTitle: "لینک‌های مهم", footerWhatsappTitle: "از طریق واتساپ با ما تماس بگیرید", footerWhatsappText: "برای محصول، بخش یا درخواست تامین مستقیم تماس بگیرید.", footer: "ارتباط شفاف در واردات، صادرات و تامین جهانی.", copyright: "© Copyright 2026 Dynamic Era Export. همه حقوق محفوظ است."
+  },
+};
+
+Object.entries(compactLanguageCompletionSeeds).forEach(([code, seed]) => {
+  const categories = {
+    energy: seed.categories[0],
+    construction: seed.categories[1],
+    textile: seed.categories[2],
+    food: seed.categories[3],
+    health: seed.categories[4],
+    defense: seed.categories[5],
+  };
+  copy[code] = mergeLanguageCopy(copy[code] || copy.en, {
+    ...seed,
+    hero: seed.hero?.map(([eyebrow, title, text]) => ({ eyebrow, title, text })) || copy[code]?.hero,
+    categories,
+    categoryDetails: Object.fromEntries(
+      Object.entries(categories).map(([key, [title, text]]) => [key, { title, text, points: [title, seed.allSectorText, seed.categoryCustomCtaButton] }])
+    ),
+    allSectors: seed.allSectorNames.map((title) => [title, seed.allSectorText]),
+    aboutPillars: seed.pillars,
+    aboutOperationsEyebrow: seed.whatWeDo,
+    aboutOperationsTitle: seed.aboutOperationsTitle || copy[code]?.aboutOperationsTitle,
+    aboutOperations: seed.operations,
+    aboutValuesEyebrow: seed.ourValues,
+    aboutValuesTitle: seed.aboutValuesTitle || copy[code]?.aboutValuesTitle,
+    aboutValues: seed.valuesList,
+  });
+});
+
+Object.entries(extraLanguageDefaults).forEach(([code, seed]) => {
+  const categories = {
+    energy: seed.categories[0],
+    construction: seed.categories[1],
+    textile: seed.categories[2],
+    food: seed.categories[3],
+    health: seed.categories[4],
+    defense: seed.categories[5],
+  };
+  copy[code] = mergeLanguageCopy(copy[code] || copy.en, {
+    ...seed,
+    hero: seed.hero?.map(([eyebrow, title, text]) => ({ eyebrow, title, text })) || copy[code]?.hero,
+    categories,
+    categoryDetails: Object.fromEntries(
+      Object.entries(categories).map(([key, [title, text]]) => [key, { title, text, points: [title, seed.allSectorText, seed.categoryCustomCtaButton] }])
+    ),
+    allSectors: seed.allSectorNames.map((title) => [title, seed.allSectorText]),
+    aboutPillars: seed.pillars,
+    aboutOperationsEyebrow: seed.whatWeDo,
+    aboutOperationsTitle: seed.aboutOperationsTitle || seed.operationsTitle || seed.copyOperationsTitle || seed.operationsLead || seed.aboutOperationsTitle || seed.aboutOperationsTitleText || seed.aboutOperationsTitleTextValue || seed.aboutOperationsTitleValue || seed.aboutOperationsTitleCopy || seed.aboutOperationsTitleLabel || seed.aboutOperationsTitleName || (code === "fa" ? "در فرایندهای واردات، صادرات و تامین پشتیبانی کامل ارائه می‌دهیم." : copy[code]?.aboutOperationsTitle),
+    aboutOperations: seed.operations,
+    aboutValuesEyebrow: seed.ourValues,
+    aboutValuesTitle: seed.aboutValuesTitle || (code === "fa" ? "باور داریم اعتماد، سرعت، انعطاف‌پذیری و نگاه جهانی پایه تجارت است." : copy[code]?.aboutValuesTitle),
+    aboutValues: seed.valuesList,
+  });
+});
+
+const autoLanguageCompletionCopy = {
+  "tr": {
+    "homeBadge": "Global Ticaret, Dinamik Çözümler",
+    "hero": [
+      {
+        "eyebrow": "Global Ticaret, Dinamik Çözümler"
+      }
+    ]
+  },
+  "ru": {
+    "homeBadge": "Глобальная торговля, динамические решения",
+    "hero": [
+      {
+        "eyebrow": "Глобальная торговля, динамические решения"
+      }
+    ]
+  },
+  "fr": {
+    "nav": [
+      null,
+      null,
+      null,
+      "Contact"
+    ],
+    "homeBadge": "Commerce mondial, solutions dynamiques",
+    "hero": [
+      {
+        "eyebrow": "Commerce mondial, solutions dynamiques"
+      }
+    ],
+    "categories": {
+      "textile": [
+        "Textile"
+      ]
+    },
+    "categoryDetails": {
+      "textile": {
+        "title": "Textile"
+      }
+    },
+    "allSectors": [
+      null,
+      null,
+      [
+        "Textile"
+      ]
+    ],
+    "contactTitle": "Contact"
+  },
+  "de": {
+    "homeBadge": "Globaler Handel, dynamische Lösungen",
+    "hero": [
+      {
+        "eyebrow": "Globaler Handel, dynamische Lösungen"
+      }
+    ],
+    "categoryDetails": {
+      "defense": {
+        "points": [
+          "Einhaltung"
+        ]
+      }
+    },
+    "allSectors": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        "Automobil"
+      ]
+    ]
+  },
+  "nl": {
+    "nav": [
+      "Thuis",
+      null,
+      null,
+      "Contact"
+    ],
+    "direct": "Neem contact op via WhatsApp",
+    "homeBadge": "Mondiale handel, dynamische oplossingen",
+    "hero": [
+      {
+        "eyebrow": "Mondiale handel, dynamische oplossingen"
+      }
+    ],
+    "categoryCustomCtaButton": "Neem contact op via WhatsApp",
+    "allSectors": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        "Automobiel"
+      ]
+    ],
+    "aboutCtaPrimary": "Neem contact op via WhatsApp",
+    "contactTitle": "Contact"
+  },
+  "ar": {
+    "homeBadge": "التجارة العالمية، الحلول الديناميكية",
+    "hero": [
+      {
+        "eyebrow": "التجارة العالمية، الحلول الديناميكية"
+      }
+    ]
+  },
+  "it": {
+    "nav": [
+      "Casa"
+    ],
+    "allCategoriesCta": "Visualizza tutte le aree di business",
+    "categories": {
+      "food": [
+        "Cibo"
+      ]
+    },
+    "categoryDetails": {
+      "food": {
+        "title": "Cibo"
+      }
+    },
+    "allSectors": [
+      null,
+      null,
+      null,
+      [
+        "Cibo"
+      ],
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        "Automobilistico"
+      ]
+    ],
+    "aboutIntroTitle": "Chi siamo",
+    "aboutIntroText": "Dynamic Era Export è una società commerciale che opera nel commercio nazionale ed estero con un ampio portafoglio di prodotti, forti relazioni con i fornitori e un approccio orientato alla soluzione.\n\nSviluppa soluzioni di sourcing adatte alle esigenze dei clienti nei settori dell'energia, dei materiali da costruzione, del tessile, dell'alimentazione, della sanità, della difesa e di diverse categorie commerciali. Il nostro obiettivo non è solo fornire prodotti, ma offrire ai nostri clienti un'esperienza commerciale affidabile, sostenibile ed efficiente.\n\nCon la nostra ampia rete settoriale, la struttura operativa flessibile e l'approccio al servizio orientato al cliente, ci posizioniamo come un forte partner commerciale nei processi di importazione ed esportazione delle aziende.",
+    "aboutMore": "Ulteriori informazioni su di noi"
+  },
+  "pt": {
+    "allCategoriesCta": "Ver todas as áreas de negócios",
+    "aboutIntroTitle": "Sobre nós",
+    "aboutIntroText": "Dynamic Era Export é uma empresa comercial que atua no comércio interno e externo com um amplo portfólio de produtos, fortes relacionamentos com fornecedores e uma abordagem orientada a soluções.\n\nDesenvolve soluções de sourcing adequadas às necessidades dos clientes em energia, materiais de construção, têxteis, alimentos, saúde, indústria de defesa e diferentes categorias comerciais. Nosso objetivo não é apenas fornecer produtos, mas oferecer aos nossos clientes uma experiência comercial confiável, sustentável e eficiente.\n\nCom nossa ampla rede setorial, estrutura operacional flexível e abordagem de atendimento orientada ao cliente, nos posicionamos como um forte parceiro de negócios nos processos de importação e exportação das empresas.",
+    "aboutMore": "Mais informações sobre nós",
+    "aboutOperationsTitle": "Fornecemos suporte ponta a ponta nos processos de importação, exportação e sourcing.",
+    "aboutValuesTitle": "Acreditamos que a confiança, a rapidez, a flexibilidade e uma perspectiva global são a base do comércio."
+  },
+  "zh": {
+    "allCategoriesCta": "查看所有业务领域",
+    "aboutIntroTitle": "关于我们",
+    "aboutIntroText": "Dynamic Era Export 是一家从事国内和外贸业务的贸易公司，拥有广泛的产品组合、强大的供应商关系和以解决方案为导向的方法。\n\n它开发适合能源、建筑材料、纺织、食品、卫生、国防工业和不同贸易类别客户需求的采购解决方案。我们的目标不仅仅是提供产品，而是为客户提供可靠、可持续和高效的贸易体验。\n\n凭借广泛的行业网络、灵活的运营结构和以客户为导向的服务方式，我们将自己定位为公司进出口流程中强大的业务合作伙伴。",
+    "aboutMore": "关于我们的更多信息",
+    "aboutOperationsTitle": "我们在进口、出口和采购流程中提供端到端支持。",
+    "aboutValuesTitle": "我们相信信任、速度、灵活性和全球视野是贸易的基础。"
+  },
+  "fa": {
+    "hero": [
+      {
+        "eyebrow": "تجارت جهانی، راه حل های پویا",
+        "title": "یک قدرت تجاری پویا که به روی جهان باز می شود.",
+        "text": "Dynamic Era Export محصولات را از بخش های مختلف با راه حل های صادراتی قابل اعتماد، سریع و حرفه ای به بازارهای بین المللی ارائه می دهد."
+      },
+      {
+        "eyebrow": "بخش گسترده و شبکه محصول",
+        "title": "راه حل های تجاری همه کاره از انرژی تا غذا، نساجی تا سلامتی.",
+        "text": "ما به طور حرفه ای فرآیندهای تحقیق محصول، منبع یابی، قیمت گذاری و عملیات را بر اساس تقاضای مشتری مدیریت می کنیم."
+      },
+      {
+        "eyebrow": "20+ سال تجربه تجاری",
+        "title": "با قدرت پویای تجارت جهانی، روند خود را تسریع کنید.",
+        "text": "ما با بیش از 1500 مشتری و شبکه گسترده ای، راه حل های تجاری سریع، انعطاف پذیر و پایدار ارائه می دهیم."
+      }
+    ],
+    "metrics": [
+      [
+        null,
+        "سال خدمت"
+      ],
+      [
+        null,
+        "مشتریان"
+      ],
+      [
+        null,
+        "مناطق تجاری"
+      ],
+      [
+        null,
+        "حمایت تجاری"
+      ]
+    ],
+    "allCategoriesCta": "مشاهده تمام حوزه های تجاری",
+    "aboutIntroTitle": "درباره ما",
+    "aboutIntroText": "Dynamic Era Export یک شرکت تجاری است که در تجارت داخلی و خارجی با سبد محصولات گسترده، روابط قوی با تامین کنندگان و رویکرد راه حل محور فعالیت می کند.\n\nراه حل های منبع یابی مناسب برای نیازهای مشتری در انرژی، مصالح ساختمانی، نساجی، مواد غذایی، بهداشت، صنایع دفاعی و دسته های مختلف تجاری را توسعه می دهد. هدف ما تنها ارائه محصولات نیست، بلکه ارائه یک تجربه تجاری قابل اعتماد، پایدار و کارآمد به مشتریان خود است.\n\nبا شبکه گسترده بخش، ساختار عملیاتی منعطف و رویکرد خدمات مشتری مدار، خود را به عنوان یک شریک تجاری قوی در فرآیندهای واردات و صادرات شرکت ها قرار می دهیم.",
+    "aboutMore": "اطلاعات بیشتر درباره ما",
+    "aboutOperationsTitle": "ما در فرآیندهای واردات، صادرات و منبع یابی پشتیبانی کامل ارائه می دهیم.",
+    "aboutValuesTitle": "ما بر این باوریم که اعتماد، سرعت، انعطاف پذیری و دیدگاه جهانی اساس تجارت است."
+  },
+  "uk": {
+    "quoteCta": "Отримати цінову пропозицію",
+    "homeBadge": "Глобальна торгівля, динамічні рішення",
+    "homeText": "Від енергетики до будівельних матеріалів, від текстилю до продуктів харчування, від охорони здоров’я до оборонної промисловості, ми створюємо цінність для наших клієнтів за допомогою правильного продукту, правильного постачальника та правильної моделі торгівлі.\n\nМаючи понад 20 років комерційного досвіду, понад 1500 клієнтів і потужну мережу поставок у понад 20 секторах, ми є динамічною силою світової торгівлі.",
+    "quoteTitle": "Ми з вами на кожному етапі торгівлі",
+    "quoteText": "Ми надаємо наскрізну підтримку, починаючи від дослідження продукту та пошуку джерел до ціноутворення та планування логістики.",
+    "trustTitle": "Ми з вами на кожному етапі торгівлі",
+    "trustText": "Ми надаємо наскрізну підтримку в імпортних та експортних операціях, починаючи від дослідження продукту та пошуку джерел до ціноутворення та планування логістики.",
+    "servicesLead": "Ми надаємо комерційну інфраструктуру, мережу постачання та оперативну підтримку компаній, необхідних для процесів імпорту та експорту під одним дахом.",
+    "services": [
+      [
+        "Пошук продукції",
+        "Ми досліджуємо продукти через нашу місцеву та міжнародну мережу поставок і зв’язуємо вас із відповідними постачальниками."
+      ],
+      [
+        "Процеси імпорту",
+        "Для товарів, що постачаються з-за кордону, ми підтримуємо пошук, документацію та координацію логістики."
+      ],
+      [
+        "Експортні рішення",
+        "Ми створюємо продуктові, ринкові та операційні рішення для компаній, які хочуть експортувати з Туреччини на різні ринки."
+      ],
+      [
+        "Дослідження постачальників",
+        "Ми пропонуємо відповідні варіанти постачальника, виходячи з якості, потужності, цінового балансу та умов доставки."
+      ],
+      [
+        "Котирування та ціноутворення",
+        "Ми готуємо конкурентоспроможні та порівняльні варіанти пропозицій для запитуваних груп товарів."
+      ],
+      [
+        "Логістика та відстеження операцій",
+        "Ми надаємо регулярну підтримку протягом процесів доставки, відвантаження та операційного супроводу."
+      ]
+    ],
+    "processTitle": "Ми аналізуємо попит, знаходимо правильне джерело і стежимо за роботою.",
+    "processLead": "Кожен сектор має різні очікування щодо якості, доставки, вартості та відповідності; тому ми будуємо торгову модель, що залежить від попиту, а не стандартний процес.",
+    "processSteps": [
+      [
+        null,
+        "Аналіз попиту",
+        "Уточнюються товарна група, цільовий ринок, кількість, очікувана якість і план доставки."
+      ],
+      [
+        null,
+        "Джерело постачання",
+        "Вивчаються відповідні постачальники, порівнюються ціни та варіанти роботи."
+      ],
+      [
+        null,
+        "Торгова операція",
+        "Ціни, документація, логістика та процеси доставки супроводжуються прозорою комунікацією."
+      ]
+    ],
+    "ctaTitle": "Давайте разом покращимо ваш торговий процес.",
+    "ctaText": "Зв’яжіться з нами, щоб отримати потрібний продукт, постачальника чи імпортно-експортне рішення. Давайте побудуємо найбільш підходящу торгову модель для вас.",
+    "hero": [
+      {
+        "eyebrow": "Глобальна торгівля, динамічні рішення",
+        "title": "Динамічна торгова сила, що відкривається світові.",
+        "text": "Dynamic Era Export постачає продукти з різних секторів на міжнародні ринки за допомогою надійних, швидких і професійних експортних рішень."
+      },
+      {
+        "eyebrow": "Широкий сектор і продуктова мережа",
+        "title": "Універсальні торгові рішення від енергетики до продуктів харчування, текстилю до здоров’я.",
+        "text": "Ми професійно керуємо процесами дослідження продукту, пошуку джерел, ціноутворення та експлуатації відповідно до попиту клієнтів."
+      },
+      {
+        "eyebrow": "20+ років комерційного досвіду",
+        "title": "Прискоріть свій процес завдяки динамічній силі глобальної торгівлі.",
+        "text": "Маючи понад 1500 клієнтів і широку галузеву мережу, ми пропонуємо швидкі, гнучкі та стійкі торговельні рішення."
+      }
+    ],
+    "metrics": [
+      [
+        null,
+        "років служби"
+      ],
+      [
+        null,
+        "клієнтів"
+      ],
+      [
+        null,
+        "сфери бізнесу"
+      ],
+      [
+        null,
+        "підтримка торгівлі"
+      ]
+    ],
+    "categoryTitle": "Рекомендовані сфери діяльності",
+    "categoryLead": "Dynamic Era Export має широку торгову мережу серед груп продуктів і матеріалів, необхідних для різних секторів.",
+    "allCategoriesCta": "Переглянути всі сфери діяльності",
+    "categories": {
+      "energy": [
+        "Енергія",
+        "Обладнання, інфраструктурні продукти, електротехнічні матеріали та продукти підтримки відновлюваної енергії."
+      ],
+      "construction": [
+        "Будівельні матеріали",
+        "Будівельні матеріали, інфраструктурні продукти, механічне обладнання та проектні потреби."
+      ],
+      "textile": [
+        "Текстиль",
+        "Тканина, готовий одяг, робочий одяг, технічний текстиль та різні групи текстилю."
+      ],
+      "food": [
+        "харчування",
+        "Основні продукти харчування, упаковані продукти харчування, сільськогосподарська продукція та надійні торгові рішення."
+      ],
+      "health": [
+        "Здоров'я",
+        "Медичні вироби, витратні матеріали, обладнання для охорони здоров’я та рішення для постачання для окремих галузей."
+      ],
+      "defense": [
+        "Оборонна промисловість",
+        "Професійні процеси постачання з дотриманням вимог, конфіденційністю та операційною дисципліною."
+      ]
+    },
+    "categoryDetails": {
+      "energy": {
+        "title": "Енергія",
+        "text": "Для енергетичного сектору ми надаємо рішення для пошуку джерел для різних груп продуктів, особливо обладнання, інфраструктурних продуктів, електротехнічних матеріалів і продуктів підтримки відновлюваної енергії.",
+        "points": [
+          "Енергетичне обладнання",
+          "Електротехнічні матеріали",
+          "Пошук на основі проекту"
+        ]
+      },
+      "construction": {
+        "title": "Будівельні матеріали",
+        "text": "Ми надаємо послуги з пошуку будівельних матеріалів, інфраструктурних продуктів, механічного обладнання, додаткових будівельних виробів і потреб, що базуються на проектах.",
+        "points": [
+          "Будівельні та інфраструктурні продукти",
+          "Механічне обладнання",
+          "Потреби на основі проекту"
+        ]
+      },
+      "textile": {
+        "title": "Текстиль",
+        "text": "Ми пропонуємо внутрішні та міжнародні торгові рішення для тканин, готового одягу, робочого одягу, технічних текстильних виробів та різних груп текстилю.",
+        "points": [
+          "Тканина і готова одяг",
+          "Робочий одяг",
+          "Вироби технічного текстилю"
+        ]
+      },
+      "food": {
+        "title": "харчування",
+        "text": "Ми розробляємо надійні рішення щодо постачання та торгівлі основними продуктами харчування, упакованими продуктами харчування, сільськогосподарською продукцією та різними категоріями продуктів харчування.",
+        "points": [
+          "Основний продукт харчування",
+          "Упакована продукція",
+          "Сільськогосподарська продукція"
+        ]
+      },
+      "health": {
+        "title": "Здоров'я",
+        "text": "Ми надаємо рішення щодо пошуку медичних виробів, витратних матеріалів, обладнання для охорони здоров’я та потреб конкретного сектора.",
+        "points": [
+          "Вироби медичного призначення",
+          "Витратні матеріали",
+          "Медичне обладнання"
+        ]
+      },
+      "defense": {
+        "title": "Оборонна промисловість",
+        "text": "В оборонній промисловості ми розробляємо професійні рішення для процесів постачання в певному секторі з дотриманням принципів відповідності, конфіденційності та операційної дисципліни.",
+        "points": [
+          "Відповідність",
+          "Конфіденційність і дисциплінованість",
+          "Галузеве постачання"
+        ]
+      }
+    },
+    "categoryPageLead": "У всіх сферах нашого бізнесу ми розробляємо продукти та рішення щодо пошуку відповідно до попиту клієнтів.",
+    "categoryScrollHint": "Прокрутіть список, щоб переглянути всі сектори",
+    "categoryCustomCtaTitle": "Зв’яжіться з нами щодо груп продуктів, яких тут немає.",
+    "categoryCustomCtaText": "Якщо ви не бачите в списку потрібну групу товарів, зв’яжіться з нами. Dynamic Era Export може досліджувати відповідні варіанти постачання для ваших особливих запитів у різних секторах.",
+    "allSectorsLead": "Dynamic Era Export пропонує комплексні торговельні рішення для потреб продуктів і джерел у різних секторах.",
+    "allSectors": [
+      [
+        "Енергія",
+        "Обладнання, інфраструктурні продукти, електротехнічні матеріали та продукти підтримки відновлюваної енергії."
+      ],
+      [
+        "Будівельні матеріали",
+        "Будівельні матеріали, інфраструктурні продукти, механічне обладнання та проектні потреби."
+      ],
+      [
+        "Текстиль",
+        "Тканина, готовий одяг, робочий одяг, вироби технічного текстилю та різні групи текстилю."
+      ],
+      [
+        "харчування",
+        "Основні продукти харчування, упаковані продукти харчування, сільськогосподарська продукція та надійні торгові рішення."
+      ],
+      [
+        "Здоров'я",
+        "Медичні вироби, витратні матеріали, обладнання для охорони здоров’я та рішення щодо пошуку джерел для певних галузей."
+      ],
+      [
+        "Оборонна промисловість",
+        "Професійні процеси пошуку з дотриманням вимог, конфіденційності та операційної дисципліни."
+      ],
+      [
+        "Електротехніка та електроніка",
+        "Електротехнічні матеріали, електронні вироби, з'єднувальне обладнання та освітлювальні вироби."
+      ],
+      [
+        "Машини та обладнання",
+        "Потреби в промисловому обладнанні, виробничому обладнанні, запасних частинах і технічному обладнанні."
+      ],
+      [
+        "Меблі",
+        "Широкі можливості пошуку меблів для дому, офісу, комерційних приміщень і проектних меблів."
+      ],
+      [
+        "Автомобільний",
+        "Автомобільні запчастини, обладнання, аксесуари та групи товарів для окремих галузей."
+      ],
+      [
+        "Пластик і гума",
+        "Пластмасові вироби, гумові матеріали, технічні частини та групи промислових товарів."
+      ],
+      [
+        "Упаковка",
+        "Пакувальні продукти та пакувальні рішення для харчової, текстильної, промислової та роздрібної торгівлі."
+      ],
+      [
+        "Косметика",
+        "Косметична продукція, засоби особистої гігієни, засоби гігієни та суміжні групи товарів."
+      ],
+      [
+        "Чистячі засоби",
+        "Промислові чистячі засоби, гігієнічні матеріали, витратні матеріали та засоби корпоративного використання."
+      ],
+      [
+        "Сільськогосподарська продукція",
+        "Сільськогосподарська продукція, продовольча сировина та торгові рішення для аграрного сектора."
+      ],
+      [
+        "Медичні вироби",
+        "Підтримка постачальників продуктів для закладів охорони здоров’я та компаній, що постачають медичні препарати."
+      ],
+      [
+        "Сировина",
+        "Групи сировини, необхідні у виробничих процесах різних галузей."
+      ],
+      [
+        "Будівельні вироби",
+        "Додаткові групи продуктів, які використовуються в будівництві, оздобленні та будівельних проектах."
+      ],
+      [
+        "Логістична підтримка торгівлі",
+        "Підтримка координації етапів відвантаження, доставки та відстеження операцій."
+      ],
+      [
+        "Загальні рішення з пошуку",
+        "Дослідження та пошук рішень для спеціальних запитів на продукти, що виходять за межі однієї категорії."
+      ]
+    ],
+    "aboutIntroTitle": "Про нас",
+    "aboutIntroText": "Dynamic Era Export – це торгова компанія, що працює у внутрішній та зовнішній торгівлі з широким портфелем продуктів, міцними зв’язками з постачальниками та орієнтованим на рішення підходом.\n\nВін розробляє рішення щодо пошуку джерел, які відповідають потребам клієнтів у сферах енергетики, будівельних матеріалів, текстилю, продуктів харчування, охорони здоров’я, оборонної промисловості та різних категорій торгівлі. Наша мета полягає не тільки в тому, щоб надавати продукти, але й запропонувати нашим клієнтам надійний, стабільний і ефективний досвід торгівлі.\n\nЗавдяки широкій галузевій мережі, гнучкій операційній структурі та орієнтованому на клієнта підходу до обслуговування ми позиціонуємо себе як сильного ділового партнера в імпортних та експортних процесах компаній.",
+    "aboutMore": "Більше інформації про нас",
+    "homeAboutTitle": "Ми перетворюємо потреби в пошуку джерел у правильну торгову модель.",
+    "homeAboutText": "В енергетиці, текстилі, харчовій промисловості, охороні здоров’я та багатьох інших секторах ми керуємо дослідженнями продуктів, порівнюємо постачальників, пропонуємо пропозиції та оперативний контроль з одного місця. Ми уточнюємо ваш запит, знаходимо правильне джерело та підтримуємо процес за допомогою прозорого спілкування.",
+    "homeAboutValues": [
+      "Пошук джерел відповідно до попиту",
+      "Продуктова мережа за галузями",
+      "Прозоре супроводження операцій"
+    ],
+    "homeAboutButton": "Дізнайтеся про нашу робочу модель",
+    "aboutText": "Успіх у світовій торгівлі залежить від отримання потрібного продукту в потрібний час і за правильних умов. Ми аналізуємо потреби наших клієнтів, визначаємо канали постачання, які відповідають сектору та попиту, і надійно керуємо процесом торгівлі.",
+    "aboutSupport": "У Dynamic Era Export ми виходимо за рамки пошуку продуктів і керуємо кожним кроком торгівлі з довірою, прозорістю та швидкістю.",
+    "aboutFlowTitle": "Торгівля, заснована на довірі, швидкості та прозорості",
+    "aboutFlowText1": "З першого дня наша головна мета полягала в тому, щоб підключити клієнтів до правильних каналів постачання, надійно керувати процесами імпорту та експорту та стати діловим партнером, який створює цінність на кожному етапі торгівлі.",
+    "aboutFlowText2": "У сучасному глобальному торговому ландшафті компанії очікують більше, ніж продукт: надійний постачальник, правильне ціноутворення, стійкі ділові відносини, оперативне спостереження та швидке спілкування. У Dynamic Era Export ми використовуємо комплексний підхід до торгівлі, який враховує всі ці потреби.",
+    "aboutPillars": [
+      [
+        "Наше бачення",
+        "Стати потужним торговельним брендом, відомим своєю надійністю, швидкістю та орієнтованим на рішення мисленням у глобальній торгівлі, пропонуючи при цьому стійкі рішення для пошуку в різних секторах."
+      ],
+      [
+        "Наша місія",
+        "Правильно аналізувати потреби наших клієнтів щодо імпорту, експорту та пошуку джерел і надавати найбільш відповідні торговельні рішення з якісними продуктами, надійними джерелами, конкурентними цінами та професійною операційною підтримкою."
+      ],
+      [
+        "Наш підхід",
+        "Ми розглядаємо кожну співпрацю як довгострокові комерційні відносини та зосереджуємось не лише на поточних запитах на продукт, але й на майбутніх потребах наших клієнтів."
+      ]
+    ],
+    "aboutOperationsEyebrow": "Що ми робимо",
+    "aboutOperationsTitle": "Ми надаємо наскрізну підтримку в процесах імпорту, експорту та пошуку.",
+    "aboutOperations": [
+      [
+        null,
+        "Підтримка імпорту та експорту",
+        "Ми надаємо комерційну підтримку в процесах імпорту та експорту."
+      ],
+      [
+        null,
+        "Дослідження продукту та постачальника",
+        "Ми досліджуємо продукти та постачальників для різних секторів."
+      ],
+      [
+        null,
+        "Товарні групи, що відповідають попиту",
+        "Ми визначаємо відповідні групи товарів на основі попиту клієнтів."
+      ],
+      [
+        null,
+        "Підключення постачальників",
+        "Ми співпрацюємо з місцевими та міжнародними постачальниками."
+      ],
+      [
+        null,
+        "Котирування та операції",
+        "Ми керуємо котируванням, ціноутворенням і операційними процесами."
+      ],
+      [
+        null,
+        "Сталі джерела",
+        "Ми пропонуємо екологічні рішення для широких категорій продуктів."
+      ]
+    ],
+    "aboutValuesEyebrow": "Наші цінності",
+    "aboutValuesTitle": "Ми віримо, що довіра, швидкість, гнучкість і глобальна перспектива є основою торгівлі.",
+    "aboutValues": [
+      [
+        "Надійність",
+        "Ми використовуємо прозорий, відповідальний і стабільний підхід до всіх бізнес-процесів."
+      ],
+      [
+        "швидкість",
+        "Ми швидко реагуємо на запити клієнтів, ефективно плануємо процес і ретельно відслідковуємо хід операцій."
+      ],
+      [
+        "Гнучкість",
+        "Замість фіксованих шаблонів ми створюємо рішення для конкретного проекту, продукту та попиту."
+      ],
+      [
+        "Глобальна перспектива",
+        "Оцінюючи різні ринки, групи продуктів і джерела постачання, ми пропонуємо ширші можливості."
+      ]
+    ],
+    "aboutCtaEyebrow": "Робота з Dynamic Era Export",
+    "aboutCtaTitle": "Давайте зробимо ваш торговий процес безпечнішим, швидшим і ефективнішим.",
+    "aboutCtaText": "Якщо ви шукаєте конкретну групу продуктів або потребуєте професійної підтримки для імпортно-експортних процесів, наша команда готова створити правильне рішення для вас.",
+    "aboutCtaPrimary": "Зв'яжіться через WhatsApp",
+    "aboutCtaEmail": "Зв'язатися через електронну пошту",
+    "aboutCtaSecondary": "Сторінка контактів",
+    "values": [
+      "Широка продуктова та галузева мережа",
+      "Надійний торговий процес",
+      "Гнучкі та швидкі рішення",
+      "Досвід міжнародної торгівлі"
+    ],
+    "contactLead": "Який би продукт, цільову країну чи категорію ви не шукали, ми можемо почати з короткого повідомлення.",
+    "form": {
+      "configTitle": "Службу форм не налаштовано",
+      "configText": "Перш ніж надсилати повідомлення, потрібно додати ключ доступу Web3Forms. Тим часом ви можете зв’язатися з нами через WhatsApp.",
+      "successTitle": "Ваше повідомлення успішно надіслано",
+      "successText": "дякую Ми зв'яжемося з вами якомога швидше.",
+      "errorTitle": "Не вдалося надіслати повідомлення",
+      "errorText": "Повторіть спробу незабаром або зв’яжіться з нами через WhatsApp.",
+      "rateTitle": "Зачекайте хвилинку",
+      "rateText": "Для захисту від спаму ви можете надсилати лише одне повідомлення за хвилину."
+    },
+    "partnersTitle": "Глобальна торгова екосистема",
+    "importantLinksTitle": "Важливі посилання",
+    "footerWhatsappTitle": "Зв’яжіться з нами на WhatsApp",
+    "footerWhatsappText": "Зв’яжіться з нами напряму, щоб отримати запит щодо свого продукту, сектору чи джерела.",
+    "footer": "Чітка комунікація в імпорті, експорті та глобальних операціях з пошуку.",
+    "copyright": "© Copyright 2026 Dynamic Era Export. Всі права захищені."
+  },
+  "ro": {
+    "nav": [
+      null,
+      null,
+      null,
+      "Contact"
+    ],
+    "quoteCta": "Obțineți o cotație",
+    "homeBadge": "Comerț global, soluții dinamice",
+    "homeText": "De la energie la materiale de construcții, de la textile la alimente, de la sănătate la industria de apărare, creăm valoare pentru clienții noștri cu produsul potrivit, furnizorul potrivit și modelul comercial potrivit.\n\nCu peste 20 de ani de experiență comercială, peste 1500 de clienți și o rețea puternică de aprovizionare în peste 20 de sectoare, suntem puterea dinamică a comerțului global.",
+    "quoteTitle": "Suntem alături de dvs. în fiecare etapă a comerțului",
+    "quoteText": "De la cercetarea produselor și aprovizionarea până la planificarea prețurilor și logisticii, oferim asistență completă.",
+    "trustTitle": "Suntem alături de dvs. în fiecare etapă a comerțului",
+    "trustText": "De la cercetarea și aprovizionarea produselor până la planificarea prețurilor și logisticii, oferim suport complet în operațiunile de import și export.",
+    "servicesLead": "Oferim infrastructura comercială, rețeaua de aprovizionare și suportul operațional de care companiile au nevoie în procesele de import și export sub un singur acoperiș.",
+    "services": [
+      [
+        "Aprovizionarea cu produse",
+        "Cercetăm produse prin intermediul rețelei noastre locale și internaționale de aprovizionare și vă punem în legătură cu furnizori potriviți."
+      ],
+      [
+        "Procese de import",
+        "Pentru produsele provenite din străinătate, sprijinim coordonarea aprovizionării, documentării și logisticii."
+      ],
+      [
+        "Soluții de export",
+        "Creăm soluții de produse, piețe și operațiuni pentru companiile care doresc să exporte din Turcia către diferite piețe."
+      ],
+      [
+        "Cercetarea furnizorilor",
+        "Oferim opțiuni de furnizori adecvate în funcție de calitate, capacitate, echilibru de preț și termeni de livrare."
+      ],
+      [
+        "Cotație și prețuri",
+        "Pregătim opțiuni de cotație competitive și comparabile pentru grupurile de produse solicitate."
+      ],
+      [
+        "Logistica și urmărirea operațiunilor",
+        "Oferim suport regulat pe parcursul proceselor de livrare, expediere și de urmărire operațională."
+      ]
+    ],
+    "processTitle": "Analizăm cererea, găsim sursa potrivită și urmărim operațiunea.",
+    "processLead": "Fiecare sector are așteptări diferite pentru calitate, livrare, cost și conformitate; prin urmare, construim un model comercial specific cererii mai degrabă decât un proces standard.",
+    "processSteps": [
+      [
+        null,
+        "Analiza cererii",
+        "Sunt clarificate grupul de produse, piata tinta, cantitatea, asteptarile de calitate si planul de livrare."
+      ],
+      [
+        null,
+        "Sursa de aprovizionare",
+        "Sunt cercetați furnizorii potriviți și sunt comparate prețurile și opțiunile de operare."
+      ],
+      [
+        null,
+        "Operațiune comercială",
+        "Procesele de cotație, documentare, logistică și livrare sunt urmate cu o comunicare transparentă."
+      ]
+    ],
+    "ctaTitle": "Haideți să vă întărim procesul comercial împreună.",
+    "ctaText": "Contactați-ne pentru produsul, furnizorul sau soluția de import-export de care aveți nevoie. Să construim cel mai potrivit model de comerț pentru tine.",
+    "hero": [
+      {
+        "eyebrow": "Comerț global, soluții dinamice",
+        "title": "O putere comercială dinamică care se deschide către lume.",
+        "text": "Dynamic Era Export livrează produse din diferite sectoare pe piețele internaționale cu soluții de export fiabile, rapide și profesionale."
+      },
+      {
+        "eyebrow": "Sector vast și rețea de produse",
+        "title": "Soluții comerciale versatile de la energie la alimente, textile la sănătate.",
+        "text": "Gestionăm în mod profesionist procesele de cercetare a produselor, aprovizionare, stabilire a prețurilor și operare în funcție de cererea clienților."
+      },
+      {
+        "eyebrow": "20+ ani de experiență comercială",
+        "title": "Accelerează-ți procesul cu puterea dinamică a comerțului global.",
+        "text": "Cu peste 1500 de clienți și o rețea sectorială largă, oferim soluții comerciale rapide, flexibile și durabile."
+      }
+    ],
+    "metrics": [
+      [
+        null,
+        "ani de serviciu"
+      ],
+      [
+        null,
+        "clienţilor"
+      ],
+      [
+        null,
+        "zonele de afaceri"
+      ],
+      [
+        null,
+        "sprijin comercial"
+      ]
+    ],
+    "categoryTitle": "Zone de afaceri recomandate",
+    "categoryLead": "Dynamic Era Export are o rețea comercială largă în grupuri de produse și materiale necesare diferitelor sectoare.",
+    "allCategoriesCta": "Vedeți toate zonele de afaceri",
+    "categories": {
+      "energy": [
+        "Energie",
+        "Echipamente, produse de infrastructură, materiale electrice și produse de sprijin pentru energie regenerabilă."
+      ],
+      "construction": [
+        "Materiale de constructii",
+        "Materiale de construcție, produse de infrastructură, echipamente mecanice și nevoi bazate pe proiecte."
+      ],
+      "textile": [
+        "Textile",
+        "Tesaturi, prêt-à-porter, imbracaminte de lucru, textile tehnice si diferite grupe de textile."
+      ],
+      "food": [
+        "Mâncare",
+        "Produse alimentare de bază, alimente ambalate, produse agricole și soluții comerciale de încredere."
+      ],
+      "health": [
+        "Sănătate",
+        "Produse medicale, consumabile, echipamente medicale și soluții de aprovizionare specifice sectorului."
+      ],
+      "defense": [
+        "Industria de apărare",
+        "Procese profesionale de aprovizionare cu conformitate, confidențialitate și disciplină operațională."
+      ]
+    },
+    "categoryDetails": {
+      "energy": {
+        "title": "Energie",
+        "text": "Pentru sectorul energetic, oferim soluții de aprovizionare pentru diferite grupuri de produse, în special echipamente, produse de infrastructură, materiale electrice și produse de sprijin pentru energie regenerabilă.",
+        "points": [
+          "Echipamente energetice",
+          "Materiale electrice",
+          "Aprovizionare bazată pe proiecte"
+        ]
+      },
+      "construction": {
+        "title": "Materiale de constructii",
+        "text": "Oferim servicii de aprovizionare pentru materiale de construcție, produse de infrastructură, echipamente mecanice, produse de construcții complementare și nevoi bazate pe proiecte.",
+        "points": [
+          "Produse pentru constructii si infrastructura",
+          "Echipamente mecanice",
+          "Nevoile bazate pe proiecte"
+        ]
+      },
+      "textile": {
+        "title": "Textile",
+        "text": "Oferim soluții de comerț intern și internațional pentru țesături, prêt-à-porter, îmbrăcăminte de lucru, produse textile tehnice și diferite grupe textile.",
+        "points": [
+          "Tesatura si gata de purtat",
+          "Îmbrăcăminte de lucru",
+          "Produse textile tehnice"
+        ]
+      },
+      "food": {
+        "title": "Mâncare",
+        "text": "Dezvoltăm soluții fiabile de aprovizionare și comerț pentru produse alimentare de bază, alimente ambalate, produse agricole și diferite categorii de alimente.",
+        "points": [
+          "Alimente de bază",
+          "Produse ambalate",
+          "Produse agricole"
+        ]
+      },
+      "health": {
+        "title": "Sănătate",
+        "text": "Oferim soluții de aprovizionare pentru produse medicale, consumabile, echipamente medicale și nevoi specifice sectorului.",
+        "points": [
+          "Produse medicale",
+          "Consumabile",
+          "Echipamente medicale"
+        ]
+      },
+      "defense": {
+        "title": "Industria de apărare",
+        "text": "În industria de apărare, dezvoltăm soluții profesionale pentru procesele de aprovizionare specifice sectorului, cu principii de conformitate, confidențialitate și disciplină operațională.",
+        "points": [
+          "Conformitate",
+          "Confidențialitate și disciplină",
+          "Aprovizionare specifică sectorului"
+        ]
+      }
+    },
+    "categoryPageLead": "În toate domeniile noastre de activitate, dezvoltăm soluții de produse și aprovizionare în funcție de cererea clienților.",
+    "categoryScrollHint": "Derulați lista pentru a vedea toate sectoarele",
+    "categoryCustomCtaTitle": "Contactați-ne pentru grupurile de produse care nu sunt listate aici.",
+    "categoryCustomCtaText": "Dacă nu puteți vedea grupul de produse de care aveți nevoie în listă, contactați-ne. Dynamic Era Export poate căuta opțiuni de aprovizionare adecvate pentru solicitările dumneavoastră speciale din diferite sectoare.",
+    "allSectorsLead": "Dynamic Era Export oferă soluții comerciale complete pentru nevoile de produse și aprovizionare din diferite sectoare.",
+    "allSectors": [
+      [
+        "Energie",
+        "Echipamente, produse de infrastructură, materiale electrice și produse de sprijin pentru energie regenerabilă."
+      ],
+      [
+        "Materiale de constructii",
+        "Materiale de construcție, produse de infrastructură, echipamente mecanice și nevoi bazate pe proiecte."
+      ],
+      [
+        "Textile",
+        "Tesaturi, prêt-à-porter, imbracaminte de lucru, produse textile tehnice si diferite grupe textile."
+      ],
+      [
+        "Mâncare",
+        "Produse alimentare de bază, alimente ambalate, produse agricole și soluții comerciale de încredere."
+      ],
+      [
+        "Sănătate",
+        "Produse medicale, consumabile, echipamente medicale și soluții de aprovizionare specifice sectorului."
+      ],
+      [
+        "Industria de apărare",
+        "Procese profesionale de aprovizionare cu conformitate, confidențialitate și disciplină operațională."
+      ],
+      [
+        "Electrice și electronice",
+        "Materiale electrice, produse electronice, echipamente de conectare și produse de iluminat."
+      ],
+      [
+        "Mașini și echipamente",
+        "Nevoi de utilaje industriale, echipamente de producție, piese de schimb și echipamente tehnice."
+      ],
+      [
+        "Mobilier",
+        "Opțiuni largi de aprovizionare pentru casă, birou, spații comerciale și produse de mobilier bazate pe proiecte."
+      ],
+      [
+        "Automobile",
+        "Piese de schimb pentru automobile, echipamente, accesorii și grupuri de produse specifice sectorului."
+      ],
+      [
+        "Plastic & cauciuc",
+        "Produse din plastic, materiale din cauciuc, piese tehnice și grupe de produse industriale."
+      ],
+      [
+        "Ambalare",
+        "Produse de ambalare și soluții de ambalare pentru sectoarele alimentar, textil, industrial și de retail."
+      ],
+      [
+        "Cosmetice",
+        "Produse cosmetice, produse de îngrijire personală, produse de igienă și grupe de produse aferente."
+      ],
+      [
+        "Produse de curatenie",
+        "Produse de curățare industrială, materiale de igienă, consumabile și produse de uz corporativ."
+      ],
+      [
+        "Produse agricole",
+        "Produse agricole, materii prime alimentare și soluții comerciale pentru sectorul agricol."
+      ],
+      [
+        "Produse medicale",
+        "Suport de aprovizionare cu produse pentru instituțiile de sănătate și companiile de furnizare medicală."
+      ],
+      [
+        "Materii prime",
+        "Grupuri de materii prime necesare în procesele de producție din diferite sectoare."
+      ],
+      [
+        "Produse pentru constructii",
+        "Grupe de produse complementare utilizate în construcții, decorațiuni și proiecte de construcții."
+      ],
+      [
+        "Comerț sprijinit de logistică",
+        "Suport de coordonare pentru etapele de expediere, livrare și urmărire operațională."
+      ],
+      [
+        "Soluții generale de aprovizionare",
+        "Soluții de cercetare și aprovizionare pentru cereri speciale de produse dincolo de o singură categorie."
+      ]
+    ],
+    "aboutIntroTitle": "Despre noi",
+    "aboutIntroText": "Dynamic Era Export este o companie comercială care operează în comerțul intern și exterior cu un portofoliu larg de produse, relații puternice cu furnizorii și o abordare orientată spre soluții.\n\nEa dezvoltă soluții de aprovizionare potrivite nevoilor clienților în energie, materiale de construcții, textile, alimente, sănătate, industria de apărare și diferite categorii comerciale. Scopul nostru nu este doar să oferim produse, ci să oferim clienților noștri o experiență comercială de încredere, durabilă și eficientă.\n\nCu rețeaua noastră sectorială largă, structura operațională flexibilă și abordarea de servicii orientată către client, ne poziționăm ca un partener de afaceri puternic în procesele de import și export ale companiilor.",
+    "aboutMore": "Mai multe informații despre noi",
+    "homeAboutTitle": "Transformăm nevoile de aprovizionare în modelul comercial potrivit.",
+    "homeAboutText": "În domeniul energiei, textilelor, alimentației, sănătății și în multe alte sectoare, gestionăm cercetarea produselor, compararea furnizorilor, cotația și urmărirea operațională dintr-un singur loc. Vă clarificăm cererea, găsim sursa potrivită și menținem procesul în mișcare printr-o comunicare transparentă.",
+    "homeAboutValues": [
+      "Aprovizionare specifică cererii",
+      "Rețea de produse sectorială",
+      "Urmărire transparentă a operațiunii"
+    ],
+    "homeAboutButton": "Explorați modelul nostru de lucru",
+    "aboutText": "Succesul în comerțul global depinde de obținerea produsului potrivit, la momentul potrivit și în condițiile potrivite. Analizăm nevoile clienților noștri, identificăm canalele de aprovizionare potrivite pentru sector și cerere și gestionăm procesul comercial în mod fiabil.",
+    "aboutSupport": "La Dynamic Era Export, mergem dincolo de găsirea de produse și gestionăm fiecare pas al comerțului cu încredere, transparență și rapiditate.",
+    "aboutFlowTitle": "Comerțul bazat pe încredere, viteză și transparență",
+    "aboutFlowText1": "Încă din prima zi, obiectivul nostru principal a fost să conectăm clienții cu canalele de aprovizionare potrivite, să gestionăm procesele de import și export în mod fiabil și să devenim un partener de afaceri care creează valoare în fiecare etapă a comerțului.",
+    "aboutFlowText2": "În peisajul comercial global de astăzi, companiile așteaptă mai mult decât un produs: un furnizor de încredere, prețuri corecte, relații de afaceri durabile, urmărire operațională și comunicare rapidă. La Dynamic Era Export, adoptăm o abordare comercială holistică care ia în considerare toate aceste nevoi.",
+    "aboutPillars": [
+      [
+        "Viziunea noastră",
+        "Pentru a deveni un brand comercial puternic, cunoscut pentru fiabilitate, rapiditate și gândire axată pe soluții în comerțul global, oferind în același timp soluții de aprovizionare durabile în diferite sectoare."
+      ],
+      [
+        "Misiunea noastră",
+        "Să analizăm corect nevoile de import, export și aprovizionare ale clienților noștri și să oferim cele mai potrivite soluții comerciale cu produse de calitate, surse de încredere, prețuri competitive și suport operațional profesional."
+      ],
+      [
+        "Abordarea noastră",
+        "Vedem fiecare colaborare ca pe o relație comercială pe termen lung și ne concentrăm nu numai pe cererile curente de produse, ci și pe nevoile viitoare ale clienților noștri."
+      ]
+    ],
+    "aboutOperationsEyebrow": "Ce facem",
+    "aboutOperationsTitle": "Oferim suport end-to-end în procesele de import, export și aprovizionare.",
+    "aboutOperations": [
+      [
+        null,
+        "Suport pentru import și export",
+        "Oferim suport comercial in procesele de import si export."
+      ],
+      [
+        null,
+        "Cercetare de produse și furnizori",
+        "Cercetăm produse și furnizori pentru diferite sectoare."
+      ],
+      [
+        null,
+        "Grupuri de produse potrivite la cerere",
+        "Identificăm grupuri de produse potrivite în funcție de cererea clienților."
+      ],
+      [
+        null,
+        "Conexiuni cu furnizorii",
+        "Ne conectăm cu furnizori locali și internaționali."
+      ],
+      [
+        null,
+        "Citate și operațiuni",
+        "Gestionăm ofertele, prețurile și procesele operaționale."
+      ],
+      [
+        null,
+        "Aprovizionare durabilă",
+        "Oferim soluții de aprovizionare durabilă pentru categorii largi de produse."
+      ]
+    ],
+    "aboutValuesEyebrow": "Valorile noastre",
+    "aboutValuesTitle": "Credem că încrederea, viteza, flexibilitatea și o perspectivă globală sunt temelia comerțului.",
+    "aboutValues": [
+      [
+        "Fiabilitate",
+        "Adoptăm o abordare transparentă, responsabilă și durabilă în toate procesele de afaceri."
+      ],
+      [
+        "Viteză",
+        "Răspundem rapid la solicitările clienților, planificăm eficient procesul și urmărim îndeaproape fluxul operațional."
+      ],
+      [
+        "Flexibilitate",
+        "În loc de modele fixe, creăm soluții specifice proiectului, specifice produsului și specifice cererii."
+      ],
+      [
+        "Perspectivă globală",
+        "Evaluând diferite piețe, grupuri de produse și surse de aprovizionare, oferim opțiuni mai largi."
+      ]
+    ],
+    "aboutCtaEyebrow": "Lucrul cu Dynamic Era Export",
+    "aboutCtaTitle": "Să vă facem procesul comercial mai sigur, mai rapid și mai eficient.",
+    "aboutCtaText": "Indiferent dacă sunteți în căutarea unui anumit grup de produse sau aveți nevoie de asistență profesională pentru procesele de import-export, echipa noastră este pregătită să construiască soluția potrivită pentru dvs.",
+    "aboutCtaPrimary": "Contactați prin WhatsApp",
+    "aboutCtaEmail": "Contactați prin e-mail",
+    "aboutCtaSecondary": "Pagina de contact",
+    "values": [
+      "Rețea largă de produse și sector",
+      "Proces comercial de încredere",
+      "Soluții flexibile și rapide",
+      "Experiență în comerț internațional"
+    ],
+    "contactTitle": "Contact",
+    "contactLead": "Indiferent de produsul, țara țintă sau categoria pe care o căutați, putem începe cu un mesaj scurt.",
+    "form": {
+      "configTitle": "Serviciul de formulare nu este configurat",
+      "configText": "O cheie de acces Web3Forms trebuie adăugată înainte ca mesajele să poată fi trimise. Ne puteți contacta între timp prin WhatsApp.",
+      "successTitle": "Mesajul dvs. a fost trimis cu succes",
+      "successText": "Multumesc. Vă vom reveni cât mai curând posibil.",
+      "errorTitle": "Mesajul nu a putut fi trimis",
+      "errorText": "Vă rugăm să încercați din nou în scurt timp sau să ne contactați prin WhatsApp.",
+      "rateTitle": "Vă rugăm să așteptați un moment",
+      "rateText": "Pentru protecția împotriva spamului, puteți trimite doar un mesaj pe minut."
+    },
+    "partnersTitle": "Ecosistemul comercial global",
+    "importantLinksTitle": "Legături importante",
+    "footerWhatsappTitle": "Contactați-ne pe WhatsApp",
+    "footerWhatsappText": "Contactați-ne direct pentru cererea dvs. de produs, sector sau aprovizionare.",
+    "footer": "Comunicare clară în operațiunile de import, export și aprovizionare globală.",
+    "copyright": "© Copyright 2026 Dynamic Era Export. Toate drepturile rezervate."
+  },
+  "bg": {
+    "quoteCta": "Получете оферта",
+    "homeBadge": "Глобална търговия, динамични решения",
+    "homeText": "От енергетиката до строителните материали, от текстила до храните, от здравеопазването до отбранителната индустрия, ние създаваме стойност за нашите клиенти с правилния продукт, правилния доставчик и правилния търговски модел.\n\nС 20+ години търговски опит, 1500+ клиенти и силна мрежа за доставки в над 20 сектора, ние сме динамичната сила на световната търговия.",
+    "quoteTitle": "Ние сме с вас на всеки етап от търговията",
+    "quoteText": "От проучване на продукта и снабдяване до планиране на ценообразуване и логистика, ние предоставяме поддръжка от край до край.",
+    "trustTitle": "Ние сме с вас на всеки етап от търговията",
+    "trustText": "От проучване на продукта и снабдяване до ценообразуване и логистично планиране, ние предоставяме цялостна поддръжка при операциите по внос и износ.",
+    "servicesLead": "Ние предоставяме търговската инфраструктура, мрежата за доставки и оперативната поддръжка на компаниите, от които се нуждаят в процесите на внос и износ под един покрив.",
+    "services": [
+      [
+        "Снабдяване с продукти",
+        "Ние проучваме продукти чрез нашата местна и международна мрежа за доставки и ви свързваме с подходящи доставчици."
+      ],
+      [
+        "Процеси на импортиране",
+        "За продукти, доставени от чужбина, ние поддържаме снабдяване, документация и логистична координация."
+      ],
+      [
+        "Експортиране на решения",
+        "Ние създаваме продуктови, пазарни и оперативни решения за компании, които искат да изнасят от Турция на различни пазари."
+      ],
+      [
+        "Проучване на доставчици",
+        "Ние предлагаме подходящи доставчици на база качество, капацитет, ценови баланс и условия на доставка."
+      ],
+      [
+        "Оферти и цени",
+        "Изготвяме конкурентни и сравними опции за оферти за заявените продуктови групи."
+      ],
+      [
+        "Логистика и проследяване на операциите",
+        "Ние осигуряваме редовна поддръжка по време на процесите на доставка, изпращане и последващи операции."
+      ]
+    ],
+    "processTitle": "Ние анализираме търсенето, намираме правилния източник и проследяваме операцията.",
+    "processLead": "Всеки сектор има различни очаквания за качество, доставка, цена и съответствие; следователно ние изграждаме търговски модел, специфичен за търсенето, а не стандартен процес.",
+    "processSteps": [
+      [
+        null,
+        "Анализ на търсенето",
+        "Изясняват се продуктова група, целеви пазар, количество, очакване за качество и план за доставка."
+      ],
+      [
+        null,
+        "Източник на доставка",
+        "Проучват се подходящи доставчици и се сравняват цени и възможности за работа."
+      ],
+      [
+        null,
+        "Търговска операция",
+        "Процесите на оферти, документация, логистика и доставка се следват с прозрачна комуникация."
+      ]
+    ],
+    "ctaTitle": "Нека заедно укрепим вашия търговски процес.",
+    "ctaText": "Свържете се с нас за продукта, доставчика или решението за внос-износ, от което се нуждаете. Нека изградим най-подходящия търговски модел за вас.",
+    "hero": [
+      {
+        "eyebrow": "Глобална търговия, динамични решения",
+        "title": "Динамична търговска сила, отваряща се към света.",
+        "text": "Dynamic Era Export доставя продукти от различни сектори на международните пазари с надеждни, бързи и професионални решения за износ."
+      },
+      {
+        "eyebrow": "Широк сектор и продуктова мрежа",
+        "title": "Разнообразни търговски решения от енергия до храна, текстил до здравеопазване.",
+        "text": "Ние професионално управляваме процесите на проучване на продукта, снабдяване, ценообразуване и работа според търсенето на клиентите."
+      },
+      {
+        "eyebrow": "20+ години търговски опит",
+        "title": "Ускорете процеса си с динамичната сила на глобалната търговия.",
+        "text": "С над 1500 клиенти и широка секторна мрежа ние предлагаме бързи, гъвкави и устойчиви търговски решения."
+      }
+    ],
+    "metrics": [
+      [
+        null,
+        "години трудов стаж"
+      ],
+      [
+        null,
+        "клиенти"
+      ],
+      [
+        null,
+        "бизнес области"
+      ],
+      [
+        null,
+        "търговска подкрепа"
+      ]
+    ],
+    "categoryTitle": "Представени бизнес области",
+    "categoryLead": "Dynamic Era Export има широка търговска мрежа в групи продукти и материали, необходими на различни сектори.",
+    "allCategoriesCta": "Вижте всички бизнес области",
+    "categories": {
+      "energy": [
+        "енергия",
+        "Оборудване, инфраструктурни продукти, електрически материали и поддържащи продукти за възобновяема енергия."
+      ],
+      "construction": [
+        "Строителни материали",
+        "Строителни материали, инфраструктурни продукти, механично оборудване и нужди, базирани на проекти."
+      ],
+      "textile": [
+        "Текстил",
+        "Платове, конфекция, работно облекло, технически текстил и различни групи текстил."
+      ],
+      "food": [
+        "храна",
+        "Основни хранителни продукти, пакетирани храни, селскостопански продукти и надеждни търговски решения."
+      ],
+      "health": [
+        "здраве",
+        "Медицински продукти, консумативи, здравно оборудване и специфични за сектора решения за доставки."
+      ],
+      "defense": [
+        "Отбранителна индустрия",
+        "Професионални процеси на доставка със съответствие, поверителност и оперативна дисциплина."
+      ]
+    },
+    "categoryDetails": {
+      "energy": {
+        "title": "енергия",
+        "text": "За енергийния сектор ние предоставяме решения за снабдяване с различни продуктови групи, особено оборудване, инфраструктурни продукти, електрически материали и продукти за поддръжка на възобновяема енергия.",
+        "points": [
+          "Енергийно оборудване",
+          "Електрически материали",
+          "Проектно базирано снабдяване"
+        ]
+      },
+      "construction": {
+        "title": "Строителни материали",
+        "text": "Ние предоставяме услуги за снабдяване със строителни материали, инфраструктурни продукти, механично оборудване, допълнителни строителни продукти и нужди, базирани на проекти.",
+        "points": [
+          "Строителни и инфраструктурни продукти",
+          "Механично оборудване",
+          "Базирани на проекта нужди"
+        ]
+      },
+      "textile": {
+        "title": "Текстил",
+        "text": "Ние предлагаме вътрешни и международни търговски решения за платове, конфекция, работно облекло, технически текстилни продукти и различни текстилни групи.",
+        "points": [
+          "Плат и конфекция",
+          "Работно облекло",
+          "Изделия от технически текстил"
+        ]
+      },
+      "food": {
+        "title": "храна",
+        "text": "Ние разработваме надеждни решения за снабдяване и търговия с основни хранителни продукти, пакетирани храни, селскостопански продукти и различни категории храни.",
+        "points": [
+          "Основна храна",
+          "Пакетирани продукти",
+          "Селскостопански продукти"
+        ]
+      },
+      "health": {
+        "title": "здраве",
+        "text": "Ние предлагаме решения за снабдяване с медицински продукти, консумативи, здравно оборудване и специфични за сектора нужди.",
+        "points": [
+          "Медицински продукти",
+          "Консумативи",
+          "Здравно оборудване"
+        ]
+      },
+      "defense": {
+        "title": "Отбранителна индустрия",
+        "text": "В отбранителната индустрия ние разработваме професионални решения за специфични за сектора процеси на доставка с принципи на съответствие, поверителност и оперативна дисциплина.",
+        "points": [
+          "Съответствие",
+          "Конфиденциалност и дисциплина",
+          "Специфично за сектора предлагане"
+        ]
+      }
+    },
+    "categoryPageLead": "Във всички наши бизнес области ние разработваме продукти и решения за снабдяване според търсенето на клиентите.",
+    "categoryScrollHint": "Превъртете списъка, за да видите всички сектори",
+    "categoryCustomCtaTitle": "Свържете се с нас за групи продукти, които не са изброени тук.",
+    "categoryCustomCtaText": "Ако не виждате продуктовата група, от която се нуждаете, в списъка, свържете се с нас. Dynamic Era Export може да проучи подходящи опции за снабдяване за вашите специални заявки в различни сектори.",
+    "allSectorsLead": "Dynamic Era Export предлага всеобхватни търговски решения за нуждите от продукти и снабдяване в различни сектори.",
+    "allSectors": [
+      [
+        "енергия",
+        "Оборудване, инфраструктурни продукти, електрически материали и поддържащи продукти за възобновяема енергия."
+      ],
+      [
+        "Строителни материали",
+        "Строителни материали, инфраструктурни продукти, механично оборудване и нужди, базирани на проекти."
+      ],
+      [
+        "Текстил",
+        "Платове, конфекция, работно облекло, изделия от технически текстил и различни групи текстил."
+      ],
+      [
+        "храна",
+        "Основни хранителни продукти, пакетирани храни, селскостопански продукти и надеждни търговски решения."
+      ],
+      [
+        "здраве",
+        "Медицински продукти, консумативи, здравно оборудване и специфични за сектора решения за снабдяване."
+      ],
+      [
+        "Отбранителна индустрия",
+        "Професионални процеси за снабдяване със съответствие, поверителност и оперативна дисциплина."
+      ],
+      [
+        "Електротехника и електроника",
+        "Електрически материали, електронни продукти, свързващо оборудване и осветителни продукти."
+      ],
+      [
+        "Машини и оборудване",
+        "Необходимост от промишлени машини, производствено оборудване, резервни части и техническо оборудване."
+      ],
+      [
+        "Мебели",
+        "Широки възможности за снабдяване с мебелни продукти за дома, офиса, търговските площи и проекти."
+      ],
+      [
+        "Автомобилна",
+        "Автомобилни резервни части, оборудване, аксесоари и специфични за сектора продуктови групи."
+      ],
+      [
+        "Пластмаса и каучук",
+        "Пластмасови изделия, каучукови материали, технически части и индустриални продуктови групи."
+      ],
+      [
+        "Опаковка",
+        "Опаковъчни продукти и опаковъчни решения за хранителния, текстилния, индустриалния и търговския сектор."
+      ],
+      [
+        "Козметика",
+        "Козметични продукти, продукти за лична хигиена, хигиенни продукти и свързани продуктови групи."
+      ],
+      [
+        "Почистващи продукти",
+        "Индустриални почистващи продукти, хигиенни материали, консумативи и продукти за корпоративна употреба."
+      ],
+      [
+        "Селскостопански продукти",
+        "Земеделски продукти, хранителни суровини и търговски решения за сектора на селското стопанство."
+      ],
+      [
+        "Медицински продукти",
+        "Подкрепа за снабдяване с продукти за здравни институции и компании за медицински доставки."
+      ],
+      [
+        "Суровини",
+        "Групи суровини, необходими в производствените процеси на различни сектори."
+      ],
+      [
+        "Строителни продукти",
+        "Допълнителни групи продукти, използвани в строителството, декорацията и строителните проекти."
+      ],
+      [
+        "Логистично поддържана търговия",
+        "Координационна поддръжка за етапите на изпращане, доставка и оперативно проследяване."
+      ],
+      [
+        "Общи решения за снабдяване",
+        "Проучване и намиране на решения за специални заявки за продукти извън една категория."
+      ]
+    ],
+    "aboutIntroTitle": "За нас",
+    "aboutIntroText": "Dynamic Era Export е търговска компания, работеща във вътрешната и външната търговия с широко продуктово портфолио, силни връзки с доставчици и подход, ориентиран към решения.\n\nТой разработва решения за снабдяване, подходящи за нуждите на клиентите в енергетиката, строителните материали, текстила, храните, здравеопазването, отбранителната промишленост и различни търговски категории. Нашата цел е не само да предоставяме продукти, но и да предлагаме на нашите клиенти надеждно, устойчиво и ефективно търговско изживяване.\n\nС нашата широка секторна мрежа, гъвкава оперативна структура и подход, ориентиран към клиента, ние се позиционираме като силен бизнес партньор в процесите на внос и износ на компаниите.",
+    "aboutMore": "Повече информация за нас",
+    "homeAboutTitle": "Превръщаме нуждите от снабдяване в правилния търговски модел.",
+    "homeAboutText": "В енергетиката, текстила, храните, здравеопазването и много други сектори, ние управляваме проучване на продукти, сравнение на доставчици, котировки и оперативно проследяване от едно място. Ние изясняваме вашето търсене, намираме правилния източник и поддържаме процеса с прозрачна комуникация.",
+    "homeAboutValues": [
+      "Снабдяване според търсенето",
+      "Секторна продуктова мрежа",
+      "Прозрачно проследяване на операцията"
+    ],
+    "homeAboutButton": "Разгледайте нашия работен модел",
+    "aboutText": "Успехът в глобалната търговия зависи от достигането до правилния продукт, в точното време и при правилните условия. Ние анализираме нуждите на нашите клиенти, идентифицираме канали за снабдяване, подходящи за сектора и търсенето, и управляваме надеждно търговския процес.",
+    "aboutSupport": "В Dynamic Era Export надхвърляме намирането на продукти и управляваме всяка стъпка от търговията с доверие, прозрачност и бързина.",
+    "aboutFlowTitle": "Търговия, изградена на доверие, бързина и прозрачност",
+    "aboutFlowText1": "От първия ден нашата основна цел е да свържем клиентите с правилните канали за снабдяване, да управляваме надеждно процесите на внос и износ и да станем бизнес партньор, който създава стойност на всеки етап от търговията.",
+    "aboutFlowText2": "В днешния глобален търговски пейзаж компаниите очакват повече от продукт: надежден доставчик, правилно ценообразуване, устойчиви бизнес отношения, оперативно проследяване и бърза комуникация. В Dynamic Era Export възприемаме холистичен търговски подход, който взема предвид всички тези нужди.",
+    "aboutPillars": [
+      [
+        "Нашата визия",
+        "Да станем силна търговска марка, известна с надеждност, бързина и фокусирано върху решения мислене в глобалната търговия, като същевременно предлагаме устойчиви решения за снабдяване в различни сектори."
+      ],
+      [
+        "Нашата мисия",
+        "Да анализираме правилно нуждите от внос, износ и снабдяване на нашите клиенти и да предоставим най-подходящите търговски решения с качествени продукти, надеждни източници, конкурентни цени и професионална оперативна поддръжка."
+      ],
+      [
+        "Нашият подход",
+        "Ние гледаме на всяко сътрудничество като на дългосрочни търговски взаимоотношения и се фокусираме не само върху настоящите заявки за продукти, но и върху бъдещите нужди на нашите клиенти."
+      ]
+    ],
+    "aboutOperationsEyebrow": "Какво правим",
+    "aboutOperationsTitle": "Ние предоставяме поддръжка от край до край в процесите на импортиране, експортиране и снабдяване.",
+    "aboutOperations": [
+      [
+        null,
+        "Поддръжка за импортиране и експортиране",
+        "Ние предоставяме търговска подкрепа в процесите на внос и износ."
+      ],
+      [
+        null,
+        "Проучване на продукти и доставчици",
+        "Ние проучваме продукти и доставчици за различни сектори."
+      ],
+      [
+        null,
+        "Продуктови групи, отговарящи на търсенето",
+        "Ние идентифицираме подходящи продуктови групи въз основа на търсенето на клиентите."
+      ],
+      [
+        null,
+        "Връзки с доставчици",
+        "Свързваме се с местни и международни доставчици."
+      ],
+      [
+        null,
+        "Котировки и операции",
+        "Ние управляваме оферти, цени и оперативни процеси."
+      ],
+      [
+        null,
+        "Устойчиво снабдяване",
+        "Ние предлагаме решения за устойчиво снабдяване в широки продуктови категории."
+      ]
+    ],
+    "aboutValuesEyebrow": "Нашите ценности",
+    "aboutValuesTitle": "Вярваме, че доверието, бързината, гъвкавостта и глобалната перспектива са в основата на търговията.",
+    "aboutValues": [
+      [
+        "Надеждност",
+        "Ние възприемаме прозрачен, отговорен и устойчив подход във всички бизнес процеси."
+      ],
+      [
+        "Скорост",
+        "Ние реагираме бързо на заявките на клиентите, планираме ефективно процеса и проследяваме отблизо оперативния поток."
+      ],
+      [
+        "Гъвкавост",
+        "Вместо фиксирани модели, ние създаваме специфични за проекта, продукта и търсенето решения."
+      ],
+      [
+        "Глобална перспектива",
+        "Като оценяваме различни пазари, продуктови групи и източници на доставки, ние предлагаме по-широки възможности."
+      ]
+    ],
+    "aboutCtaEyebrow": "Работа с Dynamic Era Export",
+    "aboutCtaTitle": "Нека направим вашия търговски процес по-безопасен, по-бърз и по-ефективен.",
+    "aboutCtaText": "Независимо дали търсите конкретна продуктова група или се нуждаете от професионална поддръжка за импортно-износни процеси, нашият екип е готов да изгради правилното решение за вас.",
+    "aboutCtaPrimary": "Свържете се чрез WhatsApp",
+    "aboutCtaEmail": "Свържете се чрез имейл",
+    "aboutCtaSecondary": "Страница за контакт",
+    "values": [
+      "Широка продуктова и секторна мрежа",
+      "Надежден търговски процес",
+      "Гъвкави и бързи решения",
+      "Опит в международната търговия"
+    ],
+    "contactLead": "Какъвто и продукт, целева страна или категория да търсите, можем да започнем с кратко съобщение.",
+    "form": {
+      "configTitle": "Услугата за формуляри не е конфигурирана",
+      "configText": "Трябва да се добави ключ за достъп Web3Forms, преди да могат да се изпращат съобщения. Междувременно можете да се свържете с нас чрез WhatsApp.",
+      "successTitle": "Вашето съобщение беше изпратено успешно",
+      "successText": "благодаря Ние ще се свържем с вас възможно най-скоро.",
+      "errorTitle": "Съобщението не можа да бъде изпратено",
+      "errorText": "Моля, опитайте отново скоро или се свържете с нас чрез WhatsApp.",
+      "rateTitle": "Моля, изчакайте малко",
+      "rateText": "За защита от спам можете да изпращате само едно съобщение на минута."
+    },
+    "partnersTitle": "Глобална търговска екосистема",
+    "importantLinksTitle": "Важни връзки",
+    "footerWhatsappTitle": "Свържете се с нас на WhatsApp",
+    "footerWhatsappText": "Свържете се директно с нас за вашия продукт, сектор или заявка за снабдяване.",
+    "footer": "Ясна комуникация при операции по внос, износ и глобални доставки.",
+    "copyright": "© Copyright 2026 Dynamic Era Export. Всички права запазени."
+  },
+  "az": {
+    "quoteCta": "Sitat əldə edin",
+    "homeBadge": "Qlobal Ticarət, Dinamik Həllər",
+    "homeText": "Enerjidən tikinti materiallarına, tekstildən qidaya, sağlamlıqdan müdafiə sənayesinə qədər biz müştərilərimiz üçün doğru məhsul, düzgün təchizatçı və düzgün ticarət modeli ilə dəyər yaradırıq.\n\n20+ illik kommersiya təcrübəsi, 1500+ müştəri və 20+ sektorda güclü təchizat şəbəkəsi ilə biz qlobal ticarətin dinamik gücüyük.",
+    "quoteTitle": "Ticarətin Hər Mərhələsində Sizinləyik",
+    "quoteText": "Məhsulun tədqiqi və tədarükdən tutmuş qiymət və logistika planlaşdırılmasına qədər biz hərtərəfli dəstək veririk.",
+    "trustTitle": "Ticarətin Hər Mərhələsində Sizinləyik",
+    "trustText": "Məhsulun tədqiqi və tədarükdən tutmuş qiymət və logistika planlaşdırılmasına qədər biz idxal və ixrac əməliyyatlarında hərtərəfli dəstək veririk.",
+    "servicesLead": "Biz idxal və ixrac proseslərində ehtiyac duyulan kommersiya infrastrukturunu, təchizat şəbəkəsini və əməliyyat dəstəyini bir dam altında təmin edirik.",
+    "services": [
+      [
+        "Məhsulların Təminatı",
+        "Biz yerli və beynəlxalq təchizat şəbəkəmiz vasitəsilə məhsulları araşdırır və sizi uyğun təchizatçılarla əlaqələndiririk."
+      ],
+      [
+        "İdxal Prosesləri",
+        "Xaricdən gətirilən məhsullar üçün mənbə, sənədləşdirmə və logistika koordinasiyasını dəstəkləyirik."
+      ],
+      [
+        "İxrac Həlləri",
+        "Türkiyədən müxtəlif bazarlara ixrac etmək istəyən şirkətlər üçün məhsul, bazar və əməliyyat həlləri yaradırıq."
+      ],
+      [
+        "Təchizatçı Araşdırması",
+        "Biz keyfiyyət, tutum, qiymət balansı və çatdırılma şərtlərinə əsaslanan uyğun təchizat variantları təklif edirik."
+      ],
+      [
+        "Kotirovka və Qiymətləndirmə",
+        "Biz tələb olunan məhsul qrupları üçün rəqabətli və müqayisə edilə bilən kotirovka variantları hazırlayırıq."
+      ],
+      [
+        "Logistika və Əməliyyat İzləmə",
+        "Çatdırılma, daşınma və əməliyyat təqibi proseslərində müntəzəm dəstək veririk."
+      ]
+    ],
+    "processTitle": "Tələbi təhlil edirik, düzgün mənbəni tapırıq və əməliyyatı izləyirik.",
+    "processLead": "Hər sektorun keyfiyyət, çatdırılma, qiymət və uyğunluq üçün fərqli gözləntiləri var; buna görə də biz standart prosesdən daha çox tələbə uyğun ticarət modeli qururuq.",
+    "processSteps": [
+      [
+        null,
+        "Tələb Analizi",
+        "Məhsul qrupu, hədəf bazar, kəmiyyət, keyfiyyət gözləntiləri və çatdırılma planı aydınlaşdırılır."
+      ],
+      [
+        null,
+        "Təchizat Mənbəsi",
+        "Uyğun təchizatçılar araşdırılır, qiymət və əməliyyat variantları müqayisə edilir."
+      ],
+      [
+        null,
+        "Ticarət əməliyyatı",
+        "Kotirovka, sənədləşdirmə, logistika və çatdırılma prosesləri şəffaf ünsiyyətlə izlənilir."
+      ]
+    ],
+    "ctaTitle": "Gəlin ticarət prosesinizi birlikdə gücləndirək.",
+    "ctaText": "Ehtiyacınız olan məhsul, təchizatçı və ya idxal-ixrac həlli üçün bizimlə əlaqə saxlayın. Gəlin sizin üçün ən uyğun ticarət modelini quraq.",
+    "hero": [
+      {
+        "eyebrow": "Qlobal Ticarət, Dinamik Həllər",
+        "title": "Dünyaya açılan dinamik ticarət gücü.",
+        "text": "Dynamic Era Export etibarlı, sürətli və peşəkar ixrac həlləri ilə müxtəlif sektorlardan məhsulları beynəlxalq bazarlara çatdırır."
+      },
+      {
+        "eyebrow": "Geniş sektor və məhsul şəbəkəsi",
+        "title": "Enerjidən qidaya, tekstildən sağlamlığa qədər çox yönlü ticarət həlləri.",
+        "text": "Biz müştərilərin tələbinə uyğun olaraq məhsul araşdırması, satınalma, qiymət və əməliyyat proseslərini peşəkar şəkildə idarə edirik."
+      },
+      {
+        "eyebrow": "20+ illik kommersiya təcrübəsi",
+        "title": "Qlobal ticarətin dinamik gücü ilə prosesinizi sürətləndirin.",
+        "text": "1500+ müştəri və geniş sektor şəbəkəsi ilə biz sürətli, çevik və davamlı ticarət həlləri təklif edirik."
+      }
+    ],
+    "metrics": [
+      [
+        null,
+        "xidmət illəri"
+      ],
+      [
+        null,
+        "müştərilər"
+      ],
+      [
+        null,
+        "biznes sahələri"
+      ],
+      [
+        null,
+        "ticarət dəstəyi"
+      ]
+    ],
+    "categoryTitle": "Seçilmiş Biznes Sahələri",
+    "categoryLead": "Dynamic Era Export müxtəlif sektorların ehtiyac duyduğu məhsul və material qrupları arasında geniş ticarət şəbəkəsinə malikdir.",
+    "allCategoriesCta": "Bütün Biznes Sahələrinə Baxın",
+    "categories": {
+      "energy": [
+        "Enerji",
+        "Avadanlıq, infrastruktur məhsulları, elektrik materialları və bərpa olunan enerjiyə dəstək məhsulları."
+      ],
+      "construction": [
+        "Tikinti materialları",
+        "Tikinti materialları, infrastruktur məhsulları, mexaniki avadanlıq və layihə əsaslı ehtiyaclar."
+      ],
+      "textile": [
+        "Tekstil",
+        "Parça, hazır geyim, iş geyimi, texniki tekstil və müxtəlif tekstil qrupları."
+      ],
+      "food": [
+        "Qida",
+        "Əsas ərzaq məhsulları, qablaşdırılmış qidalar, kənd təsərrüfatı məhsulları və etibarlı ticarət həlləri."
+      ],
+      "health": [
+        "Sağlamlıq",
+        "Tibbi məhsullar, istehlak materialları, səhiyyə avadanlığı və sektora aid təchizat həlləri."
+      ],
+      "defense": [
+        "Müdafiə Sənayesi",
+        "Uyğunluq, məxfilik və əməliyyat intizamı ilə peşəkar təchizat prosesləri."
+      ]
+    },
+    "categoryDetails": {
+      "energy": {
+        "title": "Enerji",
+        "text": "Enerji sektoru üçün biz müxtəlif məhsul qrupları, xüsusən də avadanlıq, infrastruktur məhsulları, elektrik materialları və bərpa olunan enerji dəstəyi məhsulları üzrə mənbə həlləri təqdim edirik.",
+        "points": [
+          "Enerji avadanlıqları",
+          "Elektrik materialları",
+          "Layihə əsaslı mənbə"
+        ]
+      },
+      "construction": {
+        "title": "Tikinti materialları",
+        "text": "Biz tikinti materialları, infrastruktur məhsulları, mexaniki avadanlıqlar, tamamlayıcı tikinti məhsulları və layihə əsaslı ehtiyaclar üçün satınalma xidmətləri təqdim edirik.",
+        "points": [
+          "Bina və infrastruktur məhsulları",
+          "Mexanik avadanlıq",
+          "Layihə əsaslı ehtiyaclar"
+        ]
+      },
+      "textile": {
+        "title": "Tekstil",
+        "text": "Parça, hazır geyim, iş geyimləri, texniki tekstil məhsulları və müxtəlif tekstil qrupları üçün yerli və beynəlxalq ticarət həlləri təklif edirik.",
+        "points": [
+          "Parça və hazır geyim",
+          "İş paltarı",
+          "Texniki tekstil məhsulları"
+        ]
+      },
+      "food": {
+        "title": "Qida",
+        "text": "Biz əsas ərzaq məhsulları, qablaşdırılmış qidalar, kənd təsərrüfatı məhsulları və müxtəlif qida kateqoriyaları üçün etibarlı tədarük və ticarət həlləri hazırlayırıq.",
+        "points": [
+          "Əsas qida",
+          "Qablaşdırılmış məhsullar",
+          "Kənd təsərrüfatı məhsulları"
+        ]
+      },
+      "health": {
+        "title": "Sağlamlıq",
+        "text": "Biz tibbi məhsullar, istehlak materialları, səhiyyə avadanlığı və sektora aid ehtiyaclar üçün qaynaq həlləri təqdim edirik.",
+        "points": [
+          "Tibbi məhsullar",
+          "İstehlak materialları",
+          "Səhiyyə avadanlıqları"
+        ]
+      },
+      "defense": {
+        "title": "Müdafiə Sənayesi",
+        "text": "Müdafiə sənayesində biz uyğunluq, məxfilik və əməliyyat intizamı prinsipləri ilə sektora xas təchizat prosesləri üçün peşəkar həllər hazırlayırıq.",
+        "points": [
+          "Uyğunluq",
+          "Məxfilik və nizam-intizam",
+          "Sektora uyğun təchizat"
+        ]
+      }
+    },
+    "categoryPageLead": "Bütün iş sahələrimizdə biz müştəri tələblərinə uyğun məhsul və tədarük həlləri inkişaf etdiririk.",
+    "categoryScrollHint": "Bütün sektorlara baxmaq üçün siyahını sürüşdürün",
+    "categoryCustomCtaTitle": "Burada qeyd olunmayan məhsul qrupları üçün bizimlə əlaqə saxlayın.",
+    "categoryCustomCtaText": "Siyahıda sizə lazım olan məhsul qrupunu görə bilmirsinizsə, bizimlə əlaqə saxlayın. Dynamic Era Export müxtəlif sektorlar üzrə xüsusi sorğularınız üçün uyğun mənbə variantlarını araşdıra bilər.",
+    "allSectorsLead": "Dynamic Era Export müxtəlif sektorlar üzrə məhsul və tədarük ehtiyacları üçün hərtərəfli ticarət həlləri təklif edir.",
+    "allSectors": [
+      [
+        "Enerji",
+        "Avadanlıq, infrastruktur məhsulları, elektrik materialları və bərpa olunan enerjiyə dəstək məhsulları."
+      ],
+      [
+        "Tikinti materialları",
+        "Tikinti materialları, infrastruktur məhsulları, mexaniki avadanlıq və layihə əsaslı ehtiyaclar."
+      ],
+      [
+        "Tekstil",
+        "Parça, hazır geyim, iş geyimləri, texniki tekstil məhsulları və müxtəlif tekstil qrupları."
+      ],
+      [
+        "Qida",
+        "Əsas ərzaq məhsulları, qablaşdırılmış qidalar, kənd təsərrüfatı məhsulları və etibarlı ticarət həlləri."
+      ],
+      [
+        "Sağlamlıq",
+        "Tibbi məhsullar, istehlak materialları, səhiyyə avadanlığı və sektora xas mənbə həlləri."
+      ],
+      [
+        "Müdafiə Sənayesi",
+        "Uyğunluq, məxfilik və əməliyyat intizamı ilə peşəkar qaynaq prosesləri."
+      ],
+      [
+        "Elektrik və Elektronika",
+        "Elektrik materialları, elektron məhsullar, qoşulma avadanlıqları və işıqlandırma məhsulları."
+      ],
+      [
+        "Maşın və Avadanlıq",
+        "Sənaye maşınları, istehsal avadanlıqları, ehtiyat hissələri və texniki avadanlıqlara ehtiyac."
+      ],
+      [
+        "Mebel",
+        "Ev, ofis, ticarət sahəsi və layihə əsaslı mebel məhsulları üçün geniş seçim variantları."
+      ],
+      [
+        "Avtomobil",
+        "Avtomobil ehtiyat hissələri, avadanlıq, aksesuarlar və sektora aid məhsul qrupları."
+      ],
+      [
+        "Plastik və Kauçuk",
+        "Plastik məhsullar, rezin materiallar, texniki hissələr və sənaye məhsul qrupları."
+      ],
+      [
+        "Qablaşdırma",
+        "Qida, tekstil, sənaye və pərakəndə sektorlar üçün qablaşdırma məhsulları və qablaşdırma həlləri."
+      ],
+      [
+        "Kosmetika",
+        "Kosmetik məhsullar, şəxsi qulluq məhsulları, gigiyena məhsulları və əlaqəli məhsul qrupları."
+      ],
+      [
+        "Təmizləyici Məhsullar",
+        "Sənaye təmizlik məhsulları, gigiyena materialları, istehlak materialları və korporativ istifadə məhsulları."
+      ],
+      [
+        "Kənd Təsərrüfatı Məhsulları",
+        "Kənd təsərrüfatı məhsulları, ərzaq xammalı və kənd təsərrüfatı sektoru üçün ticarət həlləri."
+      ],
+      [
+        "Tibbi Məhsullar",
+        "Səhiyyə müəssisələri və tibbi təchizat şirkətləri üçün məhsul tədarükü dəstəyi."
+      ],
+      [
+        "Xammal",
+        "Müxtəlif sektorların istehsal proseslərində lazım olan xammal qrupları."
+      ],
+      [
+        "Tikinti Məhsulları",
+        "Tikinti, bəzək və tikinti layihələrində istifadə olunan tamamlayıcı məhsul qrupları."
+      ],
+      [
+        "Logistika ilə dəstəklənən ticarət",
+        "Göndərmə, çatdırılma və əməliyyat izləmə mərhələləri üçün koordinasiya dəstəyi."
+      ],
+      [
+        "Ümumi mənbə həlləri",
+        "Bir kateqoriyadan kənarda xüsusi məhsul tələbləri üçün araşdırma və axtarış həlləri."
+      ]
+    ],
+    "aboutIntroTitle": "Haqqımızda",
+    "aboutIntroText": "Dynamic Era Export geniş məhsul portfeli, güclü təchizatçı əlaqələri və həll yönümlü yanaşması ilə daxili və xarici ticarətdə fəaliyyət göstərən ticarət şirkətidir.\n\nEnerji, tikinti materialları, tekstil, qida, səhiyyə, müdafiə sənayesi və müxtəlif ticarət kateqoriyalarında müştərilərin ehtiyaclarına uyğun qaynaq həlləri hazırlayır. Məqsədimiz təkcə məhsul təqdim etmək deyil, həm də müştərilərimizə etibarlı, davamlı və səmərəli ticarət təcrübəsi təqdim etməkdir.\n\nGeniş sektor şəbəkəmiz, çevik əməliyyat strukturumuz və müştəri yönümlü xidmət yanaşmamızla özümüzü şirkətlərin idxal və ixrac proseslərində güclü iş ortağı kimi yerləşdiririk.",
+    "aboutMore": "Haqqımızda Ətraflı Məlumat",
+    "homeAboutTitle": "Mənbə ehtiyaclarını düzgün ticarət modelinə çeviririk.",
+    "homeAboutText": "Enerji, tekstil, qida, səhiyyə və bir çox digər sektorlarda biz məhsul araşdırması, təchizatçı müqayisəsi, qiymət təklifi və əməliyyat təqibini bir yerdən idarə edirik. Şəffaf ünsiyyətlə tələbinizi dəqiqləşdirir, düzgün mənbəni tapır və prosesi davam etdiririk.",
+    "homeAboutValues": [
+      "Tələb-xüsusi mənbə",
+      "Sektor əsaslı məhsul şəbəkəsi",
+      "Şəffaf əməliyyat təqibi"
+    ],
+    "homeAboutButton": "İş Modelimizi araşdırın",
+    "aboutText": "Qlobal ticarətdə uğur düzgün məhsula, doğru zamanda və uyğun şərtlərdə çatmaqdan asılıdır. Müştərilərimizin ehtiyaclarını təhlil edir, sektora və tələbata uyğun qaynaq kanallarını müəyyənləşdirir və ticarət prosesini etibarlı şəkildə idarə edirik.",
+    "aboutSupport": "Dynamic Era Export-də biz məhsul tapmaqdan kənara çıxırıq və ticarətin hər addımını etibar, şəffaflıq və sürətlə idarə edirik.",
+    "aboutFlowTitle": "Etibar, sürət və şəffaflıq üzərində qurulmuş ticarət",
+    "aboutFlowText1": "İlk gündən bizim əsas məqsədimiz müştəriləri düzgün tədarük kanalları ilə əlaqələndirmək, idxal və ixrac proseslərini etibarlı şəkildə idarə etmək və ticarətin hər mərhələsində dəyər yaradan biznes tərəfdaşı olmaqdır.",
+    "aboutFlowText2": "Müasir qlobal ticarət mənzərəsində şirkətlər məhsuldan daha çox şey gözləyir: etibarlı təchizatçı, düzgün qiymət, davamlı işgüzar əlaqələr, əməliyyat təqibi və sürətli ünsiyyət. Dynamic Era Export-də biz bütün bu ehtiyacları nəzərə alan vahid ticarət yanaşmasını qəbul edirik.",
+    "aboutPillars": [
+      [
+        "Vizyonumuz",
+        "Qlobal ticarətdə etibarlılıq, sürət və həll odaklı düşüncə ilə tanınan güclü ticarət markası olmaq, eyni zamanda müxtəlif sektorlarda davamlı qaynaq həlləri təklif etmək."
+      ],
+      [
+        "Missiyamız",
+        "Müştərilərimizin idxal, ixrac və satınalma ehtiyaclarını düzgün təhlil etmək və keyfiyyətli məhsullar, etibarlı mənbələr, rəqabətli qiymətlər və peşəkar əməliyyat dəstəyi ilə ən uyğun ticarət həllərini təqdim etmək."
+      ],
+      [
+        "Bizim yanaşmamız",
+        "Biz hər bir əməkdaşlığı uzunmüddətli ticarət əlaqələri kimi görürük və təkcə cari məhsul tələblərinə deyil, həm də müştərilərimizin gələcək ehtiyaclarına diqqət yetiririk."
+      ]
+    ],
+    "aboutOperationsEyebrow": "Biz nə edirik",
+    "aboutOperationsTitle": "Biz idxal, ixrac və satınalma proseslərində başdan-başa dəstək veririk.",
+    "aboutOperations": [
+      [
+        null,
+        "İdxal və ixrac dəstəyi",
+        "Biz idxal və ixrac proseslərində kommersiya dəstəyi veririk."
+      ],
+      [
+        null,
+        "Məhsul və təchizatçı araşdırması",
+        "Biz müxtəlif sektorlar üçün məhsul və təchizatçıları araşdırırıq."
+      ],
+      [
+        null,
+        "Tələbə uyğun məhsul qrupları",
+        "Müştəri tələbinə əsasən uyğun məhsul qruplarını müəyyənləşdiririk."
+      ],
+      [
+        null,
+        "Təchizatçı əlaqələri",
+        "Biz yerli və beynəlxalq təchizatçılarla əlaqə saxlayırıq."
+      ],
+      [
+        null,
+        "Sitatlar və əməliyyatlar",
+        "Biz kotirovka, qiymət və əməliyyat proseslərini idarə edirik."
+      ],
+      [
+        null,
+        "Davamlı mənbə",
+        "Biz geniş məhsul kateqoriyaları üzrə davamlı mənbə həlləri təklif edirik."
+      ]
+    ],
+    "aboutValuesEyebrow": "Dəyərlərimiz",
+    "aboutValuesTitle": "Biz güvən, sürət, çeviklik və qlobal perspektivin ticarətin əsası olduğuna inanırıq.",
+    "aboutValues": [
+      [
+        "Etibarlılıq",
+        "Biz bütün biznes proseslərində şəffaf, məsuliyyətli və davamlı bir yanaşma tətbiq edirik."
+      ],
+      [
+        "Sürət",
+        "Biz müştərilərin istəklərinə tez cavab verir, prosesi səmərəli planlaşdırır və əməliyyat axınını yaxından izləyirik."
+      ],
+      [
+        "Çeviklik",
+        "Sabit nümunələr əvəzinə biz layihəyə, məhsula və tələbata uyğun həllər yaradırıq."
+      ],
+      [
+        "Qlobal Perspektiv",
+        "Müxtəlif bazarları, məhsul qruplarını və təchizat mənbələrini qiymətləndirərək, biz daha geniş seçimlər təklif edirik."
+      ]
+    ],
+    "aboutCtaEyebrow": "Dynamic Era Export ilə işləyirik",
+    "aboutCtaTitle": "Ticarət prosesinizi daha təhlükəsiz, daha sürətli və daha səmərəli edək.",
+    "aboutCtaText": "İstər konkret məhsul qrupu axtarırsınız, istərsə də idxal-ixrac prosesləri üçün peşəkar dəstəyə ehtiyacınız olsun, komandamız sizin üçün düzgün həll variantını yaratmağa hazırdır.",
+    "aboutCtaPrimary": "WhatsApp vasitəsilə əlaqə saxlayın",
+    "aboutCtaEmail": "E-poçt vasitəsilə əlaqə saxlayın",
+    "aboutCtaSecondary": "Əlaqə səhifəsi",
+    "values": [
+      "Geniş məhsul və sektor şəbəkəsi",
+      "Etibarlı ticarət prosesi",
+      "Çevik və sürətli həllər",
+      "Beynəlxalq ticarət təcrübəsi"
+    ],
+    "contactLead": "Axtardığınız məhsul, hədəf ölkə və ya kateqoriya nə olursa olsun, qısa bir mesajla başlaya bilərik.",
+    "form": {
+      "configTitle": "Forma xidməti konfiqurasiya edilməyib",
+      "configText": "Mesajlar göndərilməzdən əvvəl Web3Forms giriş açarı əlavə edilməlidir. Bu arada WhatsApp vasitəsilə bizimlə əlaqə saxlaya bilərsiniz.",
+      "successTitle": "Mesajınız uğurla göndərildi",
+      "successText": "təşəkkür edirəm. Biz ən qısa zamanda sizinlə əlaqə saxlayacağıq.",
+      "errorTitle": "Mesaj göndərilə bilmədi",
+      "errorText": "Lütfən, qısa müddətdə yenidən cəhd edin və ya WhatsApp vasitəsilə bizimlə əlaqə saxlayın.",
+      "rateTitle": "Zəhmət olmasa bir az gözləyin",
+      "rateText": "Spamdan qorunmaq üçün dəqiqədə yalnız bir mesaj göndərə bilərsiniz."
+    },
+    "partnersTitle": "Qlobal Ticarət Ekosistemi",
+    "importantLinksTitle": "Vacib Linklər",
+    "footerWhatsappTitle": "WhatsApp-də bizə müraciət edin",
+    "footerWhatsappText": "Məhsul, sektor və ya satınalma sorğunuz üçün birbaşa bizimlə əlaqə saxlayın.",
+    "footer": "İdxal, ixrac və qlobal satınalma əməliyyatlarında aydın ünsiyyət.",
+    "copyright": "© Copyright 2026 Dynamic Era Export. Bütün hüquqlar qorunur."
+  },
+  "pl": {
+    "quoteCta": "Uzyskaj wycenę",
+    "homeBadge": "Handel globalny, rozwiązania dynamiczne",
+    "homeText": "Od energii po materiały budowlane, od tekstyliów po żywność, od zdrowia po przemysł obronny – tworzymy wartość dla naszych klientów dzięki odpowiedniemu produktowi, właściwemu dostawcy i właściwemu modelowi handlowemu.\n\nDzięki ponad 20-letniemu doświadczeniu handlowemu, ponad 1500 klientom i silnej sieci dostaw w ponad 20 sektorach jesteśmy dynamiczną siłą światowego handlu.",
+    "quoteTitle": "Jesteśmy z Tobą na każdym etapie handlu",
+    "quoteText": "Zapewniamy kompleksowe wsparcie, od badań produktów i zaopatrzenia po planowanie cen i logistyki.",
+    "trustTitle": "Jesteśmy z Tobą na każdym etapie handlu",
+    "trustText": "Od badań produktów i zaopatrzenia po planowanie cen i logistyki – zapewniamy kompleksowe wsparcie w operacjach importu i eksportu.",
+    "servicesLead": "Zapewniamy pod jednym dachem infrastrukturę handlową, sieć dostaw i wsparcie operacyjne, których potrzebują firmy w procesach importu i eksportu.",
+    "services": [
+      [
+        "Pozyskiwanie produktów",
+        "Badamy produkty za pośrednictwem naszej lokalnej i międzynarodowej sieci dostaw i łączymy Cię z odpowiednimi dostawcami."
+      ],
+      [
+        "Procesy importu",
+        "W przypadku produktów sprowadzanych z zagranicy wspieramy zaopatrzenie, dokumentację i koordynację logistyki."
+      ],
+      [
+        "Rozwiązania eksportowe",
+        "Tworzymy rozwiązania produktowe, rynkowe i operacyjne dla firm, które chcą eksportować z Turcji na różne rynki."
+      ],
+      [
+        "Badania dostawców",
+        "Oferujemy odpowiednie opcje dostawców w oparciu o jakość, wydajność, równowagę cenową i warunki dostawy."
+      ],
+      [
+        "Oferta i wycena",
+        "Przygotowujemy konkurencyjne i porównywalne oferty cenowe dla żądanych grup produktowych."
+      ],
+      [
+        "Śledzenie logistyki i operacji",
+        "Zapewniamy regularne wsparcie podczas procesów dostaw, wysyłki i działań operacyjnych."
+      ]
+    ],
+    "processTitle": "Analizujemy popyt, znajdujemy odpowiednie źródło i śledzimy operację.",
+    "processLead": "Każdy sektor ma inne oczekiwania dotyczące jakości, dostaw, kosztów i zgodności; dlatego budujemy model handlu dostosowany do popytu, a nie standardowy proces.",
+    "processSteps": [
+      [
+        null,
+        "Analiza popytu",
+        "Wyjaśniona zostaje grupa produktów, rynek docelowy, ilość, oczekiwana jakość i plan dostaw."
+      ],
+      [
+        null,
+        "Źródło zaopatrzenia",
+        "Poszukiwani są odpowiedni dostawcy i porównywane są opcje cenowe i operacyjne."
+      ],
+      [
+        null,
+        "Operacja Handlowa",
+        "Procesy ofertowe, dokumentacyjne, logistyczne i dostawcze są prowadzone przy przejrzystej komunikacji."
+      ]
+    ],
+    "ctaTitle": "Wzmocnijmy razem Twój proces handlowy.",
+    "ctaText": "Skontaktuj się z nami, aby uzyskać potrzebny produkt, dostawcę lub rozwiązanie importowo-eksportowe. Zbudujmy dla Ciebie najbardziej odpowiedni model handlu.",
+    "hero": [
+      {
+        "eyebrow": "Handel globalny, rozwiązania dynamiczne",
+        "title": "Dynamiczne otwarcie potęgi handlowej na świat.",
+        "text": "Dynamic Era Export dostarcza produkty z różnych sektorów na rynki międzynarodowe dzięki niezawodnym, szybkim i profesjonalnym rozwiązaniom eksportowym."
+      },
+      {
+        "eyebrow": "Szeroka sieć branżowa i produktowa",
+        "title": "Wszechstronne rozwiązania handlowe, od energii po żywność, od tekstyliów po zdrowie.",
+        "text": "Profesjonalnie zarządzamy badaniami produktów, zaopatrzeniem, cenami i procesami operacyjnymi zgodnie z zapotrzebowaniem klienta."
+      },
+      {
+        "eyebrow": "Ponad 20 lat doświadczenia komercyjnego",
+        "title": "Przyspiesz swój proces dzięki dynamicznej sile globalnego handlu.",
+        "text": "Dzięki ponad 1500 klientom i szerokiej sieci sektorowej oferujemy szybkie, elastyczne i zrównoważone rozwiązania handlowe."
+      }
+    ],
+    "metrics": [
+      [
+        null,
+        "lat służby"
+      ],
+      [
+        null,
+        "klienci"
+      ],
+      [
+        null,
+        "obszary biznesowe"
+      ],
+      [
+        null,
+        "wsparcie handlowe"
+      ]
+    ],
+    "categoryTitle": "Wyróżnione obszary biznesowe",
+    "categoryLead": "Dynamic Era Export posiada szeroką sieć handlową obejmującą grupy produktów i materiałów potrzebnych różnym sektorom.",
+    "allCategoriesCta": "Wyświetl wszystkie obszary biznesowe",
+    "categories": {
+      "energy": [
+        "Energia",
+        "Sprzęt, produkty infrastrukturalne, materiały elektryczne i produkty wspierające energię odnawialną."
+      ],
+      "construction": [
+        "Materiały budowlane",
+        "Materiały budowlane, produkty infrastrukturalne, sprzęt mechaniczny i potrzeby oparte na projektach."
+      ],
+      "textile": [
+        "Włókienniczy",
+        "Tkaniny, odzież gotowa, robocza, tekstylia techniczne i różne grupy tekstyliów."
+      ],
+      "food": [
+        "Żywność",
+        "Podstawowe produkty spożywcze, żywność pakowana, produkty rolne i niezawodne rozwiązania handlowe."
+      ],
+      "health": [
+        "Zdrowie",
+        "Produkty medyczne, materiały eksploatacyjne, sprzęt medyczny i rozwiązania w zakresie dostaw specyficzne dla danego sektora."
+      ],
+      "defense": [
+        "Przemysł Obronny",
+        "Profesjonalne procesy dostaw z zachowaniem zgodności, poufności i dyscypliny operacyjnej."
+      ]
+    },
+    "categoryDetails": {
+      "energy": {
+        "title": "Energia",
+        "text": "Dla sektora energetycznego zapewniamy rozwiązania w zakresie zaopatrzenia w różnych grupach produktów, w szczególności w sprzęt, produkty infrastrukturalne, materiały elektryczne i produkty wspierające energię odnawialną.",
+        "points": [
+          "Sprzęt energetyczny",
+          "Materiały elektryczne",
+          "Zaopatrzenie oparte na projektach"
+        ]
+      },
+      "construction": {
+        "title": "Materiały budowlane",
+        "text": "Świadczymy usługi zaopatrzenia w materiały budowlane, produkty infrastrukturalne, sprzęt mechaniczny, uzupełniające produkty budowlane i potrzeby oparte na projektach.",
+        "points": [
+          "Produkty budowlane i infrastrukturalne",
+          "Sprzęt mechaniczny",
+          "Potrzeby oparte na projektach"
+        ]
+      },
+      "textile": {
+        "title": "Włókienniczy",
+        "text": "Oferujemy rozwiązania w zakresie handlu krajowego i międzynarodowego w zakresie tkanin, odzieży roboczej, odzieży roboczej, technicznych wyrobów tekstylnych i różnych grup tekstyliów.",
+        "points": [
+          "Tkanina i gotowe do noszenia",
+          "Odzież robocza",
+          "Techniczne wyroby tekstylne"
+        ]
+      },
+      "food": {
+        "title": "Żywność",
+        "text": "Opracowujemy niezawodne rozwiązania w zakresie zaopatrzenia i handlu podstawowymi produktami spożywczymi, żywnością pakowaną, produktami rolnymi i różnymi kategoriami żywności.",
+        "points": [
+          "Podstawowe jedzenie",
+          "Produkty pakowane",
+          "Produkty rolne"
+        ]
+      },
+      "health": {
+        "title": "Zdrowie",
+        "text": "Dostarczamy rozwiązania w zakresie pozyskiwania produktów medycznych, materiałów eksploatacyjnych, sprzętu medycznego i potrzeb specyficznych dla danego sektora.",
+        "points": [
+          "Produkty medyczne",
+          "Materiały eksploatacyjne",
+          "Sprzęt medyczny"
+        ]
+      },
+      "defense": {
+        "title": "Przemysł Obronny",
+        "text": "W branży obronnej opracowujemy profesjonalne rozwiązania dla sektorowych procesów dostaw z zachowaniem zasad compliance, poufności i dyscypliny operacyjnej.",
+        "points": [
+          "Zgodność",
+          "Poufność i dyscyplina",
+          "Dostawy specyficzne dla danego sektora"
+        ]
+      }
+    },
+    "categoryPageLead": "We wszystkich obszarach naszej działalności opracowujemy rozwiązania w zakresie produktów i zaopatrzenia zgodnie z zapotrzebowaniem klientów.",
+    "categoryScrollHint": "Przewiń listę, aby wyświetlić wszystkie sektory",
+    "categoryCustomCtaTitle": "Skontaktuj się z nami w sprawie grup produktów, które nie są tutaj wymienione.",
+    "categoryCustomCtaText": "Jeśli na liście nie widzisz potrzebnej Ci grupy produktów, skontaktuj się z nami. Dynamic Era Export może zbadać odpowiednie opcje zaopatrzenia dla Twoich specjalnych wymagań w różnych sektorach.",
+    "allSectorsLead": "Dynamic Era Export oferuje kompleksowe rozwiązania handlowe dla potrzeb produktów i zaopatrzenia w różnych sektorach.",
+    "allSectors": [
+      [
+        "Energia",
+        "Sprzęt, produkty infrastrukturalne, materiały elektryczne i produkty wspierające energię odnawialną."
+      ],
+      [
+        "Materiały budowlane",
+        "Materiały budowlane, produkty infrastrukturalne, sprzęt mechaniczny i potrzeby oparte na projektach."
+      ],
+      [
+        "Włókienniczy",
+        "Tkaniny, konfekcja, odzież robocza, techniczne wyroby tekstylne i różne grupy tekstyliów."
+      ],
+      [
+        "Żywność",
+        "Podstawowe produkty spożywcze, żywność pakowana, produkty rolne i niezawodne rozwiązania handlowe."
+      ],
+      [
+        "Zdrowie",
+        "Produkty medyczne, materiały eksploatacyjne, sprzęt medyczny i rozwiązania zaopatrzeniowe specyficzne dla danego sektora."
+      ],
+      [
+        "Przemysł Obronny",
+        "Profesjonalne procesy zaopatrzenia z zachowaniem zgodności, poufności i dyscypliny operacyjnej."
+      ],
+      [
+        "Elektryka i elektronika",
+        "Materiały elektryczne, produkty elektroniczne, sprzęt połączeniowy i produkty oświetleniowe."
+      ],
+      [
+        "Maszyny i sprzęt",
+        "Maszyny przemysłowe, sprzęt produkcyjny, części zamienne i wyposażenie techniczne."
+      ],
+      [
+        "Meble",
+        "Szerokie możliwości zaopatrzenia w produkty meblowe do domu, biura, powierzchni komercyjnej i oparte na projektach."
+      ],
+      [
+        "Automobilowy",
+        "Motoryzacyjne części zamienne, wyposażenie, akcesoria i specyficzne dla branży grupy produktów."
+      ],
+      [
+        "Plastik i guma",
+        "Wyroby z tworzyw sztucznych, materiały gumowe, części techniczne i grupy produktów przemysłowych."
+      ],
+      [
+        "Opakowanie",
+        "Produkty opakowaniowe i rozwiązania opakowaniowe dla sektora spożywczego, tekstylnego, przemysłowego i detalicznego."
+      ],
+      [
+        "Kosmetyki",
+        "Produkty kosmetyczne, produkty higieny osobistej, produkty higieniczne i powiązane grupy produktów."
+      ],
+      [
+        "Produkty czyszczące",
+        "Przemysłowe produkty czyszczące, materiały higieniczne, materiały eksploatacyjne i produkty do użytku korporacyjnego."
+      ],
+      [
+        "Produkty Rolne",
+        "Produkty rolne, surowce spożywcze i rozwiązania handlowe dla sektora rolnego."
+      ],
+      [
+        "Produkty medyczne",
+        "Wsparcie w zakresie pozyskiwania produktów dla instytucji opieki zdrowotnej i firm z branży zaopatrzenia medycznego."
+      ],
+      [
+        "Surowce",
+        "Grupy surowców potrzebne w procesach produkcyjnych różnych sektorów."
+      ],
+      [
+        "Produkty budowlane",
+        "Uzupełniające grupy produktów stosowane w budownictwie, dekoracji i projektach budowlanych."
+      ],
+      [
+        "Handel wspierany logistyką",
+        "Wsparcie koordynacyjne na etapach wysyłki, dostawy i śledzenia operacyjnego."
+      ],
+      [
+        "Ogólne rozwiązania dotyczące zaopatrzenia",
+        "Rozwiązania w zakresie badań i pozyskiwania produktów specjalnych, wykraczających poza jedną kategorię."
+      ]
+    ],
+    "aboutIntroTitle": "O nas",
+    "aboutIntroText": "Dynamic Era Export jest firmą handlową działającą w handlu krajowym i zagranicznym, z szerokim portfolio produktów, silnymi relacjami z dostawcami i podejściem zorientowanym na rozwiązania.\n\nOpracowuje rozwiązania w zakresie zaopatrzenia odpowiednie dla potrzeb klientów z branży energetycznej, materiałów budowlanych, tekstyliów, żywności, zdrowia, przemysłu obronnego i różnych kategorii handlowych. Naszym celem jest nie tylko dostarczanie produktów, ale także oferowanie naszym klientom niezawodnych, zrównoważonych i wydajnych doświadczeń handlowych.\n\nDzięki naszej szerokiej sieci branżowej, elastycznej strukturze operacyjnej i podejściu do usług zorientowanych na klienta, pozycjonujemy się jako silny partner biznesowy w procesach importu i eksportu przedsiębiorstw.",
+    "aboutMore": "Więcej informacji o nas",
+    "homeAboutTitle": "Przekształcamy potrzeby sourcingowe we właściwy model handlowy.",
+    "homeAboutText": "W sektorach energetycznym, tekstylnym, spożywczym, zdrowotnym i wielu innych zarządzamy badaniami produktów, porównywaniem dostawców, ofertami cenowymi i monitorowaniem operacyjnym z jednego miejsca. Wyjaśniamy Twoje zapotrzebowanie, znajdujemy właściwe źródło i utrzymujemy proces dzięki przejrzystej komunikacji.",
+    "homeAboutValues": [
+      "Zaopatrzenie dostosowane do zapotrzebowania",
+      "Sieć produktów oparta na sektorach",
+      "Przejrzyste monitorowanie operacji"
+    ],
+    "homeAboutButton": "Poznaj nasz model pracy",
+    "aboutText": "Sukces w handlu światowym zależy od dotarcia do odpowiedniego produktu, we właściwym czasie i we właściwych warunkach. Analizujemy potrzeby naszych klientów, identyfikujemy kanały zaopatrzenia odpowiednie dla branży i popytu oraz rzetelnie zarządzamy procesem handlowym.",
+    "aboutSupport": "W Dynamic Era Export wykraczamy poza wyszukiwanie produktów i zarządzamy każdym etapem handlu z zaufaniem, przejrzystością i szybkością.",
+    "aboutFlowTitle": "Handel oparty na zaufaniu, szybkości i przejrzystości",
+    "aboutFlowText1": "Od samego początku naszym głównym celem było zapewnienie klientom odpowiednich kanałów zaopatrzenia, niezawodne zarządzanie procesami importu i eksportu oraz bycie partnerem biznesowym tworzącym wartość na każdym etapie handlu.",
+    "aboutFlowText2": "W dzisiejszym globalnym krajobrazie handlowym firmy oczekują czegoś więcej niż tylko produktu: niezawodnego dostawcy, właściwych cen, zrównoważonych relacji biznesowych, działań następczych i szybkiej komunikacji. W Dynamic Era Export przyjmujemy holistyczne podejście do handlu, które uwzględnia wszystkie te potrzeby.",
+    "aboutPillars": [
+      [
+        "Nasza wizja",
+        "Stać się silną marką handlową znaną z niezawodności, szybkości i myślenia skoncentrowanego na rozwiązaniach w handlu światowym, oferując jednocześnie zrównoważone rozwiązania w zakresie zaopatrzenia w różnych sektorach."
+      ],
+      [
+        "Nasza misja",
+        "Prawidłowa analiza potrzeb naszych klientów w zakresie importu, eksportu i zaopatrzenia oraz dostarczanie najbardziej odpowiednich rozwiązań handlowych z produktami wysokiej jakości, niezawodnymi źródłami, konkurencyjnymi cenami i profesjonalnym wsparciem operacyjnym."
+      ],
+      [
+        "Nasze podejście",
+        "Każdą współpracę postrzegamy jako długoterminową relację handlową i skupiamy się nie tylko na bieżących zapotrzebowaniach na produkty, ale także na przyszłych potrzebach naszych klientów."
+      ]
+    ],
+    "aboutOperationsEyebrow": "Co robimy",
+    "aboutOperationsTitle": "Zapewniamy kompleksowe wsparcie w procesach importu, eksportu i zaopatrzenia.",
+    "aboutOperations": [
+      [
+        null,
+        "Wsparcie importu i eksportu",
+        "Zapewniamy wsparcie handlowe w procesach importu i eksportu."
+      ],
+      [
+        null,
+        "Badania produktów i dostawców",
+        "Badamy produkty i dostawców dla różnych sektorów."
+      ],
+      [
+        null,
+        "Grupy produktów dopasowane do popytu",
+        "Identyfikujemy odpowiednie grupy produktów na podstawie zapotrzebowania klientów."
+      ],
+      [
+        null,
+        "Połączenia dostawców",
+        "Łączymy się z dostawcami lokalnymi i międzynarodowymi."
+      ],
+      [
+        null,
+        "Cytaty i operacje",
+        "Zarządzamy procesami ofertowymi, cenowymi i operacyjnymi."
+      ],
+      [
+        null,
+        "Zrównoważone pozyskiwanie",
+        "Oferujemy zrównoważone rozwiązania w zakresie zaopatrzenia w szerokich kategoriach produktów."
+      ]
+    ],
+    "aboutValuesEyebrow": "Nasze wartości",
+    "aboutValuesTitle": "Wierzymy, że zaufanie, szybkość, elastyczność i globalna perspektywa są podstawą handlu.",
+    "aboutValues": [
+      [
+        "Niezawodność",
+        "Stosujemy przejrzyste, odpowiedzialne i zrównoważone podejście we wszystkich procesach biznesowych."
+      ],
+      [
+        "Prędkość",
+        "Szybko reagujemy na prośby klientów, sprawnie planujemy proces i uważnie śledzimy przepływ operacyjny."
+      ],
+      [
+        "Elastyczność",
+        "Zamiast ustalonych schematów tworzymy rozwiązania dostosowane do projektu, produktu i zapotrzebowania."
+      ],
+      [
+        "Perspektywa globalna",
+        "Oceniając różne rynki, grupy produktów i źródła dostaw, oferujemy szersze możliwości."
+      ]
+    ],
+    "aboutCtaEyebrow": "Współpraca z Dynamic Era Export",
+    "aboutCtaTitle": "Sprawmy, aby Twój proces handlowy był bezpieczniejszy, szybszy i wydajniejszy.",
+    "aboutCtaText": "Niezależnie od tego, czy szukasz konkretnej grupy produktów, czy potrzebujesz profesjonalnego wsparcia w procesach import-eksport, nasz zespół jest gotowy zbudować dla Ciebie odpowiednie rozwiązanie.",
+    "aboutCtaPrimary": "Skontaktuj się poprzez WhatsApp",
+    "aboutCtaEmail": "Kontakt poprzez e-mail",
+    "aboutCtaSecondary": "Strona kontaktowa",
+    "values": [
+      "Szeroka sieć produktów i sektorów",
+      "Niezawodny proces handlowy",
+      "Elastyczne i szybkie rozwiązania",
+      "Doświadczenie w handlu międzynarodowym"
+    ],
+    "contactLead": "Niezależnie od tego, jakiego produktu, kraju docelowego lub kategorii szukasz, możemy zacząć od krótkiej wiadomości.",
+    "form": {
+      "configTitle": "Usługa formularza nie jest skonfigurowana",
+      "configText": "Aby możliwe było wysyłanie wiadomości, należy dodać klucz dostępu Web3Forms. W międzyczasie możesz skontaktować się z nami za pośrednictwem WhatsApp.",
+      "successTitle": "Twoja wiadomość została pomyślnie wysłana",
+      "successText": "Dziękuję. Skontaktujemy się z Tobą tak szybko, jak to możliwe.",
+      "errorTitle": "Nie udało się wysłać wiadomości",
+      "errorText": "Spróbuj ponownie wkrótce lub skontaktuj się z nami poprzez WhatsApp.",
+      "rateTitle": "Proszę chwilę poczekać",
+      "rateText": "W celu ochrony przed spamem możesz wysłać tylko jedną wiadomość na minutę."
+    },
+    "partnersTitle": "Globalny ekosystem handlu",
+    "importantLinksTitle": "Ważne linki",
+    "footerWhatsappTitle": "Skontaktuj się z nami na WhatsApp",
+    "footerWhatsappText": "Skontaktuj się z nami bezpośrednio w sprawie Twojego produktu, sektora lub zapytania o źródła zaopatrzenia.",
+    "footer": "Jasna komunikacja w operacjach importu, eksportu i globalnego zaopatrzenia.",
+    "copyright": "© Copyright 2026 Dynamic Era Export. Wszelkie prawa zastrzeżone."
+  },
+  "el": {
+    "quoteCta": "Λάβετε μια προσφορά",
+    "homeBadge": "Παγκόσμιο Εμπόριο, Δυναμικές Λύσεις",
+    "homeText": "Από την ενέργεια μέχρι τα υλικά κατασκευής, από τα κλωστοϋφαντουργικά προϊόντα μέχρι τα τρόφιμα, από την υγεία στην αμυντική βιομηχανία, δημιουργούμε αξία για τους πελάτες μας με το σωστό προϊόν, τον σωστό προμηθευτή και το σωστό εμπορικό μοντέλο.\n\nΜε 20+ χρόνια εμπορικής εμπειρίας, 1500+ πελάτες και ισχυρό δίκτυο εφοδιασμού σε 20+ τομείς, είμαστε η δυναμική δύναμη του παγκόσμιου εμπορίου.",
+    "quoteTitle": "Είμαστε μαζί σας σε κάθε στάδιο του εμπορίου",
+    "quoteText": "Από την έρευνα προϊόντων και την προμήθεια έως τον προγραμματισμό τιμολόγησης και logistics, παρέχουμε υποστήριξη από άκρο σε άκρο.",
+    "trustTitle": "Είμαστε μαζί σας σε κάθε στάδιο του εμπορίου",
+    "trustText": "Από την έρευνα προϊόντων και την προμήθεια έως τον προγραμματισμό τιμολόγησης και logistics, παρέχουμε υποστήριξη από άκρο σε άκρο στις εργασίες εισαγωγής και εξαγωγής.",
+    "servicesLead": "Παρέχουμε την εμπορική υποδομή, το δίκτυο εφοδιασμού και τη λειτουργική υποστήριξη που χρειάζονται οι εταιρείες στις διαδικασίες εισαγωγής και εξαγωγής κάτω από μια στέγη.",
+    "services": [
+      [
+        "Προμήθεια προϊόντων",
+        "Ερευνούμε προϊόντα μέσω του τοπικού και διεθνούς δικτύου προμηθειών μας και σας συνδέουμε με κατάλληλους προμηθευτές."
+      ],
+      [
+        "Διαδικασίες εισαγωγής",
+        "Για προϊόντα που προέρχονται από το εξωτερικό, υποστηρίζουμε την προμήθεια, την τεκμηρίωση και τον συντονισμό logistics."
+      ],
+      [
+        "Εξαγωγικές Λύσεις",
+        "Δημιουργούμε λύσεις προϊόντων, αγοράς και λειτουργίας για εταιρείες που θέλουν να εξάγουν από την Τουρκία σε διαφορετικές αγορές."
+      ],
+      [
+        "Έρευνα Προμηθευτών",
+        "Προσφέρουμε κατάλληλες επιλογές προμηθευτών με βάση την ποιότητα, τη χωρητικότητα, το ισοζύγιο τιμής και τους όρους παράδοσης."
+      ],
+      [
+        "Προσφορά και Τιμολόγηση",
+        "Ετοιμάζουμε ανταγωνιστικές και συγκρίσιμες επιλογές προσφοράς για ζητούμενες ομάδες προϊόντων."
+      ],
+      [
+        "Logistics και Παρακολούθηση Λειτουργίας",
+        "Παρέχουμε τακτική υποστήριξη σε όλες τις διαδικασίες παράδοσης, αποστολής και λειτουργικής παρακολούθησης."
+      ]
+    ],
+    "processTitle": "Αναλύουμε τη ζήτηση, βρίσκουμε τη σωστή πηγή και παρακολουθούμε τη λειτουργία.",
+    "processLead": "Κάθε τομέας έχει διαφορετικές προσδοκίες για ποιότητα, παράδοση, κόστος και συμμόρφωση. Ως εκ τούτου, οικοδομούμε ένα μοντέλο εμπορίου ειδικά για τη ζήτηση και όχι μια τυπική διαδικασία.",
+    "processSteps": [
+      [
+        null,
+        "Ανάλυση ζήτησης",
+        "Η ομάδα προϊόντων, η αγορά-στόχος, η ποσότητα, η προσδοκία ποιότητας και το σχέδιο παράδοσης διευκρινίζονται."
+      ],
+      [
+        null,
+        "Πηγή ανεφοδιασμού",
+        "Ερευνώνται οι κατάλληλοι προμηθευτές και συγκρίνονται οι επιλογές τιμών και λειτουργίας."
+      ],
+      [
+        null,
+        "Εμπορική Λειτουργία",
+        "Οι διαδικασίες προσφοράς, τεκμηρίωσης, εφοδιαστικής και παράδοσης ακολουθούνται με διαφανή επικοινωνία."
+      ]
+    ],
+    "ctaTitle": "Ας ενισχύσουμε μαζί την εμπορική σας διαδικασία.",
+    "ctaText": "Επικοινωνήστε μαζί μας για το προϊόν, τον προμηθευτή ή τη λύση εισαγωγής-εξαγωγής που χρειάζεστε. Ας δημιουργήσουμε το πιο κατάλληλο εμπορικό μοντέλο για εσάς.",
+    "hero": [
+      {
+        "eyebrow": "Παγκόσμιο Εμπόριο, Δυναμικές Λύσεις",
+        "title": "Μια δυναμική εμπορική δύναμη που ανοίγει στον κόσμο.",
+        "text": "Η Dynamic Era Export παραδίδει προϊόντα από διαφορετικούς τομείς στις διεθνείς αγορές με αξιόπιστες, γρήγορες και επαγγελματικές λύσεις εξαγωγών."
+      },
+      {
+        "eyebrow": "Ευρύς τομέας και δίκτυο προϊόντων",
+        "title": "Ευέλικτες λύσεις εμπορίου από την ενέργεια μέχρι τα τρόφιμα, τα υφάσματα στην υγεία.",
+        "text": "Διαχειριζόμαστε επαγγελματικά τις διαδικασίες έρευνας προϊόντων, προμήθειας, τιμολόγησης και λειτουργίας σύμφωνα με τη ζήτηση των πελατών."
+      },
+      {
+        "eyebrow": "20+ χρόνια εμπορικής εμπειρίας",
+        "title": "Επιταχύνετε τη διαδικασία σας με τη δυναμική δύναμη του παγκόσμιου εμπορίου.",
+        "text": "Με 1500+ πελάτες και ένα ευρύ τομεακό δίκτυο, προσφέρουμε γρήγορες, ευέλικτες και βιώσιμες εμπορικές λύσεις."
+      }
+    ],
+    "metrics": [
+      [
+        null,
+        "χρόνια υπηρεσίας"
+      ],
+      [
+        null,
+        "πελάτες"
+      ],
+      [
+        null,
+        "επιχειρηματικούς χώρους"
+      ],
+      [
+        null,
+        "υποστήριξη του εμπορίου"
+      ]
+    ],
+    "categoryTitle": "Επιλεγμένες επιχειρηματικές περιοχές",
+    "categoryLead": "Η Dynamic Era Export διαθέτει ένα ευρύ εμπορικό δίκτυο σε ομάδες προϊόντων και υλικών που απαιτούνται από διαφορετικούς τομείς.",
+    "allCategoriesCta": "Δείτε όλους τους επιχειρηματικούς χώρους",
+    "categories": {
+      "energy": [
+        "Ενέργεια",
+        "Εξοπλισμός, προϊόντα υποδομής, ηλεκτρικά υλικά και προϊόντα υποστήριξης ανανεώσιμων πηγών ενέργειας."
+      ],
+      "construction": [
+        "Υλικά Κατασκευών",
+        "Οικοδομικά υλικά, προϊόντα υποδομής, μηχανολογικός εξοπλισμός και ανάγκες που βασίζονται σε έργα."
+      ],
+      "textile": [
+        "Υφασμα",
+        "Υφάσματα, έτοιμα ενδύματα, ενδύματα εργασίας, τεχνικά υφάσματα και διάφορες ομάδες υφασμάτων."
+      ],
+      "food": [
+        "Τροφή",
+        "Βασικά προϊόντα διατροφής, συσκευασμένα τρόφιμα, αγροτικά προϊόντα και αξιόπιστες εμπορικές λύσεις."
+      ],
+      "health": [
+        "Υγεία",
+        "Ιατρικά προϊόντα, αναλώσιμα, εξοπλισμός υγειονομικής περίθαλψης και λύσεις προμήθειας ανά τομέα."
+      ],
+      "defense": [
+        "Αμυντική Βιομηχανία",
+        "Επαγγελματικές διαδικασίες εφοδιασμού με συμμόρφωση, εμπιστευτικότητα και λειτουργική πειθαρχία."
+      ]
+    },
+    "categoryDetails": {
+      "energy": {
+        "title": "Ενέργεια",
+        "text": "Για τον ενεργειακό τομέα, παρέχουμε λύσεις προμήθειας σε διάφορες ομάδες προϊόντων, ιδίως εξοπλισμό, προϊόντα υποδομής, ηλεκτρικά υλικά και προϊόντα υποστήριξης ανανεώσιμων πηγών ενέργειας.",
+        "points": [
+          "Ενεργειακός εξοπλισμός",
+          "Ηλεκτρικά υλικά",
+          "Προμήθεια βάσει έργου"
+        ]
+      },
+      "construction": {
+        "title": "Υλικά Κατασκευών",
+        "text": "Παρέχουμε υπηρεσίες προμήθειας δομικών υλικών, προϊόντων υποδομής, μηχανολογικού εξοπλισμού, συμπληρωματικών δομικών προϊόντων και αναγκών που βασίζονται σε έργα.",
+        "points": [
+          "Προϊόντα κτιρίων και υποδομών",
+          "Μηχανικός εξοπλισμός",
+          "Ανάγκες που βασίζονται σε έργα"
+        ]
+      },
+      "textile": {
+        "title": "Υφασμα",
+        "text": "Προσφέρουμε λύσεις εσωτερικού και διεθνούς εμπορίου για υφάσματα, έτοιμα ενδύματα, ενδύματα εργασίας, τεχνικά κλωστοϋφαντουργικά προϊόντα και διαφορετικές ομάδες κλωστοϋφαντουργικών προϊόντων.",
+        "points": [
+          "Ύφασμα και έτοιμα για ένδυση",
+          "Ενδύματα εργασίας",
+          "Τεχνικά κλωστοϋφαντουργικά προϊόντα"
+        ]
+      },
+      "food": {
+        "title": "Τροφή",
+        "text": "Αναπτύσσουμε αξιόπιστες λύσεις προμήθειας και εμπορίου για βασικά προϊόντα διατροφής, συσκευασμένα τρόφιμα, γεωργικά προϊόντα και διαφορετικές κατηγορίες τροφίμων.",
+        "points": [
+          "Βασική τροφή",
+          "Συσκευασμένα προϊόντα",
+          "Γεωργικά προϊόντα"
+        ]
+      },
+      "health": {
+        "title": "Υγεία",
+        "text": "Παρέχουμε λύσεις προμήθειας για ιατρικά προϊόντα, αναλώσιμα, εξοπλισμό υγειονομικής περίθαλψης και ανάγκες ανά τομέα.",
+        "points": [
+          "Ιατρικά προϊόντα",
+          "Αναλώσιμα",
+          "Εξοπλισμός υγειονομικής περίθαλψης"
+        ]
+      },
+      "defense": {
+        "title": "Αμυντική Βιομηχανία",
+        "text": "Στην αμυντική βιομηχανία, αναπτύσσουμε επαγγελματικές λύσεις για διαδικασίες εφοδιασμού σε συγκεκριμένους τομείς με αρχές συμμόρφωσης, εμπιστευτικότητας και επιχειρησιακής πειθαρχίας.",
+        "points": [
+          "Συμμόρφωση",
+          "Εμπιστευτικότητα και πειθαρχία",
+          "Προμήθεια ειδικού τομέα"
+        ]
+      }
+    },
+    "categoryPageLead": "Σε όλους τους επιχειρηματικούς μας τομείς, αναπτύσσουμε λύσεις προϊόντων και προμήθειας σύμφωνα με τη ζήτηση των πελατών.",
+    "categoryScrollHint": "Κάντε κύλιση στη λίστα για να δείτε όλους τους τομείς",
+    "categoryCustomCtaTitle": "Επικοινωνήστε μαζί μας για ομάδες προϊόντων που δεν αναφέρονται εδώ.",
+    "categoryCustomCtaText": "Εάν δεν μπορείτε να δείτε την ομάδα προϊόντων που χρειάζεστε στη λίστα, επικοινωνήστε μαζί μας. Η Dynamic Era Export μπορεί να ερευνήσει κατάλληλες επιλογές προμήθειας για τα ειδικά αιτήματά σας σε διαφορετικούς τομείς.",
+    "allSectorsLead": "Η Dynamic Era Export προσφέρει ολοκληρωμένες εμπορικές λύσεις για ανάγκες προϊόντων και προμήθειας σε διαφορετικούς τομείς.",
+    "allSectors": [
+      [
+        "Ενέργεια",
+        "Εξοπλισμός, προϊόντα υποδομής, ηλεκτρικά υλικά και προϊόντα υποστήριξης ανανεώσιμων πηγών ενέργειας."
+      ],
+      [
+        "Υλικά Κατασκευών",
+        "Οικοδομικά υλικά, προϊόντα υποδομής, μηχανολογικός εξοπλισμός και ανάγκες που βασίζονται σε έργα."
+      ],
+      [
+        "Υφασμα",
+        "Υφάσματα, έτοιμα ενδύματα, ενδύματα εργασίας, τεχνικά κλωστοϋφαντουργικά προϊόντα και διάφορες ομάδες κλωστοϋφαντουργικών προϊόντων."
+      ],
+      [
+        "Τροφή",
+        "Βασικά προϊόντα διατροφής, συσκευασμένα τρόφιμα, αγροτικά προϊόντα και αξιόπιστες εμπορικές λύσεις."
+      ],
+      [
+        "Υγεία",
+        "Ιατρικά προϊόντα, αναλώσιμα, εξοπλισμός υγειονομικής περίθαλψης και λύσεις προμήθειας ανά τομέα."
+      ],
+      [
+        "Αμυντική Βιομηχανία",
+        "Επαγγελματικές διαδικασίες προμήθειας με συμμόρφωση, εμπιστευτικότητα και λειτουργική πειθαρχία."
+      ],
+      [
+        "Ηλεκτρολόγων & Ηλεκτρονικών",
+        "Ηλεκτρικά υλικά, ηλεκτρονικά προϊόντα, εξοπλισμός σύνδεσης και προϊόντα φωτισμού."
+      ],
+      [
+        "Μηχανήματα & Εξοπλισμός",
+        "Βιομηχανικά μηχανήματα, εξοπλισμός παραγωγής, ανταλλακτικά και ανάγκες τεχνικού εξοπλισμού."
+      ],
+      [
+        "Επιπλα",
+        "Ευρείες επιλογές προμήθειας για οικιακά, γραφεία, εμπορικούς χώρους και προϊόντα επίπλων που βασίζονται σε έργα."
+      ],
+      [
+        "Αυτοκίνητο",
+        "Ανταλλακτικά αυτοκινήτων, εξοπλισμός, αξεσουάρ και ομάδες προϊόντων ανά τομέα."
+      ],
+      [
+        "Πλαστικό & Καουτσούκ",
+        "Πλαστικά προϊόντα, ελαστικά υλικά, τεχνικά μέρη και ομάδες βιομηχανικών προϊόντων."
+      ],
+      [
+        "Συσκευασία",
+        "Προϊόντα συσκευασίας και λύσεις συσκευασίας για τομείς τροφίμων, κλωστοϋφαντουργίας, βιομηχανίας και λιανικής."
+      ],
+      [
+        "Καλλυντικά",
+        "Καλλυντικά προϊόντα, προϊόντα προσωπικής περιποίησης, προϊόντα υγιεινής και συναφείς ομάδες προϊόντων."
+      ],
+      [
+        "Προϊόντα Καθαρισμού",
+        "Προϊόντα βιομηχανικού καθαρισμού, υλικά υγιεινής, αναλώσιμα και προϊόντα εταιρικής χρήσης."
+      ],
+      [
+        "Αγροτικά Προϊόντα",
+        "Αγροτικά προϊόντα, πρώτες ύλες τροφίμων και εμπορικές λύσεις για τον αγροτικό τομέα."
+      ],
+      [
+        "Ιατρικά Προϊόντα",
+        "Υποστήριξη προμήθειας προϊόντων για ιδρύματα υγειονομικής περίθαλψης και εταιρείες ιατρικών προμηθειών."
+      ],
+      [
+        "Πρώτες ύλες",
+        "Ομάδες πρώτων υλών που απαιτούνται στις παραγωγικές διαδικασίες διαφορετικών τομέων."
+      ],
+      [
+        "Δομικά Προϊόντα",
+        "Συμπληρωματικές ομάδες προϊόντων που χρησιμοποιούνται σε κατασκευές, διακόσμηση και οικοδομικά έργα."
+      ],
+      [
+        "Logistics-Supported Trade",
+        "Υποστήριξη συντονισμού για τα στάδια αποστολής, παράδοσης και λειτουργικής παρακολούθησης."
+      ],
+      [
+        "Γενικές Λύσεις Προμήθειας",
+        "Λύσεις έρευνας και προμήθειας για ειδικά αιτήματα προϊόντων πέρα ​​από μία κατηγορία."
+      ]
+    ],
+    "aboutIntroTitle": "Σχετικά με εμάς",
+    "aboutIntroText": "Η Dynamic Era Export είναι μια εμπορική εταιρεία που δραστηριοποιείται στο εσωτερικό και εξωτερικό εμπόριο με ευρύ χαρτοφυλάκιο προϊόντων, ισχυρές σχέσεις προμηθευτών και προσέγγιση προσανατολισμένη στη λύση.\n\nΑναπτύσσει λύσεις προμήθειας κατάλληλες για τις ανάγκες των πελατών σε ενέργεια, δομικά υλικά, κλωστοϋφαντουργία, τρόφιμα, υγεία, αμυντική βιομηχανία και διάφορες εμπορικές κατηγορίες. Στόχος μας δεν είναι μόνο να παρέχουμε προϊόντα, αλλά να προσφέρουμε στους πελάτες μας μια αξιόπιστη, βιώσιμη και αποτελεσματική εμπορική εμπειρία.\n\nΜε το ευρύ τομεακό μας δίκτυο, την ευέλικτη δομή λειτουργίας και την πελατοκεντρική προσέγγιση εξυπηρέτησης, τοποθετούμαστε ως ισχυρός επιχειρηματικός εταίρος στις διαδικασίες εισαγωγής και εξαγωγής των εταιρειών.",
+    "aboutMore": "Περισσότερες πληροφορίες για εμάς",
+    "homeAboutTitle": "Μετατρέπουμε τις ανάγκες προμήθειας στο σωστό εμπορικό μοντέλο.",
+    "homeAboutText": "Σε όλους τους τομείς της ενέργειας, της κλωστοϋφαντουργίας, των τροφίμων, της υγείας και σε πολλούς άλλους τομείς, διαχειριζόμαστε την έρευνα προϊόντων, τη σύγκριση προμηθευτών, τις προσφορές και τη λειτουργική παρακολούθηση από ένα μέρος. Διευκρινίζουμε το αίτημά σας, βρίσκουμε τη σωστή πηγή και συνεχίζουμε τη διαδικασία με διαφανή επικοινωνία.",
+    "homeAboutValues": [
+      "Πηγή συγκεκριμένης ζήτησης",
+      "Τομεακό δίκτυο προϊόντων",
+      "Διαφανής παρακολούθηση λειτουργίας"
+    ],
+    "homeAboutButton": "Εξερευνήστε το μοντέλο εργασίας μας",
+    "aboutText": "Η επιτυχία στο παγκόσμιο εμπόριο εξαρτάται από την επίτευξη του κατάλληλου προϊόντος, την κατάλληλη στιγμή και υπό τις κατάλληλες συνθήκες. Αναλύουμε τις ανάγκες των πελατών μας, εντοπίζουμε κανάλια προμήθειας κατάλληλα για τον κλάδο και τη ζήτηση και διαχειριζόμαστε αξιόπιστα τη διαδικασία του εμπορίου.",
+    "aboutSupport": "Στη Dynamic Era Export, προχωράμε πέρα ​​από την εύρεση προϊόντων και διαχειριζόμαστε κάθε βήμα του εμπορίου με εμπιστοσύνη, διαφάνεια και ταχύτητα.",
+    "aboutFlowTitle": "Το εμπόριο βασίζεται στην εμπιστοσύνη, την ταχύτητα και τη διαφάνεια",
+    "aboutFlowText1": "Από την πρώτη μέρα, ο βασικός μας στόχος ήταν να συνδέουμε τους πελάτες με τα σωστά κανάλια προμήθειας, να διαχειριζόμαστε αξιόπιστα τις διαδικασίες εισαγωγής και εξαγωγής και να γίνουμε επιχειρηματικός συνεργάτης που δημιουργεί αξία σε κάθε στάδιο του εμπορίου.",
+    "aboutFlowText2": "Στο σημερινό τοπίο του παγκόσμιου εμπορίου, οι εταιρείες περιμένουν περισσότερα από ένα προϊόν: αξιόπιστο προμηθευτή, σωστή τιμολόγηση, βιώσιμες επιχειρηματικές σχέσεις, λειτουργική παρακολούθηση και γρήγορη επικοινωνία. Στη Dynamic Era Export, υιοθετούμε μια ολιστική εμπορική προσέγγιση που λαμβάνει υπόψη όλες αυτές τις ανάγκες.",
+    "aboutPillars": [
+      [
+        "Το Όραμά μας",
+        "Για να γίνετε μια ισχυρή εμπορική επωνυμία γνωστή για την αξιοπιστία, την ταχύτητα και τη σκέψη με επίκεντρο τις λύσεις στο παγκόσμιο εμπόριο, προσφέροντας παράλληλα βιώσιμες λύσεις προμήθειας σε διαφορετικούς τομείς."
+      ],
+      [
+        "Η αποστολή μας",
+        "Να αναλύουμε σωστά τις ανάγκες των πελατών μας για εισαγωγή, εξαγωγή και προμήθεια και να παρέχουμε τις καταλληλότερες εμπορικές λύσεις με ποιοτικά προϊόντα, αξιόπιστες πηγές, ανταγωνιστικές τιμές και επαγγελματική λειτουργική υποστήριξη."
+      ],
+      [
+        "Η προσέγγισή μας",
+        "Βλέπουμε κάθε συνεργασία ως μια μακροπρόθεσμη εμπορική σχέση και επικεντρωνόμαστε όχι μόνο στα τρέχοντα αιτήματα προϊόντων, αλλά και στις μελλοντικές ανάγκες των πελατών μας."
+      ]
+    ],
+    "aboutOperationsEyebrow": "Τι κάνουμε",
+    "aboutOperationsTitle": "Παρέχουμε υποστήριξη από άκρο σε άκρο στις διαδικασίες εισαγωγής, εξαγωγής και προμήθειας.",
+    "aboutOperations": [
+      [
+        null,
+        "Υποστήριξη εισαγωγών και εξαγωγών",
+        "Παρέχουμε εμπορική υποστήριξη σε διαδικασίες εισαγωγής και εξαγωγής."
+      ],
+      [
+        null,
+        "Έρευνα προϊόντων και προμηθευτών",
+        "Ερευνούμε προϊόντα και προμηθευτές για διαφορετικούς τομείς."
+      ],
+      [
+        null,
+        "Ομάδες προϊόντων που ταιριάζουν στη ζήτηση",
+        "Εντοπίζουμε κατάλληλες ομάδες προϊόντων με βάση τη ζήτηση των πελατών."
+      ],
+      [
+        null,
+        "Συνδέσεις προμηθευτών",
+        "Συνδεόμαστε με τοπικούς και διεθνείς προμηθευτές."
+      ],
+      [
+        null,
+        "Τιμές και λειτουργίες",
+        "Διαχειριζόμαστε τις προσφορές, τις τιμές και τις λειτουργικές διαδικασίες."
+      ],
+      [
+        null,
+        "Βιώσιμη προμήθεια",
+        "Προσφέρουμε λύσεις βιώσιμης προμήθειας σε μεγάλες κατηγορίες προϊόντων."
+      ]
+    ],
+    "aboutValuesEyebrow": "Οι αξίες μας",
+    "aboutValuesTitle": "Πιστεύουμε ότι η εμπιστοσύνη, η ταχύτητα, η ευελιξία και η παγκόσμια προοπτική είναι τα θεμέλια του εμπορίου.",
+    "aboutValues": [
+      [
+        "Αξιοπιστία",
+        "Υιοθετούμε μια διαφανή, υπεύθυνη και βιώσιμη προσέγγιση σε όλες τις επιχειρηματικές διαδικασίες."
+      ],
+      [
+        "Ταχύτητα",
+        "Ανταποκρινόμαστε γρήγορα στα αιτήματα των πελατών, σχεδιάζουμε τη διαδικασία αποτελεσματικά και παρακολουθούμε στενά τη λειτουργική ροή."
+      ],
+      [
+        "Ευκαμψία",
+        "Αντί για σταθερά μοτίβα, δημιουργούμε λύσεις για συγκεκριμένο έργο, για συγκεκριμένο προϊόν και για συγκεκριμένη ζήτηση."
+      ],
+      [
+        "Παγκόσμια Προοπτική",
+        "Αξιολογώντας διαφορετικές αγορές, ομάδες προϊόντων και πηγές προμήθειας, προσφέρουμε ευρύτερες επιλογές."
+      ]
+    ],
+    "aboutCtaEyebrow": "Συνεργασία με το Dynamic Era Export",
+    "aboutCtaTitle": "Ας κάνουμε τη διαδικασία συναλλαγών σας ασφαλέστερη, ταχύτερη και πιο αποτελεσματική.",
+    "aboutCtaText": "Είτε αναζητάτε μια συγκεκριμένη ομάδα προϊόντων είτε χρειάζεστε επαγγελματική υποστήριξη για διαδικασίες εισαγωγής-εξαγωγής, η ομάδα μας είναι έτοιμη να δημιουργήσει τη σωστή λύση για εσάς.",
+    "aboutCtaPrimary": "Επικοινωνήστε μέσω WhatsApp",
+    "aboutCtaEmail": "Επικοινωνία μέσω email",
+    "aboutCtaSecondary": "Σελίδα επικοινωνίας",
+    "values": [
+      "Ευρύ δίκτυο προϊόντων και κλάδου",
+      "Αξιόπιστη διαδικασία εμπορίου",
+      "Ευέλικτες και γρήγορες λύσεις",
+      "Διεθνής εμπορική εμπειρία"
+    ],
+    "contactLead": "Όποιο και αν είναι το προϊόν, η χώρα-στόχος ή η κατηγορία που αναζητάτε, μπορούμε να ξεκινήσουμε με ένα σύντομο μήνυμα.",
+    "form": {
+      "configTitle": "Η υπηρεσία φόρμας δεν έχει ρυθμιστεί",
+      "configText": "Για την αποστολή μηνυμάτων πρέπει να προστεθεί ένα κλειδί πρόσβασης Web3Forms. Μπορείτε να επικοινωνήσετε μαζί μας μέσω WhatsApp στο μεταξύ.",
+      "successTitle": "Το μήνυμά σας στάλθηκε με επιτυχία",
+      "successText": "Σας ευχαριστώ. Θα επικοινωνήσουμε μαζί σας το συντομότερο δυνατό.",
+      "errorTitle": "Δεν ήταν δυνατή η αποστολή του μηνύματος",
+      "errorText": "Δοκιμάστε ξανά σύντομα ή επικοινωνήστε μαζί μας μέσω WhatsApp.",
+      "rateTitle": "Περιμένετε λίγο",
+      "rateText": "Για προστασία από ανεπιθύμητα μηνύματα, μπορείτε να στείλετε μόνο ένα μήνυμα ανά λεπτό."
+    },
+    "partnersTitle": "Παγκόσμιο Οικοσύστημα Εμπορίου",
+    "importantLinksTitle": "Σημαντικοί σύνδεσμοι",
+    "footerWhatsappTitle": "Επικοινωνήστε μαζί μας στο WhatsApp",
+    "footerWhatsappText": "Επικοινωνήστε μαζί μας απευθείας για το προϊόν, τον τομέα ή το αίτημα προμήθειας.",
+    "footer": "Σαφής επικοινωνία σε εισαγωγές, εξαγωγές και παγκόσμιες δραστηριότητες προμήθειας.",
+    "copyright": "© Πνευματικά δικαιώματα 2026 Dynamic Era Export. Με την επιφύλαξη παντός δικαιώματος."
+  }
+};
+
+function mergeCompletionCopy(base, patch) {
+  if (patch === null || patch === undefined) return base;
+  if (Array.isArray(base) && Array.isArray(patch)) {
+    const result = [...base];
+    patch.forEach((value, index) => {
+      if (value !== null && value !== undefined) {
+        result[index] = mergeCompletionCopy(base[index], value);
+      }
+    });
+    return result;
+  }
+  if (base && typeof base === "object" && !Array.isArray(base) && patch && typeof patch === "object" && !Array.isArray(patch)) {
+    const result = { ...base };
+    Object.entries(patch).forEach(([key, value]) => {
+      result[key] = mergeCompletionCopy(base[key], value);
+    });
+    return result;
+  }
+  return patch;
+}
+
+Object.entries(autoLanguageCompletionCopy).forEach(([code, localizedCopy]) => {
+  copy[code] = mergeCompletionCopy(copy[code] || copy.en, localizedCopy);
+});
+
+const finalLanguageCopyFixes = {
+  fr: {
+    nav: ["Accueil", "Secteurs", "À propos", "Nous contacter"],
+    contactTitle: "Nous contacter",
+    categories: { textile: ["Textile et habillement", "Tissus, prêt-à-porter, vêtements de travail, textiles techniques et différents groupes textiles."] },
+    categoryDetails: { textile: { title: "Textile et habillement" } },
+  },
+  nl: {
+    nav: ["Start", "Sectoren", "Over ons", "Contact opnemen"],
+    contactTitle: "Contact opnemen",
+  },
+  ro: {
+    nav: ["Acasă", "Sectoare", "Despre noi", "Contactează-ne"],
+    contactTitle: "Contactează-ne",
+    categories: { textile: ["Textile și confecții", "Țesături, îmbrăcăminte, echipamente de lucru, textile tehnice și grupuri textile diferite."] },
+    categoryDetails: { textile: { title: "Textile și confecții" } },
+  },
+};
+
+Object.entries(finalLanguageCopyFixes).forEach(([code, localizedCopy]) => {
+  copy[code] = mergeLanguageCopy(copy[code] || copy.en, localizedCopy);
+});
+
+copy.fr.allSectors[2] = ["Textile et habillement", "Tissus, prêt-à-porter, vêtements de travail, textiles techniques et différents groupes textiles."];
+copy.ro.allSectors[2] = ["Textile și confecții", "Țesături, îmbrăcăminte, echipamente de lucru, textile tehnice și grupuri textile diferite."];
+copy.el.allSectors[18] = ["Εμπόριο με υποστήριξη logistics", "Υποστήριξη συντονισμού για αποστολή, παράδοση και επιχειρησιακή παρακολούθηση."];
 
 const SITE_URL = "https://dynamiceraexport.com";
 const routePaths = {
@@ -2096,6 +5169,20 @@ Object.assign(searchUiCopy, {
   az: { ...searchUiCopy.en, open: "Saytda axtar", title: "Saytda axtar", placeholder: "Sektor, xidmət, səhifə və ya məhsul qrupu axtar", empty: "Nəticə tapılmadı.", close: "Axtarışı bağla", page: "Səhifə", sector: "Sektor", service: "Xidmət", process: "Proses", value: "Dəyər", resultCount: "nəticə" },
   pl: { ...searchUiCopy.en, open: "Szukaj w serwisie", title: "Szukaj w serwisie", placeholder: "Szukaj sektorów, usług, stron lub produktów", empty: "Nie znaleziono wyników.", close: "Zamknij wyszukiwanie", page: "Strona", sector: "Sektor", service: "Usługa", process: "Proces", value: "Wartość", resultCount: "wyników" },
   el: { ...searchUiCopy.en, open: "Αναζήτηση στον ιστότοπο", title: "Αναζήτηση στον ιστότοπο", placeholder: "Αναζητήστε κλάδους, υπηρεσίες, σελίδες ή προϊόντα", empty: "Δεν βρέθηκαν αποτελέσματα.", close: "Κλείσιμο αναζήτησης", page: "Σελίδα", sector: "Κλάδος", service: "Υπηρεσία", process: "Διαδικασία", value: "Αξία", resultCount: "αποτελέσματα" },
+});
+
+Object.assign(searchUiCopy, {
+  fr: { ...searchUiCopy.fr, page: "Page du site", service: "Service proposé" },
+  de: { ...searchUiCopy.de, service: "Dienstleistung" },
+  nl: { ...searchUiCopy.nl, sector: "Sectorgebied" },
+  it: { ...searchUiCopy.it, hint: "Inserisci almeno 2 caratteri." },
+  pt: { ...searchUiCopy.pt, hint: "Digite pelo menos 2 caracteres." },
+  uk: { ...searchUiCopy.uk, hint: "Введіть щонайменше 2 символи." },
+  ro: { ...searchUiCopy.ro, hint: "Introduceți cel puțin 2 caractere.", sector: "Domeniu" },
+  bg: { ...searchUiCopy.bg, hint: "Въведете поне 2 символа." },
+  az: { ...searchUiCopy.az, hint: "Ən azı 2 simvol daxil edin." },
+  pl: { ...searchUiCopy.pl, hint: "Wpisz co najmniej 2 znaki." },
+  el: { ...searchUiCopy.el, hint: "Πληκτρολογήστε τουλάχιστον 2 χαρακτήρες." },
 });
 
 function getPathForPage(lang, page, category) {
