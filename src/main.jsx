@@ -47,6 +47,48 @@ const company = {
   whatsapp: "905479904040",
   email: "info@dynamiceraexport.com",
   location: "Istanbul, Turkiye",
+  address: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 Fatih/İstanbul",
+  mapsUrl: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x14cab9e31f2b56e7:0x67c062350f9bab28?sa=X&ved=1t:8290&ictx=111",
+};
+
+const companyAddressByLang = {
+  tr: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 Fatih/İstanbul, Türkiye",
+  az: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 Fateh/İstanbul, Türkiyə",
+  en: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 Fatih/Istanbul, Turkey",
+  de: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 Fatih/Istanbul, Türkei",
+  fr: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 Fatih/Istanbul, Turquie",
+  it: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 Fatih/Istanbul, Turchia",
+  pt: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 Fatih/Istambul, Turquia",
+  nl: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 Fatih/Istanbul, Turkije",
+  ru: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 Фатих/Стамбул, Турция",
+  uk: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 Фатіх/Стамбул, Туреччина",
+  pl: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 Fatih/Stambuł, Turcja",
+  ro: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 Fatih/Istanbul, Turcia",
+  bg: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 Фатих/Истанбул, Турция",
+  el: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 Φατίχ/Κωνσταντινούπολη, Τουρκία",
+  zh: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 法提赫/伊斯坦布尔，土耳其",
+  ar: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 الفاتح/إسطنبول، تركيا",
+  fa: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 فاتح/استانبول، ترکیه",
+};
+
+const mapUiByLang = {
+  tr: { openInMaps: "Google Haritalar'da Aç", mapTitle: "Dynamic Era Export harita konumu", addressLabel: "Adres" },
+  en: { openInMaps: "Open in Google Maps", mapTitle: "Dynamic Era Export map location", addressLabel: "Address" },
+  de: { openInMaps: "In Google Maps öffnen", mapTitle: "Dynamic Era Export Standort auf der Karte", addressLabel: "Adresse" },
+  fr: { openInMaps: "Ouvrir dans Google Maps", mapTitle: "Dynamic Era Export sur la carte", addressLabel: "Adresse" },
+  it: { openInMaps: "Apri in Google Maps", mapTitle: "Dynamic Era Export sulla mappa", addressLabel: "Indirizzo" },
+  pt: { openInMaps: "Abrir no Google Maps", mapTitle: "Dynamic Era Export no mapa", addressLabel: "Endereço" },
+  nl: { openInMaps: "Openen in Google Maps", mapTitle: "Dynamic Era Export op de kaart", addressLabel: "Adres" },
+  ru: { openInMaps: "Открыть в Google Карты", mapTitle: "Dynamic Era Export на карте", addressLabel: "Адрес" },
+  uk: { openInMaps: "Відкрити в Google Картах", mapTitle: "Dynamic Era Export на карті", addressLabel: "Адреса" },
+  pl: { openInMaps: "Otwórz w Google Maps", mapTitle: "Dynamic Era Export na mapie", addressLabel: "Adres" },
+  ro: { openInMaps: "Deschide în Google Maps", mapTitle: "Dynamic Era Export pe hartă", addressLabel: "Adresă" },
+  bg: { openInMaps: "Отвори в Google Карти", mapTitle: "Dynamic Era Export на картата", addressLabel: "Адрес" },
+  az: { openInMaps: "Google Xəritələrdə Aç", mapTitle: "Dynamic Era Export xəritə yeri", addressLabel: "Ünvan" },
+  el: { openInMaps: "Άνοιγμα στους Χάρτες Google", mapTitle: "Dynamic Era Export στον χάρτη", addressLabel: "Διεύθυνση" },
+  zh: { openInMaps: "在 Google 地图上打开", mapTitle: "Dynamic Era Export 地图位置", addressLabel: "地址" },
+  ar: { openInMaps: "فتح في خرائط Google", mapTitle: "موقع Dynamic Era Export على الخريطة", addressLabel: "العنوان" },
+  fa: { openInMaps: "باز کردن در نقشه‌های Google", mapTitle: "موقعیت Dynamic Era Export روی نقشه", addressLabel: "آدرس" },
 };
 const socialLinks = [
   { key: "linkedin", name: "LinkedIn", url: "https://www.linkedin.com/company/dynamic-era-export" },
@@ -5432,7 +5474,10 @@ function updatePageSeo({ lang, page, category, t }) {
       description,
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Istanbul",
+        streetAddress: "Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3",
+        addressLocality: "Fatih",
+        addressRegion: "İstanbul",
+        postalCode: "34110",
         addressCountry: "TR",
       },
       areaServed: "Worldwide",
@@ -5608,7 +5653,7 @@ function App() {
           />
         )}
         {page === "about" && <About t={t} goTo={goTo} />}
-        {page === "contact" && <Contact t={t} />}
+        {page === "contact" && <Contact t={t} lang={lang} />}
       </main>
       <Footer t={t} lang={lang} goTo={goTo} />
       <FloatingWhatsApp t={t} />
@@ -6575,12 +6620,14 @@ function About({ t, goTo }) {
   );
 }
 
-function Contact({ t }) {
+function Contact({ t, lang = "tr" }) {
   const [form, setForm] = useState({ name: "", company: "", email: "", message: "", website: "" });
   const [submitting, setSubmitting] = useState(false);
   const [feedback, setFeedback] = useState(null);
   const [formStartedAt, setFormStartedAt] = useState(() => Date.now());
   const update = (key) => (event) => setForm((value) => ({ ...value, [key]: event.target.value }));
+  const localizedAddress = companyAddressByLang[lang] || companyAddressByLang.en || company.address;
+  const mapUi = mapUiByLang[lang] || mapUiByLang.en;
 
   useEffect(() => {
     if (!feedback) return undefined;
@@ -6752,24 +6799,41 @@ function Contact({ t }) {
         </Reveal>
         <Reveal>
           <aside className="contact-card">
-            <div>
+            <a
+              className="contact-card-item contact-card-address"
+              href={company.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={mapUi.openInMaps}
+            >
               <MapPin size={20} />
-              <span>{company.location}</span>
-            </div>
-            <div>
+              <span>{localizedAddress}</span>
+            </a>
+            <a className="contact-card-item" href={`tel:${company.phone.replace(/\s+/g, "")}`}>
               <Phone size={20} />
               <span>{company.phone}</span>
-            </div>
-            <div>
+            </a>
+            <a className="contact-card-item" href={`mailto:${company.email}`}>
               <Mail size={20} />
               <span>{company.email}</span>
+            </a>
+            <div className="contact-map-wrapper">
+              <iframe
+                title={mapUi.mapTitle}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                src={`https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sAr%C5%9Fah+Hal%C4%B1,+Hoca+Pa%C5%9Fa,+Alemdar+Cd.+No:+21+%C4%B0%C3%A7+Kap%C4%B1+No:+3,+34110+Fatih/%C4%B0stanbul!3m1!1s${lang}!5m1!1s${lang}`}
+              />
+              <a
+                className="contact-map-link"
+                href={company.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MapPin size={16} />
+                <span>{mapUi.openInMaps}</span>
+              </a>
             </div>
-            <iframe
-              title="Dynamic Era Export location"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=Istanbul%20Turkiye&output=embed"
-            />
             <a className="whatsapp-wide" href={`https://wa.me/${company.whatsapp}`} target="_blank" rel="noreferrer">
               <WhatsAppIcon size={19} />
               {t.whatsapp}
