@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "prebuild": "node scripts/generate-sitemap.mjs",
-    "dev": "vite --host 127.0.0.1",
-    "build": "vite build",
-    "preview": "vite preview --host 127.0.0.1",
+    "dev": "vite --host 127.0.0.1 --configLoader runner",
+    "build": "vite build --configLoader runner",
+    "preview": "vite preview --host 127.0.0.1 --configLoader runner",
     "submit:indexnow": "node scripts/submit-indexnow.mjs"
   },
   "dependencies": {

@@ -4,23 +4,23 @@ import path from "node:path";
 
 const siteUrl = "https://dynamiceraexport.com";
 const routePaths = {
-  tr: { home: "/", categories: "/sektorler", about: "/hakkimizda", contact: "/iletisim" },
-  en: { home: "/en", categories: "/en/sectors", about: "/en/about", contact: "/en/contact" },
-  it: { home: "/it", categories: "/it/settori", about: "/it/chi-siamo", contact: "/it/contatto" },
-  pt: { home: "/pt", categories: "/pt/setores", about: "/pt/sobre", contact: "/pt/contato" },
-  zh: { home: "/zh", categories: "/zh/sectors", about: "/zh/about", contact: "/zh/contact" },
-  fa: { home: "/fa", categories: "/fa/sectors", about: "/fa/about", contact: "/fa/contact" },
-  uk: { home: "/uk", categories: "/uk/sectors", about: "/uk/about", contact: "/uk/contact" },
-  ro: { home: "/ro", categories: "/ro/sectoare", about: "/ro/despre-noi", contact: "/ro/contact" },
-  bg: { home: "/bg", categories: "/bg/sectors", about: "/bg/about", contact: "/bg/contact" },
-  az: { home: "/az", categories: "/az/sektorlar", about: "/az/haqqimizda", contact: "/az/elaqe" },
-  pl: { home: "/pl", categories: "/pl/sektory", about: "/pl/o-nas", contact: "/pl/kontakt" },
-  el: { home: "/el", categories: "/el/sectors", about: "/el/about", contact: "/el/contact" },
-  ru: { home: "/ru", categories: "/ru/sectors", about: "/ru/about", contact: "/ru/contact" },
-  fr: { home: "/fr", categories: "/fr/secteurs", about: "/fr/a-propos", contact: "/fr/contact" },
-  de: { home: "/de", categories: "/de/branchen", about: "/de/ueber-uns", contact: "/de/kontakt" },
-  nl: { home: "/nl", categories: "/nl/sectoren", about: "/nl/over-ons", contact: "/nl/contact" },
-  ar: { home: "/ar", categories: "/ar/sectors", about: "/ar/about", contact: "/ar/contact" },
+  tr: { home: "/", categories: "/sektorler", catalog: "/katalog", about: "/hakkimizda", contact: "/iletisim" },
+  en: { home: "/en", categories: "/en/sectors", catalog: "/en/catalog", about: "/en/about", contact: "/en/contact" },
+  it: { home: "/it", categories: "/it/settori", catalog: "/it/catalogo", about: "/it/chi-siamo", contact: "/it/contatto" },
+  pt: { home: "/pt", categories: "/pt/setores", catalog: "/pt/catalogo", about: "/pt/sobre", contact: "/pt/contato" },
+  zh: { home: "/zh", categories: "/zh/sectors", catalog: "/zh/catalog", about: "/zh/about", contact: "/zh/contact" },
+  fa: { home: "/fa", categories: "/fa/sectors", catalog: "/fa/catalog", about: "/fa/about", contact: "/fa/contact" },
+  uk: { home: "/uk", categories: "/uk/sectors", catalog: "/uk/catalog", about: "/uk/about", contact: "/uk/contact" },
+  ro: { home: "/ro", categories: "/ro/sectoare", catalog: "/ro/catalog", about: "/ro/despre-noi", contact: "/ro/contact" },
+  bg: { home: "/bg", categories: "/bg/sectors", catalog: "/bg/catalog", about: "/bg/about", contact: "/bg/contact" },
+  az: { home: "/az", categories: "/az/sektorlar", catalog: "/az/kataloq", about: "/az/haqqimizda", contact: "/az/elaqe" },
+  pl: { home: "/pl", categories: "/pl/sektory", catalog: "/pl/katalog", about: "/pl/o-nas", contact: "/pl/kontakt" },
+  el: { home: "/el", categories: "/el/sectors", catalog: "/el/catalog", about: "/el/about", contact: "/el/contact" },
+  ru: { home: "/ru", categories: "/ru/sectors", catalog: "/ru/catalog", about: "/ru/about", contact: "/ru/contact" },
+  fr: { home: "/fr", categories: "/fr/secteurs", catalog: "/fr/catalogue", about: "/fr/a-propos", contact: "/fr/contact" },
+  de: { home: "/de", categories: "/de/branchen", catalog: "/de/katalog", about: "/de/ueber-uns", contact: "/de/kontakt" },
+  nl: { home: "/nl", categories: "/nl/sectoren", catalog: "/nl/catalogus", about: "/nl/over-ons", contact: "/nl/contact" },
+  ar: { home: "/ar", categories: "/ar/sectors", catalog: "/ar/catalog", about: "/ar/about", contact: "/ar/contact" },
 };
 const categories = [
   "energy", "construction", "textile", "food", "health", "defense", "electrical", "machinery", "furniture",
@@ -57,6 +57,7 @@ const entries = [];
 for (const lang of languages) {
   entries.push({ lang, page: "home", priority: lang === "tr" ? "1.0" : "0.9", changefreq: "weekly" });
   entries.push({ lang, page: "categories", priority: lang === "tr" ? "0.9" : "0.8", changefreq: "weekly" });
+  entries.push({ lang, page: "catalog", priority: lang === "tr" ? "0.8" : "0.7", changefreq: "monthly" });
   entries.push({ lang, page: "about", priority: lang === "tr" ? "0.8" : "0.7", changefreq: "monthly" });
   entries.push({ lang, page: "contact", priority: lang === "tr" ? "0.8" : "0.7", changefreq: "monthly" });
   for (const category of categories) {

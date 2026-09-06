@@ -11,6 +11,8 @@ import {
   ChevronDown as ChevronDownIcon,
   CircleAlert,
   Cog,
+  Download,
+  ExternalLink,
   FlaskConical,
   Globe2,
   HardHat,
@@ -49,6 +51,11 @@ const company = {
   location: "Istanbul, Turkiye",
   address: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 Fatih/İstanbul",
   mapsUrl: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x14cab9e31f2b56e7:0x67c062350f9bab28?sa=X&ved=1t:8290&ictx=111",
+};
+
+const catalogFile = {
+  url: "/catalog/dynamic-era-export-catalog.pdf",
+  downloadName: "dynamic-era-export-catalog.pdf",
 };
 
 const companyAddressByLang = {
@@ -2088,7 +2095,14 @@ const categoryOrder = [
 ];
 const featuredCategoryOrder = categoryOrder.slice(0, 6);
 const categoryIndexByKey = Object.fromEntries(categoryOrder.map((key, index) => [key, index]));
-const pages = ["home", "categories", "about", "contact"];
+const pages = ["home", "categories", "catalog", "about", "contact"];
+const pageNavIndex = { home: 0, categories: 1, about: 2, contact: 3 };
+
+function getPageLabel(t, pageKey) {
+  if (pageKey === "catalog") return t.catalogNav || "Catalog";
+  const index = pageNavIndex[pageKey];
+  return t.nav?.[index] || pageKey;
+}
 
 function mergeLanguageCopy(base, override) {
   const result = { ...base };
@@ -5034,25 +5048,287 @@ copy.fr.allSectors[2] = ["Textile et habillement", "Tissus, prêt-à-porter, vê
 copy.ro.allSectors[2] = ["Textile și confecții", "Țesături, îmbrăcăminte, echipamente de lucru, textile tehnice și grupuri textile diferite."];
 copy.el.allSectors[18] = ["Εμπόριο με υποστήριξη logistics", "Υποστήριξη συντονισμού για αποστολή, παράδοση και επιχειρησιακή παρακολούθηση."];
 
+const catalogCopy = {
+  tr: {
+    catalogNav: "Katalog",
+    catalogEyebrow: "Ürün Kataloğu",
+    catalogTitle: "Dynamic Era Export ürün kataloğu",
+    catalogLead: "Faaliyet alanlarımızı, ürün gruplarımızı ve tedarik yaklaşımımızı katalog üzerinden inceleyebilirsiniz.",
+    catalogHomeTitle: "Ürün ve faaliyet kataloğumuzu inceleyin.",
+    catalogHomeText: "Sektör bazlı ürün grupları ve dış ticaret yaklaşımımız tek dosyada.",
+    catalogHomeCta: "Kataloğu İncele",
+    catalogViewTitle: "Katalog görüntüleme alanı",
+    catalogOpen: "Yeni sekmede aç",
+    catalogDownload: "Kataloğu indir",
+    catalogFallback: "PDF burada görüntülenmezse kataloğu yeni sekmede açabilir veya indirebilirsiniz.",
+    catalogMetaTitle: "Ürün Kataloğu | Dynamic Era Export",
+    catalogMetaDescription: "Dynamic Era Export ürün kataloğunu görüntüleyin veya indirin; sektörler, ürün grupları ve global ticaret çözümlerimizi inceleyin.",
+  },
+  en: {
+    catalogNav: "Catalog",
+    catalogEyebrow: "Product Catalog",
+    catalogTitle: "Dynamic Era Export product catalog",
+    catalogLead: "Explore our sectors, product groups and sourcing approach directly through the catalog.",
+    catalogHomeTitle: "Review our product and activity catalog.",
+    catalogHomeText: "Sector-based product groups and our global trade approach in one document.",
+    catalogHomeCta: "View Catalog",
+    catalogViewTitle: "Catalog viewer",
+    catalogOpen: "Open in new tab",
+    catalogDownload: "Download catalog",
+    catalogFallback: "If the PDF does not display here, you can open it in a new tab or download it.",
+    catalogMetaTitle: "Product Catalog | Dynamic Era Export",
+    catalogMetaDescription: "View or download the Dynamic Era Export product catalog covering sectors, product groups and global trade solutions.",
+  },
+  it: {
+    catalogNav: "Catalogo",
+    catalogEyebrow: "Catalogo prodotti",
+    catalogTitle: "Catalogo prodotti Dynamic Era Export",
+    catalogLead: "Consulta settori, gruppi di prodotti e approccio al sourcing direttamente nel catalogo.",
+    catalogHomeTitle: "Consulta il nostro catalogo prodotti e attività.",
+    catalogHomeText: "Gruppi di prodotti per settore e il nostro approccio al commercio globale in un unico documento.",
+    catalogHomeCta: "Visualizza catalogo",
+    catalogViewTitle: "Visualizzatore catalogo",
+    catalogOpen: "Apri in una nuova scheda",
+    catalogDownload: "Scarica catalogo",
+    catalogFallback: "Se il PDF non viene visualizzato, puoi aprirlo in una nuova scheda o scaricarlo.",
+    catalogMetaTitle: "Catalogo prodotti | Dynamic Era Export",
+    catalogMetaDescription: "Visualizza o scarica il catalogo Dynamic Era Export con settori, gruppi di prodotti e soluzioni di commercio globale.",
+  },
+  pt: {
+    catalogNav: "Catálogo",
+    catalogEyebrow: "Catálogo de produtos",
+    catalogTitle: "Catálogo de produtos Dynamic Era Export",
+    catalogLead: "Veja nossos setores, grupos de produtos e abordagem de sourcing diretamente no catálogo.",
+    catalogHomeTitle: "Conheça nosso catálogo de produtos e atividades.",
+    catalogHomeText: "Grupos de produtos por setor e nossa abordagem de comércio global em um único documento.",
+    catalogHomeCta: "Ver catálogo",
+    catalogViewTitle: "Visualizador do catálogo",
+    catalogOpen: "Abrir em nova aba",
+    catalogDownload: "Baixar catálogo",
+    catalogFallback: "Se o PDF não aparecer aqui, você pode abri-lo em uma nova aba ou baixá-lo.",
+    catalogMetaTitle: "Catálogo de produtos | Dynamic Era Export",
+    catalogMetaDescription: "Veja ou baixe o catálogo da Dynamic Era Export com setores, grupos de produtos e soluções de comércio global.",
+  },
+  zh: {
+    catalogNav: "目录",
+    catalogEyebrow: "产品目录",
+    catalogTitle: "Dynamic Era Export 产品目录",
+    catalogLead: "通过目录查看我们的行业、产品组和采购服务方式。",
+    catalogHomeTitle: "查看我们的产品和业务目录。",
+    catalogHomeText: "一份文件概览行业产品组和全球贸易服务方式。",
+    catalogHomeCta: "查看目录",
+    catalogViewTitle: "目录查看器",
+    catalogOpen: "在新标签页打开",
+    catalogDownload: "下载目录",
+    catalogFallback: "如果 PDF 未显示，您可以在新标签页打开或下载。",
+    catalogMetaTitle: "产品目录 | Dynamic Era Export",
+    catalogMetaDescription: "查看或下载 Dynamic Era Export 产品目录，了解行业、产品组和全球贸易解决方案。",
+  },
+  fa: {
+    catalogNav: "کاتالوگ",
+    catalogEyebrow: "کاتالوگ محصولات",
+    catalogTitle: "کاتالوگ محصولات Dynamic Era Export",
+    catalogLead: "حوزه‌ها، گروه‌های محصول و رویکرد تامین ما را در کاتالوگ مشاهده کنید.",
+    catalogHomeTitle: "کاتالوگ محصولات و فعالیت‌های ما را بررسی کنید.",
+    catalogHomeText: "گروه‌های محصول بر اساس بخش و رویکرد تجارت جهانی ما در یک فایل.",
+    catalogHomeCta: "مشاهده کاتالوگ",
+    catalogViewTitle: "نمایشگر کاتالوگ",
+    catalogOpen: "باز کردن در برگه جدید",
+    catalogDownload: "دانلود کاتالوگ",
+    catalogFallback: "اگر PDF نمایش داده نشد، می‌توانید آن را در برگه جدید باز کنید یا دانلود کنید.",
+    catalogMetaTitle: "کاتالوگ محصولات | Dynamic Era Export",
+    catalogMetaDescription: "کاتالوگ Dynamic Era Export را مشاهده یا دانلود کنید و بخش‌ها، گروه‌های محصول و راهکارهای تجارت جهانی را بررسی کنید.",
+  },
+  uk: {
+    catalogNav: "Каталог",
+    catalogEyebrow: "Каталог продукції",
+    catalogTitle: "Каталог продукції Dynamic Era Export",
+    catalogLead: "Перегляньте наші напрями, групи продукції та підхід до постачання безпосередньо в каталозі.",
+    catalogHomeTitle: "Перегляньте каталог продукції та напрямів.",
+    catalogHomeText: "Групи продукції за секторами та наш підхід до міжнародної торгівлі в одному документі.",
+    catalogHomeCta: "Переглянути каталог",
+    catalogViewTitle: "Перегляд каталогу",
+    catalogOpen: "Відкрити в новій вкладці",
+    catalogDownload: "Завантажити каталог",
+    catalogFallback: "Якщо PDF не відображається, відкрийте його в новій вкладці або завантажте.",
+    catalogMetaTitle: "Каталог продукції | Dynamic Era Export",
+    catalogMetaDescription: "Перегляньте або завантажте каталог Dynamic Era Export із секторами, групами продукції та рішеннями для міжнародної торгівлі.",
+  },
+  ro: {
+    catalogNav: "Catalog",
+    catalogEyebrow: "Catalog produse",
+    catalogTitle: "Catalogul de produse Dynamic Era Export",
+    catalogLead: "Consultați sectoarele, grupele de produse și abordarea noastră de sourcing direct în catalog.",
+    catalogHomeTitle: "Consultați catalogul nostru de produse și activități.",
+    catalogHomeText: "Grupe de produse pe sectoare și abordarea noastră de comerț global într-un singur document.",
+    catalogHomeCta: "Vezi catalogul",
+    catalogViewTitle: "Vizualizator catalog",
+    catalogOpen: "Deschide într-o filă nouă",
+    catalogDownload: "Descarcă catalogul",
+    catalogFallback: "Dacă PDF-ul nu se afișează aici, îl puteți deschide într-o filă nouă sau descărca.",
+    catalogMetaTitle: "Catalog produse | Dynamic Era Export",
+    catalogMetaDescription: "Vizualizați sau descărcați catalogul Dynamic Era Export cu sectoare, grupe de produse și soluții de comerț global.",
+  },
+  bg: {
+    catalogNav: "Каталог",
+    catalogEyebrow: "Продуктов каталог",
+    catalogTitle: "Продуктов каталог на Dynamic Era Export",
+    catalogLead: "Разгледайте секторите, продуктовите групи и подхода ни към снабдяването директно в каталога.",
+    catalogHomeTitle: "Разгледайте нашия каталог с продукти и дейности.",
+    catalogHomeText: "Продуктови групи по сектори и нашият подход към глобалната търговия в един документ.",
+    catalogHomeCta: "Виж каталога",
+    catalogViewTitle: "Преглед на каталога",
+    catalogOpen: "Отвори в нов раздел",
+    catalogDownload: "Изтегли каталога",
+    catalogFallback: "Ако PDF файлът не се показва, можете да го отворите в нов раздел или да го изтеглите.",
+    catalogMetaTitle: "Продуктов каталог | Dynamic Era Export",
+    catalogMetaDescription: "Вижте или изтеглете каталога на Dynamic Era Export със сектори, продуктови групи и решения за глобална търговия.",
+  },
+  az: {
+    catalogNav: "Kataloq",
+    catalogEyebrow: "Məhsul kataloqu",
+    catalogTitle: "Dynamic Era Export məhsul kataloqu",
+    catalogLead: "Sektorlarımızı, məhsul qruplarımızı və təchizat yanaşmamızı kataloqda incələyə bilərsiniz.",
+    catalogHomeTitle: "Məhsul və fəaliyyət kataloqumuza baxın.",
+    catalogHomeText: "Sektor üzrə məhsul qrupları və qlobal ticarət yanaşmamız bir sənəddə.",
+    catalogHomeCta: "Kataloqa bax",
+    catalogViewTitle: "Kataloq görüntüləmə sahəsi",
+    catalogOpen: "Yeni tabda aç",
+    catalogDownload: "Kataloqu endir",
+    catalogFallback: "PDF burada görünmürsə, onu yeni tabda aça və ya endirə bilərsiniz.",
+    catalogMetaTitle: "Məhsul kataloqu | Dynamic Era Export",
+    catalogMetaDescription: "Dynamic Era Export məhsul kataloqunu görüntüləyin və ya endirin; sektorlar, məhsul qrupları və qlobal ticarət həlləri ilə tanış olun.",
+  },
+  pl: {
+    catalogNav: "Katalog",
+    catalogEyebrow: "Katalog produktów",
+    catalogTitle: "Katalog produktów Dynamic Era Export",
+    catalogLead: "Poznaj nasze sektory, grupy produktów i podejście do sourcingu bezpośrednio w katalogu.",
+    catalogHomeTitle: "Zobacz nasz katalog produktów i działalności.",
+    catalogHomeText: "Grupy produktów według sektorów oraz nasze podejście do handlu globalnego w jednym dokumencie.",
+    catalogHomeCta: "Zobacz katalog",
+    catalogViewTitle: "Przeglądarka katalogu",
+    catalogOpen: "Otwórz w nowej karcie",
+    catalogDownload: "Pobierz katalog",
+    catalogFallback: "Jeśli PDF nie jest widoczny, możesz otworzyć go w nowej karcie lub pobrać.",
+    catalogMetaTitle: "Katalog produktów | Dynamic Era Export",
+    catalogMetaDescription: "Zobacz lub pobierz katalog Dynamic Era Export z sektorami, grupami produktów i rozwiązaniami handlu globalnego.",
+  },
+  el: {
+    catalogNav: "Κατάλογος",
+    catalogEyebrow: "Κατάλογος προϊόντων",
+    catalogTitle: "Κατάλογος προϊόντων Dynamic Era Export",
+    catalogLead: "Δείτε τους τομείς, τις ομάδες προϊόντων και την προσέγγιση προμήθειας μέσα από τον κατάλογο.",
+    catalogHomeTitle: "Δείτε τον κατάλογο προϊόντων και δραστηριοτήτων μας.",
+    catalogHomeText: "Ομάδες προϊόντων ανά τομέα και η προσέγγισή μας στο παγκόσμιο εμπόριο σε ένα έγγραφο.",
+    catalogHomeCta: "Προβολή καταλόγου",
+    catalogViewTitle: "Προβολή καταλόγου",
+    catalogOpen: "Άνοιγμα σε νέα καρτέλα",
+    catalogDownload: "Λήψη καταλόγου",
+    catalogFallback: "Αν το PDF δεν εμφανίζεται, μπορείτε να το ανοίξετε σε νέα καρτέλα ή να το κατεβάσετε.",
+    catalogMetaTitle: "Κατάλογος προϊόντων | Dynamic Era Export",
+    catalogMetaDescription: "Δείτε ή κατεβάστε τον κατάλογο Dynamic Era Export με τομείς, ομάδες προϊόντων και λύσεις παγκόσμιου εμπορίου.",
+  },
+  ru: {
+    catalogNav: "Каталог",
+    catalogEyebrow: "Каталог продукции",
+    catalogTitle: "Каталог продукции Dynamic Era Export",
+    catalogLead: "Изучите наши направления, группы продукции и подход к поставкам прямо в каталоге.",
+    catalogHomeTitle: "Посмотрите наш каталог продукции и направлений.",
+    catalogHomeText: "Группы продукции по секторам и наш подход к международной торговле в одном документе.",
+    catalogHomeCta: "Открыть каталог",
+    catalogViewTitle: "Просмотр каталога",
+    catalogOpen: "Открыть в новой вкладке",
+    catalogDownload: "Скачать каталог",
+    catalogFallback: "Если PDF не отображается, откройте его в новой вкладке или скачайте.",
+    catalogMetaTitle: "Каталог продукции | Dynamic Era Export",
+    catalogMetaDescription: "Откройте или скачайте каталог Dynamic Era Export с секторами, группами продукции и решениями для международной торговли.",
+  },
+  fr: {
+    catalogNav: "Catalogue",
+    catalogEyebrow: "Catalogue produits",
+    catalogTitle: "Catalogue produits Dynamic Era Export",
+    catalogLead: "Découvrez nos secteurs, groupes de produits et notre approche sourcing directement dans le catalogue.",
+    catalogHomeTitle: "Consultez notre catalogue produits et activités.",
+    catalogHomeText: "Groupes de produits par secteur et approche du commerce mondial dans un seul document.",
+    catalogHomeCta: "Voir le catalogue",
+    catalogViewTitle: "Visionneuse du catalogue",
+    catalogOpen: "Ouvrir dans un nouvel onglet",
+    catalogDownload: "Télécharger le catalogue",
+    catalogFallback: "Si le PDF ne s’affiche pas ici, vous pouvez l’ouvrir dans un nouvel onglet ou le télécharger.",
+    catalogMetaTitle: "Catalogue produits | Dynamic Era Export",
+    catalogMetaDescription: "Consultez ou téléchargez le catalogue Dynamic Era Export avec secteurs, groupes de produits et solutions de commerce mondial.",
+  },
+  de: {
+    catalogNav: "Katalog",
+    catalogEyebrow: "Produktkatalog",
+    catalogTitle: "Dynamic Era Export Produktkatalog",
+    catalogLead: "Entdecken Sie unsere Branchen, Produktgruppen und unseren Sourcing-Ansatz direkt im Katalog.",
+    catalogHomeTitle: "Sehen Sie sich unseren Produkt- und Leistungskatalog an.",
+    catalogHomeText: "Branchenspezifische Produktgruppen und unser Ansatz für globalen Handel in einem Dokument.",
+    catalogHomeCta: "Katalog ansehen",
+    catalogViewTitle: "Katalogansicht",
+    catalogOpen: "In neuem Tab öffnen",
+    catalogDownload: "Katalog herunterladen",
+    catalogFallback: "Wenn das PDF hier nicht angezeigt wird, können Sie es in einem neuen Tab öffnen oder herunterladen.",
+    catalogMetaTitle: "Produktkatalog | Dynamic Era Export",
+    catalogMetaDescription: "Sehen oder laden Sie den Dynamic Era Export Produktkatalog mit Branchen, Produktgruppen und globalen Handelslösungen herunter.",
+  },
+  nl: {
+    catalogNav: "Catalogus",
+    catalogEyebrow: "Productcatalogus",
+    catalogTitle: "Dynamic Era Export productcatalogus",
+    catalogLead: "Bekijk onze sectoren, productgroepen en sourcingaanpak direct in de catalogus.",
+    catalogHomeTitle: "Bekijk onze product- en activiteitencatalogus.",
+    catalogHomeText: "Sectorgerichte productgroepen en onze aanpak voor wereldhandel in één document.",
+    catalogHomeCta: "Bekijk catalogus",
+    catalogViewTitle: "Catalogusweergave",
+    catalogOpen: "Openen in nieuw tabblad",
+    catalogDownload: "Catalogus downloaden",
+    catalogFallback: "Als de PDF hier niet wordt weergegeven, kunt u deze openen in een nieuw tabblad of downloaden.",
+    catalogMetaTitle: "Productcatalogus | Dynamic Era Export",
+    catalogMetaDescription: "Bekijk of download de Dynamic Era Export productcatalogus met sectoren, productgroepen en wereldwijde handelsoplossingen.",
+  },
+  ar: {
+    catalogNav: "الكتالوج",
+    catalogEyebrow: "كتالوج المنتجات",
+    catalogTitle: "كتالوج منتجات Dynamic Era Export",
+    catalogLead: "استعرض قطاعاتنا ومجموعات المنتجات ونهج التوريد مباشرة من خلال الكتالوج.",
+    catalogHomeTitle: "استعرض كتالوج المنتجات والأنشطة لدينا.",
+    catalogHomeText: "مجموعات المنتجات حسب القطاع ونهجنا في التجارة العالمية ضمن ملف واحد.",
+    catalogHomeCta: "عرض الكتالوج",
+    catalogViewTitle: "عارض الكتالوج",
+    catalogOpen: "فتح في تبويب جديد",
+    catalogDownload: "تنزيل الكتالوج",
+    catalogFallback: "إذا لم يظهر ملف PDF هنا، يمكنك فتحه في تبويب جديد أو تنزيله.",
+    catalogMetaTitle: "كتالوج المنتجات | Dynamic Era Export",
+    catalogMetaDescription: "اعرض أو نزّل كتالوج Dynamic Era Export للتعرف على القطاعات ومجموعات المنتجات وحلول التجارة العالمية.",
+  },
+};
+
+Object.entries(catalogCopy).forEach(([code, localizedCopy]) => {
+  copy[code] = mergeLanguageCopy(copy[code] || copy.en, localizedCopy);
+});
+
 const SITE_URL = "https://dynamiceraexport.com";
 const routePaths = {
-  tr: { home: "/", categories: "/sektorler", about: "/hakkimizda", contact: "/iletisim" },
-  en: { home: "/en", categories: "/en/sectors", about: "/en/about", contact: "/en/contact" },
-  it: { home: "/it", categories: "/it/settori", about: "/it/chi-siamo", contact: "/it/contatto" },
-  pt: { home: "/pt", categories: "/pt/setores", about: "/pt/sobre", contact: "/pt/contato" },
-  zh: { home: "/zh", categories: "/zh/sectors", about: "/zh/about", contact: "/zh/contact" },
-  fa: { home: "/fa", categories: "/fa/sectors", about: "/fa/about", contact: "/fa/contact" },
-  uk: { home: "/uk", categories: "/uk/sectors", about: "/uk/about", contact: "/uk/contact" },
-  ro: { home: "/ro", categories: "/ro/sectoare", about: "/ro/despre-noi", contact: "/ro/contact" },
-  bg: { home: "/bg", categories: "/bg/sectors", about: "/bg/about", contact: "/bg/contact" },
-  az: { home: "/az", categories: "/az/sektorlar", about: "/az/haqqimizda", contact: "/az/elaqe" },
-  pl: { home: "/pl", categories: "/pl/sektory", about: "/pl/o-nas", contact: "/pl/kontakt" },
-  el: { home: "/el", categories: "/el/sectors", about: "/el/about", contact: "/el/contact" },
-  ru: { home: "/ru", categories: "/ru/sectors", about: "/ru/about", contact: "/ru/contact" },
-  fr: { home: "/fr", categories: "/fr/secteurs", about: "/fr/a-propos", contact: "/fr/contact" },
-  de: { home: "/de", categories: "/de/branchen", about: "/de/ueber-uns", contact: "/de/kontakt" },
-  nl: { home: "/nl", categories: "/nl/sectoren", about: "/nl/over-ons", contact: "/nl/contact" },
-  ar: { home: "/ar", categories: "/ar/sectors", about: "/ar/about", contact: "/ar/contact" },
+  tr: { home: "/", categories: "/sektorler", catalog: "/katalog", about: "/hakkimizda", contact: "/iletisim" },
+  en: { home: "/en", categories: "/en/sectors", catalog: "/en/catalog", about: "/en/about", contact: "/en/contact" },
+  it: { home: "/it", categories: "/it/settori", catalog: "/it/catalogo", about: "/it/chi-siamo", contact: "/it/contatto" },
+  pt: { home: "/pt", categories: "/pt/setores", catalog: "/pt/catalogo", about: "/pt/sobre", contact: "/pt/contato" },
+  zh: { home: "/zh", categories: "/zh/sectors", catalog: "/zh/catalog", about: "/zh/about", contact: "/zh/contact" },
+  fa: { home: "/fa", categories: "/fa/sectors", catalog: "/fa/catalog", about: "/fa/about", contact: "/fa/contact" },
+  uk: { home: "/uk", categories: "/uk/sectors", catalog: "/uk/catalog", about: "/uk/about", contact: "/uk/contact" },
+  ro: { home: "/ro", categories: "/ro/sectoare", catalog: "/ro/catalog", about: "/ro/despre-noi", contact: "/ro/contact" },
+  bg: { home: "/bg", categories: "/bg/sectors", catalog: "/bg/catalog", about: "/bg/about", contact: "/bg/contact" },
+  az: { home: "/az", categories: "/az/sektorlar", catalog: "/az/kataloq", about: "/az/haqqimizda", contact: "/az/elaqe" },
+  pl: { home: "/pl", categories: "/pl/sektory", catalog: "/pl/katalog", about: "/pl/o-nas", contact: "/pl/kontakt" },
+  el: { home: "/el", categories: "/el/sectors", catalog: "/el/catalog", about: "/el/about", contact: "/el/contact" },
+  ru: { home: "/ru", categories: "/ru/sectors", catalog: "/ru/catalog", about: "/ru/about", contact: "/ru/contact" },
+  fr: { home: "/fr", categories: "/fr/secteurs", catalog: "/fr/catalogue", about: "/fr/a-propos", contact: "/fr/contact" },
+  de: { home: "/de", categories: "/de/branchen", catalog: "/de/katalog", about: "/de/ueber-uns", contact: "/de/kontakt" },
+  nl: { home: "/nl", categories: "/nl/sectoren", catalog: "/nl/catalogus", about: "/nl/over-ons", contact: "/nl/contact" },
+  ar: { home: "/ar", categories: "/ar/sectors", catalog: "/ar/catalog", about: "/ar/about", contact: "/ar/contact" },
 };
 const categorySlugs = {
   rawMaterial: "raw-material",
@@ -5337,11 +5613,12 @@ function compactSearchText(parts) {
 
 function buildSearchItems(t, lang) {
   const ui = searchUiCopy[lang] || searchUiCopy.en;
-  const items = pages.map((pageKey, index) => {
-    const title = t.nav[index];
+  const items = pages.map((pageKey) => {
+    const title = getPageLabel(t, pageKey);
     const descriptions = {
       home: compactSearchText([t.homeTitle, t.homeText, t.homeSubText, t.homeAboutTitle, t.homeAboutText]),
       categories: compactSearchText([t.categoryPageTitle, t.categoryPageLead, t.categoryCustomCtaText]),
+      catalog: compactSearchText([t.catalogTitle, t.catalogLead, t.catalogHomeText, t.catalogDownload, t.catalogOpen]),
       about: compactSearchText([t.aboutTitle, t.aboutText, t.aboutIntroText, t.aboutSupport, t.aboutFlowTitle]),
       contact: compactSearchText([t.contactTitle, t.contactLead, t.contactText, t.contactSubtitle]),
     };
@@ -5405,10 +5682,12 @@ function buildSearchItems(t, lang) {
 }
 
 function updatePageSeo({ lang, page, category, t }) {
-  const pageLabel = page === "home" ? t.homeTitle : t.nav[pages.indexOf(page)];
+  const pageLabel = page === "home" ? t.homeTitle : getPageLabel(t, page);
   const categoryLabel = category ? getCategoryEntry(t, category)[0] : null;
   const title = page === "home"
     ? seoHomeTitles[lang]
+    : page === "catalog"
+      ? t.catalogMetaTitle || `${pageLabel} | Dynamic Era Export`
     : `${categoryLabel || pageLabel} | Dynamic Era Export`;
   const descriptionSource = page === "home"
     ? t.homeText
@@ -5416,6 +5695,8 @@ function updatePageSeo({ lang, page, category, t }) {
       ? category
         ? getCategoryEntry(t, category)[1]
         : t.categoryPageLead
+      : page === "catalog"
+        ? t.catalogMetaDescription || t.catalogLead
       : page === "about"
         ? t.aboutIntroText || t.aboutText
         : t.contactLead;
@@ -5653,6 +5934,7 @@ function App() {
           />
         )}
         {page === "about" && <About t={t} goTo={goTo} />}
+        {page === "catalog" && <CatalogPage t={t} />}
         {page === "contact" && <Contact t={t} lang={lang} />}
       </main>
       <Footer t={t} lang={lang} goTo={goTo} />
@@ -5788,20 +6070,20 @@ function Header({ t, lang, setLang, page, goTo, menuOpen, setMenuOpen, onSearchO
 
   return (
     <header className={`topbar ${isTransparent ? "topbar-transparent" : "topbar-solid"}`}>
-      <a className="brand" href={getPathForPage(lang, "home")} onClick={(event) => { event.preventDefault(); goTo("home"); }} aria-label={t.nav[0]}>
+      <a className="brand" href={getPathForPage(lang, "home")} onClick={(event) => { event.preventDefault(); goTo("home"); }} aria-label={getPageLabel(t, "home")}>
         <LogoMark />
         <span className="sr-only">Dynamic Era Export - Dynamic Era Export</span>
       </a>
 
       <nav className={`nav ${menuOpen ? "nav-open" : ""}`} aria-label="Primary navigation">
-        {pages.map((item, index) => (
+        {pages.map((item) => (
           <a
             key={item}
             href={getPathForPage(lang, item)}
             className={page === item ? "active" : ""}
             onClick={(event) => { event.preventDefault(); goTo(item); }}
           >
-            {t.nav[index]}
+            {getPageLabel(t, item)}
           </a>
         ))}
       </nav>
@@ -5950,10 +6232,73 @@ function Home({ t, lang, goTo }) {
       <AboutShowcase t={t} goTo={goTo} />
       <ServicesSection t={t} />
       <CategoryPreview t={t} lang={lang} goTo={goTo} />
+      <CatalogCta t={t} goTo={goTo} />
       <ProcessSection t={t} />
       <FaqSection lang={lang} />
       <CtaBand t={t} goTo={goTo} />
     </>
+  );
+}
+
+function CatalogCta({ t, goTo }) {
+  return (
+    <section className="catalog-home-section" id="catalog-preview">
+      <Reveal className="catalog-home-layout">
+        <div className="catalog-home-copy">
+          <p className="eyebrow">{t.catalogEyebrow}</p>
+          <h2>{t.catalogHomeTitle}</h2>
+          <p>{t.catalogHomeText}</p>
+          <div className="catalog-actions">
+            <button className="primary-action" type="button" onClick={() => goTo("catalog")}>
+              <PackageOpen size={18} />
+              {t.catalogHomeCta}
+            </button>
+            <a className="secondary-action catalog-download-link" href={catalogFile.url} download={catalogFile.downloadName}>
+              <Download size={18} />
+              {t.catalogDownload}
+            </a>
+          </div>
+        </div>
+        <button className="catalog-preview-card" type="button" onClick={() => goTo("catalog")} aria-label={t.catalogHomeCta}>
+          <span>{company.name}</span>
+          <strong>{t.catalogNav}</strong>
+          <small>{t.catalogLead}</small>
+          <ArrowRight size={22} />
+        </button>
+      </Reveal>
+    </section>
+  );
+}
+
+function CatalogPage({ t }) {
+  return (
+    <section className="page-section catalog-page">
+      <Reveal className="catalog-page-intro">
+        <p className="eyebrow">{t.catalogEyebrow}</p>
+        <h1>{t.catalogTitle}</h1>
+        <p>{t.catalogLead}</p>
+        <div className="catalog-actions">
+          <a className="primary-action" href={catalogFile.url} download={catalogFile.downloadName}>
+            <Download size={18} />
+            {t.catalogDownload}
+          </a>
+          <a className="secondary-action catalog-open-link" href={catalogFile.url} target="_blank" rel="noreferrer">
+            <ExternalLink size={18} />
+            {t.catalogOpen}
+          </a>
+        </div>
+      </Reveal>
+
+      <Reveal className="catalog-viewer-shell">
+        <iframe
+          className="catalog-viewer"
+          title={t.catalogViewTitle}
+          src={`${catalogFile.url}#toolbar=1&navpanes=0`}
+          loading="lazy"
+        />
+      </Reveal>
+      <p className="catalog-fallback">{t.catalogFallback}</p>
+    </section>
   );
 }
 
@@ -6882,7 +7227,7 @@ function Footer({ t, lang, goTo }) {
     <footer className="footer">
       <div className="footer-main">
         <div className="footer-brand-col">
-          <a className="brand" href={getPathForPage(lang, "home")} onClick={(event) => { event.preventDefault(); goTo("home"); }} aria-label={t.nav[0]}>
+          <a className="brand" href={getPathForPage(lang, "home")} onClick={(event) => { event.preventDefault(); goTo("home"); }} aria-label={getPageLabel(t, "home")}>
             <LogoMark />
           </a>
           <h2>{t.homeTitle}</h2>
@@ -6899,9 +7244,9 @@ function Footer({ t, lang, goTo }) {
 
         <div className="footer-col footer-links">
           <h3>{t.importantLinksTitle || "Önemli Linkler"}</h3>
-          {pages.map((page, index) => (
+          {pages.map((page) => (
             <a key={page} href={getPathForPage(lang, page)} onClick={(event) => { event.preventDefault(); goTo(page); }}>
-              {t.nav[index]}
+              {getPageLabel(t, page)}
             </a>
           ))}
         </div>
