@@ -3128,6 +3128,31 @@ p {
   max-width: 360px;
 }
 
+.footer-address-link {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 380px;
+  align-items: flex-start;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 14px;
+  font-weight: 760;
+  line-height: 1.55;
+  text-decoration: none;
+  transition: color 180ms ease, transform 180ms ease;
+}
+
+.footer-address-link svg {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: #bff5ff;
+}
+
+.footer-address-link:hover {
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
 .footer-whatsapp {
   display: inline-flex;
   width: fit-content;

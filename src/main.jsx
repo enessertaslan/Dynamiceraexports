@@ -6875,6 +6875,8 @@ function Contact({ t, lang = "tr" }) {
 
 function Footer({ t, lang, goTo }) {
   const footerServices = (t.services || []).slice(0, 4);
+  const localizedAddress = companyAddressByLang[lang] || companyAddressByLang.en || company.address;
+  const mapUi = mapUiByLang[lang] || mapUiByLang.en;
 
   return (
     <footer className="footer">
@@ -6907,6 +6909,17 @@ function Footer({ t, lang, goTo }) {
         <div className="footer-contact-col">
           <h3>{t.footerWhatsappTitle || "WhatsApp'tan Ulaşın"}</h3>
           <p>{t.footerWhatsappText || "Ürün, sektör veya tedarik talebiniz için doğrudan bizimle iletişime geçin."}</p>
+          <a
+            className="footer-address-link"
+            href={company.mapsUrl}
+            target="_blank"
+            rel="noreferrer"
+            title={mapUi.openInMaps}
+            aria-label={`${mapUi.addressLabel}: ${localizedAddress}`}
+          >
+            <MapPin size={18} />
+            <span>{localizedAddress}</span>
+          </a>
           <a className="footer-whatsapp" href={`https://wa.me/${company.whatsapp}`} target="_blank" rel="noreferrer">
             <WhatsAppIcon size={18} />
             {t.whatsapp}
