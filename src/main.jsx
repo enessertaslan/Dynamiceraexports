@@ -53,10 +53,24 @@ const company = {
   mapsUrl: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x14cab9e31f2b56e7:0x67c062350f9bab28?sa=X&ved=1t:8290&ictx=111",
 };
 
-const catalogFile = {
-  url: "/catalog/dynamic-era-export-catalog.pdf",
-  downloadName: "dynamic-era-export-catalog.pdf",
+const catalogFiles = {
+  default: {
+    url: "/catalog/dynamic-era-export-catalog.pdf",
+    downloadName: "dynamic-era-export-catalog.pdf",
+  },
+  de: {
+    url: "/catalog/dynamic-era-export-leistungskatalog.pdf",
+    downloadName: "dynamic-era-export-leistungskatalog.pdf",
+  },
+  ar: {
+    url: "/catalog/dynamic-era-export-arabic-catalog.pdf",
+    downloadName: "dynamic-era-export-arabic-catalog.pdf",
+  },
 };
+
+function getCatalogFile(lang) {
+  return catalogFiles[lang] || catalogFiles.default;
+}
 
 const companyAddressByLang = {
   tr: "Arşah Halı, Hoca Paşa, Alemdar Cd. No: 21 İç Kapı No: 3, 34110 Fatih/İstanbul, Türkiye",
@@ -5934,7 +5948,7 @@ function App() {
           />
         )}
         {page === "about" && <About t={t} goTo={goTo} />}
-        {page === "catalog" && <CatalogPage t={t} />}
+        {page === "catalog" && <CatalogPage t={t} lang={lang} />}
         {page === "contact" && <Contact t={t} lang={lang} />}
       </main>
       <Footer t={t} lang={lang} goTo={goTo} />
@@ -6232,7 +6246,7 @@ function Home({ t, lang, goTo }) {
       <AboutShowcase t={t} goTo={goTo} />
       <ServicesSection t={t} />
       <CategoryPreview t={t} lang={lang} goTo={goTo} />
-      <CatalogCta t={t} goTo={goTo} />
+      <CatalogCta t={t} lang={lang} goTo={goTo} />
       <ProcessSection t={t} />
       <FaqSection lang={lang} />
       <CtaBand t={t} goTo={goTo} />
@@ -6240,7 +6254,9 @@ function Home({ t, lang, goTo }) {
   );
 }
 
-function CatalogCta({ t, goTo }) {
+function CatalogCta({ t, lang, goTo }) {
+  const activeCatalogFile = getCatalogFile(lang);
+
   return (
     <section className="catalog-home-section" id="catalog-preview">
       <Reveal className="catalog-home-layout">
@@ -6253,7 +6269,7 @@ function CatalogCta({ t, goTo }) {
               <PackageOpen size={18} />
               {t.catalogHomeCta}
             </button>
-            <a className="secondary-action catalog-download-link" href={catalogFile.url} download={catalogFile.downloadName}>
+            <a className="secondary-action catalog-download-link" href={activeCatalogFile.url} download={activeCatalogFile.downloadName}>
               <Download size={18} />
               {t.catalogDownload}
             </a>
@@ -6270,7 +6286,9 @@ function CatalogCta({ t, goTo }) {
   );
 }
 
-function CatalogPage({ t }) {
+function CatalogPage({ t, lang }) {
+  const activeCatalogFile = getCatalogFile(lang);
+
   return (
     <section className="page-section catalog-page">
       <Reveal className="catalog-page-intro">
@@ -6278,11 +6296,11 @@ function CatalogPage({ t }) {
         <h1>{t.catalogTitle}</h1>
         <p>{t.catalogLead}</p>
         <div className="catalog-actions">
-          <a className="primary-action" href={catalogFile.url} download={catalogFile.downloadName}>
+          <a className="primary-action" href={activeCatalogFile.url} download={activeCatalogFile.downloadName}>
             <Download size={18} />
             {t.catalogDownload}
           </a>
-          <a className="secondary-action catalog-open-link" href={catalogFile.url} target="_blank" rel="noreferrer">
+          <a className="secondary-action catalog-open-link" href={activeCatalogFile.url} target="_blank" rel="noreferrer">
             <ExternalLink size={18} />
             {t.catalogOpen}
           </a>
@@ -6293,7 +6311,7 @@ function CatalogPage({ t }) {
         <iframe
           className="catalog-viewer"
           title={t.catalogViewTitle}
-          src={`${catalogFile.url}#toolbar=1&navpanes=0`}
+          src={`${activeCatalogFile.url}#toolbar=1&navpanes=0`}
           loading="lazy"
         />
       </Reveal>
